@@ -1,0 +1,8 @@
+import { Anaphora } from '../types';
+
+const anaphora: Anaphora = {
+  id: 'saint-epiphanius',
+  name: { english: 'St. Epiphanius', geez: 'ቅዱስ ኤጲፋንዮስ', amharic: 'ቅዱስ ኤጲፋንዮስ' },
+  sections: [{ id: 'saint-epiphanius-placeholder', title: { english: 'Coming Soon' }, blocks: [{ id: 'saint-epiphanius-placeholder-1', type: 'rubric', english: '[Placeholder — contribute the full text via a Pull Request on GitHub]' }] }],
+};
+export default anaphora;
