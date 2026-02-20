@@ -14,7 +14,7 @@ const FONT_SIZE_PRESETS: { label: string; value: FontSizePreset; description: st
 ];
 
 export default function SettingsScreen() {
-  const { toggleLanguage, isActive } = useLanguage();
+  const { toggleLanguage, isActive, primaryLanguage, setPrimaryLanguage } = useLanguage();
   const { preset, setPreset } = useFontSize();
 
   return (
@@ -22,7 +22,7 @@ export default function SettingsScreen() {
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
         <Text style={styles.heading}>Settings</Text>
 
-        {/* Language */}
+        {/* Display Languages */}
         <Text style={styles.sectionTitle}>DISPLAY LANGUAGES</Text>
         <View style={styles.sectionCard}>
           <Text style={styles.sectionHint}>Select one or more languages to show during reading.</Text>
@@ -35,6 +35,26 @@ export default function SettingsScreen() {
                 activeOpacity={0.7}
               >
                 <Text style={[styles.pillText, isActive(lang) && styles.pillTextActive]}>
+                  {LANGUAGE_LABELS[lang]}
+                </Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+        </View>
+
+        {/* Primary Language */}
+        <Text style={styles.sectionTitle}>PRIMARY LANGUAGE</Text>
+        <View style={styles.sectionCard}>
+          <Text style={styles.sectionHint}>Always shown first. Only active languages can be set as primary.</Text>
+          <View style={styles.pillRow}>
+            {ALL_LANGUAGES.filter(isActive).map((lang: Language) => (
+              <TouchableOpacity
+                key={lang}
+                style={[styles.pill, primaryLanguage === lang && styles.pillActive]}
+                onPress={() => setPrimaryLanguage(lang)}
+                activeOpacity={0.7}
+              >
+                <Text style={[styles.pillText, primaryLanguage === lang && styles.pillTextActive]}>
                   {LANGUAGE_LABELS[lang]}
                 </Text>
               </TouchableOpacity>

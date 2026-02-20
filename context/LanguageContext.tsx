@@ -5,26 +5,35 @@ import { DEFAULT_LANGUAGES } from '@/constants/languages';
 
 interface LanguageContextValue {
   activeLanguages: Language[];
+  primaryLanguage: Language;
   toggleLanguage: (lang: Language) => void;
+  setPrimaryLanguage: (lang: Language) => void;
   isActive: (lang: Language) => boolean;
 }
 
 const LanguageContext = createContext<LanguageContextValue>({
   activeLanguages: DEFAULT_LANGUAGES,
+  primaryLanguage: DEFAULT_LANGUAGES[0],
   toggleLanguage: () => {},
+  setPrimaryLanguage: () => {},
   isActive: () => false,
 });
 
 const STORAGE_KEY = 'kidase_languages';
+const PRIMARY_STORAGE_KEY = 'kidase_primary_language';
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [activeLanguages, setActiveLanguages] = useState<Language[]>(DEFAULT_LANGUAGES);
+  const [primaryLanguage, setPrimaryLanguageState] = useState<Language>(DEFAULT_LANGUAGES[0]);
 
   useEffect(() => {
-    AsyncStorage.getItem(STORAGE_KEY).then((stored) => {
-      if (stored) {
-        const parsed: Language[] = JSON.parse(stored);
+    AsyncStorage.multiGet([STORAGE_KEY, PRIMARY_STORAGE_KEY]).then(([[, storedLangs], [, storedPrimary]]) => {
+      if (storedLangs) {
+        const parsed: Language[] = JSON.parse(storedLangs);
         if (parsed.length > 0) setActiveLanguages(parsed);
+      }
+      if (storedPrimary) {
+        setPrimaryLanguageState(storedPrimary as Language);
       }
     });
   }, []);
@@ -37,8 +46,19 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         ? prev.filter((l) => l !== lang)
         : [...prev, lang];
       AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      // If the removed language was primary, reassign to the first remaining active language
+      if (prev.includes(lang) && lang === primaryLanguage) {
+        const fallback = next[0];
+        setPrimaryLanguageState(fallback);
+        AsyncStorage.setItem(PRIMARY_STORAGE_KEY, fallback);
+      }
       return next;
     });
+  }
+
+  function setPrimaryLanguage(lang: Language) {
+    setPrimaryLanguageState(lang);
+    AsyncStorage.setItem(PRIMARY_STORAGE_KEY, lang);
   }
 
   function isActive(lang: Language) {
@@ -46,7 +66,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <LanguageContext.Provider value={{ activeLanguages, toggleLanguage, isActive }}>
+    <LanguageContext.Provider value={{ activeLanguages, primaryLanguage, toggleLanguage, setPrimaryLanguage, isActive }}>
       {children}
     </LanguageContext.Provider>
   );

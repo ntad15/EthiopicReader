@@ -17,7 +17,7 @@ interface Props {
 }
 
 export default function PrayerBlock({ block }: Props) {
-  const { activeLanguages } = useLanguage();
+  const { activeLanguages, primaryLanguage } = useLanguage();
   const { scale } = useFontSize();
 
   if (block.type === 'heading') {
@@ -43,10 +43,15 @@ export default function PrayerBlock({ block }: Props) {
   const speakerColor =
     block.speaker ? (SPEAKER_COLORS[block.speaker] ?? Colors.text) : Colors.text;
 
-  // Collect languages that have content
+  // Collect languages that have content, primary language always first
   const langEntries: { lang: Language; text: string }[] = activeLanguages
     .map((lang) => ({ lang, text: block[lang] ?? '' }))
-    .filter((e) => e.text.length > 0);
+    .filter((e) => e.text.length > 0)
+    .sort((a, b) => {
+      if (a.lang === primaryLanguage) return -1;
+      if (b.lang === primaryLanguage) return 1;
+      return 0;
+    });
 
   if (langEntries.length === 0) return null;
 
