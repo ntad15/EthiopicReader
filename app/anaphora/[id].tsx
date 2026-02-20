@@ -1,5 +1,5 @@
 import { useLocalSearchParams, useNavigation } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -7,6 +7,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   Platform,
+  LayoutChangeEvent,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import * as ScreenOrientation from 'expo-screen-orientation';
@@ -14,6 +15,7 @@ import { Colors } from '@/constants/colors';
 import { useFontSize } from '@/context/FontSizeContext';
 import PrayerBlock from '@/components/PrayerBlock';
 import PresentationView from '@/components/PresentationView';
+import RightSlider from '@/components/RightSlider';
 import { Anaphora, PrayerBlock as PrayerBlockType } from '@/data/types';
 
 const ANAPHORA_MAP: Record<string, () => Anaphora> = {
@@ -38,6 +40,10 @@ export default function AnaphoraReaderScreen() {
   const navigation = useNavigation();
   const { scale } = useFontSize();
   const [presentationMode, setPresentationMode] = useState(false);
+  const [sliderOpen, setSliderOpen] = useState(false);
+
+  const scrollViewRef = useRef<ScrollView>(null);
+  const sectionOffsets = useRef<number[]>([]);
 
   const loader = ANAPHORA_MAP[id];
   const data: Anaphora | null = loader ? loader() : null;
@@ -70,6 +76,17 @@ export default function AnaphoraReaderScreen() {
     };
   }, [presentationMode, navigation]);
 
+  const handleSectionLayout = (index: number) => (event: LayoutChangeEvent) => {
+    sectionOffsets.current[index] = event.nativeEvent.layout.y;
+  };
+
+  const scrollToSection = (index: number) => {
+    const offset = sectionOffsets.current[index];
+    if (offset !== undefined) {
+      scrollViewRef.current?.scrollTo({ y: Math.max(0, offset - 8), animated: true });
+    }
+  };
+
   if (!data) {
     return (
       <View style={styles.errorContainer}>
@@ -94,6 +111,7 @@ export default function AnaphoraReaderScreen() {
     <View style={styles.container}>
       <StatusBar style="light" />
       <ScrollView
+        ref={scrollViewRef}
         contentContainerStyle={styles.scroll}
         showsVerticalScrollIndicator={false}
       >
@@ -106,8 +124,8 @@ export default function AnaphoraReaderScreen() {
           </Text>
         </View>
 
-        {data.sections.map((sec) => (
-          <View key={sec.id}>
+        {data.sections.map((sec, index) => (
+          <View key={sec.id} onLayout={handleSectionLayout(index)}>
             <View style={styles.sectionHeading}>
               <Text style={[styles.sectionTitle, { fontSize: scale(11) }]}>
                 {sec.title.english.toUpperCase()}
@@ -122,6 +140,16 @@ export default function AnaphoraReaderScreen() {
         <View style={styles.bottomPadding} />
       </ScrollView>
 
+      {/* Sections button */}
+      <TouchableOpacity
+        style={styles.sectionsBtn}
+        onPress={() => setSliderOpen(true)}
+        activeOpacity={0.8}
+      >
+        <Text style={styles.sectionsBtnText}>≡ Sections</Text>
+      </TouchableOpacity>
+
+      {/* Present button */}
       <TouchableOpacity
         style={styles.presentationBtn}
         onPress={() => setPresentationMode(true)}
@@ -129,6 +157,18 @@ export default function AnaphoraReaderScreen() {
       >
         <Text style={styles.presentationBtnText}>⛶ Present</Text>
       </TouchableOpacity>
+
+      {/* Right-side sections slider */}
+      <RightSlider
+        sections={data.sections.map((sec) => ({
+          id: sec.id,
+          title: sec.title.english,
+          geezTitle: sec.title.geez,
+        }))}
+        isOpen={sliderOpen}
+        onClose={() => setSliderOpen(false)}
+        onSelectSection={scrollToSection}
+      />
     </View>
   );
 }
@@ -174,6 +214,22 @@ const styles = StyleSheet.create({
   },
   errorText: { color: Colors.textMuted, fontSize: 16 },
   bottomPadding: { height: 100 },
+  sectionsBtn: {
+    position: 'absolute',
+    bottom: 28,
+    left: 28,
+    backgroundColor: Colors.surface,
+    borderWidth: 1,
+    borderColor: Colors.border,
+    borderRadius: 24,
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+  },
+  sectionsBtnText: {
+    color: Colors.textMuted,
+    fontWeight: '700',
+    fontSize: 13,
+  },
   presentationBtn: {
     position: 'absolute',
     bottom: 28,
