@@ -28,7 +28,7 @@ const SECTIONS = [
 ];
 
 export default function HomeScreen() {
-  const { activeLanguages, toggleLanguage, isActive } = useLanguage();
+  const { toggleLanguage, isActive, canAddMore } = useLanguage();
 
   return (
     <SafeAreaView style={styles.container} edges={['bottom']}>
@@ -41,18 +41,22 @@ export default function HomeScreen() {
 
         {/* Language pills */}
         <View style={styles.langRow}>
-          {ALL_LANGUAGES.map((lang: Language) => (
-            <TouchableOpacity
-              key={lang}
-              style={[styles.pill, isActive(lang) && styles.pillActive]}
-              onPress={() => toggleLanguage(lang)}
-              activeOpacity={0.7}
-            >
-              <Text style={[styles.pillText, isActive(lang) && styles.pillTextActive]}>
-                {LANGUAGE_LABELS[lang]}
-              </Text>
-            </TouchableOpacity>
-          ))}
+          {ALL_LANGUAGES.map((lang: Language) => {
+            const active = isActive(lang);
+            const disabled = !active && !canAddMore;
+            return (
+              <TouchableOpacity
+                key={lang}
+                style={[styles.pill, active && styles.pillActive, disabled && styles.pillDisabled]}
+                onPress={() => toggleLanguage(lang)}
+                activeOpacity={disabled ? 1 : 0.7}
+              >
+                <Text style={[styles.pillText, active && styles.pillTextActive, disabled && styles.pillTextDisabled]}>
+                  {LANGUAGE_LABELS[lang]}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
         </View>
 
         {/* Section cards */}
@@ -130,6 +134,12 @@ const styles = StyleSheet.create({
   },
   pillTextActive: {
     color: Colors.accent,
+  },
+  pillDisabled: {
+    opacity: 0.35,
+  },
+  pillTextDisabled: {
+    color: Colors.textDim,
   },
   sectionLabel: {
     color: Colors.textDim,

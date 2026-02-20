@@ -3,12 +3,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Language } from '@/data/types';
 import { DEFAULT_LANGUAGES } from '@/constants/languages';
 
+const MAX_LANGUAGES = 3;
+
 interface LanguageContextValue {
   activeLanguages: Language[];
   primaryLanguage: Language;
   toggleLanguage: (lang: Language) => void;
   setPrimaryLanguage: (lang: Language) => void;
   isActive: (lang: Language) => boolean;
+  canAddMore: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextValue>({
@@ -17,6 +20,7 @@ const LanguageContext = createContext<LanguageContextValue>({
   toggleLanguage: () => {},
   setPrimaryLanguage: () => {},
   isActive: () => false,
+  canAddMore: true,
 });
 
 const STORAGE_KEY = 'kidase_languages';
@@ -42,6 +46,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     setActiveLanguages((prev) => {
       // Don't allow deselecting the last active language
       if (prev.includes(lang) && prev.length === 1) return prev;
+      // Don't allow more than MAX_LANGUAGES
+      if (!prev.includes(lang) && prev.length >= MAX_LANGUAGES) return prev;
       const next = prev.includes(lang)
         ? prev.filter((l) => l !== lang)
         : [...prev, lang];
@@ -66,7 +72,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <LanguageContext.Provider value={{ activeLanguages, primaryLanguage, toggleLanguage, setPrimaryLanguage, isActive }}>
+    <LanguageContext.Provider value={{ activeLanguages, primaryLanguage, toggleLanguage, setPrimaryLanguage, isActive, canAddMore: activeLanguages.length < MAX_LANGUAGES }}>
       {children}
     </LanguageContext.Provider>
   );

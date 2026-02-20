@@ -64,25 +64,27 @@ export default function PrayerBlock({ block }: Props) {
           {block.speaker.toUpperCase()}
         </Text>
       )}
-      {langEntries.map(({ lang, text }) => (
-        <View key={lang} style={styles.langEntry}>
-          {showLabels && (
-            <Text style={[styles.langLabel, { fontSize: scale(10) }]}>
-              {LANGUAGE_LABELS[lang]}
+      <View style={styles.columnsRow}>
+        {langEntries.map(({ lang, text }) => (
+          <View key={lang} style={[styles.langColumn, langEntries.length === 1 && styles.langColumnFull]}>
+            {showLabels && (
+              <Text style={[styles.langLabel, { fontSize: scale(10) }]}>
+                {LANGUAGE_LABELS[lang]}
+              </Text>
+            )}
+            <Text
+              style={[
+                styles.prayerText,
+                { fontSize: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16) },
+                { color: speakerColor },
+                lang === 'transliteration' && styles.transliterationText,
+              ]}
+            >
+              {text}
             </Text>
-          )}
-          <Text
-            style={[
-              styles.prayerText,
-              { fontSize: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16) },
-              { color: speakerColor },
-              lang === 'transliteration' && styles.transliterationText,
-            ]}
-          >
-            {text}
-          </Text>
-        </View>
-      ))}
+          </View>
+        ))}
+      </View>
     </View>
   );
 }
@@ -132,8 +134,16 @@ const styles = StyleSheet.create({
     marginBottom: 6,
     opacity: 0.7,
   },
-  langEntry: {
-    marginBottom: 8,
+  columnsRow: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  langColumn: {
+    flex: 1,
+  },
+  langColumnFull: {
+    flex: undefined,
+    width: '100%',
   },
   langLabel: {
     color: Colors.textDim,

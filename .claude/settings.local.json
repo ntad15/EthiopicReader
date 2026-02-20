@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(/usr/local/bin/pdftotext:*)"
+      "Bash(/usr/local/bin/pdftotext:*)",
+      "Bash(npx expo install:*)",
+      "Bash(/opt/homebrew/bin/npx expo install @react-native-community/slider)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")"
     ]
   }
 }

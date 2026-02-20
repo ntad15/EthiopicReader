@@ -1,50 +1,50 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export type FontSizePreset = 'normal' | 'large' | 'tv';
-
-export const FONT_SIZE_MULTIPLIERS: Record<FontSizePreset, number> = {
-  normal: 1,
-  large: 1.35,
-  tv: 1.8,
-};
+export const FONT_SIZE_MIN = 0.6;
+export const FONT_SIZE_MAX = 2.5;
+export const FONT_SIZE_DEFAULT = 1;
 
 interface FontSizeContextValue {
-  preset: FontSizePreset;
-  setPreset: (p: FontSizePreset) => void;
+  multiplier: number;
+  setMultiplier: (m: number) => void;
   scale: (size: number) => number;
 }
 
 const FontSizeContext = createContext<FontSizeContextValue>({
-  preset: 'normal',
-  setPreset: () => {},
+  multiplier: FONT_SIZE_DEFAULT,
+  setMultiplier: () => {},
   scale: (s) => s,
 });
 
-const STORAGE_KEY = 'kidase_fontsize';
+const STORAGE_KEY = 'kidase_fontsize_multiplier';
 
 export function FontSizeProvider({ children }: { children: React.ReactNode }) {
-  const [preset, setPresetState] = useState<FontSizePreset>('normal');
+  const [multiplier, setMultiplierState] = useState(FONT_SIZE_DEFAULT);
 
   useEffect(() => {
     AsyncStorage.getItem(STORAGE_KEY).then((stored) => {
-      if (stored && stored in FONT_SIZE_MULTIPLIERS) {
-        setPresetState(stored as FontSizePreset);
+      if (stored) {
+        const val = parseFloat(stored);
+        if (!isNaN(val) && val >= FONT_SIZE_MIN && val <= FONT_SIZE_MAX) {
+          setMultiplierState(val);
+        }
       }
     });
   }, []);
 
-  function setPreset(p: FontSizePreset) {
-    setPresetState(p);
-    AsyncStorage.setItem(STORAGE_KEY, p);
+  function setMultiplier(m: number) {
+    const clamped = Math.min(FONT_SIZE_MAX, Math.max(FONT_SIZE_MIN, Math.round(m * 100) / 100));
+    setMultiplierState(clamped);
+    AsyncStorage.setItem(STORAGE_KEY, String(clamped));
   }
 
   function scale(size: number) {
-    return Math.round(size * FONT_SIZE_MULTIPLIERS[preset]);
+    return Math.round(size * multiplier);
   }
 
   return (
-    <FontSizeContext.Provider value={{ preset, setPreset, scale }}>
+    <FontSizeContext.Provider value={{ multiplier, setMultiplier, scale }}>
       {children}
     </FontSizeContext.Provider>
   );

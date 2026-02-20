@@ -1,21 +1,16 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Platform } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Slider from '@react-native-community/slider';
 import Constants from 'expo-constants';
 import { Colors } from '@/constants/colors';
 import { ALL_LANGUAGES, LANGUAGE_LABELS } from '@/constants/languages';
 import { useLanguage } from '@/context/LanguageContext';
-import { useFontSize, FontSizePreset } from '@/context/FontSizeContext';
+import { useFontSize, FONT_SIZE_MIN, FONT_SIZE_MAX } from '@/context/FontSizeContext';
 import { Language } from '@/data/types';
 
-const FONT_SIZE_PRESETS: { label: string; value: FontSizePreset; description: string }[] = [
-  { label: 'Normal', value: 'normal', description: 'Default size' },
-  { label: 'Large', value: 'large', description: 'Easier reading' },
-  { label: 'TV', value: 'tv', description: 'Projected screen' },
-];
-
 export default function SettingsScreen() {
-  const { toggleLanguage, isActive, primaryLanguage, setPrimaryLanguage } = useLanguage();
-  const { preset, setPreset } = useFontSize();
+  const { toggleLanguage, isActive, canAddMore, primaryLanguage, setPrimaryLanguage } = useLanguage();
+  const { multiplier, setMultiplier, scale } = useFontSize();
 
   return (
     <SafeAreaView style={styles.container} edges={['bottom']}>
@@ -25,20 +20,24 @@ export default function SettingsScreen() {
         {/* Display Languages */}
         <Text style={styles.sectionTitle}>DISPLAY LANGUAGES</Text>
         <View style={styles.sectionCard}>
-          <Text style={styles.sectionHint}>Select one or more languages to show during reading.</Text>
+          <Text style={styles.sectionHint}>Select up to 3 languages to show side by side.</Text>
           <View style={styles.pillRow}>
-            {ALL_LANGUAGES.map((lang: Language) => (
-              <TouchableOpacity
-                key={lang}
-                style={[styles.pill, isActive(lang) && styles.pillActive]}
-                onPress={() => toggleLanguage(lang)}
-                activeOpacity={0.7}
-              >
-                <Text style={[styles.pillText, isActive(lang) && styles.pillTextActive]}>
-                  {LANGUAGE_LABELS[lang]}
-                </Text>
-              </TouchableOpacity>
-            ))}
+            {ALL_LANGUAGES.map((lang: Language) => {
+              const active = isActive(lang);
+              const disabled = !active && !canAddMore;
+              return (
+                <TouchableOpacity
+                  key={lang}
+                  style={[styles.pill, active && styles.pillActive, disabled && styles.pillDisabled]}
+                  onPress={() => toggleLanguage(lang)}
+                  activeOpacity={disabled ? 1 : 0.7}
+                >
+                  <Text style={[styles.pillText, active && styles.pillTextActive, disabled && styles.pillTextDisabled]}>
+                    {LANGUAGE_LABELS[lang]}
+                  </Text>
+                </TouchableOpacity>
+              );
+            })}
           </View>
         </View>
 
@@ -65,26 +64,25 @@ export default function SettingsScreen() {
         {/* Font Size */}
         <Text style={styles.sectionTitle}>TEXT SIZE</Text>
         <View style={styles.sectionCard}>
-          <Text style={styles.sectionHint}>
-            Use "TV" when projecting to a large screen or casting via AirPlay/Chromecast.
-          </Text>
-          <View style={styles.presetRow}>
-            {FONT_SIZE_PRESETS.map((p) => (
-              <TouchableOpacity
-                key={p.value}
-                style={[styles.presetBtn, preset === p.value && styles.presetBtnActive]}
-                onPress={() => setPreset(p.value)}
-                activeOpacity={0.7}
-              >
-                <Text style={[styles.presetLabel, preset === p.value && styles.presetLabelActive]}>
-                  {p.label}
-                </Text>
-                <Text style={[styles.presetDesc, preset === p.value && styles.presetDescActive]}>
-                  {p.description}
-                </Text>
-              </TouchableOpacity>
-            ))}
+          <View style={styles.sliderHeader}>
+            <Text style={styles.sliderLabel}>A</Text>
+            <Text style={styles.sliderValue}>{Math.round(multiplier * 100)}%</Text>
+            <Text style={styles.sliderLabelLarge}>A</Text>
           </View>
+          <Slider
+            style={styles.slider}
+            minimumValue={FONT_SIZE_MIN}
+            maximumValue={FONT_SIZE_MAX}
+            value={multiplier}
+            onValueChange={setMultiplier}
+            step={0.05}
+            minimumTrackTintColor={Colors.accent}
+            maximumTrackTintColor={Colors.border}
+            thumbTintColor={Colors.accent}
+          />
+          <Text style={[styles.previewText, { fontSize: scale(16) }]}>
+            Preview text — ቅዳሴ
+          </Text>
         </View>
 
         {/* App Info */}
@@ -166,39 +164,41 @@ const styles = StyleSheet.create({
   pillTextActive: {
     color: Colors.accent,
   },
-  presetRow: {
-    flexDirection: 'row',
-    gap: 10,
+  pillDisabled: {
+    opacity: 0.35,
   },
-  presetBtn: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: Colors.border,
-    borderRadius: 10,
-    padding: 12,
-    alignItems: 'center',
-    backgroundColor: Colors.surfaceElevated,
-  },
-  presetBtnActive: {
-    borderColor: Colors.accent,
-    backgroundColor: Colors.accentDim,
-  },
-  presetLabel: {
-    color: Colors.textMuted,
-    fontSize: 14,
-    fontWeight: '700',
-    marginBottom: 2,
-  },
-  presetLabelActive: {
-    color: Colors.accent,
-  },
-  presetDesc: {
+  pillTextDisabled: {
     color: Colors.textDim,
-    fontSize: 11,
   },
-  presetDescActive: {
+  sliderHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
+    marginBottom: 8,
+  },
+  sliderLabel: {
+    color: Colors.textMuted,
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  sliderLabelLarge: {
+    color: Colors.textMuted,
+    fontSize: 22,
+    fontWeight: '600',
+  },
+  sliderValue: {
     color: Colors.accent,
-    opacity: 0.7,
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  slider: {
+    width: '100%',
+    height: 36,
+  },
+  previewText: {
+    color: Colors.text,
+    textAlign: 'center',
+    marginTop: 8,
   },
   infoCard: {
     backgroundColor: Colors.surface,

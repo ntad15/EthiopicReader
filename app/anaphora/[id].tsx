@@ -75,26 +75,29 @@ export default function AnaphoraReaderScreen() {
   }
 
   useEffect(() => {
-    if (Platform.OS === 'web') {
-      if (presentationMode) {
-        document.documentElement.requestFullscreen?.().catch(() => {});
-      } else if (document.fullscreenElement) {
-        document.exitFullscreen?.().catch(() => {});
-      }
-      return;
-    }
-
     if (presentationMode) {
       navigation.setOptions({ headerShown: false });
-      ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
+      if (Platform.OS === 'web') {
+        document.documentElement.requestFullscreen?.().catch(() => {});
+      } else {
+        ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
+      }
     } else {
       navigation.setOptions({ headerShown: true });
-      ScreenOrientation.unlockAsync();
+      if (Platform.OS === 'web') {
+        if (document.fullscreenElement) {
+          document.exitFullscreen?.().catch(() => {});
+        }
+      } else {
+        ScreenOrientation.unlockAsync();
+      }
     }
 
     return () => {
       navigation.setOptions({ headerShown: true });
-      ScreenOrientation.unlockAsync();
+      if (Platform.OS !== 'web') {
+        ScreenOrientation.unlockAsync();
+      }
     };
   }, [presentationMode, navigation]);
 
