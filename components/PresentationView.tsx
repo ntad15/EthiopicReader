@@ -3,8 +3,9 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Colors } from '@/constants/colors';
 import { useLanguage } from '@/context/LanguageContext';
 import { useFontSize } from '@/context/FontSizeContext';
-import { PrayerBlock, Language } from '@/data/types';
+import { PrayerBlock, Language, LiturgicalSection } from '@/data/types';
 import { LANGUAGE_LABELS } from '@/constants/languages';
+import SectionDrawer from '@/components/SectionDrawer';
 
 const SPEAKER_COLORS: Record<string, string> = {
   priest: Colors.priest,
@@ -15,12 +16,14 @@ const SPEAKER_COLORS: Record<string, string> = {
 
 interface Props {
   blocks: PrayerBlock[];
+  sections?: LiturgicalSection[];
   onExit: () => void;
 }
 
-export default function PresentationView({ blocks, onExit }: Props) {
+export default function PresentationView({ blocks, sections, onExit }: Props) {
   const [index, setIndex] = useState(0);
-  const { activeLanguages } = useLanguage();
+  const [drawerVisible, setDrawerVisible] = useState(false);
+  const { activeLanguages, primaryLanguage } = useLanguage();
   const { scale } = useFontSize();
 
   // Skip empty blocks (no text in any active language)
@@ -41,6 +44,15 @@ export default function PresentationView({ blocks, onExit }: Props) {
     if (!isFirst) setIndex((i) => i - 1);
   }
 
+  function jumpToSection(sectionIndex: number) {
+    if (!sections) return;
+    const sec = sections[sectionIndex];
+    if (!sec || sec.blocks.length === 0) return;
+    const firstBlockId = sec.blocks[0].id;
+    const blockIndex = visibleBlocks.findIndex((b) => b.id === firstBlockId);
+    if (blockIndex >= 0) setIndex(blockIndex);
+  }
+
   if (!current) return null;
 
   const speakerColor =
@@ -52,7 +64,12 @@ export default function PresentationView({ blocks, onExit }: Props) {
     ? []
     : activeLanguages
         .map((lang) => ({ lang, text: current[lang] ?? '' }))
-        .filter((e) => e.text.length > 0);
+        .filter((e) => e.text.length > 0)
+        .sort((a, b) => {
+          if (a.lang === primaryLanguage) return -1;
+          if (b.lang === primaryLanguage) return 1;
+          return 0;
+        });
 
   const showLabels = activeLanguages.length > 1;
 
@@ -98,37 +115,36 @@ export default function PresentationView({ blocks, onExit }: Props) {
         )}
       </View>
 
-      {/* Progress */}
-      <View style={styles.progressBar} pointerEvents="none">
-        {visibleBlocks.map((_, i) => (
-          <View
-            key={i}
-            style={[
-              styles.progressDot,
-              i === index && styles.progressDotActive,
-              i < index && styles.progressDotPast,
-            ]}
-          />
-        ))}
-      </View>
-
       {/* Controls */}
       <View style={styles.controls}>
         <TouchableOpacity style={styles.backBtn} onPress={back} disabled={isFirst}>
           <Text style={[styles.navBtnText, isFirst && styles.navBtnDisabled]}>‹</Text>
         </TouchableOpacity>
-
-        <Text style={styles.counter}>{index + 1} / {visibleBlocks.length}</Text>
-
         <TouchableOpacity style={styles.forwardBtn} onPress={advance} disabled={isLast}>
           <Text style={[styles.navBtnText, isLast && styles.navBtnDisabled]}>›</Text>
         </TouchableOpacity>
       </View>
 
-      {/* Exit button */}
-      <TouchableOpacity style={styles.exitBtn} onPress={onExit}>
-        <Text style={styles.exitText}>✕ Exit</Text>
-      </TouchableOpacity>
+      {/* Top-right buttons */}
+      <View style={styles.topRight}>
+        {sections && sections.length > 0 && (
+          <TouchableOpacity style={styles.topBtn} onPress={() => setDrawerVisible(true)}>
+            <Text style={styles.topBtnText}>☰</Text>
+          </TouchableOpacity>
+        )}
+        <TouchableOpacity style={styles.topBtn} onPress={onExit}>
+          <Text style={styles.exitText}>✕</Text>
+        </TouchableOpacity>
+      </View>
+
+      {sections && (
+        <SectionDrawer
+          sections={sections}
+          visible={drawerVisible}
+          onClose={() => setDrawerVisible(false)}
+          onSelect={jumpToSection}
+        />
+      )}
     </View>
   );
 }
@@ -193,29 +209,6 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     color: Colors.textMuted,
   },
-  progressBar: {
-    position: 'absolute',
-    top: 16,
-    left: 24,
-    right: 24,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 3,
-    zIndex: 2,
-  },
-  progressDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: Colors.border,
-  },
-  progressDotActive: {
-    backgroundColor: Colors.accent,
-    width: 14,
-  },
-  progressDotPast: {
-    backgroundColor: Colors.textDim,
-  },
   controls: {
     position: 'absolute',
     bottom: 28,
@@ -224,7 +217,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 32,
+    gap: 48,
     zIndex: 2,
   },
   backBtn: {
@@ -241,25 +234,26 @@ const styles = StyleSheet.create({
   navBtnDisabled: {
     color: Colors.border,
   },
-  counter: {
-    color: Colors.textMuted,
-    fontSize: 13,
-    fontWeight: '600',
-    letterSpacing: 1,
-    minWidth: 60,
-    textAlign: 'center',
-  },
-  exitBtn: {
+  topRight: {
     position: 'absolute',
     top: 20,
     right: 20,
+    flexDirection: 'row',
+    gap: 10,
+    zIndex: 3,
+  },
+  topBtn: {
     backgroundColor: Colors.accentDim,
     borderWidth: 1,
     borderColor: Colors.accent,
     borderRadius: 20,
     paddingHorizontal: 14,
     paddingVertical: 7,
-    zIndex: 3,
+  },
+  topBtnText: {
+    color: Colors.accent,
+    fontWeight: '700',
+    fontSize: 15,
   },
   exitText: {
     color: Colors.accent,

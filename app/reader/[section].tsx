@@ -1,5 +1,5 @@
 import { useLocalSearchParams, useNavigation } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -14,6 +14,7 @@ import { Colors } from '@/constants/colors';
 import { useFontSize } from '@/context/FontSizeContext';
 import PrayerBlock from '@/components/PrayerBlock';
 import PresentationView from '@/components/PresentationView';
+import SectionDrawer from '@/components/SectionDrawer';
 import { LiturgicalText, PrayerBlock as PrayerBlockType } from '@/data/types';
 
 function loadSection(id: string): LiturgicalText | null {
@@ -32,6 +33,10 @@ export default function ReaderScreen() {
   const navigation = useNavigation();
   const { scale } = useFontSize();
   const [presentationMode, setPresentationMode] = useState(false);
+  const [drawerVisible, setDrawerVisible] = useState(false);
+
+  const scrollViewRef = useRef<ScrollView>(null);
+  const sectionOffsets = useRef<number[]>([]);
 
   const data = loadSection(section);
 
@@ -42,12 +47,35 @@ export default function ReaderScreen() {
 
   useEffect(() => {
     if (data) {
-      navigation.setOptions({ title: data.title.english });
+      navigation.setOptions({
+        title: data.title.english,
+        headerRight: () => (
+          <TouchableOpacity
+            onPress={() => setDrawerVisible(true)}
+            style={{ marginRight: 16 }}
+            hitSlop={8}
+          >
+            <Text style={{ color: Colors.accent, fontSize: 22 }}>☰</Text>
+          </TouchableOpacity>
+        ),
+      });
     }
   }, [data, navigation]);
 
+  function scrollToSection(index: number) {
+    const y = sectionOffsets.current[index] ?? 0;
+    scrollViewRef.current?.scrollTo({ y, animated: true });
+  }
+
   useEffect(() => {
-    if (Platform.OS === 'web') return;
+    if (Platform.OS === 'web') {
+      if (presentationMode) {
+        document.documentElement.requestFullscreen?.().catch(() => {});
+      } else if (document.fullscreenElement) {
+        document.exitFullscreen?.().catch(() => {});
+      }
+      return;
+    }
 
     if (presentationMode) {
       navigation.setOptions({ headerShown: false });
@@ -77,6 +105,7 @@ export default function ReaderScreen() {
         <StatusBar style="light" hidden />
         <PresentationView
           blocks={allBlocks}
+          sections={data.sections}
           onExit={() => setPresentationMode(false)}
         />
       </>
@@ -87,6 +116,7 @@ export default function ReaderScreen() {
     <View style={styles.container}>
       <StatusBar style="light" />
       <ScrollView
+        ref={scrollViewRef}
         contentContainerStyle={styles.scroll}
         showsVerticalScrollIndicator={false}
       >
@@ -99,8 +129,13 @@ export default function ReaderScreen() {
           </Text>
         </View>
 
-        {data.sections.map((sec) => (
-          <View key={sec.id}>
+        {data.sections.map((sec, index) => (
+          <View
+            key={sec.id}
+            onLayout={(e) => {
+              sectionOffsets.current[index] = e.nativeEvent.layout.y;
+            }}
+          >
             <View style={styles.sectionHeading}>
               <Text style={[styles.sectionTitle, { fontSize: scale(11) }]}>
                 {sec.title.english.toUpperCase()}
@@ -122,6 +157,13 @@ export default function ReaderScreen() {
       >
         <Text style={styles.presentationBtnText}>⛶ Present</Text>
       </TouchableOpacity>
+
+      <SectionDrawer
+        sections={data.sections}
+        visible={drawerVisible}
+        onClose={() => setDrawerVisible(false)}
+        onSelect={scrollToSection}
+      />
     </View>
   );
 }
