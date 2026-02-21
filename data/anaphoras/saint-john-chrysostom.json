@@ -1,0 +1,102 @@
+{
+  "id": "saint-john-chrysostom",
+  "name": {
+    "english": "St. John Chrysostom",
+    "geez": "ቅዱስ ዮሐንስ ዝርጋዊ",
+    "amharic": "ቅዱስ ዮሐንስ ዝርጋዊ"
+  },
+  "saint": "John Chrysostom",
+  "sections": [
+    {
+      "id": "sjc-sursum-corda",
+      "title": {
+        "english": "Sursum Corda",
+        "geez": "ልቡናክሙ ላዕሌሁ",
+        "amharic": "ልቦናችሁን ወደ ላይ አንሱ"
+      },
+      "blocks": [
+        {
+          "id": "sjc-sc-priest-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "ልቡናክሙ ላዕሌሁ።",
+          "amharic": "ልቦናችሁን ወደ ላይ አንሱ።",
+          "english": "Lift up your hearts.",
+          "transliteration": "Libbunakimu la'ile-hu."
+        },
+        {
+          "id": "sjc-sc-congregation-1",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "አሎን ኀበ እግዚአብሔር።",
+          "amharic": "ወደ እግዚአብሔር ይኑሩ።",
+          "english": "We have them with the Lord.",
+          "transliteration": "Alon khabe Egzi'abher."
+        },
+        {
+          "id": "sjc-sc-priest-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "ነአኵቶ ለእግዚአብሔር።",
+          "amharic": "ለእግዚአብሔር እናመሰግነው።",
+          "english": "Let us give thanks to the Lord.",
+          "transliteration": "Ne'akkweto le-Egzi'abher."
+        },
+        {
+          "id": "sjc-sc-congregation-2",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ይደሉ ወይሄሉ።",
+          "amharic": "ይገባልና ይገባልና።",
+          "english": "It is meet and right.",
+          "transliteration": "Yidelu we-yihelu."
+        }
+      ]
+    },
+    {
+      "id": "sjc-preface",
+      "title": {
+        "english": "Preface",
+        "geez": "ቅድስና",
+        "amharic": "ቅድስና"
+      },
+      "blocks": [
+        {
+          "id": "sjc-preface-placeholder",
+          "type": "rubric",
+          "english": "[Placeholder — contribute the full Preface text via a Pull Request on GitHub]"
+        }
+      ]
+    },
+    {
+      "id": "sjc-institution",
+      "title": {
+        "english": "Words of Institution",
+        "geez": "ቃለ ምሥጢር",
+        "amharic": "የምሥጢር ቃል"
+      },
+      "blocks": [
+        {
+          "id": "sjc-institution-placeholder",
+          "type": "rubric",
+          "english": "[Placeholder — contribute the Words of Institution via a Pull Request on GitHub]"
+        }
+      ]
+    },
+    {
+      "id": "sjc-epiclesis",
+      "title": {
+        "english": "Epiclesis",
+        "geez": "ጸሎተ ቅዱስ መንፈስ",
+        "amharic": "የቅዱስ መንፈስ ጸሎት"
+      },
+      "blocks": [
+        {
+          "id": "sjc-epiclesis-placeholder",
+          "type": "rubric",
+          "english": "[Placeholder — contribute the Epiclesis text via a Pull Request on GitHub]"
+        }
+      ]
+    }
+  ]
+}

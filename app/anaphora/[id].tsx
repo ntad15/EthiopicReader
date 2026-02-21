@@ -18,20 +18,20 @@ import SectionDrawer from '@/components/SectionDrawer';
 import { Anaphora, PrayerBlock as PrayerBlockType } from '@/data/types';
 
 const ANAPHORA_MAP: Record<string, () => Anaphora> = {
-  'saint-john-chrysostom': () => require('@/data/anaphoras/saint-john-chrysostom').default,
-  'saint-mary': () => require('@/data/anaphoras/saint-mary').default,
-  'apostles': () => require('@/data/anaphoras/apostles').default,
-  'saint-basil': () => require('@/data/anaphoras/saint-basil').default,
-  'saint-gregory': () => require('@/data/anaphoras/saint-gregory').default,
-  'saint-epiphanius': () => require('@/data/anaphoras/saint-epiphanius').default,
-  'saint-cyril': () => require('@/data/anaphoras/saint-cyril').default,
-  'saint-james-sarugh': () => require('@/data/anaphoras/saint-james-sarugh').default,
-  'saint-james-nisibis': () => require('@/data/anaphoras/saint-james-nisibis').default,
-  'saint-dioscorus': () => require('@/data/anaphoras/saint-dioscorus').default,
-  'our-lord': () => require('@/data/anaphoras/our-lord').default,
-  'saint-john-thunder': () => require('@/data/anaphoras/saint-john-thunder').default,
-  'three-hundred-eighteen': () => require('@/data/anaphoras/three-hundred-eighteen').default,
-  'saint-athanasius': () => require('@/data/anaphoras/saint-athanasius').default,
+  'saint-john-chrysostom': () => require('@/data/anaphoras/saint-john-chrysostom.json'),
+  'saint-mary': () => require('@/data/anaphoras/saint-mary.json'),
+  'apostles': () => require('@/data/anaphoras/apostles.json'),
+  'saint-basil': () => require('@/data/anaphoras/saint-basil.json'),
+  'saint-gregory': () => require('@/data/anaphoras/saint-gregory.json'),
+  'saint-epiphanius': () => require('@/data/anaphoras/saint-epiphanius.json'),
+  'saint-cyril': () => require('@/data/anaphoras/saint-cyril.json'),
+  'saint-james-sarugh': () => require('@/data/anaphoras/saint-james-sarugh.json'),
+  'saint-james-nisibis': () => require('@/data/anaphoras/saint-james-nisibis.json'),
+  'saint-dioscorus': () => require('@/data/anaphoras/saint-dioscorus.json'),
+  'our-lord': () => require('@/data/anaphoras/our-lord.json'),
+  'saint-john-thunder': () => require('@/data/anaphoras/saint-john-thunder.json'),
+  'three-hundred-eighteen': () => require('@/data/anaphoras/three-hundred-eighteen.json'),
+  'saint-athanasius': () => require('@/data/anaphoras/saint-athanasius.json'),
 };
 
 export default function AnaphoraReaderScreen() {

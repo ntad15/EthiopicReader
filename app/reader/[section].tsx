@@ -20,9 +20,9 @@ import { LiturgicalText, PrayerBlock as PrayerBlockType } from '@/data/types';
 function loadSection(id: string): LiturgicalText | null {
   switch (id) {
     case 'kidan':
-      return require('@/data/kidan').default;
+      return require('@/data/kidan.json');
     case 'serate-kidase':
-      return require('@/data/serate-kidase').default;
+      return require('@/data/serate-kidase.json');
     default:
       return null;
   }

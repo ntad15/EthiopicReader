@@ -121,7 +121,7 @@ export default function PresentationView({ blocks, sections, onExit }: Props) {
           return 0;
         });
 
-  const showLabels = activeLanguages.length > 1;
+  const showLabels = false;
 
   const showMoreBelow = isScrollable && !isAtBottom;
   const showMoreAbove = isScrollable && !isAtTop;

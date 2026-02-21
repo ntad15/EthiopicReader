@@ -55,7 +55,7 @@ export default function PrayerBlock({ block }: Props) {
 
   if (langEntries.length === 0) return null;
 
-  const showLabels = activeLanguages.length > 1;
+  const showLabels = false;
 
   return (
     <View style={[styles.blockContainer, block.type === 'response' && styles.responseContainer]}>
@@ -75,7 +75,10 @@ export default function PrayerBlock({ block }: Props) {
             <Text
               style={[
                 styles.prayerText,
-                { fontSize: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16) },
+                {
+                  fontSize: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16),
+                  lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16) * 1.5,
+                },
                 { color: speakerColor },
                 lang === 'transliteration' && styles.transliterationText,
               ]}
@@ -154,7 +157,6 @@ const styles = StyleSheet.create({
   },
   prayerText: {
     color: Colors.text,
-    lineHeight: 28,
   },
   transliterationText: {
     fontStyle: 'italic',

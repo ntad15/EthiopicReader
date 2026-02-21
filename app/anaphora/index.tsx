@@ -2,7 +2,9 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { Colors } from '@/constants/colors';
-import { ANAPHORAS } from '@/data/anaphoras/index';
+import { AnaphoraMetadata } from '@/data/types';
+
+const ANAPHORAS: AnaphoraMetadata[] = require('@/data/anaphoras/anaphoras.json');
 
 export default function AnaphoraListScreen() {
   return (

@@ -1,0 +1,73 @@
+{
+  "id": "serate-kidase",
+  "title": {
+    "english": "Serate Kidase",
+    "geez": "ሥርዓተ ቅዳሴ",
+    "amharic": "ሥርዓተ ቅዳሴ"
+  },
+  "sections": [
+    {
+      "id": "serate-opening",
+      "title": {
+        "english": "Preparation",
+        "geez": "ዝግጅት",
+        "amharic": "ዝግጅት"
+      },
+      "blocks": [
+        {
+          "id": "serate-opening-rubric-1",
+          "type": "rubric",
+          "english": "The preparatory service begins. The deacon calls the congregation to prayer."
+        },
+        {
+          "id": "serate-deacon-call-1",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ቁሙ ለጸሎት።",
+          "amharic": "ለጸሎት ቁሙ።",
+          "english": "Stand for prayer.",
+          "transliteration": "Qumu le-tselot."
+        },
+        {
+          "id": "serate-congregation-response-1",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "እግዚአብሔር ሕልው ነው በዚህ ቦታ።",
+          "amharic": "እግዚአብሔር በዚህ ስፍራ ይኑር።",
+          "english": "Lord, be present in this place.",
+          "transliteration": "Egzi'abher hilluw newu bezih bota."
+        }
+      ]
+    },
+    {
+      "id": "serate-trisagion",
+      "title": {
+        "english": "Trisagion",
+        "geez": "ቅዱስ ቅዱስ ቅዱስ",
+        "amharic": "ቅዱስ ቅዱስ ቅዱስ"
+      },
+      "blocks": [
+        {
+          "id": "serate-trisagion-placeholder",
+          "type": "rubric",
+          "english": "[Placeholder — contribute the full Trisagion text via a Pull Request on GitHub]"
+        }
+      ]
+    },
+    {
+      "id": "serate-readings",
+      "title": {
+        "english": "Scripture Readings",
+        "geez": "ምንባባት",
+        "amharic": "ምንባባት"
+      },
+      "blocks": [
+        {
+          "id": "serate-readings-placeholder",
+          "type": "rubric",
+          "english": "[Placeholder — Epistle, Gospel, and other readings vary by liturgical calendar]"
+        }
+      ]
+    }
+  ]
+}
