@@ -1,0 +1,3 @@
+# Kidase Reader
+
+@AGENTS.md
