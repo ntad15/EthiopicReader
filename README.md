@@ -1,4 +1,4 @@
-# Kidase Reader
+# Qidase Reader
 
 A digital reader for the Divine Liturgy (Qidase) of the Ethiopian Orthodox Tewahedo Church. Displays liturgical texts in Ge'ez, Amharic, English, and transliteration with speaker role indicators and section-based navigation.
 
@@ -8,9 +8,9 @@ A digital reader for the Divine Liturgy (Qidase) of the Ethiopian Orthodox Tewah
 - 3 main liturgical sections: Kidan (Prayer of the Covenant), Serate Kidase (Preparatory Service), and Fere Kidase (14 Anaphoras)
 - 14 Anaphoras including St. Basil, St. Mary, St. Cyril, Apostles, Our Lord, and more
 - Speaker role indicators (priest, deacon, congregation)
-- Adjustable font size
-- Persistent language and display preferences
-- Dark theme UI
+- Adjustable font size with persistent preferences
+- Full-screen presentation mode with keyboard/tap navigation (designed for projectors)
+- Warm parchment ("Modern Manuscript") theme
 - Runs on iOS, Android, and web
 
 ## Getting Started
@@ -63,30 +63,39 @@ All 17 data files are available: `kidan.json`, `serate-kidase.json`, and all 14 
 ```
 EthiopicReader/
 ├── app/
-│   ├── _layout.tsx              # Root layout (providers, navigation)
+│   ├── _layout.tsx              # Root layout (providers, font loading, navigation)
 │   ├── +not-found.tsx           # 404 screen
 │   ├── (tabs)/
-│   │   ├── _layout.tsx          # Tab bar (Kidase, Settings)
-│   │   ├── index.tsx            # Home screen — section list & language toggle
-│   │   └── settings.tsx         # Settings screen
+│   │   ├── _layout.tsx          # Tab bar / sidebar layout (responsive)
+│   │   ├── index.tsx            # Home screen — content library
+│   │   ├── settings.tsx         # Settings (languages, font size, app info)
+│   │   └── bookmarks.tsx        # Bookmarks (placeholder)
 │   ├── reader/
-│   │   └── [section].tsx        # Reader view for Kidan & Serate Kidase
+│   │   └── [section].tsx        # Reader for Kidan & Serate Kidase
 │   └── anaphora/
-│       ├── index.tsx            # Anaphora list
+│       ├── index.tsx            # Anaphora list (14 items)
 │       └── [id].tsx             # Individual anaphora reader
 ├── components/
-│   ├── PrayerBlock.tsx          # Renders a single prayer block
-│   ├── PresentationView.tsx     # Presentation/display layout
-│   └── SectionDrawer.tsx        # Section navigation drawer
+│   ├── ReaderLayout.tsx         # Shared reader layout (used by reader & anaphora screens)
+│   ├── PrayerBlock.tsx          # Renders a single prayer block (multi-column, speaker colors)
+│   ├── PresentationView.tsx     # Full-screen presentation mode (dark, tap/keyboard nav)
+│   ├── SectionDrawer.tsx        # Animated section navigation drawer
+│   └── CrossIcon.tsx            # Ethiopian cross SVG icon
 ├── context/
-│   ├── LanguageContext.tsx       # Language selection state
-│   └── FontSizeContext.tsx       # Font size state
+│   ├── LanguageContext.tsx       # Active languages & primary language state
+│   └── FontSizeContext.tsx       # Font size multiplier state
+├── constants/
+│   ├── colors.ts                # Full color palette + speaker color records
+│   ├── fonts.ts                 # Font family aliases (Playfair Display, EB Garamond)
+│   ├── layout.ts                # Max content width (720px centered column)
+│   └── languages.ts             # Language labels and defaults
+├── utils/
+│   └── language.ts              # Shared language sorting/filtering utility
 ├── data/
 │   ├── types.ts                 # TypeScript types (PrayerBlock, LiturgicalSection, etc.)
-│   ├── kidan.ts                 # Kidan liturgical text
-│   ├── serate-kidase.ts         # Serate Kidase liturgical text
-│   └── anaphoras/               # 14 anaphora data files
-├── constants/                   # Colors, language labels
+│   ├── kidan.json               # Kidan liturgical text
+│   ├── serate-kidase.json       # Serate Kidase liturgical text
+│   └── anaphoras/               # 14 anaphora data files + metadata index
 ├── admin-server.js              # Local admin HTTP server (node admin-server.js)
 ├── admin-ui.html                # Admin UI served by the server
 ├── app.json                     # Expo config

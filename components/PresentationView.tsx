@@ -1,12 +1,12 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Platform, NativeSyntheticEvent, NativeScrollEvent, LayoutChangeEvent } from 'react-native';
 import Slider from '@react-native-community/slider';
-import { Colors } from '@/constants/colors';
+import { Colors, presentationSpeakerColors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
 import { useLanguage } from '@/context/LanguageContext';
 import { useFontSize, FONT_SIZE_MIN, FONT_SIZE_MAX } from '@/context/FontSizeContext';
-import { PrayerBlock, Language, LiturgicalSection } from '@/data/types';
-import { LANGUAGE_LABELS } from '@/constants/languages';
+import { PrayerBlock, LiturgicalSection } from '@/data/types';
+import { getLanguageEntries } from '@/utils/language';
 import SectionDrawer from '@/components/SectionDrawer';
 
 // Presentation mode stays dark for projector/screen use
@@ -17,13 +17,6 @@ const PRES = {
   text: Colors.presentationText,
   textMuted: Colors.presentationTextMuted,
   textDim: Colors.presentationTextDim,
-};
-
-const SPEAKER_COLORS: Record<string, string> = {
-  priest: Colors.accent,
-  deacon: '#7B9FC4',
-  congregation: PRES.text,
-  all: PRES.text,
 };
 
 interface Props {
@@ -128,22 +121,13 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
   if (!current) return null;
 
   const speakerColor =
-    current.speaker ? (SPEAKER_COLORS[current.speaker] ?? PRES.text) : PRES.text;
+    current.speaker ? (presentationSpeakerColors[current.speaker] ?? PRES.text) : PRES.text;
 
   const isRubricOrHeading = current.type === 'rubric' || current.type === 'heading';
 
-  const langEntries: { lang: Language; text: string }[] = isRubricOrHeading
+  const langEntries = isRubricOrHeading
     ? []
-    : activeLanguages
-        .map((lang) => ({ lang, text: current[lang] ?? '' }))
-        .filter((e) => e.text.length > 0)
-        .sort((a, b) => {
-          if (a.lang === primaryLanguage) return -1;
-          if (b.lang === primaryLanguage) return 1;
-          return 0;
-        });
-
-  const showLabels = false;
+    : getLanguageEntries(activeLanguages, primaryLanguage, current);
 
   const showMoreBelow = isScrollable && !isAtBottom;
   const showMoreAbove = isScrollable && !isAtTop;
@@ -184,11 +168,6 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
             <View style={styles.columnsRow}>
               {langEntries.map(({ lang, text }) => (
                 <View key={lang} style={[styles.langColumn, langEntries.length === 1 && styles.langColumnFull]}>
-                  {showLabels && (
-                    <Text style={[styles.langLabel, { fontSize: scale(11) }]}>
-                      {LANGUAGE_LABELS[lang]}
-                    </Text>
-                  )}
                   <Text
                     style={[
                       styles.prayerText,
@@ -293,7 +272,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 40,
-    backgroundColor: `rgba(10,10,10,0.6)`,
+    backgroundColor: 'rgba(10,10,10,0.6)',
     zIndex: 2,
   },
   fadeBottom: {
@@ -302,7 +281,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 40,
-    backgroundColor: `rgba(10,10,10,0.6)`,
+    backgroundColor: 'rgba(10,10,10,0.6)',
     zIndex: 2,
   },
   rubricText: {
@@ -327,13 +306,6 @@ const styles = StyleSheet.create({
   },
   langColumnFull: {
     width: '100%',
-  },
-  langLabel: {
-    color: PRES.textDim,
-    fontWeight: '600',
-    letterSpacing: 1.5,
-    textTransform: 'uppercase',
-    marginBottom: 6,
   },
   prayerText: {
     fontWeight: '500',

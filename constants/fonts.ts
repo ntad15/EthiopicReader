@@ -1,5 +1,3 @@
-import { Platform } from 'react-native';
-
 /**
  * Font family constants for the Modern Manuscript theme.
  *
@@ -7,28 +5,16 @@ import { Platform } from 'react-native';
  * EB Garamond: Used for body serif text and Ge'ez/Amharic labels
  *
  * These require the fonts to be loaded via useFonts() in the root layout.
- * Falls back to platform serif if custom fonts are unavailable.
  */
-
-const PLATFORM_SERIF = Platform.select({
-  ios: 'Georgia',
-  android: 'serif',
-  web: 'Georgia, "Times New Roman", serif',
-}) ?? 'serif';
 
 export const Fonts = {
   // Display serif — titles, headings, Ge'ez titles
   serifBold: 'PlayfairDisplay_700Bold',
   serifExtraBold: 'PlayfairDisplay_800ExtraBold',
-  serifRegular: 'PlayfairDisplay_400Regular',
-  serifItalic: 'PlayfairDisplay_400Regular_Italic',
 
   // Body serif — descriptions, prayer text, secondary labels
   bodyRegular: 'EBGaramond_400Regular',
   bodyMedium: 'EBGaramond_500Medium',
   bodyBold: 'EBGaramond_700Bold',
   bodyItalic: 'EBGaramond_400Regular_Italic',
-
-  // Fallback
-  platformSerif: PLATFORM_SERIF,
 };

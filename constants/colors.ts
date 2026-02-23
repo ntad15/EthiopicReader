@@ -10,6 +10,7 @@ export const Colors = {
   text: '#2C1810',                // deep brown-black
   textMuted: '#7A6652',           // muted warm brown
   textDim: '#A69882',             // dim warm tone
+  textOnColor: '#FFFFFF',         // white text on colored backgrounds
 
   // Accents
   accent: '#B5945B',              // muted gold — icons, decorative elements
@@ -26,9 +27,6 @@ export const Colors = {
   congregation: '#2C1810',        // dark brown for congregation
   rubric: '#8B7355',              // warm muted for rubric/instructions
 
-  // Utility
-  danger: '#C44B4B',
-
   // Decorative
   goldSeal: '#B5945B',            // gold seal background
   goldSealBorder: '#9A7D4A',      // darker gold border for seal
@@ -42,4 +40,21 @@ export const Colors = {
   presentationText: '#ffffff',
   presentationTextMuted: '#666666',
   presentationTextDim: '#444444',
+  presentationDeacon: '#7B9FC4',  // lighter blue for deacon in dark mode
+};
+
+/** Speaker role colors for the reading view (light theme). */
+export const speakerColors: Record<string, string> = {
+  priest: Colors.priest,
+  deacon: Colors.deacon,
+  congregation: Colors.congregation,
+  all: Colors.text,
+};
+
+/** Speaker role colors for presentation mode (dark theme). */
+export const presentationSpeakerColors: Record<string, string> = {
+  priest: Colors.accent,
+  deacon: Colors.presentationDeacon,
+  congregation: Colors.presentationText,
+  all: Colors.presentationText,
 };

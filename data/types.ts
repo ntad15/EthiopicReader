@@ -1,13 +1,9 @@
 export type Language = 'geez' | 'amharic' | 'english' | 'transliteration';
 
-export type SpeakerRole = 'priest' | 'deacon' | 'congregation' | 'all';
-
-export type BlockType = 'heading' | 'rubric' | 'prayer' | 'response';
-
 export interface PrayerBlock {
   id: string;
-  type: BlockType;
-  speaker?: SpeakerRole;
+  type: 'heading' | 'rubric' | 'prayer' | 'response';
+  speaker?: 'priest' | 'deacon' | 'congregation' | 'all';
   geez?: string;
   amharic?: string;
   english?: string;

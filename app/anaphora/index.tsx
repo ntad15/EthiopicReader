@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   sealNumber: {
     fontFamily: Fonts.serifBold,
-    color: '#FFFFFF',
+    color: Colors.textOnColor,
     fontSize: 15,
     fontWeight: '700',
   },

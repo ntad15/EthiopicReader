@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   pillTextActive: {
-    color: '#FFFFFF',
+    color: Colors.textOnColor,
   },
   pillDisabled: {
     opacity: 0.35,

@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const FONT_SIZE_MIN = 0.6;
 export const FONT_SIZE_MAX = 2.5;
-export const FONT_SIZE_DEFAULT = 1;
+const FONT_SIZE_DEFAULT = 1;
 
 interface FontSizeContextValue {
   multiplier: number;
