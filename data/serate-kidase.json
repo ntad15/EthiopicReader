@@ -928,10 +928,10 @@
     {
       "id": "serate-preparatory-service",
       "title": {
-        "english": "Preparatory Service",
-        "geez": "ሥርዓተ ቅዳሴ",
-        "amharic": "ሥርዓተ ቅዳሴ",
-        "transliteration": ""
+        "english": "Glory and honor are due",
+        "geez": "",
+        "amharic": "",
+        "transliteration": "Sibhat wekibir"
       },
       "blocks": [
         {
@@ -939,48 +939,30 @@
           "type": "prayer",
           "speaker": "deacon",
           "geez": "ስብሐት ወክብር ለሥሉስ ቅዱስ ይደሉ",
-          "amharic": "ልዩ ሦስት ለሚሆኑ ለአብና ለወልድ ለመንፈስ ቅዱስም ይደልዎሙ ለአብ ወወልድ ወመንፈስ ቅዱስ",
-          "english": "Sebhat wekibir lesilus kidus yidelu Glory and honor are meet to he Holy Trinity, Yidelwomu le’ab wewold wemenfes kidus",
-          "transliteration": ""
+          "amharic": "ልዩ ሦስት ለሚሆኑ ለአብና ለወልድ ለመንፈስ ቅዱስም ",
+          "english": "Glory and honor are meet to he Holy Trinity, ",
+          "transliteration": "Sebhat wekibir lesilus kidus yidelu "
+        },
+        {
+          "id": "serate-kidase-mlz26kf711w",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ይደልዎሙ ለአብ ወወልድ ወመንፈስ ቅዱስ",
+          "amharic": "",
+          "english": "",
+          "transliteration": " Yidelwomu le’ab wewold wemenfes kidus"
+        },
+        {
+          "id": "serate-kidase-mlz2c4d3fg0",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
+          "amharic": "ሁል ጊዜ ክብር ምስጋና ይገባቸዋል ዛሬም ዘወትርም ለዘላለሙ አሜን።\n",
+          "english": "the Father and the Son and the Holy Spirit at all times. Both now and ever and world without end. Amen.",
+          "transliteration": "Ab wewold wemenfes kidus kulo gize yi’izeni wezelfeni wele’aleme alem"
         },
         {
           "id": "serate-preparatory-service-087",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
-          "amharic": "ሁል ጊዜ ክብር ምስጋና ይገባቸዋል ዛሬም ዘወትርም ለዘላለሙ አሜን። አሜን።",
-          "english": "the Father and the Son and the Holy Spirit at all times. Both now and ever and world without end. Amen. Amen.",
-          "transliteration": "Ab wewold wemenfes kidus kulo gize yi’izeni wezelfeni wele’aleme alem"
-        },
-        {
-          "id": "serate-preparatory-service-088",
-          "type": "prayer",
-          "speaker": "deacon",
-          "geez": "ስብሐት ወክብር ለሥሉስ ቅዱስ ይደሉ",
-          "amharic": "ልዩ ሦስት ለሚሆኑ ለአብና ለወልድ ለመንፈስ ቅዱስም ይደልዎሙ ለአብ ወወልድ ወመንፈስ ቅዱስ",
-          "english": "Sebhat wekibir lesilus kidus yidelu Glory and honor are meet to he Holy Trinity, Yidelwomu le’ab wewold wemenfes kidus",
-          "transliteration": ""
-        },
-        {
-          "id": "serate-preparatory-service-089",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
-          "amharic": "ሁል ጊዜ ክብር ምስጋና ይገባቸዋል ዛሬም ዘወትርም ለዘላለሙ አሜን። አሜን።",
-          "english": "the Father and the Son and the Holy Spirit at all times. Both now and ever and world without end. Amen. Amen.",
-          "transliteration": "Ab wewold wemenfes kidus kulo gize yi’izeni wezelfeni wele’aleme alem"
-        },
-        {
-          "id": "serate-preparatory-service-090",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
-          "amharic": "ሁል ጊዜ ክብር ምስጋና ይገባቸዋል ዛሬም ዘወትርም ለዘላለሙ አሜን። አሜን።",
-          "english": "the Father and the Son and the Holy Spirit at all times. Both now and ever and world without end. Amen. Amen.",
-          "transliteration": "Ab wewold wemenfes kidus kulo gize yi’izeni wezelfeni wele’aleme alem"
-        },
-        {
-          "id": "serate-preparatory-service-091",
           "type": "response",
           "speaker": "congregation",
           "geez": "አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
