@@ -2169,6 +2169,317 @@
         "transliteration": ""
       },
       "blocks": []
+    },
+    {
+      "id": "section-catec",
+      "title": {
+        "english": "Go Forth Catechumens",
+        "geez": "ፃኡ ንኡሰ ክርስቲያን",
+        "amharic": "ካቴኩሜኖች",
+        "transliteration": "Tsa'u ni'use kiristeeyan"
+      },
+      "blocks": [
+        {
+          "id": "catec-001",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ፃኡ ንኡሰ ክርስቲያን።",
+          "amharic": "የክርስቲያን ታናናሾች በሰላም ሂዱ።",
+          "english": "Go forth, ye catechumens.",
+          "transliteration": "Tsasu ni'use kiristeeyan."
+        },
+        {
+          "id": "catec-002",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ተንሥኡ ለጸሎት",
+          "amharic": "ለጸሎት ተነሡ።",
+          "english": "Stand up for prayer.",
+          "transliteration": "Tensi'u letselot"
+        },
+        {
+          "id": "catec-003",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "እግዚኦ ተሣሃለነ።",
+          "amharic": "አቤቱ ይቅር በለን።",
+          "english": "Lord have mercy upon us.",
+          "transliteration": "Igzee'o tesahalene."
+        },
+        {
+          "id": "catec-004",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "ሰላም ለኵልክሙ።",
+          "amharic": "ሰላም ለሁላችሁም።",
+          "english": "Peace be unto you all.",
+          "transliteration": "Selam lekwulikimu."
+        },
+        {
+          "id": "catec-005",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ምስለ መንፈስከ።",
+          "amharic": "ከመንፈስህ ጋራ።",
+          "english": "And with Thy spirit.",
+          "transliteration": "Misle menfesike."
+        },
+        {
+          "id": "catec-006",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ጸልዩ በእንተ ሰላመ ቤተ ክርስቲያን አሐቲ ቅድስት ጉባኤ እንተ ሐዋርያት ርትዕት በኀበ እግዚአብሔር",
+          "amharic": "ሐዋርያት ለሰበሰቡዋት በእግዚአብሔር ዘንድ ስለቀናች ክብርት ስለምትሆን አንዲት ቤተ ክርስቲያን ስላም ጸልዩ።",
+          "english": "Pray for the peace of the one holy apostolic church orthodox in the Lord.",
+          "transliteration": "Tseliyu be'inte selame béte kiristeeyan ahatee qidist guba'é inte hawariyat riti'it behabe Igzee'abihér."
+        },
+        {
+          "id": "catec-007",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ኪርያላይሶን።",
+          "amharic": "",
+          "english": "Kyrie eleison.",
+          "transliteration": "Kyrie eleison."
+        },
+        {
+          "id": "catec-008",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ጸልዩ በእንተ ርእሰ ሊቃነ ጳጳሳት አባ ማትያስ እግዚእነ ርእሰ ሊቃነ ጳጳሳት",
+          "amharic": "ብፁዕ ስለሚሆን ስለ ሊቀ ጳጳሳቱ ስለ አባ ማትያስ የደገኛዩቱ አገር ኢትዮጵያ ፓትርያርክ የሊቃነ",
+          "english": "Pray for the Patriarch Abba Matthias lord chief of the bishops of the great country",
+          "transliteration": "Tseliyu be'inte ri'ise leeqane papasat Abba Matyas Egziene ri'ise leeqane papasat"
+        },
+        {
+          "id": "catec-009",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ዘሀገር ዓባይ ኢትዮጵያ ወዲበ ርእሰ ሀገረ አበዊነ ብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ",
+          "amharic": "ጳጳሳቱ አለቃ ጌታ ስለሚሆን ባባቶቻችን አገርም ብፁዕ ስለሚሆን ስለ አባ ጴጥሮስ",
+          "english": "Ethiopia, and for the blessed Primate of the country of our fathers Abba Peter and all",
+          "transliteration": "zehager abayi Ethiopia wedeebe ri'ise hagere abeweene bisu'i leeqe papasine abba Petros"
+        },
+        {
+          "id": "catec-010",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ወኵሎሙ ኤጲስ ቆጶሳት ቀሳውስት ወዲያቆናት ርቱዓነ ሃይማኖት።",
+          "amharic": "ሃይማኖታቸው ስለ ቀና ስለ ኤጲስ ቆጶሳቱ ስለ ቀሳውስቱና ስለ ዲያቆናቱም ሁሉ ጸልዩ።",
+          "english": "the orthodox bishops, priests and deacons.",
+          "transliteration": "wekwulomu épees qoposat qesawist wedeeyaqonat ritu'ane haymanot."
+        },
+        {
+          "id": "catec-011",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ተንሥኡ ለጸሎት",
+          "amharic": "ለጸሎት ተነሡ።",
+          "english": "Stand up for prayer.",
+          "transliteration": "Tensi'u letselot"
+        },
+        {
+          "id": "catec-012",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "እግዚኦ ተሣሃለነ።",
+          "amharic": "አቤቱ ይቅር በለን።",
+          "english": "Lord have mercy upon us.",
+          "transliteration": "Igzee'o tesahalene."
+        },
+        {
+          "id": "catec-013",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "ሰላም ለኵልክሙ።",
+          "amharic": "ሰላም ለሁላችሁም።",
+          "english": "Peace be unto you all.",
+          "transliteration": "Selam lekwulikimu."
+        },
+        {
+          "id": "catec-014",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ምስለ መንፈስከ።",
+          "amharic": "ከመንፈስህ ጋራ።",
+          "english": "And with Thy spirit.",
+          "transliteration": "Misle menfesike."
+        },
+        {
+          "id": "catec-015",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ጸልዩ በእንተ ዛቲ ቤተ ክርስቲያን ቅድስት ወማኅበርነ በውስቴታ።",
+          "amharic": "ክብር ስለምትሆን ስለዚች ቤተ ክርስቲያን በውስጥዋም ስላለ አንድነታችንም ጸልዪ",
+          "english": "Pray for this holy church and our congregation therein.",
+          "transliteration": "Tseliyu be'inte zatee béte kiristeeyan qidist wemahiberene bewisteta."
+        },
+        {
+          "id": "catec-016",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ማኅበርነ ባርከ ዕቀብ በሰላም።",
+          "amharic": "አንድነታችንን ባርክ በስላም ጠብቅ።",
+          "english": "Bless our congregation and keep them in peace.",
+          "transliteration": "Mahiberene barike iqeb beselam."
+        },
+        {
+          "id": "catec-017",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ንበል ኵልነ በጥበበ እግዚአብሔር ጸሎተ ሃይማኖት።",
+          "amharic": "በእግዚአብሔር ጥበብ ሆነን ሁላችን የሃይማኖትን ጸሎት እንበል።",
+          "english": "Let us all say, in the wisdom of God, the prayer of faith",
+          "transliteration": "Nibel kwuline betibebe Igzee'abihér tselote haymanot."
+        }
+      ]
+    },
+    {
+      "id": "section-mlzfnac9y6n",
+      "title": {
+        "english": "Creed",
+        "geez": "",
+        "amharic": "",
+        "transliteration": "Amekniyou"
+      },
+      "blocks": [
+        {
+          "id": "catec-018",
+          "type": "heading",
+          "geez": "አመክኒዩ ዘሃዋርያት",
+          "amharic": "",
+          "english": "Apostle's Creed",
+          "transliteration": ""
+        },
+        {
+          "id": "catec-019",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "ንጹሕ የሆነ ከቍርባኑ ይቀበል፤ …",
+          "english": "He that is pure let him receive of the oblation and he that is not pure let him not receive it, that he may not be consumed by the fire of the Godhead which is prepared for the devil and his angels. Who so hath revenge in his heart and who so hath in him strange thoughts and fornication let him not draw nigh. As I have cleansed my hands from outward pollution, so also I am pure from the blood of you all. If you presumptuously draw nigh to the body and blood of Christ I will not be responsible for your reception thereof. I am pure of your wickedness but your sin will return upon your head if you do not draw nigh in purity.",
+          "transliteration": ""
+        },
+        {
+          "id": "catec-020",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "ይህን የቄሱን ቃል ያቀለለ ወይም የሳቀና የተነጋገረ ወይም በቤተ ክርስቲያን ውስጥ በክፋት የቆመ ቢኖር ጌታችንን ኢየሱስ ክርስቶስን እንዳሳዘንው በርሱም እንደ ተነሣሣ ይወቅ ይረዳ ስለ በረከት ፈንታ መርገምን ስለ ኃጢአት ሥርየት ፈንታም ገሃነመ እሳትን ከእግዚአብሔር ዘንድ ይቀበላል",
+          "english": "If there be any who disdains this word of the priest or laughs or speaks or stands in the church in an evil manner, let him know and understand that he is provoking to wrath our Lord Jesus Christ, and bringing upon himself a curse instead of a blessing, and will get from God the fire of hell instead of the remission of sin.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "section-mlzfp6akufl",
+      "title": {
+        "english": "Stand up for prayer",
+        "geez": "",
+        "amharic": "",
+        "transliteration": "Tensi'u"
+      },
+      "blocks": [
+        {
+          "id": "serate-kidase-mlzfp6akv95",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ተንሥኡ ለጸሎት",
+          "amharic": "ለጸሎት ተነሡ። ",
+          "english": "Stand up for prayer. ",
+          "transliteration": "Tensi'u letselot "
+        },
+        {
+          "id": "serate-kidase-mlzfp6akk0p",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "እግዚኦ ተሣሃለነ። ",
+          "amharic": "አቤቱ ይቅር በለን።",
+          "english": "Lord have mercy upon us.",
+          "transliteration": "Igzee'o tesahalene."
+        },
+        {
+          "id": "serate-kidase-mlzfp6akl8f",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "ሰላም ለኵልክሙ።",
+          "amharic": "ሰላም ለሁላችሁም። ",
+          "english": "Peace be unto you all. ",
+          "transliteration": "Selam lekwulikimu. "
+        },
+        {
+          "id": "serate-kidase-mlzfp6aken5",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ምስለ መንፈስከ። ",
+          "amharic": "ከመንፈስህ ጋራ።",
+          "english": "And with Thy spirit.",
+          "transliteration": "Misle menfesike."
+        }
+      ]
+    },
+    {
+      "id": "section-mlzfoh03ucg",
+      "title": {
+        "english": "Prayer of Salutation",
+        "geez": "",
+        "amharic": ""
+      },
+      "blocks": [
+        {
+          "id": "catec-025",
+          "type": "heading",
+          "geez": "",
+          "amharic": "ባስልዮስ የተናገረው የአምኃ ጸሎት",
+          "english": "\"Prayer of Salutation\" of St. Basil",
+          "transliteration": ""
+        },
+        {
+          "id": "catec-026",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "ለዘላለሙ ገናና የምትሆን እግዚአብሔር ሆይ ያለጥፋት ሰውን የፈጠርኸው። አስቀድሞ በሰይጣን ቅንዓት የገባውን ሞት …",
+          "english": "God, great eternal, who didst form a man uncorrupt,",
+          "transliteration": ""
+        },
+        {
+          "id": "catec-027",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ስብሐት ለእግዚአብሔር በሰማያት ወሰላም በምድር ሥምረቱ ለስብእ",
+          "amharic": "በሰማይ ለእግዚአብሔር ምስጋና ይገባል ሰላም በምድር ፍቅሩ ለሰው ሆነ።",
+          "english": "Glory to God in heaven and on earth peace, His goodwill toward men.",
+          "transliteration": "Sibhat le'Igzee'abihér besemayat weselam bemidir simretu leseb'i."
+        },
+        {
+          "id": "catec-028",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "አቤቱ ፈቃድህን በሁላችን ልቡና ሙላ፤",
+          "english": "",
+          "transliteration": ""
+        },
+        {
+          "id": "catec-029",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "ጸልዩ በእንተ ሰላም ፍጽምት ወፍቅር ተአምኁ በበይናቲክሙ በአምኃ ቅድሳት።",
+          "amharic": "ፍጽምት ስልምትሆን ሰላምና ፍቅር ጸልዪ እርስ በርሳችሁ በተለየች ሰላምታ እጅ ተነሳሱ።",
+          "english": "Pray for the perfect peace and love. Salute one another with a holy salutation",
+          "transliteration": "Tseliyu be'inte selam fitsimt wefiqir te'amihu bebeyinateekimu be'amiha qidisat."
+        },
+        {
+          "id": "catec-030",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ክርስቶስ አምላክነ ረስየነ ድልዋነ ከመ ንትአማኅ በበይናቲነ በአምኃ ቅድሳት",
+          "amharic": "ፈጣሪያችን ክርስቶስ ሆይ እርስ በርሳችን  በከበረች ሰላምታ እጅ እንነሳሳ ዘንድ የበቃን አድርገን።",
+          "english": "Christ our God, make us meet to salute one another with a holy salutation.",
+          "transliteration": "Kiristos amlakine resiyene diliwane keme niti'amah bebeyinateene be'amiha qidisat."
+        }
+      ]
     }
   ]
 }
