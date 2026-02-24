@@ -6,7 +6,9 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
+  useWindowDimensions,
 } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -25,21 +27,21 @@ import CrossIcon from '@/components/CrossIcon';
 
 const QIDASE_SUBSECTIONS = [
   {
-    id: 'kidan',
+    id: 'qidan',
     title: 'Qidan',
     geez: 'ኪዳን',
     description: 'Prayer of the Covenant',
-    route: '/reader/kidan' as const,
+    route: '/reader/qidan' as const,
   },
   {
-    id: 'serate-kidase',
+    id: 'serate-qidase',
     title: 'Serate Qidase',
     geez: 'ሥርዓተ ቅዳሴ',
     description: 'Preparatory Service',
-    route: '/reader/serate-kidase' as const,
+    route: '/reader/serate-qidase' as const,
   },
   {
-    id: 'fere-kidase',
+    id: 'fere-qidase',
     title: 'Fere Qidase',
     geez: 'ፍሬ ቅዳሴ',
     description: '14 Anaphoras',
@@ -48,8 +50,10 @@ const QIDASE_SUBSECTIONS = [
 ];
 
 export default function HomeScreen() {
-  const [qidaseOpen, setQidaseOpen] = useState(true);
-  const chevronRotation = useSharedValue(90); // 90deg = open (pointing down via rotation)
+  const { width } = useWindowDimensions();
+  const isMobile = width < 768;
+  const [qidaseOpen, setQidaseOpen] = useState(false);
+  const chevronRotation = useSharedValue(0); // 90deg = open (pointing down via rotation)
 
   const chevronStyle = useAnimatedStyle(() => ({
     transform: [{ rotateZ: `${chevronRotation.value}deg` }],
@@ -64,14 +68,16 @@ export default function HomeScreen() {
         {/* ── Header ── */}
         <View style={styles.headerBar}>
           <View style={styles.headerCenter}>
-            <CrossIcon size={16} color={Colors.burgundy} />
-            <Text style={styles.headerTitle}>Qidase Reader</Text>
+            <View style={{ marginTop: 6 }}>
+              <CrossIcon size={isMobile ? 24 : 16} color={Colors.burgundy} />
+            </View>
+            <Text style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}>Qidase Reader</Text>
           </View>
         </View>
 
         {/* ── Scripture banner ── */}
         <View style={styles.banner}>
-          <View style={styles.bannerImageWrap}>
+          <View style={[styles.bannerImageWrap, isMobile && styles.bannerImageWrapMobile]}>
             <Image
               source={require('@/assets/images/cross_painting_cropped.jpg')}
               style={styles.bannerImage}
@@ -80,12 +86,12 @@ export default function HomeScreen() {
           </View>
           <View style={styles.bannerContent}>
             <Text style={styles.quoteText}>
-              {'\u201C'}Love the Lord your God with all your heart and with all your soul and with all your mind.{'\u201D'}
+              Love the Lord your God with all your heart and with all your soul and with all your mind.
             </Text>
             <Text style={styles.quoteRef}>{'\u2014'} Gospel of Matthew 22:37</Text>
             <View style={styles.quoteDivider} />
             <Text style={styles.quoteText}>
-              {'\u201C'}Love your neighbor as yourself.{'\u201D'}
+              Love your neighbor as yourself.
             </Text>
             <Text style={styles.quoteRef}>{'\u2014'} Gospel of Matthew 22:39</Text>
           </View>
@@ -95,8 +101,9 @@ export default function HomeScreen() {
         <Text style={styles.sectionTitle}>Content Library</Text>
 
         {/* Qidase — parent section */}
-        <TouchableOpacity
+        <HoverableOpacity
           style={styles.parentItem}
+          hoverStyle={styles.parentItemHover}
           activeOpacity={0.7}
           onPress={() => {
             hapticLight();
@@ -115,7 +122,7 @@ export default function HomeScreen() {
           <Animated.View style={chevronStyle}>
             <Ionicons name="chevron-forward" size={18} color={Colors.textDim} />
           </Animated.View>
-        </TouchableOpacity>
+        </HoverableOpacity>
 
         {/* Subsections */}
         {qidaseOpen &&
@@ -125,8 +132,9 @@ export default function HomeScreen() {
               entering={FadeInUp.duration(200).delay(i * 50)}
               exiting={FadeOutUp.duration(150)}
             >
-              <TouchableOpacity
+              <HoverableOpacity
                 style={styles.subItem}
+                hoverStyle={styles.subItemHover}
                 activeOpacity={0.7}
                 onPress={() => {
                   hapticLight();
@@ -142,7 +150,7 @@ export default function HomeScreen() {
                   <Text style={styles.subDesc}>{section.description}</Text>
                 </View>
                 <Ionicons name="chevron-forward" size={16} color={Colors.textDim} />
-              </TouchableOpacity>
+              </HoverableOpacity>
             </Animated.View>
           ))}
       </ScrollView>
@@ -176,6 +184,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: Colors.text,
   },
+  headerTitleMobile: {
+    fontSize: 24,
+  },
 
   /* ── Scripture banner ── */
   banner: {
@@ -191,6 +202,9 @@ const styles = StyleSheet.create({
     width: 100,
     overflow: 'hidden',
   },
+  bannerImageWrapMobile: {
+    width: 130,
+  },
   bannerImage: {
     ...StyleSheet.absoluteFillObject,
     width: '100%',
@@ -202,11 +216,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   quoteText: {
-    fontFamily: Fonts.bodyItalic,
+    fontFamily: Fonts.bodyRegular,
     fontSize: 13,
     color: Colors.text,
     lineHeight: 19,
-    fontStyle: 'italic',
   },
   quoteRef: {
     fontFamily: Fonts.bodyMedium,
@@ -239,6 +252,10 @@ const styles = StyleSheet.create({
     gap: 14,
     borderWidth: 1,
     borderColor: Colors.borderSubtle,
+  },
+  parentItemHover: {
+    backgroundColor: Colors.surfaceElevated,
+    borderColor: Colors.accent,
   },
   parentIcon: {
     width: 48,
@@ -282,6 +299,10 @@ const styles = StyleSheet.create({
     gap: 12,
     borderWidth: 1,
     borderColor: Colors.borderSubtle,
+  },
+  subItemHover: {
+    backgroundColor: Colors.surfaceElevated,
+    borderColor: Colors.accent,
   },
   subIcon: {
     width: 36,

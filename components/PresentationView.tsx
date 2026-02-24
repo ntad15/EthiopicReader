@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Platform, NativeSyntheticEvent, NativeScrollEvent, LayoutChangeEvent } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
 import Slider from '@react-native-community/slider';
 import { Colors, presentationSpeakerColors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
@@ -212,17 +213,17 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
 
       {/* Top-right buttons */}
       <View style={styles.topRight}>
-        <TouchableOpacity style={styles.topBtn} onPress={() => setFontBarVisible((v) => !v)}>
+        <HoverableOpacity style={styles.topBtn} hoverStyle={styles.topBtnHover} onPress={() => setFontBarVisible((v) => !v)}>
           <Text style={styles.topBtnText}>Aa</Text>
-        </TouchableOpacity>
+        </HoverableOpacity>
         {sections && sections.length > 0 && (
-          <TouchableOpacity style={styles.topBtn} onPress={() => setDrawerVisible(true)}>
+          <HoverableOpacity style={styles.topBtn} hoverStyle={styles.topBtnHover} onPress={() => setDrawerVisible(true)}>
             <Text style={styles.topBtnText}>{'\u2630'}</Text>
-          </TouchableOpacity>
+          </HoverableOpacity>
         )}
-        <TouchableOpacity style={styles.topBtn} onPress={onExit}>
+        <HoverableOpacity style={styles.topBtn} hoverStyle={styles.topBtnHover} onPress={onExit}>
           <Text style={styles.topBtnText}>{'\u2715'}</Text>
-        </TouchableOpacity>
+        </HoverableOpacity>
       </View>
 
       {sections && (
@@ -363,6 +364,9 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingHorizontal: 14,
     paddingVertical: 7,
+  },
+  topBtnHover: {
+    backgroundColor: 'rgba(181, 148, 91, 0.35)',
   },
   topBtnText: {
     color: Colors.accent,

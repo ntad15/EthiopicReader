@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "Qidase Reader",
-    "slug": "kidase-reader",
+    "slug": "qidase-reader",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "kidase-reader",
+    "scheme": "qidase-reader",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -14,14 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.kidase.reader"
+      "bundleIdentifier": "com.qidase.reader"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#F4F1E8"
       },
-      "package": "com.kidase.reader"
+      "package": "com.qidase.reader"
     },
     "web": {
       "bundler": "metro",

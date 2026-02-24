@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Platform } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Slider from '@react-native-community/slider';
 import Constants from 'expo-constants';
@@ -30,9 +31,10 @@ export default function SettingsScreen() {
                 const active = isActive(lang);
                 const disabled = !active && !canAddMore;
                 return (
-                  <TouchableOpacity
+                  <HoverableOpacity
                     key={lang}
                     style={[styles.pill, active && styles.pillActive, disabled && styles.pillDisabled]}
+                    hoverStyle={disabled ? undefined : active ? styles.pillActiveHover : styles.pillHover}
                     onPress={() => {
                       hapticLight();
                       toggleLanguage(lang);
@@ -42,7 +44,7 @@ export default function SettingsScreen() {
                     <Text style={[styles.pillText, active && styles.pillTextActive, disabled && styles.pillTextDisabled]}>
                       {LANGUAGE_LABELS[lang]}
                     </Text>
-                  </TouchableOpacity>
+                  </HoverableOpacity>
                 );
               })}
             </View>
@@ -54,9 +56,10 @@ export default function SettingsScreen() {
             <Text style={styles.sectionHint}>Always shown first. Only active languages can be set as primary.</Text>
             <View style={styles.pillRow}>
               {ALL_LANGUAGES.filter(isActive).map((lang: Language) => (
-                <TouchableOpacity
+                <HoverableOpacity
                   key={lang}
                   style={[styles.pill, primaryLanguage === lang && styles.pillActive]}
+                  hoverStyle={primaryLanguage === lang ? styles.pillActiveHover : styles.pillHover}
                   onPress={() => {
                     hapticLight();
                     setPrimaryLanguage(lang);
@@ -66,7 +69,7 @@ export default function SettingsScreen() {
                   <Text style={[styles.pillText, primaryLanguage === lang && styles.pillTextActive]}>
                     {LANGUAGE_LABELS[lang]}
                   </Text>
-                </TouchableOpacity>
+                </HoverableOpacity>
               ))}
             </View>
           </View>
@@ -167,9 +170,16 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     backgroundColor: Colors.surfaceElevated,
   },
+  pillHover: {
+    borderColor: Colors.accent,
+    backgroundColor: Colors.surface,
+  },
   pillActive: {
     borderColor: Colors.burgundy,
     backgroundColor: Colors.burgundy,
+  },
+  pillActiveHover: {
+    backgroundColor: Colors.burgundyLight,
   },
   pillText: {
     fontFamily: Fonts.bodyMedium,

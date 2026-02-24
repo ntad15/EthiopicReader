@@ -7,6 +7,7 @@ import {
   ScrollView,
   Pressable,
 } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -28,12 +29,13 @@ interface Props {
   visible: boolean;
   onClose: () => void;
   onSelect: (index: number) => void;
+  onPresent?: () => void;
 }
 
 const DRAWER_WIDTH = 280;
 const SPRING_CONFIG = { damping: 22, stiffness: 220, mass: 0.8 };
 
-export default function SectionDrawer({ sections, visible, onClose, onSelect }: Props) {
+export default function SectionDrawer({ sections, visible, onClose, onSelect, onPresent }: Props) {
   const translateX = useSharedValue(DRAWER_WIDTH);
   const { primaryLanguage } = useLanguage();
 
@@ -99,15 +101,21 @@ export default function SectionDrawer({ sections, visible, onClose, onSelect }: 
         >
           <View style={styles.drawerHeader}>
             <Text style={styles.drawerTitle}>SECTIONS</Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}>
+            <HoverableOpacity
+              onPress={onClose}
+              hitSlop={12}
+              style={{ borderRadius: 6, padding: 4 }}
+              hoverStyle={{ backgroundColor: Colors.accentDim }}
+            >
               <Text style={styles.closeBtn}>{'\u2715'}</Text>
-            </TouchableOpacity>
+            </HoverableOpacity>
           </View>
-          <ScrollView showsVerticalScrollIndicator={false}>
+          <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
             {sections.map((sec, index) => (
-              <TouchableOpacity
+              <HoverableOpacity
                 key={sec.id}
                 style={styles.item}
+                hoverStyle={styles.itemHover}
                 onPress={() => {
                   onSelect(index);
                   onClose();
@@ -120,9 +128,24 @@ export default function SectionDrawer({ sections, visible, onClose, onSelect }: 
                 <Text style={styles.snippet} numberOfLines={2}>
                   {getSnippet(sec)}
                 </Text>
-              </TouchableOpacity>
+              </HoverableOpacity>
             ))}
           </ScrollView>
+          {onPresent && (
+            <View style={styles.drawerFooter}>
+              <HoverableOpacity
+                onPress={() => {
+                  onClose();
+                  onPresent();
+                }}
+                activeOpacity={0.8}
+                style={styles.presentBtn}
+                hoverStyle={styles.presentBtnHover}
+              >
+                <Text style={styles.presentBtnText}>Present</Text>
+              </HoverableOpacity>
+            </View>
+          )}
         </Animated.View>
       </GestureDetector>
     </>
@@ -177,6 +200,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: Colors.borderSubtle,
   },
+  itemHover: {
+    backgroundColor: Colors.accentDim,
+  },
   itemTitle: {
     fontFamily: Fonts.serifBold,
     color: Colors.burgundy,
@@ -189,5 +215,27 @@ const styles = StyleSheet.create({
     color: Colors.textMuted,
     fontSize: 12,
     lineHeight: 18,
+  },
+  drawerFooter: {
+    borderTopWidth: 1,
+    borderTopColor: Colors.border,
+    paddingHorizontal: 18,
+    paddingVertical: 14,
+  },
+  presentBtn: {
+    backgroundColor: Colors.burgundy,
+    borderRadius: 24,
+    paddingVertical: 12,
+    alignItems: 'center',
+  },
+  presentBtnHover: {
+    backgroundColor: Colors.burgundyLight,
+  },
+  presentBtnText: {
+    color: Colors.textOnColor,
+    fontFamily: Fonts.bodyMedium,
+    fontWeight: '700',
+    fontSize: 13,
+    letterSpacing: 0.5,
   },
 });

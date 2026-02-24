@@ -7,10 +7,11 @@ import {
   TouchableOpacity,
   Platform,
 } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
 import { useNavigation } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import * as ScreenOrientation from 'expo-screen-orientation';
-import Animated, { FadeIn } from 'react-native-reanimated';
+import Animated from 'react-native-reanimated';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Colors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
@@ -46,10 +47,10 @@ export default function ReaderLayout({
   /* Swipe left from right edge to open section drawer */
   const openDrawer = useCallback(() => setDrawerVisible(true), []);
   const edgeSwipe = Gesture.Pan()
-    .activeOffsetX(-20)
-    .failOffsetY([-15, 15])
+    .activeOffsetX(-15)
+    .failOffsetY([-30, 30])
     .onEnd((e) => {
-      if (e.translationX < -50 || e.velocityX < -500) {
+      if (e.translationX < -40 || e.velocityX < -400) {
         openDrawer();
       }
     })
@@ -60,14 +61,17 @@ export default function ReaderLayout({
   useEffect(() => {
     navigation.setOptions({
       title: title.english,
+      headerBackVisible: false,
+      headerLeft: () => null,
       headerRight: () => (
-        <TouchableOpacity
+        <HoverableOpacity
           onPress={() => setDrawerVisible(true)}
-          style={{ marginRight: 16 }}
+          style={{ marginRight: 16, borderRadius: 6, padding: 2 }}
+          hoverStyle={{ backgroundColor: Colors.burgundyDim }}
           hitSlop={8}
         >
           <Text style={{ color: Colors.burgundy, fontSize: 22 }}>{'\u2630'}</Text>
-        </TouchableOpacity>
+        </HoverableOpacity>
       ),
     });
   }, [title, navigation]);
@@ -176,27 +180,15 @@ export default function ReaderLayout({
         </View>
       </ScrollView>
 
-      <Animated.View
-        entering={FadeIn.duration(350).delay(300).springify().damping(18)}
-        style={styles.presentationBtn}
-      >
-        <TouchableOpacity
-          onPress={() => {
-            hapticMedium();
-            setPresentationMode(true);
-          }}
-          activeOpacity={0.8}
-          style={styles.presentationBtnInner}
-        >
-          <Text style={styles.presentationBtnText}>Present</Text>
-        </TouchableOpacity>
-      </Animated.View>
-
       <SectionDrawer
         sections={sections}
         visible={drawerVisible}
         onClose={() => setDrawerVisible(false)}
         onSelect={scrollToSection}
+        onPresent={() => {
+          hapticMedium();
+          setPresentationMode(true);
+        }}
       />
     </View>
   );
@@ -272,34 +264,11 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     bottom: 0,
-    width: 24,
+    width: 40,
     zIndex: 5,
   },
 
   bottomPadding: { height: 100 },
 
-  /* ── Floating present button ── */
-  presentationBtn: {
-    position: 'absolute',
-    bottom: 28,
-    right: 28,
-  },
-  presentationBtnInner: {
-    backgroundColor: Colors.burgundy,
-    borderRadius: 24,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.15,
-    shadowRadius: 6,
-    elevation: 4,
-  },
-  presentationBtnText: {
-    color: Colors.textOnColor,
-    fontFamily: Fonts.bodyMedium,
-    fontWeight: '700',
-    fontSize: 13,
-    letterSpacing: 0.5,
-  },
+
 });

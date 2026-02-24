@@ -3,17 +3,17 @@ import * as Haptics from 'expo-haptics';
 
 const isNative = Platform.OS === 'ios' || Platform.OS === 'android';
 
-/** Light tap — toggles, pills, minor interactions. */
+/** Soft tap — toggles, pills, minor interactions. */
 export function hapticLight() {
   if (isNative) {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Soft);
   }
 }
 
-/** Medium tap — button presses, drawer open/close. */
+/** Light tap — button presses, drawer open/close. */
 export function hapticMedium() {
   if (isNative) {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
   }
 }
 

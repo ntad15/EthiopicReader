@@ -1,3 +1,3 @@
-# Kidase Reader
+# Qidase Reader
 
 @AGENTS.md

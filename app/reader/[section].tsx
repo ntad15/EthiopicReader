@@ -7,10 +7,10 @@ import { LiturgicalText } from '@/data/types';
 
 function loadSection(id: string): LiturgicalText | null {
   switch (id) {
-    case 'kidan':
-      return require('@/data/kidan.json');
-    case 'serate-kidase':
-      return require('@/data/serate-kidase.json');
+    case 'qidan':
+      return require('@/data/qidan.json');
+    case 'serate-qidase':
+      return require('@/data/serate-qidase.json');
     default:
       return null;
   }

@@ -6,6 +6,7 @@ import {
   StyleSheet,
   useWindowDimensions,
 } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { Colors } from '@/constants/colors';
@@ -85,9 +86,10 @@ export default function TabLayout() {
                 (item.route !== '/' && pathname === item.route);
 
               return (
-                <TouchableOpacity
+                <HoverableOpacity
                   key={idx}
                   style={[deskStyles.sideItem, isActive && deskStyles.sideItemActive]}
+                  hoverStyle={!isActive ? deskStyles.sideItemHover : undefined}
                   onPress={() => {
                     if (item.isStack) {
                       router.push(item.route as any);
@@ -112,7 +114,7 @@ export default function TabLayout() {
                       <Text style={deskStyles.sideSub}>{item.subtitle}</Text>
                     )}
                   </View>
-                </TouchableOpacity>
+                </HoverableOpacity>
               );
             })}
           </View>
@@ -186,6 +188,9 @@ const deskStyles = StyleSheet.create({
   },
   sideItemActive: {
     backgroundColor: Colors.burgundyDim,
+  },
+  sideItemHover: {
+    backgroundColor: Colors.accentDim,
   },
   sideTextWrap: {
     flex: 1,

@@ -23,8 +23,8 @@ const LanguageContext = createContext<LanguageContextValue>({
   canAddMore: true,
 });
 
-const STORAGE_KEY = 'kidase_languages';
-const PRIMARY_STORAGE_KEY = 'kidase_primary_language';
+const STORAGE_KEY = 'qidase_languages';
+const PRIMARY_STORAGE_KEY = 'qidase_primary_language';
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [activeLanguages, setActiveLanguages] = useState<Language[]>(DEFAULT_LANGUAGES);

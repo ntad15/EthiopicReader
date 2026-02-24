@@ -9,7 +9,12 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { FontSizeProvider } from '@/context/FontSizeContext';
+import { View, Text, TouchableOpacity, useWindowDimensions } from 'react-native';
+import HoverableOpacity from '@/components/HoverableOpacity';
+import { router } from 'expo-router';
 import { Colors } from '@/constants/colors';
+import { Fonts } from '@/constants/fonts';
+import CrossIcon from '@/components/CrossIcon';
 import {
   PlayfairDisplay_400Regular,
   PlayfairDisplay_400Regular_Italic,
@@ -26,6 +31,8 @@ import {
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  const { width } = useWindowDimensions();
+  const isMobile = width < 768;
   const [loaded] = useFonts({
     PlayfairDisplay_400Regular,
     PlayfairDisplay_400Regular_Italic,
@@ -54,23 +61,30 @@ export default function RootLayout() {
               screenOptions={{
                 headerStyle: { backgroundColor: Colors.background },
                 headerTintColor: Colors.burgundy,
-                headerTitleStyle: { fontWeight: '700', color: Colors.text },
+                headerTitle: () => (
+                  <HoverableOpacity
+                    onPress={() => router.navigate('/')}
+                    activeOpacity={0.7}
+                    style={{ flexDirection: 'row', alignItems: 'center', gap: 8, borderRadius: 6, padding: 4 }}
+                    hoverStyle={{ opacity: 0.7 }}
+                  >
+                    <View style={{ marginTop: 5 }}>
+                      <CrossIcon size={isMobile ? 22 : 14} color={Colors.burgundy} />
+                    </View>
+                    <Text style={{ fontFamily: Fonts.serifBold, fontSize: isMobile ? 22 : 16, color: Colors.text }}>
+                      Qidase Reader
+                    </Text>
+                  </HoverableOpacity>
+                ),
+                headerBackVisible: false,
+                headerLeft: () => null,
                 contentStyle: { backgroundColor: Colors.background },
               }}
             >
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-              <Stack.Screen
-                name="reader/[section]"
-                options={{ headerBackTitle: 'Back', title: '' }}
-              />
-              <Stack.Screen
-                name="anaphora/index"
-                options={{ title: 'Fere Qidase', headerBackTitle: 'Back' }}
-              />
-              <Stack.Screen
-                name="anaphora/[id]"
-                options={{ headerBackTitle: 'Back', title: '' }}
-              />
+              <Stack.Screen name="reader/[section]" />
+              <Stack.Screen name="anaphora/index" />
+              <Stack.Screen name="anaphora/[id]" />
               <Stack.Screen name="+not-found" />
             </Stack>
             <StatusBar style="dark" />
