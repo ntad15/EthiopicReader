@@ -22,7 +22,7 @@ const SECTIONS = [
   {
     id: 'fere-kidase',
     title: { english: 'Fere Kidase', geez: 'ፍሬ ቅዳሴ', amharic: 'ፍሬ ቅዳሴ' },
-    subtitle: '14 Anaphoras',
+    subtitle: 'Anaphoras',
     route: '/anaphora' as const,
   },
 ];

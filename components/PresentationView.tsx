@@ -19,10 +19,18 @@ interface Props {
   blocks: PrayerBlock[];
   sections?: LiturgicalSection[];
   onExit: () => void;
+  startBlockId?: string;
 }
 
-export default function PresentationView({ blocks, sections, onExit }: Props) {
-  const [index, setIndex] = useState(0);
+export default function PresentationView({ blocks, sections, onExit, startBlockId }: Props) {
+  const visibleBlocksForInit = blocks.filter((b) => {
+    if (b.type === 'rubric' || b.type === 'heading') return true;
+    return b.geez || b.amharic || b.english || b.transliteration;
+  });
+  const initialIndex = startBlockId
+    ? Math.max(0, visibleBlocksForInit.findIndex((b) => b.id === startBlockId))
+    : 0;
+  const [index, setIndex] = useState(initialIndex);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const [fontBarVisible, setFontBarVisible] = useState(false);
   const { activeLanguages, primaryLanguage } = useLanguage();
