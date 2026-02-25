@@ -54,7 +54,7 @@ export default function PrayerBlock({ block }: Props) {
     ]}>
       {block.speaker && (
         <Text style={[styles.speakerLabel, { color: speakerColor, fontSize: scale(9) }]}>
-          {block.speaker.toUpperCase()}
+          {(block.speaker === 'congregation' ? 'People' : block.speaker).toUpperCase()}
         </Text>
       )}
       <View style={styles.columnsRow}>
@@ -64,8 +64,8 @@ export default function PrayerBlock({ block }: Props) {
               style={[
                 styles.prayerText,
                 {
-                  fontSize: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16),
-                  lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 18 : 16) * 1.6,
+                  fontSize: scale(lang === 'geez' || lang === 'amharic' ? 17 : 16),
+                  lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 17 : 16) * 1.6,
                 },
                 (lang === 'geez' || lang === 'amharic') && styles.geezText,
                 lang === 'english' && styles.englishText,
@@ -181,8 +181,7 @@ const styles = StyleSheet.create({
     color: Colors.text,
   },
   transliterationText: {
-    fontFamily: Fonts.bodyItalic,
-    fontStyle: 'italic',
+    fontFamily: Fonts.bodyRegular,
     color: Colors.textMuted,
   },
 });

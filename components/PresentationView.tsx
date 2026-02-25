@@ -24,7 +24,7 @@ const PRES = {
 interface Props {
   blocks: PrayerBlock[];
   sections?: LiturgicalSection[];
-  onExit: () => void;
+  onExit: (blockId?: string) => void;
   startBlockId?: string;
 }
 
@@ -166,7 +166,7 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
           <>
             {current.speaker && (
               <Text style={[styles.speaker, { color: speakerColor, fontSize: scale(11) }]}>
-                {current.speaker.toUpperCase()}
+                {(current.speaker === 'congregation' ? 'People' : current.speaker).toUpperCase()}
               </Text>
             )}
             <View style={styles.columnsRow}>
@@ -176,8 +176,8 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
                     style={[
                       styles.prayerText,
                       {
-                        fontSize: scale(lang === 'geez' || lang === 'amharic' ? 26 : 22),
-                        lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 26 : 22) * 1.5,
+                        fontSize: scale(lang === 'geez' || lang === 'amharic' ? 23 : 22),
+                        lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 23 : 22) * 1.5,
                       },
                       { color: speakerColor },
                       lang === 'transliteration' && styles.transliteration,
@@ -221,7 +221,7 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
             <Text style={styles.topBtnText}>{'\u2630'}</Text>
           </HoverableOpacity>
         )}
-        <HoverableOpacity style={styles.topBtn} hoverStyle={styles.topBtnHover} onPress={onExit}>
+        <HoverableOpacity style={styles.topBtn} hoverStyle={styles.topBtnHover} onPress={() => onExit(visibleBlocks[index]?.id)}>
           <Text style={styles.topBtnText}>{'\u2715'}</Text>
         </HoverableOpacity>
       </View>
@@ -301,22 +301,22 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   columnsRow: {
-    flexDirection: 'column',
-    gap: 20,
+    flexDirection: 'row',
+    gap: 24,
     width: '100%',
+    alignItems: 'flex-start',
   },
   langColumn: {
-    width: '100%',
+    flex: 1,
   },
   langColumnFull: {
-    width: '100%',
+    flex: 1,
   },
   prayerText: {
     fontWeight: '500',
   },
   transliteration: {
-    fontFamily: Fonts.bodyItalic,
-    fontStyle: 'italic',
+    fontFamily: Fonts.bodyRegular,
     color: PRES.textMuted,
   },
   fontBar: {

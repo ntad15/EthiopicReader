@@ -9,4 +9,4 @@ export const LANGUAGE_LABELS: Record<Language, string> = {
 
 export const ALL_LANGUAGES: Language[] = ['geez', 'amharic', 'english', 'transliteration'];
 
-export const DEFAULT_LANGUAGES: Language[] = ['english'];
+export const DEFAULT_LANGUAGES: Language[] = ['geez', 'english', 'transliteration'];
