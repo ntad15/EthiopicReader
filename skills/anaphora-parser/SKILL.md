@@ -164,3 +164,15 @@ Example: `ap-op-1` (Apostles, Opening, block 1), `lo-san-3` (Lord, Sanctus, bloc
 - Count total blocks written vs. total numbered paragraphs in the PDF — they should be close (rubrics add extra blocks beyond paragraph count)
 - Run `npx expo start` and navigate to the anaphora in the app to verify it renders correctly
 - Check that existing Ge'ez/Amharic content was not accidentally overwritten
+
+---
+
+## Commit
+
+```bash
+git add anaphora_pds/<name>_text.txt data/anaphoras/<name>.json && \
+git commit -m "parse <Name> anaphora from PDF
+
+- Add anaphora_pds/<name>_text.txt: extracted text from pages <start>-<end>
+- Populate data/anaphoras/<name>.json: <N> paragraphs across <N> sections with English text"
+```
