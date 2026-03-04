@@ -3,6 +3,10 @@
 Shared instructions for AI coding agents (Claude Code, Codex, OpenCode, etc.).
 Uses the [Agent Skills](https://agentskills.io) format. All skills are local in `skills/`.
 
+## Project-Specific Skills
+
+- [anaphora-parser](skills/anaphora-parser/SKILL.md) — Parse Ethiopian Orthodox anaphoras from PDF into structured JSON for the Qidase Reader
+
 ## Frontend Design
 
 - [frontend-design](skills/frontend-design/SKILL.md) — Distinctive, production-grade frontend interfaces that avoid generic AI aesthetics
