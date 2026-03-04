@@ -1,0 +1,1315 @@
+=== ANAPHORA OF THE APOSTLES — ALL LANGUAGES ===
+Source: all_lang_kidases.pdf, pp. 101-138
+Generated from apostles.json — Ge'ez and Amharic from existing JSON data
+
+--- OPENING ---
+
+[1] type=prayer speaker=priest
+GE'EZ: አኮቴተ ቁርባን ዘአበዊነ ሐዋርያት በረከተ ጸሎቶሙ የሀሉ ምስለ ርዕሰ ሊቃነ ጳጳሳቲነ አባ ማትያስ ወምስለ ሊቀ ጳጳስነ አባ ጴጥሮስ ወምስለ ኵልነ ሕዝበ ክርስቲያን ወይዕቀባ ለሀገሪትነ ኢትዮጵያ ለዓለም ዓለም አሜን።
+AMHARIC: የአባቶቻችን የሐዋርያት የቁርባን ምስጋና። የፀሎታቸው በረከት በጳጳሳቱ አለቃ በአባ ማትያስ በጳጳሳችን በአባ ጴጥሮስ በሁላችንም ላይ ይደር አገራችንን ኢትዮጵያን ይጠብቃት ለዘላለሙ አሜን።
+ENGLISH: PRIEST: The Anaphora of our fathers the Apostles, may the blessing of their prayer be with our rulers and people, unto the ages of ages. Amen.
+
+[2] type=prayer speaker=priest
+GE'EZ: እግዚአብሔር ምስለ ኵልክሙ።
+AMHARIC: እግዚአብሔር ከሁላችሁ ጋር ይሁን።
+ENGLISH: PRIEST: The Lord be with you all.
+
+[3] type=response speaker=congregation
+GE'EZ: ምስለ መንፈስከ።
+AMHARIC: ከመንፈስህ ጋራ።
+ENGLISH: CONGREGATION: And with your spirit.
+
+[4] type=prayer speaker=priest
+GE'EZ: አዕኵትዎ ለአምላክነ
+AMHARIC: ፊጣሪያችንን አመስግኑት
+ENGLISH: PRIEST: Give ye thanks unto our God.
+
+[5] type=response speaker=congregation
+GE'EZ: ርቱዕ ይደሉ
+AMHARIC: እውነት ነው ይገባዋል።
+ENGLISH: CONGREGATION: It is right, it is just.
+
+[6] type=prayer speaker=priest
+GE'EZ: አልዕሉ አልባቢክሙ
+AMHARIC: ልቦናችሁ ሰማያዊ ነገር ያስብ።
+ENGLISH: PRIEST: Lift up your hearts.
+
+[7] type=response speaker=congregation
+GE'EZ: ብነ ኅበ እግዚአብሔር አምላክነ።
+AMHARIC: በፈጣሪያችን በእግዚአብሔር ዘንድ ተስፋ አለን።
+ENGLISH: CONGREGATION: We have lifted them up unto the Lord our God.
+
+--- LORD'S PRAYER ---
+
+[8] type=prayer speaker=congregation
+GE'EZ: አቡነ ዘበሰማያት ይትቀደስ ስምከ ትምጻእ መንግሥትከ
+AMHARIC: አባታችን ሆይ! በሰማይ የምትኖር፣ ስምህ ይቀደስ፣ መንገሥትህ ትምጣ፣
+ENGLISH: CONGREGATION: Our Father who art in heaven, hallowed be thy name, Thy kingdom come
+
+[9] type=prayer speaker=congregation
+GE'EZ: ወይኩን ፈቃድከ በከመ በሰማይ ከማሁ በምድር። ሲሳየነ ዘለለ ዕለትነ ሀበነ ዮም።
+AMHARIC: ፈቃድህ በሰማይ እንደ ሆነ እንዲሁም በምድር ይሁን! የዕለት እንጀራችንን ስጠን ዛሬ፣
+ENGLISH: CONGREGATION: Thy will be done on earth as it is in heaven; give us this day our daily bread,
+
+[10] type=prayer speaker=congregation
+GE'EZ: ኅድግ ለነ አበሳነ ወጌጋየነ ከመ ንሕነኒ ንኅድግ ለዘአበሰ ለነ።
+AMHARIC: በደላችንን ይቅር በለን፣ እኛም የበደሉንን ይቅር እንደምንል፣
+ENGLISH: CONGREGATION: And forgive us our trespasses as we forgive them that trespass against us,
+
+[11] type=prayer speaker=congregation
+GE'EZ: ኢታብአነ እግዚኦ ውስተ መንሱት አላ አድኅነነ ወባልሐነ እምኵሉ እኩይ
+AMHARIC: አቤቱ ወደ ፈተና አታግባን፣ ከክፉ ሁሉ አድነን እንጂ፣
+ENGLISH: CONGREGATION: And lead us not into temptation but deliver us and rescue us from all evil;
+
+[12] type=prayer speaker=congregation
+GE'EZ: እስመ ዚኣከ ይእቲ መንግሥት ኃይል ወስብሐት ለዓለመ ዓለም።
+AMHARIC: መንግሥት ያንተ ናትና። ኃይል፣ ምስጋና ለዘለዓለሙ በእውነት።
+ENGLISH: CONGREGATION: For Thine is the kingdom, the power and the glory for ever and ever.
+
+--- HAIL MARY ---
+
+[13] type=prayer speaker=congregation
+GE'EZ: በሰላመ ቅዱስ ገብርኤል መልአክ ኦ እግዝእትየ ማርያም ሰላም ለኪ
+AMHARIC: እመቤታችን ቅድስት ድንግል ማርያም ሆይ በመልአኩ በቅዱስ ገብረኤል ሰላምታ ሰላም እልሻለሁ
+ENGLISH: CONGREGATION: O Holy Virgin Mary, in the peace of the Angel Gabriel, peace be unto Thee.
+
+[14] type=prayer speaker=congregation
+GE'EZ: ድንግል በኅሊናኪ ወድንግል በሥጋኪ። እመ እግዚአብሔር ጸባዖት ሰላም ለኪ
+AMHARIC: በሃሳብሽ ድንግል ነሽ በሥጋሽም ድንግል ነሽ። የአሸናፊ የእግዚአብሔር እናት ሆይ ሰላምታ ላንቺ ይገባል።
+ENGLISH: CONGREGATION: Thou art virgin in spirit as well as in body. O Thou Mother of Perfect God peace be unto Thee.
+
+[15] type=prayer speaker=congregation
+GE'EZ: ቡርክት አንቲ እምአንስት ወቡሩክ ፍሬ ከርሥኪ።
+AMHARIC: ከሴቶች ሁሉ ተለይተሽ አንቺ የትባረክሽ ነሽ የማኅፀንሽም ፍሬ የተባረከ ነው።
+ENGLISH: CONGREGATION: Blessed art Thou among women and blessed is the Fruit of Thy womb.
+
+[16] type=prayer speaker=congregation
+GE'EZ: ተፈሥሒ ፍሥሕት ኦ ምልእተ ጸጋ እግዚአብሔር ምስሌኪ።
+AMHARIC: ጸጋን የተመላሽ ሆይ ደስ ይበልሽ እግዚአብሔር ከአንቺ ጋር ነውና
+ENGLISH: CONGREGATION: Rejoice O Thou who art full of grace the Lord is with Thee.
+
+[17] type=prayer speaker=congregation
+GE'EZ: ሰአሊ ወጸልዪ ኀበ ፍቁር ወልድኪ ኢየሱስ ክርስቶስ
+AMHARIC: ከተወደደው ልጅሽ ከጌታችን ከመድኃኒታችን ከኢየሱስ ክርስቶስ ዘንድ ይቅርታን ለምኝልን
+ENGLISH: CONGREGATION: Ask and pray for us to Thy beloved Son, Jesus Christ
+
+[18] type=prayer speaker=congregation
+GE'EZ: ከመ ይሥረይ ለነ ኃጣውኢነ።
+AMHARIC: ኃጢአታችንን ያስተሠርይልን ዘንድ ለዘለዓለሙ አሜን።
+ENGLISH: CONGREGATION: That He may have mercy upon our souls and forgive us our sins. Amen.
+
+--- PREFACE ---
+
+[19] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: አቤቱ በተወደደ ልጅህ በጌታችን በኢየሱስ እናመሰግንሃለን በኋለኛው ዘመን የምክርህን አበጋዝ መድኃኒትና ቤዛ የሚሆን ልጅህን የሰደድህልን። ይህ ቃል ካንተ የተገኘ ነው በርሱም ሁሉን በፈቃድህ አደረግህ።
+ENGLISH: PRIEST: We give Thee thanks, O Lord, in Thy beloved Son our Lord Jesus, Whom in the last days Thou sent unto us, Thy Son, the Saviour and Redeemer, the messenger of Thy counsel.
+
+[20] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: This Word is He, Who is from Thee, and through Whom Thou made all things according to Thy will.
+
+--- INTERCESSIONS ---
+
+[21] type=prayer speaker=deacon
+GE'EZ: በአንተ ብፁዕ ወቅዱስ አባ ማትያስ፣ ወብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ፣
+AMHARIC: ብፁዕ ቅዱስ ስለሚሆን ስለ ርእሰ ሊቃነ ጳጳሳት ስለ አባ ማትያስ ብፁዕም ስለሚሆን ስለ አባ ጴጥሮስ በጸሎታቸውና
+ENGLISH: DEACON: For the sake of the blessed and holy Patriarch Abba and the blessed Archbishop Abba, while they yet give Thee thanks in their prayer and their supplications: Stephen the first martyr, Zacharias the priest and John the Baptist.
+
+[22] type=prayer speaker=deacon
+GE'EZ: እንዘ የአኵቱከ በጸሎቶሙ ወበስእለቶሙ እስጢፋኖስ ቀዳሜ ሰማዕት፣ ዘካርያስ ካህን ወዮሐንስ መጥምቅ
+AMHARIC: በልመናቸው ሲያመስግኑህ የሰማዕታት መጀመሪያ እስጢፋኖስ። ካህን ዘካርያስና መጥምቁ ዩሐንስ
+ENGLISH: DEACON: And for the sake of all the saints and martyrs who have gone to their rest in faith: Matthew and Mark, Luke, and John, the four Evangelists; Mary the mother of God, Simon Peter and Andrew, James and John, Philip and Bartholomew, Thomas and Matthew, Thaddaeus and Nathanael, James the son of Alphaeus and Matthias, the twelve Apostles; and James the Apostle, brother of the Lord, Bishop of Jerusalem: Paul, Timothy, Silas, and Barnabas; Titus, Philemon, and Clement, the seventy-two disciples, the five hundred brethren, the three hundred and eighteen Orthodox; may the prayers of them all come unto us and visit us together with them.
+
+[23] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: And remember Thou the peace of the universal apostolic church, which was made by Christ through His precious blood.
+
+[24] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Remember, Thou, all the patriarchs, archbishops, bishops, priests, and deacons who keep straight the way of the true word.
+
+[25] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The assistant priest shall say the Prayer of Benediction of St. Basil.
+
+[26] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O holy Trinity, Father, Son, and Holy Spirit, bless Thy people, beloved Christians, with heavenly and earthly blessings.
+
+[27] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And send upon us the grace of the Holy Spirit, and keep the doors of Thy holy church open unto us in mercy and in faith; and perfect unto us the faith of Thy holy Trinity unto our last breath.
+
+[28] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O my Lord Jesus Christ, visit the sick of Thy people; heal them; and guide our fathers and our brethren who have journeyed, becoming strangers: bring them back to their dwelling places in peace and in health.
+
+[29] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Bless the airs of heaven, and the rains and the fruits of the earth of this year, in accordance with Thy grace, and make joy and gladness prevail perpetually on the face of the earth.
+
+[30] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And confirm for us Thy peace. Turn the hearts of mighty kings to deal kindly with us always.
+
+[31] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Grant peace to the scholars of the church, who are continually gathered in Thy holy church; to all, to each by their several names, in the presence of powerful rulers, O our God, increase Thy peace.
+
+[32] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Rest the souls of our ancestors, both our brothers and sisters who have fallen asleep and gained their rest in the right faith.
+
+[33] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And bless those who give gifts of incense, bread and wine, ointment and oil, decorations and reading books, and vessels for the sanctuary, that Christ our God may give them their reward in the heavenly Jerusalem.
+
+[34] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And all of them that are assembled with us to entreat for mercy, Christ our God have mercy upon them: and all them that give alms before Thine awful and terrifying throne, receive.
+
+[35] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And comfort every straitened soul, they who are in chains, and they who are in exile or captivity.
+
+[36] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And them that are held in bitter servitude, our God, deliver them in Thy mercy. And all of them that have entrusted it to us to remember them in our supplications to Thee O our Master Jesus Christ, remember them in Thy heavenly kingdom, and remember me, thy sinful servant.
+
+[37] type=prayer speaker=priest
+GE'EZ: ኦ እግዚኦ አድኅን ሕዝበከ ወባርክ ርስተከ
+AMHARIC: አቤቱ ሕዝብህን አድን ርስትህንም ባርክ።
+ENGLISH: PRIEST: O Lord, save thy people and bless Thine inheritance, feed them and lift them up for ever.
+
+--- SANCTUS ---
+
+[38] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Lord pity and have mercy upon the patriarchs, archbishops, bishops, priests, deacons and all the Christian people.
+
+[39] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: To these and to all grant rest to their souls, and have mercy upon them. Thy Son Whom Thou did send from heaven to the womb of a virgin, was conceived in her womb, and was made flesh and Thy Son became known by the Holy Spirit.
+
+[40] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Ye that are sitting, stand up.
+
+[41] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: There stand before Thee a thousand thousands and ten thousand times ten thousand, both the holy angels and archangels and Thy honourable beasts, each with six wings.
+
+[42] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Look to the east.
+
+[43] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: With two of their wings they cover their face, with two of their wings they cover their feet, and with two of their wings they fly from end to end of the world.
+
+[44] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Let us give heed.
+
+[45] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And they all constantly hallow and praise Thee, with all them that hallow and praise Thee.
+
+[46] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Receive also our hallowing which we utter unto Thee: Holy, holy, holy, perfect Lord of hosts.
+
+[47] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Answer ye.
+
+[48] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Holy, holy, holy, perfect Lord of hosts, heaven and earth are full of the holiness of Thy glory.
+
+--- POST-SANCTUS ---
+
+[49] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Truly heaven and earth are full of the holiness of Thy glory, through our Lord, God, and Saviour Jesus Christ, Thy holy Son. He came and was born of a virgin that He might fulfil Thy will and make a people for Thee.
+
+[50] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Remember us all in Thy kingdom; remember us, Lord, Master, in Thy kingdom; remember us, Lord, in Thy kingdom, as Thou remembered the thief on the right hand when Thou was on the tree of the holy cross.
+
+--- INSTITUTION NARRATIVE ---
+
+[51] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Then the assistant priest shall put on grains of incense, and present the censer bowl with lid tilted back, to the celebrant, who shall cross his two hands in the smoke of the incense, then passing them over the bread and the cup three times each.
+
+[52] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: He stretched out His hands in the passion, suffering to save the sufferers that trust in Him.
+
+[53] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Who was delivered to the passion that He might destroy death, break the bonds of Satan, tread down hell, lead forth the saints, establish a covenant and make known His resurrection.
+
+[54] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Priests, raise up your hands.
+
+[55] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: In the same night in which they betrayed Him, He took bread in His holy, blessed and spotless hands.
+
+[56] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] At this time he shall raise the host.
+
+[57] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: We believe that this is He, truly we believe.
+
+[58] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: He looked up to heaven toward Thee, His Father, gave thanks, blessed and broke.
+
+[59] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Over the bread three times. Then he shall indent the Host lightly with his thumb in five places without separation.
+
+[60] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And He gave to His disciples and said unto them: Take, eat, this bread is truly My body which will be broken on your behalf for the remission of sin.
+
+[61] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen. Amen. Amen. We believe and confess, we glorify Thee, O our Lord and our God; that this is He we truly believe.
+
+[62] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And likewise also the cup giving thanks, blessing it and hallowing it, He gave it to His disciples, and said unto them, take, drink; this cup is My blood which will be shed on your behalf as a propitiation for many.
+
+[63] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] He shall then move the cup with his right hand in the sign of the cross.
+
+[64] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen. Amen. Amen. We believe and confess, we glorify Thee, O our Lord and our God, that this is He, we truly believe.
+
+[65] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And as often as ye do this do it in remembrance of Me.
+
+[66] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: We proclaim Thy death, Lord, and Thy holy resurrection; we believe in Thy ascension and Thy second advent. We glorify Thee, and confess Thee, we offer our prayer unto Thee and supplicate Thee, O our Lord and our God.
+
+--- ANAMNESIS (HYMNS OF THE SACRIFICE) ---
+
+[67] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The following hymns are chanted during the Anamnesis (memorial of the Passion).
+
+[68] type=prayer speaker=priest
+GE'EZ: እንዘ ቢዙሃን ንሕነ እምጽዖተ ዘመን ዘዚኣሁ ነአምን ሞቶ ወንሴፎ ትንሣኤሁ
+AMHARIC: 
+ENGLISH: PRIEST: We await the hope of the age which is His, We believe in His death and hope for His resurrection
+
+[69] type=response speaker=congregation
+GE'EZ: ለእግዚእ ክርስቶስ ዘኢይትአተት ጸጋሁ መለያልየ ፩ደ ይረስየነ ምስሌሁ በአጽናፈ ዓለም ይጠባሕ ፩ዱ ሥጋሁ
+AMHARIC: 
+ENGLISH: CONGREGATION: For the Lord Christ whose grace is unsearchable, may He unite us all as one with Him; in the ends of the earth may His one body be glorified
+
+[70] type=prayer speaker=priest
+GE'EZ: ኦ ክርስቶስ በግዐ መሥዋዕት ፩ዱ ካህነ ወንጌል ሥጋከ ለለጊዜ ይሠዋዕ በፈቃዱ
+AMHARIC: 
+ENGLISH: PRIEST: O Christ, Thou art the one sacrificial Lamb; O Priest of the Gospel, Thy body is offered each time by His will
+
+[71] type=response speaker=congregation
+GE'EZ: ተዝካረ ሞትከ ባሕር ለልበ ጠቢባን ምዕላዱ ነፋሰ ጥዒና መንፈሳዊ ሶበ ይነፍሕ በዓውዱ ከመ ነበልባል ይትነሣእ ሞገዱ
+AMHARIC: 
+ENGLISH: CONGREGATION: The memorial of Thy death is the sea for the hearts of the wise; when the healing breath of the Spirit blows in its season, its waves rise like a flame
+
+[72] type=prayer speaker=priest
+GE'EZ: ጊዜ ይሠዋዕ ኅብስተ ሥጋከ እምልክዐ ሥጋከ ፍሉጥ ወደምከ ወይን እምደመ ጠባይዕ ውሉጥ
+AMHARIC: 
+ENGLISH: PRIEST: When the bread of Thy body is offered, cut off from Thy natural body, and Thy blood of wine poured out from Thy natural blood
+
+[73] type=response speaker=congregation
+GE'EZ: ኢየሱስ ክርስቶስ ለሥርየተ ኀጢአት ሥሉጥ ንሕነሰ እግዚኦ በዓይነ ሃይማኖት ፍሉጥ ፍጹመ ሥጋዌከ ንሬኢ እምውስጥ
+AMHARIC: 
+ENGLISH: CONGREGATION: Jesus Christ, the one who is swift to forgive sins; we, O Lord, with the pure eye of faith, behold Thy perfect incarnation from within
+
+[74] type=prayer speaker=priest
+GE'EZ: አብርሃም ተመነየ ተፈሥሐ ወተነበየ ምሥጢረ ሞትከ ክርስቶስ አመ በበግዕ ርእየ
+AMHARIC: 
+ENGLISH: PRIEST: Abraham desired and rejoiced and prophesied the mystery of Thy death, O Christ, when he saw the lamb
+
+[75] type=response speaker=congregation
+GE'EZ: ብፁዓን ንሕነ ዘአፈድፈድናሁ ዕበየ እስመ ንሠውዓከ ለለእለቱ ወንጠብሐከ ዝየ ወበደምከ ነሐፅብ ጌጋየ
+AMHARIC: 
+ENGLISH: CONGREGATION: Blessed are we who have multiplied His greatness, for we offer Thee daily and praise Thee here, and in Thy blood we wash away our sins
+
+[76] type=prayer speaker=priest
+GE'EZ: ናሁ ማዕከሌነ ወማዕከሌከ ሥዩም ትእምርተ መሐላ ሥጋከ ወቀስተ ኪዳንከ ደም
+AMHARIC: 
+ENGLISH: PRIEST: Behold, between us and Thee is set the sign of the oath, Thy body, and the bow of Thy covenant, Thy blood
+
+[77] type=response speaker=congregation
+GE'EZ: ኢየሱስ ክርስቶስ መሥዋዕተ ሰላም በከመ ተገብረ ቀስተ ደመና አመ ተአይኅ ዓለም ዝናመ ጌጋይነ ይእፁ ጥብሕከ ልጓም
+AMHARIC: 
+ENGLISH: CONGREGATION: Jesus Christ, the sacrifice of peace; as the rainbow appeared when the world was flooded, so may Thy sacrifice restrain the flood of our sins
+
+--- ANAMNESIS AND EPICLESIS ---
+
+[78] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Now, Lord, we remember Thy death and Thy resurrection. We confess Thee and we offer unto Thee this bread and this cup, giving thanks unto Thee; and thereby Thou has made us worthy of the joy, standing before Thee and ministering to Thee. We pray and beseech Thee, Lord, that Thou would send the Holy Spirit and power upon this bread and upon this cup.
+
+[79] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: May He make them the body and blood of our Lord, God, and Saviour Jesus Christ, unto the ages of ages.
+
+[80] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Once over the bread, once over the cup, and once more over both.
+
+[81] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen. Lord have pity upon us, Lord spare us, Lord have mercy upon us.
+
+[82] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: With all the heart let us beseech the Lord our God that He grant unto us the good communion of the Holy Spirit.
+
+[83] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: As it was, is, and shall be unto generations of generations, and endless ages.
+
+[84] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] At this time he shall dip his finger into the Blood and sign the Body.
+
+[85] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Grant it together unto all them that take of it, that it may be unto them for sanctification and for filling with the Holy Spirit and for strengthening of the true faith, that they may hallow and praise Thee and Thy beloved Son Jesus Christ with the Holy Spirit.
+
+[86] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen.
+
+[87] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Grant us to be united through Thy Holy Spirit, and heal us by this oblation that we may live in Thee for ever.
+
+[88] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The people shall repeat his words.
+
+[89] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Blessed be the Name of the Lord, and blessed be he that comes in the Name of the Lord, and let the Name of his glory be blessed. So be it. So be it. So be it blessed.
+
+[90] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The people shall repeat his words.
+
+[91] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Send the grace of the Holy Spirit upon us.
+
+[92] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The people shall repeat his words.
+
+--- PRAYER OF FRACTION ---
+
+[93] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Arise for prayer.
+
+[94] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Lord have mercy upon us.
+
+[95] type=prayer speaker=priest
+GE'EZ: እግዚአብሔር ምስለ ኵልክሙ።
+AMHARIC: እግዚአብሔር ከሁላችሁ ጋር ይሁን።
+ENGLISH: PRIEST: Peace be unto all of you.
+
+[96] type=response speaker=congregation
+GE'EZ: ምስለ መንፈስከ።
+AMHARIC: ከመንፈስህ ጋራ።
+ENGLISH: CONGREGATION: And with your spirit.
+
+[97] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And again we beseech the almighty God, the Father of our Lord, God, and Saviour Jesus Christ, to grant us to partake of this holy mystery with blessing, to grant to us confirmation and not to condemn any of us, but to make worthy all that partake of the holy mystery, of the body and blood of Christ. The almighty Lord is our God.
+
+[98] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Pray ye.
+
+[99] type=response speaker=congregation
+GE'EZ: አቡነ ዘበሰማያት ይትቀደስ ስምከ ትምጻእ መንግሥትከ ወይኩን ፈቃድከ በከመ በሰማይ ወበምድር። ሲሳየነ ዘለለ ዕለት ሀበነ ዮም። ወኅድግ ለነ አበሳነ ከመ ንሕነኒ ንኅድግ ለዘአበሰ ለነ። ኢታብአነ ውስተ መንሱት፡ አላ አድኅነነ እምዕኩይ፡ እስመ ዚኣከ ይእቲ መንግሥት ወኃይል ወስብሐት ለዓለም ዓለም።
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father, Who art in heaven, hallowed be Thy name, Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts as we forgive our debtors, and lead us lest we enter into temptation, but deliver us rescuing us from all evil: for Thine is the kingdom, the power and the glory for ever and ever.
+
+[100] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Lord our almighty God, grant us to partake effectually of Thy holy mystery, and condemn none of us, but bless all in Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.
+
+--- ABSOLUTION ---
+
+[101] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: According to thy mercy, our God, and not according to our sins.
+
+[102] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] To be repeated thrice. Then, in succession, they shall all say:
+
+[103] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: The hosts of the angels of the Saviour of the World stand before the Saviour of the world.
+
+[104] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: And encircle the Saviour of the world, even the body and blood of the Saviour of the world.
+
+[105] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: Let us draw nigh the face of the Saviour of the world. In the faith which is of Him let us submit ourselves to Christ.
+
+[106] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The assistant deacon shall say while entering:
+
+[107] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Open ye the gates, princes.
+
+[108] type=prayer speaker=deacon
+GE'EZ: አድንኑ አርእስቲክሙ ቅድመ እግዚአብሔር አምላክነ
+AMHARIC: በአምላካችን በእግዚአብሔር ፊት ራሳችሁን ዝቅ፣ ዝቅ አድርጉ
+ENGLISH: DEACON: Ye who are standing, bow your heads.
+
+[109] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Lord eternal, Who knows what is hidden and what is manifest, before Thee Thy people have bowed their heads, and unto Thee have subdued the stubborn hearts of their body; look from Thy worthy dwelling-place, bless them, men and women; incline Thine ear to them and hearken unto their prayer.
+
+[110] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Confirm them with the strength of Thy right hand, help them and protect them from evil affliction; be a guardian both to their bodies and to their souls; and increase to them, both men and women, Thy faith and the fear of Thy name,
+
+[111] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: through Thine only-begotten Son, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and unto the ages of ages. Amen.
+
+--- PRAYER OF PENITENCE ---
+
+[112] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Worship the Lord with fear.
+
+[113] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Before Thee, Lord, we worship, and Thee do we glorify.
+
+[114] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O Lord God, the Father almighty, Thou it is Who heals the wounds of our soul, body, and spirit,
+
+[115] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: because Thou has said, by the mouth of Thine only-begotten Son, our Lord, God, and Saviour Jesus Christ, that which He said to our father Peter, you are a rock, and upon this rock I will build My holy church, and the gates of hell shall not prevail against it; and unto you do I give the keys of the Kingdom of heaven; what you shall have bound on earth shall be bound in heaven, and what you shall have loosed on earth shall be loosed in heaven.
+
+[116] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Let all Thy servants and Thy handmaids, according to their several names, be absolved and set free out of the mouth of the Holy Spirit, and out of the mouth of me also, Thy sinful and guilty servant, whether they have wrought wittingly or unwittingly.
+
+[117] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Keep them, Lord, and defend them, thy servants, my fathers, brothers and sisters.
+
+[118] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And also loose me, thy humble and sinful servant.
+
+[119] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Both absolve them and set them free: out of the mouth of the holy Trinity: the Father, Son, and Holy Spirit, and out of the mouth of me Thy sinful and unrighteous servant.
+
+[120] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O propitious, merciful and lover of man, Lord our God, that takes away the sin of the world, accept the penitence of Thy servants and Thy handmaids, and shine upon them with the light of everlasting life, and forgive them, Lord, all their sins; for Thou art good and the lover of man.
+
+[121] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O Lord our God, merciful, slow to anger, plenteous in mercy and righteous, forgive me my sins,
+
+[122] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: and deliver all thy servants and handmaids from all transgression and curse. If we have transgressed against Thee, Lord, whether in our word, deed, or thought, release, remit, pardon and have mercy, for Thou art good and the lover of man, Lord our God.
+
+[123] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O Lord, absolve us and set us free, and absolve all Thy people, and absolve me Thy sinful servant.
+
+--- REMEMBRANCES ---
+
+[124] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Then he shall turn his face towards the people, bless them three times, make mention of them that are with him and say also:
+
+[125] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Remember, Lord, the honourable father, our Patriarch Abba and the blessed Archbishop Abba. Our God, keep them for us for many years and length of days in righteousness and peace.
+
+[126] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Remember, Lord, all our civil authorities, and loose them from all the chains of sin which they have committed wittingly or unwittingly, quickly subdue their adversaries and enemies under their feet.
+
+[127] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Remember, Lord, the patriarchs, archbishops, bishops, priests and deacons, anagnosts and singers, virgins and monks, widows and orphans, men and women, aged and children; and all Christian people that are standing in this holy church; strengthen them in the faith of Christ.
+
+[128] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] At this moment he shall mention those that have lately been laid to rest.
+
+[129] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Remember, Lord, all our fathers, brothers and sisters that are asleep and resting in the orthodox faith, and lay their souls in the bosom of Abraham, Isaac and Jacob.
+
+[130] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And as for us, deliver us from every transgression and curse and from all wickedness and from all rebellion and from all false swearing and from all anathemas and from all perjury and from mingling with heretics and gentiles in error and defilement.
+
+[131] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Grant us, Lord, wisdom, power, reason, understanding and knowledge, that we may depart and flee for evermore from all works of Satan, the tempter.
+
+[132] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Grant us, Lord, to do Thy will and good pleasure at all times, and write our names in the book of life in the kingdom of heaven with all saints and martyrs, through Jesus Christ our Lord, through whom to Thee with Him and the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.
+
+--- PRE-COMMUNION ---
+
+[133] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Give heed.
+
+[134] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Holy things for the holy.
+
+[135] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: One is the holy Father, one is the holy Son, one is the Holy Spirit.
+
+[136] type=prayer speaker=priest
+GE'EZ: እግዚአብሔር ምስለ ኵልክሙ።
+AMHARIC: እግዚአብሔር ከሁላችሁ ጋር ይሁን።
+ENGLISH: PRIEST: The Lord be with you all.
+
+[137] type=response speaker=congregation
+GE'EZ: ምስለ መንፈስከ።
+AMHARIC: ከመንፈስህ ጋራ።
+ENGLISH: CONGREGATION: And with your spirit.
+
+[138] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The priest shall then lift up the whole Host with his hands and say:
+
+[139] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Lord, have compassion upon us, O Christ; Lord, have compassion upon us, O Christ; Lord, have compassion upon us, O Christ.
+
+[140] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Three times in a loud chant, and fifteen times in a low chant. The people shall repeat his words.
+
+[141] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Ye that are penitent bow your heads.
+
+[142] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The priest shall turn toward the people and say:
+
+[143] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Lord our God, look upon Thy people that are penitent, and according to Thy great mercy, have mercy upon them, and according to the multitude of Thy compassion blot out their iniquity, cover them and keep them from all evil.
+
+[144] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And redeem their souls in peace, forgive their former works, join them with Thy holy church, through the grace and compassion of Thine only-begotten Son our Lord, God, and Saviour Jesus Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.
+
+[145] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: Arise for prayer.
+
+[146] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Lord have mercy upon us.
+
+[147] type=prayer speaker=priest
+GE'EZ: እግዚአብሔር ምስለ ኵልክሙ።
+AMHARIC: እግዚአብሔር ከሁላችሁ ጋር ይሁን።
+ENGLISH: PRIEST: Peace be unto all of you.
+
+[148] type=response speaker=congregation
+GE'EZ: ምስለ መንፈስከ።
+AMHARIC: ከመንፈስህ ጋራ።
+ENGLISH: CONGREGATION: And with your spirit.
+
+[149] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: This is the true holy body of our Lord, God, and Saviour Jesus Christ, that is given for life, salvation, remission of sin unto them that receive of it in faith.
+
+[150] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen.
+
+[151] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: This is the true precious blood of our Lord, God, and Saviour Jesus Christ, which is given for life, salvation, and remission of sins into those who drink of it in faith.
+
+[152] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen.
+
+[153] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: For this is the body and blood of Emmanuel our very God.
+
+[154] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen.
+
+[155] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: I believe, I believe, I believe and I confess, unto my last breath, that this is the body and blood of our Lord, God, and Saviour Jesus Christ, which He took from the Lady of us all, the holy Mary of twofold virginity, and made it one with His godhead without mixture or confusion, without division or alteration; and He verily confessed with a good testimony in the days of Pontius Pilate, and this body He gave up for our sakes and for the life of us all.
+
+[156] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen.
+
+[157] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: I believe, I believe, I believe and I confess that His godhead was not separated from His manhood, not for an hour nor for the twinkling of an eye, but He gave it up for our sakes for life, salvation, and remission of sin unto them that partake of it in faith.
+
+[158] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Amen.
+
+[159] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: I believe, I believe, I believe and I confess that this is the body and blood of our Lord, God, and Saviour Jesus Christ, and that to Him are rightly due honour and glory and adoration with His kind heavenly Father and the Holy Spirit, the life-giver, both now and ever and unto the ages of ages. Amen.
+
+--- HOLY COMMUNION ---
+
+[160] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Then the priest shall take in his hand the asbadikon which bears the sign of the cross, dip it into the chalice into the blood, and with it make the sign of the cross on the Body. Then, with the Body, he shall make the sign of the cross over the Blood and say:
+
+[161] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Blessed be God, almighty Father, our God. And blessed be the only-begotten Son, our Lord and Saviour Jesus Christ. And blessed be the Holy Spirit the Paraclete, the comforter and cleanser of us all.
+
+[162] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Then the assistant deacon shall offer water to the priests and deacons to wash their hands, signifying that they should be holy in their souls.
+
+[163] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Lord my God, behold the sacrifice of Thy Son's body, which pleases Thee. Through it blot out all my sins because Thine only-begotten Son died for me.
+
+[164] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And behold the pure blood of Thy Messiah, which was shed for me upon Calvary, cries aloud in my stead. Grant that the testimony of this blood may be unto the forgiveness of me Thy servant.
+
+[165] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And accept my prayers for its sake, because thy beloved accepted the spear and the nails for my sake, and suffered to please Thee. But after I was saved, Satan returned to my heart and pierced me through with his darts. Grant me, Lord, Thy mercy, because he is a powerful accuser.
+
+[166] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And by the provision of sin he slew me. Avenge me of the audacious one who is not satisfied with my being led astray from my life.
+
+[167] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Thou, Lord, my King, God, Saviour bind up the wounds of soul and body of me Thy servant.
+
+[168] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Before receiving the Holy Communion, all communicants shall say:
+
+[169] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: O my Lord Jesus Christ, it in no wise befits Thee to enter under the roof of my polluted house, for I have provoked Thee to wrath, for I have done evil in Thy sight, and through the transgression of Thy commandment have polluted my soul and body which Thou created after Thine image and likeness, yet in me dwells no good thing.
+
+[170] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: But for the sake of Thy plan, and Thine incarnation for my salvation, for the sake of thy precious cross and Thy life-giving death, for the sake of Thy resurrection on the third day, I pray thee and beseech Thee, O my Lord, that Thou would purge me from all guilt and curse, and from all sin and defilement.
+
+[171] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: And when I have received Thy holy mystery, let it not be unto me for judgement nor for condemnation, but have compassion upon me and have mercy upon me; and through it grant me remission of my sin and life for my soul, O life of the world, through the petition of our Lady, the holy Mary His mother of twofold virginity, and of John the Baptist, and through the prayer of all the holy angels, all the martyrs, and righteous who have fought for the good, unto ages of ages. Amen.
+
+[172] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The priest shall come out of the sanctuary and distribute the Holy Communion to the faithful in order. Then the men, then the women. But the babies who have already been baptized shall receive before the other faithful.
+
+[173] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] While receiving the Holy Communion, the priest shall say to himself:
+
+[174] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O my Lord Jesus Christ, let not this Thy mystery be iniquity in me, rather let it be for the purifying of my soul and my body.
+
+[175] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The celebrant receives of the Host first, next he shall give it to the assistant priest, who gives him the Blood; the assistant priest shall himself receive of the Blood. The celebrant shall give the priests of the Body, the assistant priest shall give them of the Blood.
+
+[176] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] While offering the Holy Qurban at the time of the Anaphora of the Apostles, the priest shall say:
+
+[177] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: The bread of life which came down from heaven, the holy body of Christ.
+
+[178] type=response speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: Amen.
+
+[179] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: Holy, holy, holy Trinity ineffable, grant me to receive this body and His blood for life and not for condemnation. Grant me to bring forth fruit that shall be well-pleasing unto Thee, to the end that I may appear in Thy glory, and live unto Thee, doing Thy will.
+
+[180] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: In faith I call upon Thee, Father, and call upon Thy Kingdom: hallowed, Lord, be Thy name upon us, for mighty art Thou, praised and glorious, and to Thee be glory, unto endless ages.
+
+[181] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Then he shall consume what he has received. While chewing he shall put his hand on his mouth. He shall chew in fear and trembling without making any sound till he finishes. Then he shall say:
+
+[182] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: Fill my mouth with praise, my heart with joy, and my soul with gladness, fill me who have received of this divine mystery, O Thou Who became man for the salvation of man.
+
+[183] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] When the assistant priest gives the blood he shall say:
+
+[184] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: This is the cup of life that came down from heaven; this is the precious blood of Christ.
+
+[185] type=response speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: Amen and amen.
+
+--- POST-COMMUNION PRAYERS ---
+
+[186] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The Prayer of Basil. When the blood is in his mouth he shall say in his heart:
+
+[187] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O my Lord and my God Jesus Christ, behold I have received Thy holy Body and Thy precious Blood. May they be for the remission of my sins and the blotting out of my trespasses.
+
+[188] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O only-begotten Son and lover of man, fill my mouth with Thy praise that I may praise Thy glory, for Thou art He Who once became man and declared Himself through His incarnation in order to save me for ever. Thou has redeemed me for ever for the sake of Thy holy Name.
+
+[189] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Glory be to Thee, O my Lord and my God Jesus Christ, Who has granted me Thy Body and Thy Blood at the hand of Thy servant. I glorify thee and pray thee that I may be in the midst of Thy flock, and that accepting me, Thou will number me with Thy sheep.
+
+[190] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And now remember not my trespasses. I give thanks for Thy grace which has been granted unto me, and for Thy help which has been with me.
+
+[191] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] When the deacon receives the cup he shall say:
+
+[192] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: I will take the cup of life, and call upon the name of the Lord. Pray ye for us and for all Christians who ask us to mention them. Praise ye and sing in the peace and love of Jesus Christ.
+
+[193] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] And then the clergy shall chant Psalm 150. They shall chant one by one or two by two according to their number, without ceasing.
+
+[194] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The priest shall say as he goes out:
+
+[195] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Those whom Thou has called, Lord, and hallowed, make happy with Thy call, confirm with Thy power, keep with Thy love, join in Thine everlasting kingdom through Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.
+
+[196] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] When the priest goes out he shall bless over the Paten once. Then he shall offer the Body to the people, and the deacon shall offer the Blood.
+
+[197] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O eternal God, light of life, Thou has given, Lord, unto us Thy servants strength and protection, during the present days and nights, keeping all in peace. Bless them on this present day, and on those to come hereafter, through our Lord Jesus Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.
+
+[198] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: We thank God that we have partaken of His holy things; we pray and trust that which we have received may be healing for the life of the soul while we glorify the Lord our God.
+
+[199] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: My mouth shall speak the praise of the Lord, and let all flesh bless His holy Name for ever and ever.
+
+[200] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.
+
+--- THANKSGIVING ---
+
+[201] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: We have received of the holy body and the precious blood of Christ.
+
+[202] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever.
+
+[203] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.
+
+[204] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: And let us give thanks unto Him that makes us ready to communicate in the precious and holy mystery.
+
+[205] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever.
+
+[206] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.
+
+[207] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The priest shall sing in Izl:
+
+[208] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: I will extol Thee, my King and my God, and I will bless Thy name for ever and ever.
+
+[209] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.
+
+[210] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Every day will I bless Thee, and I will praise Thy name for ever and ever.
+
+[211] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.
+
+[212] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever.
+
+[213] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.
+
+[214] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] This is not said in Izl on every occasion, but only at the feasts of our Lord and those of our Lady, and on Sundays.
+
+[215] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Again we offer our supplication to the almighty God, Father of the Lord and Saviour Jesus Christ.
+
+[216] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: We give Thee thanks, for Thou has granted us to take of Thy holy mystery. Let it not be unto me an occasion of guilt nor of judgement, but for the renewal of soul, body and spirit; through Thine only-begotten Son through Whom to Thee with Him and with the Holy Spirit be glory, and dominion, both now and ever and unto the ages of ages. Amen.
+
+[217] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Commandment of St. Basil: Whatever remains of the Body and blood, let the celebrant distribute it to the priests and deacons before any of them drink water. If there is much, let everyone take until all has been consumed. Because the Body and Blood can never turn again into bread and wine.
+
+[218] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The priest shall sing from Zimmari. Then he shall sing a song of two stanzas as follows:
+
+[219] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: Hallelujah hallelujah, our Father Who art in heaven, hallowed be thy Name, forgive us all our trespasses, lead us lest we fall into temptation; Lord deliver us from the evil day, and save us from every temptation.
+
+--- POST-CONSUMPTION PRAYERS ---
+
+[220] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O Lord, Thy holy undefiled mystery has been completed, which Thou gave us for power and salvation, a memorial of Thy death as Thou appointed.
+
+[221] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And we have beheld the mystery of Thy holy resurrection. Let us be inheritors of life, and through it keep us in this hour and at all times, for Thou art a glorious King over all, our Lord, God, and Saviour Jesus Christ. Unto Thee we offer thanksgiving, majesty and honour, with Thy good heavenly Father, and with the Holy Spirit, the life giver, unto the ages of ages. Amen.
+
+[222] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] Prayer after drinking water to be said by all together:
+
+[223] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: I pray unto Thee and ask Thee, my Lord God, and Good Shepherd, Who loved Thy flock so to give Thy life as a ransom for Thy sheep, that Thou may grant me Thy body as a meat indeed for righteousness, and Thy blood as drink indeed for everlasting life.
+
+[224] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: And further I pray Thee and beseech Thee, O my Lord, that this Thy body and blood which I have received shall neither be for my shame nor for the guilt of my soul and body, but let them give me life and health; and teach me Thy fear, and instruct me in Thy love, so that I may please Thee all the days of my life and glorify Thee without ceasing.
+
+[225] type=prayer speaker=all
+GE'EZ: 
+AMHARIC: 
+ENGLISH: ALL: O Lord, cleanse my soul and purify it also. So that it may be a sacrifice unto Thee, and dispose my heart that the Holy Spirit may live and dwell in it and fill it. Because I have accepted Thy body and blood in faith, and received them from the hands of Thy priests, and eaten them; for Thine is the glory unto endless ages. Amen.
+
+--- FINAL PRAYERS AND DISMISSAL ---
+
+[226] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: For the sake of our thank-offering we beseech God to write our prayers in the book of life, and for the eternal God to remember us in the dwelling-place of the saints in His light.
+
+[227] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: On behalf of our fathers, brothers, and sisters, who have absented themselves, we beseech God to grant them diligence. Care for them all, deliver them from the bonds of this world and grant them a good nature, love, faith, and good hope through the body and blood of the Son of God, unto endless ages. Amen. So be it. So be it.
+
+[228] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The Laying on of the Hand.
+
+[229] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O eternal God, light of life unquenchable, look upon Thy servants and handmaids, planting in their hearts the fear of Thy name, in order that they may bear fruit in blessing, and count them with those who have been given Thy body and blood.
+
+[230] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And let Thy hand rest upon them that have bowed their heads before Thee, Thy people, men and women, aged and children, virgins and monks, widows and orphans.
+
+[231] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: And join us also with them protect and help and confirm and strengthen us with the strength of Thine archangels; from all evil works keep us apart, and in all good works unite us.
+
+[232] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Through Thine only-begotten Son, through whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto ages of ages. Amen.
+
+[233] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: And keep them in the right faith in glory and honour all the days of their life.
+
+[234] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: And make them to be in love and peace which passes all knowledge and all understanding, through the prayers and supplications of the Lady of us all, the mother of God, the holy and pure Mary, and the four great ones, full of light, Michael, Gabriel, Raphael and Sorial, and the four incorporeal creatures, and the twenty-four heavenly priests,
+
+[235] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: and remember our great holy fathers Abraham, Isaac and Jacob, the patriarchs, and John the Baptist, and the hundred and forty four thousand holy babes, and our fathers the learned Apostles, and the holy Apostle Mark, martyr and evangelist, and the seventy-two disciples, and the five hundred brethren, and the three hundred and eighteen orthodox, and the three young men Hanania, Mishael and Azariah, and the seven holy young men.
+
+[236] type=prayer speaker=deacon
+GE'EZ: 
+AMHARIC: 
+ENGLISH: DEACON: And St. Stephen archdeacon and first martyr, Saints Georgeos, Theodore of the East, Banadlios, Marcorius, Mamas, Saints Aboli, Philataos, Marmihnam, Abadir, Galawdeos, Phasiladas, Saints Victor, Minas, Kirkos, and his mother Iyalota, and all the martyrs, and the virgin Abba Nob the brave who fought and was martyred for the sake of the Only-begotten. And the great father, lord and righteous Abba Antony, our father Paul, our holy fathers the three Macarii, our father Youhannes the short, the righteous Abba Baula, our father Beshoi, our father Amon, Abba Youhannes Kama, our father Pantaleon, our father Shenouda, our father Besenda, Abba Latsion, Abba Pachomius, our father Abakarzon, our father Barsoma, our holy Roman fathers Maximos and Domatios, the strong and holy Abba Moses, the forty-nine martyrs, and all who wear the cross, righteous and good, and the angel of this blessed day. Their blessing and the grace of their help and pleadings be always with our head of state. Amen.
+
+[237] type=response speaker=congregation
+GE'EZ: 
+AMHARIC: 
+ENGLISH: CONGREGATION: O peaceful King of peace, Jesus Christ, grant us Thy peace and confirm us in Thy peace, and forgive us our sins, and make us worthy to leave and enter our homes in peace.
+
+[238] type=prayer speaker=deacon
+GE'EZ: አድንኑ አርእስቲክሙ ቅድመ እግዚአብሔር አምላክነ
+AMHARIC: በአምላካችን በእግዚአብሔር ፊት ራሳችሁን ዝቅ፣ ዝቅ አድርጉ አገልጋዩ በሚሆን በካህኑ እጅ ይባርካችሁ ዘንድ።
+ENGLISH: DEACON: Bow your heads in front of the Lord our God, that He may bless you at the hand of His servant the priest.
+
+[239] type=response speaker=congregation
+GE'EZ: አሜን እግዚአብሔር ይባርከነ ወይሰሃለነ
+AMHARIC: አሜን እግዚአብሔር ይባርከን፤ ይቅርም ይበለን።
+ENGLISH: CONGREGATION: Amen. May He bless us at the hand of his servant the priest.
+
+[240] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] While blessing with the sign of the cross he shall say:
+
+[241] type=prayer speaker=priest
+GE'EZ: ኦ እግዚኦ አድኅን ሕዝበከ ወባርክ ርስተከ
+AMHARIC: አቤቱ ሕዝብህን አድን ርስትህንም ባርክ።
+ENGLISH: PRIEST: O Lord, save Thy people and bless Thine inheritance. Feed them, lift them up for ever, and keep Thy church which Thou did purchase and ransom with the precious blood of Thine only-begotten Son, our Lord, God, and Saviour Jesus Christ,
+
+[242] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: and which Thou hast called to be a dwelling place for kings and rulers, for pure kindred and holy people, you who have come and gathered and prayed in this holy church, and you who have eaten the holy body and drunk the precious blood of our Lord Jesus Christ. May He forgive your sins which you have committed wittingly or unwittingly. May He forgive you your past sins and keep you from future ones, for the sake of His body, the divine body, and for the sake of His blood, the blood of the covenant of Jesus Christ the Son of the Lord of hosts, and the Son of pure Mary, who has sealed the virginity of her conscience and body, unto the ages of ages. Amen.
+
+[243] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] At the end of the service he shall give benediction, and bless with his finger every one of the people, touching his forehead. But the priests he shall bless by clasping each other's right hand. And when he blesses the priests he shall say to each:
+
+[244] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: The power of our father Peter is with you.
+
+[245] type=prayer speaker=priest
+GE'EZ: እግዚአብሔር ምስለ ኵልክሙ።
+AMHARIC: እግዚአብሔር ከሁላችሁ ጋር ይሁን።
+ENGLISH: PRIEST: The Lord be with all of you.
+
+[246] type=response speaker=congregation
+GE'EZ: አሜን እግዚአብሔር ይባርከነ ለአግብርቲሁ በሰላም ሥርየተ ይኩነነ ዘተመጦነ ሥጋከ ወደመከ
+AMHARIC: አሜን እግዚአብሔር እኛን አገልጋዮቹን በሰላም ይባርከን። የተቀበልነው ሥጋህና ደምህ ለሥርየት ይሁነን።
+ENGLISH: CONGREGATION: And with your spirit. Amen. May God bless us, His servants, in peace. Remission be unto us who have received Thy body and Thy blood. Enable us by the Spirit to tread upon all the power of the enemy. We all hope for the blessing of Thy holy hand which is full of mercy. From all evil works keep us apart, and in all good works unite us.
+
+[247] type=prayer speaker=all
+GE'EZ: ኪያከ እግዚኦ ነአኵት ነሢአነ ጸጋ ዘእመንፈስ ቅዱስ።
+AMHARIC: አቤቱ ከመንፈስ ቅዱስ የተገኘ ጸጋን ተቀበለን፤ አንተን እናመሰግንሃለን።
+ENGLISH: ALL: Blessed be He Who has given us His holy body and His precious blood. We have received grace and we have found life by the power of the cross of Jesus Christ. Unto Thee, Lord, do we give thanks, for we have received grace from the Holy Spirit.
+
+[248] type=prayer speaker=deacon
+GE'EZ: እትዉ በሰላም።
+AMHARIC: በሰላም ወደ በታችሁ ግቡ።
+ENGLISH: DEACON: Go in peace.
+
+[249] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] After partaking of the Holy Communion one shall not wash his hands or feet, shall not take off his clothes or bow down or kneel, shall not spit, nor cut his nails or hair, nor go on a journey, nor sue in the court, nor go to a public bathing place, nor eat or drink too much, nor indulge in any excess nor other occasion of sin. None of these, nor the like should be done after receiving the Holy Communion.
+
+[250] type=rubric
+GE'EZ: 
+AMHARIC: 
+ENGLISH: [RUBRIC] The assistant priest shall say while distributing the remaining two loaves:
+
+[251] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Lord our God and creator, giver of good and food to all flesh, who grants blessing to Thy servants who fear Thy holy name, stretch forth Thy holy right hand today at this hour,
+
+[252] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: and bless this bread which is in my hand: let Thy blessing and goodness be upon it, let it also be to them who receive it, a medicine and a healing for the soul, power and strength of the body, and forgiveness of sin. This bread which Thou has given us is for Thy thanksgiving, so that we may glorify Thy kingdom, holy Trinity, Father, Son, and holy Spirit.
+
+[253] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: O Lord, let Thy blessing be upon this bread, upon him who distributes it, upon them who receive it, and upon them who serve Thee in fear.
+
+[254] type=prayer speaker=priest
+GE'EZ: 
+AMHARIC: 
+ENGLISH: PRIEST: Glory be to the Father, Son, and Holy Spirit, both now and ever, and unto the ages of ages. Amen.
+
+Total blocks: 254
