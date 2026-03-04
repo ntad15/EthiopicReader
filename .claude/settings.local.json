@@ -9,7 +9,24 @@
       "Bash(wc:*)",
       "Bash(grep:*)",
       "Bash(cat:*)",
-      "Bash(node -e:*)"
+      "Bash(node -e:*)",
+      "Bash(brew list poppler)",
+      "Bash(brew install poppler)",
+      "Bash(pdftoppm -v)",
+      "Bash(pdftotext -f 43 -l 57 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" -)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/bin:/bin:$PATH\")",
+      "Bash(pdftotext -f 143 -l 151 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/cyril_text.txt\")",
+      "Bash(pdftotext -f 128 -l 136 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/epiphanius_check.txt\")",
+      "Bash(pdftotext -f 151 -l 159 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/james_sarugh_text.txt\")",
+      "Bash(pdftotext -f 159 -l 164 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/dioscorus_text.txt\")",
+      "Bash(pdftotext -f 128 -l 136 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/epiphanius_text.txt\")",
+      "Bash(pdftotext -f 136 -l 143 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/chrysostom_text.txt\")",
+      "Bash(git add anaphora_pds/chrysostom_text.txt data/anaphoras/saint-john-chrysostom.json)",
+      "Bash(git commit:*)",
+      "Bash(pdftotext -f 110 -l 115 -layout \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/all_lang_kidases.pdf\" \"/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/apostles_text_all_test.txt\")",
+      "Bash(git -C /Users/nahom_work/Documents/projects/EthiopicReader log --oneline -5)",
+      "Bash(git -C /Users/nahom_work/Documents/projects/EthiopicReader show HEAD:data/anaphoras/saint-dioscorus.json)",
+      "Bash(python3:*)"
     ]
   }
 }

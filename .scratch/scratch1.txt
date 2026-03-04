@@ -1,0 +1,1 @@
+export PATH="/opt/homebrew/bin:/usr/bin:/bin:$PATH" && pdftotext -f 43 -l 57 -layout "/Users/nahom_work/Documents/projects/EthiopicReader/anaphora_pds/englishethiopianliturgy.pdf" /tmp/apostles_text.txt && wc -l /tmp/apostles_text.txt
