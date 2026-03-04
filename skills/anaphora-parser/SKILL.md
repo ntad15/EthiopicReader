@@ -5,6 +5,8 @@ description: Parse an Ethiopian Orthodox anaphora from the englishethiopianlitur
 
 Parse an anaphora from the PDF source into a structured JSON file. Follow these steps in order.
 
+> **Context tip:** Parsing a full anaphora is a long task. If the context window fills up mid-way, run `/compact` to summarize prior context and continue from where you left off without losing progress.
+
 ---
 
 ## Step 1 — Extract PDF text
