@@ -7,15 +7,933 @@
   },
   "sections": [
     {
-      "id": "saint-dioscorus-placeholder",
-      "title": {
-        "english": "Coming Soon"
-      },
+      "id": "saint-dioscorus-opening",
+      "title": { "english": "Opening" },
       "blocks": [
         {
-          "id": "saint-dioscorus-placeholder-1",
+          "id": "di-op-1",
           "type": "rubric",
-          "english": "[Placeholder — contribute the full text via a Pull Request on GitHub]"
+          "geez": "",
+          "amharic": "",
+          "english": "The Anaphora of St. Dioscorus, may his prayer and blessing be with our (head of state: King, Queen, President . . .), unto the ages of ages. Amen.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-op-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The Lord be with all of you.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-op-3",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "And with your spirit.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-op-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Give ye thanks unto our God.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-op-5",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "It is right, it is just.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-op-6",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Lift up your hearts.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-op-7",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "We have lifted them up unto the Lord our God.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-preface",
+      "title": { "english": "Preface" },
+      "blocks": [
+        {
+          "id": "di-pr-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "From before the world and ever after, God is in His Trinity, God is in His divinity, and God is in His kingdom.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Before the dawn and the morning, before day and night, and before the creation of the angels, God was in His kingdom.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-3",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Before the heavens were stretched out, before the face of the earth appeared, and before the green plants were produced, God was in His kingdom.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Before the sun, the moon, the stars, and before the motion of lights, God was in His kingdom.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-5",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Before the moving beasts, the flying birds, and before the beasts of the sea, God was in His kingdom.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-6",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Before He created Adam after His image and likeness and before Adam transgressed His commandment, God was in His kingdom.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-7",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Glory be to the Father, the Son, and the Holy Spirit, both now and ever and unto the ages of ages.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-8",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "For the sake of the blessed . . . (Anaphora of the Apostles, # 6 - 9)",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-9",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "Prayer of Benediction. (Anaphora of the Apostles, #10 - 21)",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-10",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Lord, pity and have mercy upon the patriarchs, archbishops, bishops, priests, deacons and all the Christian people.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-11",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Let heaven hear, the earth listen; and the foundations of the earth be afraid.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-12",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Ye that are sitting, stand up.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-13",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The Lord came down through the will of His Father, sojourned in Mary and was born while she was a pure virgin.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-14",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Look to the east.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-15",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "He was laid in the manger of the cattle, received the presents of His kingdom, and wept as infants do, asking for food from the breasts of His mother.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-16",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "He walked openly and appeared like a man, grew little by little and was baptized in Jordan at the age of thirty.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-17",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Let us give heed.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-18",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "He stayed in the wilderness as a fasting man, was tempted by the Devil and He degraded the rulers of darkness through the power of His divinity.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pr-19",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Answer me.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-sanctus",
+      "title": { "english": "Sanctus" },
+      "blocks": [
+        {
+          "id": "di-san-1",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Holy, holy, holy, perfect Lord of hosts, heaven and earth are full of the holiness of Thy glory.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-post-sanctus",
+      "title": { "english": "Post-Sanctus" },
+      "blocks": [
+        {
+          "id": "di-ps-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Holy, holy, holy God in His Trinity; being a king, He showed His humility like a servant.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ps-2",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "At this time he shall offer incense.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ps-3",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Remember us, Lord, in Thy kingdom . . . (Anaphora of the Apostles, #34)",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ps-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "He who created man stretched forth His hands for suffering to set free Adam from the yoke of sin.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ps-5",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Priests, raise up your hands.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-institution",
+      "title": { "english": "Institution" },
+      "blocks": [
+        {
+          "id": "di-inst-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "In the same night in which they betrayed Him, He took bread in His holy, blessed and spotless hands.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-2",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "At this time he shall raise the Host.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-3",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "We believe that this is He, truly we believe.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "He looked up to heaven towards Thee, His Father, gave thanks, blessed and broke (+ three times).",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-5",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "At this time he shall indent the Host lightly with his thumb in five places without separation.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-6",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "And He gave to His holy disciples and His pure apostles and said unto them: Take, eat, this (pointing) bread is My body which will be broken for you for the remission of sin.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-7",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Amen. Amen. Amen. We believe and confess, we glorify Thee, O our Lord and our God; that this is He we truly believe.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-8",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Again. He mixed water with wine, gave thanks, blessed, hallowed (+ three times) and gave it to His holy disciples and His pure apostles and said unto them: Take, drink, this (pointing) cup is My blood which will be shed for you as a propitiation for many.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-9",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "He shall then move the cup with his right hand in the sign of the cross.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-inst-10",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Amen. Amen. Amen.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-anamnesis",
+      "title": { "english": "Anamnesis" },
+      "blocks": [
+        {
+          "id": "di-an-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The Jews took hold of Him and made Him stand in the court, Him before Whom the hosts of angels stand in fear and trembling.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-an-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "They crucified Him on the tree, nailed Him with nails, beat Him on the head with sticks, pierced His side with a spear, to Him Who gave drink to the Israelites from a rock, they gave to drink gall mixed with myrrh in His thirst.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-an-3",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The immortal died, died to destroy death, died to quicken the dead as He had promised them with the word of covenant.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-an-4",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "We proclaim Thy death, Lord, and Thy holy resurrection; we believe Thine ascension and Thy second advent. We glorify Thee and confess Thee, we offer our prayer unto Thee and supplicate Thee, O our Lord and our God.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-an-5",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "They took Him down from the tree, wrapped Him in linen cloths, and buried Him in a new grave.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-an-6",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "He rose from the dead on the third day, and entered where His disciples were gathered and appeared to them in the upper room of Zion, and when He ascended unto heaven on the fortieth day He ordered them saying, \"Wait for the promise of the Father.\"",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-epiclesis",
+      "title": { "english": "Epiclesis" },
+      "blocks": [
+        {
+          "id": "di-ep-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "On the fiftieth day, He sent to them the Holy Spirit in the likeness of fire, and they spoke in the languages of all countries; so also, as Thou did with them, send the Holy Spirit over this (pointing) bread and this (pointing) cup to make them the body and blood of our Lord and Saviour Jesus Christ, unto the ages of ages. (+ once over the Bread, once over the Cup, and once more over Both) as Thou said, \"He that eats My flesh, and drinks My blood, dwells in Me, and I in him.\"",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-2",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Amen. Lord pity us, Lord spare us, Lord have mercy upon us.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-3",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "With all the heart let us beseech the Lord our God to grant unto us the good communion of the Holy Spirit.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-4",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "As it was, is, and shall be unto generations of generations and endless ages.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-5",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "At this time he shall dip his finger into the Blood and sign the Body.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-6",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Grant it together unto all Thy people that it may be unto them for life and for purification from sin, unto endless ages.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-7",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Grant us to be united through Thy Holy Spirit, and heal us by this oblation that we may live in Thee for ever.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-8",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "The people shall repeat his words.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-9",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Blessed be the name of the Lord, and blessed be He that comes in the name of the Lord, and let the name of His glory be blessed. So be it. So be it. So be it blessed.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-10",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "The people shall repeat his words.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-11",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Send the grace of the Holy Spirit upon us.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-ep-12",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "The people shall repeat his words.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-fraction",
+      "title": { "english": "Fraction" },
+      "blocks": [
+        {
+          "id": "di-fr-1",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Arise for prayer.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-fr-2",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Lord have mercy upon us.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-fr-3",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Peace be unto all of you.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-fr-4",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "And with your spirit.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-fr-5",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The Prayer of Fraction. Where is the country of wisdom, where is its abode . . . (Anaphora of St. Epiphanius, #76-95)",
+          "transliteration": ""
+        },
+        {
+          "id": "di-fr-6",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "According to Thy mercy, our God, and not according to our sins. (to be repeated thrice)\n\nThe hosts of the angels of the Saviour of the world stand before the Saviour of the world and encircle the Saviour of the world, even the body and blood of the Saviour of the world.\n\nLet us draw near the face of the Saviour of the world. In the faith which is of Him let us submit ourselves to Christ.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-pre-communion",
+      "title": { "english": "Pre-Communion" },
+      "blocks": [
+        {
+          "id": "di-pc-1",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Open ye the gates, princes.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-2",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Ye who are standing, bow your heads.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-3",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Let the Lamb come so that we may see Him with our eyes, immolate Him with our hands and rejoice in Him. May His body be joined with this bread, and may His blood be poured into this cup.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Let none of us think when he eats of this (pointing) bread that he eats mere flesh without blood and Spirit. Let none of us think when he drinks of this (pointing) cup that he drinks mere blood without body and Spirit, but one is the body, blood and Spirit as His divinity became one with His humanity unto the ages of ages.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-5",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Worship the Lord with fear.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-6",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Before Thee, Lord, do we worship and Thee do we glorify.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-7",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "Prayer of Penitence (Anaphora of the Apostles, # 72 - 88)",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-8",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Give heed.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-9",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Holy things for the holy.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-10",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "One is the holy Father, one is the holy Son, one is the Holy Spirit.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-11",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The Lord be with all of you.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pc-12",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "And with your spirit.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-communion",
+      "title": { "english": "Communion" },
+      "blocks": [
+        {
+          "id": "di-com-1",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "At this time the priest shall lift up the whole Host with his hand and say:",
+          "transliteration": ""
+        },
+        {
+          "id": "di-com-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Lord, have compassion upon us, O Christ. (three times in a loud chant and fifteen times in a low chant)",
+          "transliteration": ""
+        },
+        {
+          "id": "di-com-3",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "The people shall repeat his words. Then the priest shall repeat them three times and the people twice.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-com-4",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Ye that are penitent, bow your heads.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-com-5",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Lord our God . . . (Anaphora of the Apostles #95-103, again 104-138)",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-post-communion",
+      "title": { "english": "Post-Communion" },
+      "blocks": [
+        {
+          "id": "di-pcom-1",
+          "type": "rubric",
+          "geez": "",
+          "amharic": "",
+          "english": "After receiving the Holy Communion.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Pilot of the Soul: Again we supplicate the almighty God, Father of our Lord and Saviour Jesus Christ, because He neither disdained nor refused our supplication, nor did He remove His mercy from us, because the Lord our God is merciful.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-3",
+          "type": "prayer",
+          "speaker": "deacon",
+          "geez": "",
+          "amharic": "",
+          "english": "Pray ye.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Yea Lord, Thou art the God of all.\nYea Lord, Thou art the King of all.\nYea Lord, Thou art the Almighty.\nYea Lord, Thou art the Governor of all.\nYea Lord, Thou art the Saviour of all.\nYea Lord, Thou art the Judge of all.\nYea Lord, Thou art the Life-giver of all.\nYea Lord, Thou art the Keeper of all.\nYea Lord, Thou art the Nourisher of all.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-5",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "As Thou did join the body of Thy Son with our body, and Thou did mix the blood of Thy Messiah with our blood, so put Thy fear in our heart and the beauty of Thy worship in our mind.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-6",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "We, who are carnal, mind the things of the flesh and do the works of the flesh and walk in the way of the flesh. But do Thou teach us the work of the Spirit, make us understand the law of the Spirit, and lead us to the way of the Spirit.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-7",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Because if Thou pity us, we sinners, then Thou will be called compassionate. Thou pities the righteous because of their works and does recompense them according to their righteousness.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-8",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Remember not against us former iniquities: let Thy tender mercies, O God, speedily precede us.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-9",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Towards Thee we cry, towards Thee we weep, Thee we entreat, unto endless ages.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-pcom-10",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "",
+          "amharic": "",
+          "english": "Amen.",
+          "transliteration": ""
+        }
+      ]
+    },
+    {
+      "id": "saint-dioscorus-dismissal",
+      "title": { "english": "Dismissal" },
+      "blocks": [
+        {
+          "id": "di-dis-1",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "The Laying on of the Hand. O eternal God, light of life unquenchable, look upon Thy servants and handmaids and plant in their hearts the fear of Thy name, in order that they may bear fruit in blessing; and count them with those to whom have been given Thy body and blood.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-dis-2",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "And let Thy hand rest upon them who have bowed their heads before Thee, Thy people, men and women, aged and children, virgins and monks, widows and orphans.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-dis-3",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "And join us also with them, protect, help, confirm, and strengthen us with the strength of Thine archangels; from all evil works keep us apart and in all good works unite us.",
+          "transliteration": ""
+        },
+        {
+          "id": "di-dis-4",
+          "type": "prayer",
+          "speaker": "priest",
+          "geez": "",
+          "amharic": "",
+          "english": "Through Thine only-begotten Son, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.",
+          "transliteration": ""
         }
       ]
     }
