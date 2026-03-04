@@ -7,29 +7,28 @@ import {
   TouchableOpacity,
   TextInput,
   Platform,
+  Dimensions,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import HoverableOpacity from '@/components/HoverableOpacity';
 import { useNavigation } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import * as ScreenOrientation from 'expo-screen-orientation';
 import Animated from 'react-native-reanimated';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Colors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
 import { contentColumn } from '@/constants/layout';
 import { useFontSize } from '@/context/FontSizeContext';
-import { hapticMedium } from '@/utils/haptics';
+import { usePresentationMode } from '@/context/PresentationModeContext';
 import CrossIcon from '@/components/CrossIcon';
 import PrayerBlock from '@/components/PrayerBlock';
 import PresentationView from '@/components/PresentationView';
 import SectionDrawer from '@/components/SectionDrawer';
+import SettingsSheet from '@/components/SettingsSheet';
 import { LiturgicalSection, PrayerBlock as PrayerBlockType } from '@/data/types';
 
 interface ReaderLayoutProps {
   title: { english: string; geez?: string };
   sections: LiturgicalSection[];
-  /** Font size for the Ge'ez title (default 38). */
   geezTitleSize?: number;
 }
 
@@ -40,8 +39,9 @@ export default function ReaderLayout({
 }: ReaderLayoutProps) {
   const navigation = useNavigation();
   const { scale } = useFontSize();
-  const [presentationMode, setPresentationMode] = useState(false);
+  const { isPresentationMode, isExiting, exitPresentation } = usePresentationMode();
   const [drawerVisible, setDrawerVisible] = useState(false);
+  const [settingsVisible, setSettingsVisible] = useState(false);
   const [searchVisible, setSearchVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [currentResultIdx, setCurrentResultIdx] = useState(0);
@@ -51,7 +51,6 @@ export default function ReaderLayout({
   const sectionOffsets = useRef<number[]>([]);
   const blockOffsets = useRef<Record<string, number>>({});
   const scrollYRef = useRef(0);
-  const exitScrollBlockIdRef = useRef<string | undefined>(undefined);
 
   /* Swipe left from right edge to open section drawer */
   const openDrawer = useCallback(() => setDrawerVisible(true), []);
@@ -110,33 +109,35 @@ export default function ReaderLayout({
   const currentResultBlockId = searchResults[currentResultIdx]?.block.id;
 
   function getBlockIdAtScrollY(y: number): string | undefined {
+    const centerY = y + Dimensions.get('window').height * 0.4;
     const entries = Object.entries(blockOffsets.current);
     if (entries.length === 0) return undefined;
-    // Find the last block whose top is at or above the current scroll position
     let best: string | undefined;
     for (const [id, offset] of entries) {
-      if (offset <= y + 80) best = id;
+      if (offset <= centerY) {
+        const block = allBlocks.find((b) => b.id === id);
+        if (!block || block.type !== 'heading') best = id;
+      }
     }
     return best;
   }
 
-  function handlePresentPress() {
-    hapticMedium();
-    // If a search result is active, use that block; otherwise sync to scroll position
-    if (!searchQuery.trim()) {
+  // Sync startBlockId from scroll position when entering presentation mode
+  useEffect(() => {
+    if (isPresentationMode && !searchQuery.trim()) {
       const blockId = getBlockIdAtScrollY(scrollYRef.current);
       setPresentationStartBlockId(blockId);
     }
-    setPresentationMode(true);
-  }
+  }, [isPresentationMode]);
 
   useEffect(() => {
     navigation.setOptions({
       title: title.english,
       headerBackVisible: false,
       headerLeft: () => null,
+      headerRightContainerStyle: { backgroundColor: 'transparent' },
       headerRight: () => (
-        <View style={{ flexDirection: 'row', gap: 12, marginRight: 16, alignItems: 'center' }}>
+        <View style={{ flexDirection: 'row', gap: 12, marginRight: 16, alignItems: 'center', backgroundColor: Colors.background }}>
           <TouchableOpacity
             onPress={() => {
               setSearchVisible((v) => !v);
@@ -148,14 +149,9 @@ export default function ReaderLayout({
           >
             <Ionicons name="search-outline" size={18} color={Colors.burgundy} />
           </TouchableOpacity>
-          <HoverableOpacity
-            onPress={() => setDrawerVisible(true)}
-            style={{ borderRadius: 6, padding: 2 }}
-            hoverStyle={{ backgroundColor: Colors.burgundyDim }}
-            hitSlop={8}
-          >
+          <TouchableOpacity onPress={() => setDrawerVisible(true)} hitSlop={8}>
             <Text style={{ color: Colors.burgundy, fontSize: 22 }}>{'\u2630'}</Text>
-          </HoverableOpacity>
+          </TouchableOpacity>
         </View>
       ),
     });
@@ -166,61 +162,23 @@ export default function ReaderLayout({
     scrollViewRef.current?.scrollTo({ y, animated: true });
   }
 
+  // Hide header when in presentation mode
   useEffect(() => {
-    if (presentationMode) {
-      navigation.setOptions({ headerShown: false });
-      if (Platform.OS === 'web') {
-        document.documentElement.requestFullscreen?.().catch(() => {});
-      } else {
-        ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
-      }
-    } else {
-      navigation.setOptions({ headerShown: true });
-      if (Platform.OS === 'web') {
-        if (document.fullscreenElement) {
-          document.exitFullscreen?.().catch(() => {});
-        }
-      } else {
-        ScreenOrientation.unlockAsync();
-      }
-    }
-
-    return () => {
-      navigation.setOptions({ headerShown: true });
-      if (Platform.OS !== 'web') {
-        ScreenOrientation.unlockAsync();
-      }
-    };
-  }, [presentationMode, navigation]);
-
-  if (presentationMode) {
-    return (
-      <>
-        <StatusBar style="light" hidden />
-        <PresentationView
-          blocks={allBlocks}
-          sections={sections}
-          onExit={(blockId) => {
-            exitScrollBlockIdRef.current = blockId;
-            setPresentationMode(false);
-          }}
-          startBlockId={presentationStartBlockId}
-        />
-      </>
-    );
-  }
+    navigation.setOptions({ headerShown: !isPresentationMode });
+  }, [isPresentationMode, navigation]);
 
   return (
     <View style={styles.container}>
-      <StatusBar style="dark" />
+      <StatusBar style={isPresentationMode ? 'light' : 'dark'} hidden={isPresentationMode} />
 
       {/* Invisible right-edge swipe zone to open drawer */}
-      {Platform.OS !== 'web' && (
+      {Platform.OS !== 'web' && !isPresentationMode && (
         <GestureDetector gesture={edgeSwipe}>
           <Animated.View style={styles.edgeSwipeZone} />
         </GestureDetector>
       )}
 
+      {/* ScrollView stays mounted — scroll position preserved when presentation overlays */}
       <ScrollView
         ref={scrollViewRef}
         contentContainerStyle={styles.scroll}
@@ -229,7 +187,6 @@ export default function ReaderLayout({
         scrollEventThrottle={16}
       >
         <View style={contentColumn.wrapper}>
-          {/* Title block */}
           <View style={styles.titleBlock}>
             <CrossIcon size={18} color={Colors.accent} />
             {title.geez && (
@@ -280,15 +237,15 @@ export default function ReaderLayout({
         </View>
       </ScrollView>
 
-      {/* Floating search overlay */}
-      {searchVisible && (
+      {/* Floating search overlay — reader mode only */}
+      {!isPresentationMode && searchVisible && (
         <View style={styles.searchOverlay}>
           <View style={styles.searchRow}>
             <TextInput
               style={styles.searchInput}
               value={searchQuery}
               onChangeText={(text) => setSearchQuery(text)}
-              placeholder="Search…"
+              placeholder="Search\u2026"
               placeholderTextColor={Colors.textDim}
               autoFocus
               returnKeyType="search"
@@ -302,7 +259,7 @@ export default function ReaderLayout({
                 setPresentationStartBlockId(undefined);
               }}
             >
-              <Text style={styles.searchCloseText}>✕</Text>
+              <Text style={styles.searchCloseText}>{'\u2715'}</Text>
             </TouchableOpacity>
           </View>
           {searchQuery.trim().length > 0 && (
@@ -312,7 +269,7 @@ export default function ReaderLayout({
                 onPress={() => navigateToResult(currentResultIdx - 1)}
                 disabled={currentResultIdx === 0}
               >
-                <Text style={styles.navBtnText}>▲</Text>
+                <Text style={styles.navBtnText}>{'\u25B2'}</Text>
               </TouchableOpacity>
               <Text style={styles.searchCountText}>
                 {searchResults.length === 0
@@ -324,24 +281,42 @@ export default function ReaderLayout({
                 onPress={() => navigateToResult(currentResultIdx + 1)}
                 disabled={currentResultIdx === searchResults.length - 1}
               >
-                <Text style={styles.navBtnText}>▼</Text>
+                <Text style={styles.navBtnText}>{'\u25BC'}</Text>
               </TouchableOpacity>
             </View>
           )}
         </View>
       )}
 
-      <TouchableOpacity style={styles.presentFab} onPress={handlePresentPress}>
-        <Ionicons name="easel-outline" size={17} color={Colors.background} />
-      </TouchableOpacity>
+      {/* Section drawer — reader mode only */}
+      {!isPresentationMode && (
+        <SectionDrawer
+          sections={sections}
+          visible={drawerVisible}
+          onClose={() => setDrawerVisible(false)}
+          onSelect={scrollToSection}
+          onSettings={() => setSettingsVisible(true)}
+        />
+      )}
 
-      <SectionDrawer
-        sections={sections}
-        visible={drawerVisible}
-        onClose={() => setDrawerVisible(false)}
-        onSelect={scrollToSection}
-        onPresent={handlePresentPress}
-      />
+      {/* Settings bottom sheet */}
+      <SettingsSheet visible={settingsVisible} onClose={() => setSettingsVisible(false)} />
+
+      {/* Presentation overlay */}
+      {isPresentationMode && (
+        <View style={styles.presentationOverlay}>
+          {isExiting ? (
+            <View style={styles.presentationBlank} />
+          ) : (
+            <PresentationView
+              blocks={allBlocks}
+              sections={sections}
+              onExit={() => exitPresentation()}
+              startBlockId={presentationStartBlockId}
+            />
+          )}
+        </View>
+      )}
     </View>
   );
 }
@@ -350,14 +325,10 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: Colors.background, overflow: 'hidden' },
   scroll: { paddingHorizontal: 20, paddingTop: 16 },
 
-  /* ── Title area ── */
   titleBlock: {
     marginBottom: 32,
     paddingBottom: 20,
     alignItems: 'center',
-  },
-  decorativeCross: {
-    marginBottom: 10,
   },
   titleGeez: {
     fontFamily: Fonts.serifExtraBold,
@@ -392,7 +363,6 @@ const styles = StyleSheet.create({
     borderRadius: 1,
   },
 
-  /* ── Section headings (decorative badge) ── */
   sectionHeading: {
     marginTop: 32,
     marginBottom: 10,
@@ -421,24 +391,6 @@ const styles = StyleSheet.create({
   },
 
   bottomPadding: { height: 100 },
-
-  presentFab: {
-    position: 'absolute',
-    bottom: 28,
-    right: 20,
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    backgroundColor: Colors.burgundy,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 6,
-    zIndex: 5,
-  },
 
   highlightedBlock: {
     backgroundColor: Colors.accentDim,
@@ -518,5 +470,18 @@ const styles = StyleSheet.create({
   searchCountText: {
     color: Colors.textMuted,
     fontSize: 13,
+  },
+
+  presentationOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 20,
+  },
+  presentationBlank: {
+    flex: 1,
+    backgroundColor: '#0a0a0a',
   },
 });

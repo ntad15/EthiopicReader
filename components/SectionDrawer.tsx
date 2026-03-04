@@ -29,13 +29,13 @@ interface Props {
   visible: boolean;
   onClose: () => void;
   onSelect: (index: number) => void;
-  onPresent?: () => void;
+  onSettings?: () => void;
 }
 
 const DRAWER_WIDTH = 280;
 const SPRING_CONFIG = { damping: 22, stiffness: 220, mass: 0.8 };
 
-export default function SectionDrawer({ sections, visible, onClose, onSelect, onPresent }: Props) {
+export default function SectionDrawer({ sections, visible, onClose, onSelect, onSettings }: Props) {
   const translateX = useSharedValue(DRAWER_WIDTH);
   const { primaryLanguage } = useLanguage();
 
@@ -131,18 +131,18 @@ export default function SectionDrawer({ sections, visible, onClose, onSelect, on
               </HoverableOpacity>
             ))}
           </ScrollView>
-          {onPresent && (
+          {onSettings && (
             <View style={styles.drawerFooter}>
               <HoverableOpacity
                 onPress={() => {
                   onClose();
-                  onPresent();
+                  onSettings();
                 }}
                 activeOpacity={0.8}
-                style={styles.presentBtn}
-                hoverStyle={styles.presentBtnHover}
+                style={styles.settingsBtn}
+                hoverStyle={styles.settingsBtnHover}
               >
-                <Text style={styles.presentBtnText}>Present</Text>
+                <Text style={styles.settingsBtnText}>{'\u2699'} Settings</Text>
               </HoverableOpacity>
             </View>
           )}
@@ -222,18 +222,20 @@ const styles = StyleSheet.create({
     paddingHorizontal: 18,
     paddingVertical: 14,
   },
-  presentBtn: {
-    backgroundColor: Colors.burgundy,
+  settingsBtn: {
+    borderWidth: 1,
+    borderColor: Colors.border,
     borderRadius: 24,
     paddingVertical: 12,
     alignItems: 'center',
+    backgroundColor: Colors.surfaceElevated,
   },
-  presentBtnHover: {
-    backgroundColor: Colors.burgundyLight,
+  settingsBtnHover: {
+    borderColor: Colors.accent,
   },
-  presentBtnText: {
-    color: Colors.textOnColor,
+  settingsBtnText: {
     fontFamily: Fonts.bodyMedium,
+    color: Colors.textMuted,
     fontWeight: '700',
     fontSize: 13,
     letterSpacing: 0.5,

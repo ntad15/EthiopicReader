@@ -9,6 +9,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { FontSizeProvider } from '@/context/FontSizeContext';
+import { PresentationModeProvider } from '@/context/PresentationModeContext';
 import { View, Text, TouchableOpacity, useWindowDimensions } from 'react-native';
 import HoverableOpacity from '@/components/HoverableOpacity';
 import { router } from 'expo-router';
@@ -57,10 +58,12 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <LanguageProvider>
           <FontSizeProvider>
+          <PresentationModeProvider>
             <Stack
               screenOptions={{
                 headerStyle: { backgroundColor: Colors.background },
                 headerTintColor: Colors.burgundy,
+                headerRightContainerStyle: { backgroundColor: 'transparent' },
                 headerTitle: () => (
                   <HoverableOpacity
                     onPress={() => router.navigate('/')}
@@ -88,6 +91,7 @@ export default function RootLayout() {
               <Stack.Screen name="+not-found" />
             </Stack>
             <StatusBar style="dark" />
+          </PresentationModeProvider>
           </FontSizeProvider>
         </LanguageProvider>
       </SafeAreaProvider>

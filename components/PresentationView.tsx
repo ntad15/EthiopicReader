@@ -29,18 +29,25 @@ interface Props {
 }
 
 export default function PresentationView({ blocks, sections, onExit, startBlockId }: Props) {
-  const visibleBlocksForInit = blocks.filter((b) => {
-    if (b.type === 'rubric' || b.type === 'heading') return true;
-    return b.geez || b.amharic || b.english || b.transliteration;
+  const { activeLanguages, primaryLanguage } = useLanguage();
+  const { scale, multiplier, setMultiplier } = useFontSize();
+
+  // Skip empty blocks and headings (headings are section markers, not useful as slides)
+  // Must be defined before useState so initialIndex uses the same array as rendering
+  const visibleBlocks = blocks.filter((b) => {
+    if (b.type === 'heading') return false;
+    if (b.type === 'rubric') {
+      return !!(b.english || b.geez || b.amharic || b.transliteration);
+    }
+    return activeLanguages.some((lang) => !!b[lang]);
   });
+
   const initialIndex = startBlockId
-    ? Math.max(0, visibleBlocksForInit.findIndex((b) => b.id === startBlockId))
+    ? Math.max(0, visibleBlocks.findIndex((b) => b.id === startBlockId))
     : 0;
   const [index, setIndex] = useState(initialIndex);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const [fontBarVisible, setFontBarVisible] = useState(false);
-  const { activeLanguages, primaryLanguage } = useLanguage();
-  const { scale, multiplier, setMultiplier } = useFontSize();
 
   // Scroll tracking for overflow pagination
   const scrollRef = useRef<ScrollView>(null);
@@ -51,15 +58,6 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
   const isScrollable = contentHeight > viewportHeight + 2;
   const isAtBottom = scrollY >= contentHeight - viewportHeight - 2;
   const isAtTop = scrollY <= 2;
-
-  // Skip empty blocks and headings (headings are section markers, not useful as slides)
-  const visibleBlocks = blocks.filter((b) => {
-    if (b.type === 'heading') return false;
-    if (b.type === 'rubric') {
-      return !!(b.english || b.geez || b.amharic || b.transliteration);
-    }
-    return activeLanguages.some((lang) => !!b[lang]);
-  });
 
   const current = visibleBlocks[index];
   const isFirst = index === 0;
