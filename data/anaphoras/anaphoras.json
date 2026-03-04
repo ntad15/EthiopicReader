@@ -7,5 +7,25 @@
     "id": "saint-dioscorus",
     "name": { "english": "St. Dioscorus", "geez": "ቅዱስ ዲዮስቆሮስ", "amharic": "ቅዱስ ዲዮስቆሮስ" },
     "saint": "Dioscorus"
+  },
+  {
+    "id": "saint-cyril",
+    "name": { "english": "St. Cyril", "geez": "ቅዱስ ቄርሎስ", "amharic": "ቅዱስ ቄርሎስ" },
+    "saint": "Cyril"
+  },
+  {
+    "id": "saint-epiphanius",
+    "name": { "english": "St. Epiphanius", "geez": "ቅዱስ ኤጲፋንዮስ", "amharic": "ቅዱስ ኤጲፋንዮስ" },
+    "saint": "Epiphanius"
+  },
+  {
+    "id": "saint-john-chrysostom",
+    "name": { "english": "St. John Chrysostom", "geez": "ቅዱስ ዮሐንስ አፈወርቅ", "amharic": "ቅዱስ ዮሐንስ አፈወርቅ" },
+    "saint": "John Chrysostom"
+  },
+  {
+    "id": "saint-james-sarugh",
+    "name": { "english": "St. James of Sarugh", "geez": "ቅዱስ ያዕቆብ ዘሥሩግ", "amharic": "ቅዱስ ያዕቆብ ዘሥሩግ" },
+    "saint": "James of Sarugh"
   }
 ]
