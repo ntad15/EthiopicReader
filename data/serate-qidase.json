@@ -986,7 +986,8 @@
           "geez": "1ኛ ምንባብ",
           "amharic": "ወደ ኤፌሶን ሰዎች",
           "english": "1st Reading: Ephesians Ch. 6 : 1 - 9",
-          "transliteration": ""
+          "transliteration": "",
+          "dynamic": "pauline"
         },
         {
           "id": "serate-readings-093",
@@ -1068,7 +1069,8 @@
           "geez": "",
           "amharic": "2ኛ ምንባብ - ራዕይ ዮሐንስ",
           "english": "2nd Reading: Revelation Ch. 12 : 1 - 12",
-          "transliteration": ""
+          "transliteration": "",
+          "dynamic": "catholic"
         },
         {
           "id": "serate-readings-098",
@@ -1151,7 +1153,8 @@
           "geez": "",
           "amharic": "3ኛ ምንባብ፡ - የሐዋርያት ሥራ",
           "english": "3rd Reading: Acts of the Apostles Ch. 7 : 23 - 29",
-          "transliteration": ""
+          "transliteration": "",
+          "dynamic": "acts"
         },
         {
           "id": "serate-readings-103",
@@ -1996,7 +1999,8 @@
           "geez": "መዝሙር 102(103) : 14-15",
           "amharic": "ተዘከር እግዚኦ ከመ መሬት ንሕነ። ወሰብእሰ ከመ ሣዕር መዋዕሊሁ። ወከመ ጽጌ ገዳም ከማሁ ይፈሪ።",
           "english": "Psalm 102(103) : 14b-15",
-          "transliteration": "teze’ker I’gzio ke’me me’reit ni’hene. wese’bise keme sa’iri mewa’i’leehu. we’keme tsi’gei ge’dami kema’hu yi’fe’ri."
+          "transliteration": "teze’ker I’gzio ke’me me’reit ni’hene. wese’bise keme sa’iri mewa’i’leehu. we’keme tsi’gei ge’dami kema’hu yi’fe’ri.",
+          "dynamic": "psalm"
         },
         {
           "id": "serate-readings-178",
@@ -2029,10 +2033,10 @@
           "id": "serate-readings-181",
           "type": "prayer",
           "speaker": "priest",
-          "geez": "ወንጌል ቅዱስ ዘዜነወ ማቴዎስ ቃለ ወልድ እግዚአብሔር።",
-          "amharic": "ክቡር የሚሆን ይህ ወንጌል ማቴዎስ የትናገረው የእግዚአብሔር ልጅ ቃል ነው።",
-          "english": "The Holy Gospel which Matthew proclaimed, the Word of the Son of God.",
-          "transliteration": "wengèl qidus zezènewe Matewos qale weld igzee’abihèr."
+          "geez": "ወንጌል ቅዱስ ዘዜነወ ቃለ ወልድ እግዚአብሔር።",
+          "amharic": "ክቡር የሚሆን ይህ ወንጌል የእግዚአብሔር ልጅ ቃል ነው።",
+          "english": "The Holy Gospel the Word of the Son of God.",
+          "transliteration": "wengèl qidus zezènewe qale weld igzee’abihèr."
         },
         {
           "id": "serate-readings-182",
@@ -2067,7 +2071,8 @@
           "geez": "",
           "amharic": "ቅዱስ ሉቃስ 12 ፡ 16 – 31",
           "english": "Reading from The Gospel St. Luke Ch. 12 : 16 - 31",
-          "transliteration": ""
+          "transliteration": "",
+          "dynamic": "gospel"
         },
         {
           "id": "serate-daily-gospel-186",
