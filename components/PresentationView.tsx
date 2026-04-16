@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
   },
   columnsRow: {
     flexDirection: 'row',
-    gap: 24,
+    gap: 40,
     width: '100%',
     alignItems: 'flex-start',
   },

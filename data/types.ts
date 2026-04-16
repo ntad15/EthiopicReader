@@ -8,6 +8,9 @@ export interface PrayerBlock {
   amharic?: string;
   english?: string;
   transliteration?: string;
+  /** ReadingSlotKey — marks a heading/rubric block that shows a dynamic reading reference */
+  dynamic?: string;
+
 }
 
 export interface LiturgicalSection {

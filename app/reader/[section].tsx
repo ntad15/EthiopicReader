@@ -4,6 +4,7 @@ import { Colors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
 import ReaderLayout from '@/components/ReaderLayout';
 import { LiturgicalText } from '@/data/types';
+import { ReadingsProvider } from '@/context/ReadingsContext';
 
 function loadSection(id: string): LiturgicalText | null {
   switch (id) {
@@ -29,10 +30,13 @@ export default function ReaderScreen() {
   }
 
   return (
-    <ReaderLayout
-      title={data.title}
-      sections={data.sections}
-    />
+    <ReadingsProvider>
+      <ReaderLayout
+        title={data.title}
+        sections={data.sections}
+        showReadingPicker={section === 'serate-qidase'}
+      />
+    </ReadingsProvider>
   );
 }
 

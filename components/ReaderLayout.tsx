@@ -24,18 +24,24 @@ import PrayerBlock from '@/components/PrayerBlock';
 import PresentationView from '@/components/PresentationView';
 import SectionDrawer from '@/components/SectionDrawer';
 import SettingsSheet from '@/components/SettingsSheet';
+import ReadingsPicker from '@/components/ReadingsPicker';
+import { useReadings } from '@/context/ReadingsContext';
 import { LiturgicalSection, PrayerBlock as PrayerBlockType } from '@/data/types';
 
 interface ReaderLayoutProps {
   title: { english: string; geez?: string };
   sections: LiturgicalSection[];
+  /** Font size for the Ge'ez title (default 38). */
   geezTitleSize?: number;
+  /** When true, shows a Readings button in the header. Use for serate-qidase. */
+  showReadingPicker?: boolean;
 }
 
 export default function ReaderLayout({
   title,
   sections,
   geezTitleSize = 38,
+  showReadingPicker = false,
 }: ReaderLayoutProps) {
   const navigation = useNavigation();
   const { scale } = useFontSize();
@@ -46,6 +52,17 @@ export default function ReaderLayout({
   const [searchQuery, setSearchQuery] = useState('');
   const [currentResultIdx, setCurrentResultIdx] = useState(0);
   const [presentationStartBlockId, setPresentationStartBlockId] = useState<string | undefined>(undefined);
+  const [pickerVisible, setPickerVisible] = useState(false);
+  const [pickerMode, setPickerMode] = useState<'dialog' | 'dropdown'>('dialog');
+  const { slots, loaded } = useReadings();
+  const hasActiveReadings = showReadingPicker && Object.values(slots).some((s) => s !== null);
+
+  // Auto-open picker on first load only if there are no saved readings
+  useEffect(() => {
+    if (showReadingPicker && loaded && !Object.values(slots).some((s) => s !== null)) {
+      setPickerVisible(true);
+    }
+  }, [loaded]);
 
   const scrollViewRef = useRef<ScrollView>(null);
   const sectionOffsets = useRef<number[]>([]);
@@ -137,7 +154,24 @@ export default function ReaderLayout({
       headerLeft: () => null,
       headerRightContainerStyle: { backgroundColor: 'transparent' },
       headerRight: () => (
-        <View style={{ flexDirection: 'row', gap: 12, marginRight: 16, alignItems: 'center', backgroundColor: Colors.background }}>
+        <View style={{ flexDirection: 'row', gap: 12, marginRight: 16, alignItems: 'center' }}>
+          {showReadingPicker && (
+            <TouchableOpacity
+              onPress={() => { setPickerMode('dropdown'); setPickerVisible(true); }}
+              hitSlop={8}
+              style={{ position: 'relative' }}
+            >
+              <Ionicons name="book-outline" size={18} color={Colors.burgundy} />
+              {hasActiveReadings && (
+                <View style={{
+                  position: 'absolute', top: -2, right: -2,
+                  width: 7, height: 7, borderRadius: 3.5,
+                  backgroundColor: Colors.accent,
+                  borderWidth: 1, borderColor: Colors.background,
+                }} />
+              )}
+            </TouchableOpacity>
+          )}
           <TouchableOpacity
             onPress={() => {
               setSearchVisible((v) => !v);
@@ -155,7 +189,7 @@ export default function ReaderLayout({
         </View>
       ),
     });
-  }, [title, navigation]);
+  }, [title, navigation, showReadingPicker, hasActiveReadings]);
 
   function scrollToSection(index: number) {
     const y = sectionOffsets.current[index] ?? 0;
@@ -317,6 +351,7 @@ export default function ReaderLayout({
           )}
         </View>
       )}
+      <ReadingsPicker visible={pickerVisible} onClose={() => setPickerVisible(false)} mode={pickerMode} />
     </View>
   );
 }
