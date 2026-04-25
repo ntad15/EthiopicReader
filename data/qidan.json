@@ -27,55 +27,10 @@
           "id": "kidan-tri-resp-1",
           "type": "response",
           "speaker": "congregation",
-          "geez": "እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተወልደ እማርያም እምቅድስት ድንግል ተሣሃለነ እግዚኦ።",
-          "amharic": "እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ ከቅድስት ድንግል ማርያም የተወለደ፣ አቤቱ ይቅር በለን።",
-          "english": "God, Holy Mighty, Holy Living Immortal, who was born from the holy Virgin Mary, have mercy upon us, Lord.",
-          "transliteration": "Igzee'abihér, qidus hayal qidus hiyaw ze'eeyimewit zetewelde iMariam imqidist dingil tesahalene igzee'o."
-        },
-        {
-          "id": "kidan-tri-resp-2",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "ቅዱስ እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተጠምቀ በዮርዳኖስ ወተሰቅለ ዲበ ዕፀ መስቀል። ተሣሃለነ እግዚኦ።",
-          "amharic": "ቅዱስ እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ በዮርዳኖስ የተጠመቀ፣ በመስቀል ላይ የተሰቀለ አቤቱ ይቅር በለን።",
-          "english": "Holy God, Holy Mighty, Holy Living Immortal, who was baptized in Jordan and crucified on the tree of the cross, have mercy upon us, Lord.",
-          "transliteration": "Qidus Igzee'abiher qidus hayal qidus hiyaw ze'iymewit zeteTemqe beYordanos weteseqle deebe itSe mesqel tesahalene igzio."
-        },
-        {
-          "id": "kidan-tri-resp-3",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "ቅዱስ እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተንሥአ እሙታን አመ ሣልስት ዕለት ዐርገ በስብሐት ውስተ ሰማያት ወነበረ በየማነ አቡሁ ዳግመ ይመጽእ በስብሐት ይኰንን ሕያዋነ ወሙታነ ተሣሃለነ እግዚኦ።",
-          "amharic": "ቅዱስ እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ በሦስተኛው ቀን ከሙታን ተለይቶ የተነሣ፣ በክብር በምስጋና ወደ ሰማይ የወጣ፣ በአባቱ ቀኝ የተቀመጠ፣ በሕያዋንና በሙታን ይፈርድ ዘንድ ዳግመኛ በጌትነት ይመጣል አቤቱ ይቅር በለን።",
-          "english": "Holy God, Holy Mighty, Holy Living Immortal, who did rise from the dead on the third day, ascended into heaven in glory, and sits at the right hand of the Father, and wilt come again in glory to judge the quick and the dead, have mercy upon us, Lord.",
-          "transliteration": "qidus Igzee'abihér qidus hayal qidus hiyaw ze'eeyimewit zetensi'a imutan ame salist ilet, arge besibihat wiste semayat wenebere beyemane abuhu, dagime yimets'i besibhat yikwonin hiyawane wemutane tesahalene igzee'o."
-        },
-        {
-          "id": "kidan-tri-doxology",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "ስብሐት ለአብ ስብሐት ለወልድ ስብሐት ለመንፈስ ቅዱስ",
-          "amharic": "ለአብ ምስጋና ለወልድ ምስጋና፣ ለመንፈስ ቅዱስ ምስጋና",
-          "english": "Glory be to the Father, glory be to the Son, glory be to the Holy Spirit,",
-          "transliteration": "Sibhat le'Ab sibhat leWeld sibhat leMenfes Qidus"
-        },
-        {
-          "id": "kidan-tri-now-ever",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "ይእዜኒ ወዘልፈኒ ለዓለመ ዓለም አሜን ወአሜን ለይኩን፣ ለይኩን።",
-          "amharic": "ዛሬም፣ ዘወትርም ለዘለዓለም እውነት በእውነት ይሁን፣ ይሁን።",
-          "english": "both now and ever and world without end. Amen and Amen, so be it, so be it.",
-          "transliteration": "Yi'izénee wezelfenee wele'alem alem amen we'amen leyikun leyikun."
-        },
-        {
-          "id": "kidan-tri-holy-trinity",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "ቅዱስ ሥሉስ እግዚአብሔር ሕያው ተሣሃለነ።",
-          "amharic": "በሦስትነት ያለህ ቅዱስ ሕያው እግዚአብሔር ሆይ! ይቅር በለን።",
-          "english": "O Holy Trinity, living God have mercy upon us.",
-          "transliteration": "Qidus silus Igzee'abihér hiyaw tesahalene."
+          "geez": "እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተወልደ እማርያም እምቅድስት ድንግል ተሣሃለነ እግዚኦ። ቅዱስ እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተጠምቀ በዮርዳኖስ ወተሰቅለ ዲበ ዕፀ መስቀል። ተሣሃለነ እግዚኦ። ቅዱስ እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተንሥአ እሙታን አመ ሣልስት ዕለት ዐርገ በስብሐት ውስተ ሰማያት ወነበረ በየማነ አቡሁ ዳግመ ይመጽእ በስብሐት ይኰንን ሕያዋነ ወሙታነ ተሣሃለነ እግዚኦ። ስብሐት ለአብ ስብሐት ለወልድ ስብሐት ለመንፈስ ቅዱስ ይእዜኒ ወዘልፈኒ ለዓለመ ዓለም አሜን ወአሜን ለይኩን፣ ለይኩን። ቅዱስ ሥሉስ እግዚአብሔር ሕያው ተሣሃለነ።",
+          "amharic": "እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ ከቅድስት ድንግል ማርያም የተወለደ፣ አቤቱ ይቅር በለን። ቅዱስ እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ በዮርዳኖስ የተጠመቀ፣ በመስቀል ላይ የተሰቀለ አቤቱ ይቅር በለን። ቅዱስ እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ በሦስተኛው ቀን ከሙታን ተለይቶ የተነሣ፣ በክብር በምስጋና ወደ ሰማይ የወጣ፣ በአባቱ ቀኝ የተቀመጠ፣ በሕያዋንና በሙታን ይፈርድ ዘንድ ዳግመኛ በጌትነት ይመጣል አቤቱ ይቅር በለን። ለአብ ምስጋና ለወልድ ምስጋና፣ ለመንፈስ ቅዱስ ምስጋና ዛሬም፣ ዘወትርም ለዘለዓለም እውነት በእውነት ይሁን፣ ይሁን። በሦስትነት ያለህ ቅዱስ ሕያው እግዚአብሔር ሆይ! ይቅር በለን።",
+          "english": "God, Holy Mighty, Holy Living Immortal, who was born from the holy Virgin Mary, have mercy upon us, Lord. Holy God, Holy Mighty, Holy Living Immortal, who was baptized in Jordan and crucified on the tree of the cross, have mercy upon us, Lord. Holy God, Holy Mighty, Holy Living Immortal, who did rise from the dead on the third day, ascended into heaven in glory, and sits at the right hand of the Father, and wilt come again in glory to judge the quick and the dead, have mercy upon us, Lord. Glory be to the Father, glory be to the Son, glory be to the Holy Spirit, both now and ever and world without end. Amen and Amen, so be it, so be it. O Holy Trinity, living God have mercy upon us.",
+          "transliteration": "Igzee'abihér, qidus hayal qidus hiyaw ze'eeyimewit zetewelde iMariam imqidist dingil tesahalene igzee'o. Qidus Igzee'abiher qidus hayal qidus hiyaw ze'iymewit zeteTemqe beYordanos weteseqle deebe itSe mesqel tesahalene igzio. qidus Igzee'abihér qidus hayal qidus hiyaw ze'eeyimewit zetensi'a imutan ame salist ilet, arge besibihat wiste semayat wenebere beyemane abuhu, dagime yimets'i besibhat yikwonin hiyawane wemutane tesahalene igzee'o. Sibhat le'Ab sibhat leWeld sibhat leMenfes Qidus Yi'izénee wezelfenee wele'alem alem amen we'amen leyikun leyikun. Qidus silus Igzee'abihér hiyaw tesahalene."
         }
       ]
     },
@@ -208,19 +163,10 @@
           "id": "kidan-morn-resp-3a",
           "type": "response",
           "speaker": "congregation",
-          "geez": "ብነ ኀበ እግዚአብሔር አቡነ ዘበሰማያት፣ አቡነ ዘበሰማያት፣",
-          "amharic": "በእግዚአብሔር ዘንድ አለን። አባታችን ሆይ! አባታችን ሆይ!",
-          "english": "We lift them unto the Lord our God. Our Father who art in heaven, Our Father who art in heaven,",
-          "transliteration": "Bine habe Igzee'abihér abune zebesemayat, abune zebesemayat,"
-        },
-        {
-          "id": "kidan-morn-resp-3b",
-          "type": "response",
-          "speaker": "congregation",
-          "geez": "አቡነ ዘበሰማያት ኢታብአነ እግዚኦ ውስተ መንሱት።",
-          "amharic": "አባታችን ሆይ! አቤቱ ወደ ፈተና አታግባን።",
-          "english": "Our Father who art in heaven, lead us not into temptation.",
-          "transliteration": "Abune zebesemayat, eetabi'ane igzee'o wiste mensut."
+          "geez": "ብነ ኀበ እግዚአብሔር አቡነ ዘበሰማያት፣ አቡነ ዘበሰማያት፣ አቡነ ዘበሰማያት ኢታብአነ እግዚኦ ውስተ መንሱት።",
+          "amharic": "በእግዚአብሔር ዘንድ አለን። አባታችን ሆይ! አባታችን ሆይ! አባታችን ሆይ! አቤቱ ወደ ፈተና አታግባን።",
+          "english": "We lift them unto the Lord our God. Our Father who art in heaven, Our Father who art in heaven, Our Father who art in heaven, lead us not into temptation.",
+          "transliteration": "Bine habe Igzee'abihér abune zebesemayat, abune zebesemayat, Abune zebesemayat, eetabi'ane igzee'o wiste mensut."
         },
         {
           "id": "kidan-morn-rubric-1",

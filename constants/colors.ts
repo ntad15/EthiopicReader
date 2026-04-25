@@ -24,6 +24,8 @@ export const Colors = {
   // Speaker colors
   priest: '#5C1D1D',              // burgundy for priest
   deacon: '#4A6D8C',             // muted blue for deacon
+  asstPriest: '#7A2E2E',         // lighter burgundy for assistant priest
+  asstDeacon: '#5D7F9F',         // lighter blue for assistant deacon
   congregation: '#2C1810',        // dark brown for congregation
   rubric: '#8B7355',              // warm muted for rubric/instructions
 
@@ -45,12 +47,16 @@ export const Colors = {
   presentationTextMuted: '#666666',
   presentationTextDim: '#444444',
   presentationDeacon: '#7B9FC4',  // lighter blue for deacon in dark mode
+  presentationAsstPriest: '#C7A36B',  // medium gold for assistant priest in dark mode
+  presentationAsstDeacon: '#93B3D6',  // lighter blue for assistant deacon in dark mode
 };
 
 /** Speaker role colors for the reading view (light theme). */
 export const speakerColors: Record<string, string> = {
   priest: Colors.priest,
   deacon: Colors.deacon,
+  'asst. priest': Colors.asstPriest,
+  'asst. deacon': Colors.asstDeacon,
   congregation: Colors.congregation,
   all: Colors.text,
 };
@@ -59,6 +65,8 @@ export const speakerColors: Record<string, string> = {
 export const presentationSpeakerColors: Record<string, string> = {
   priest: Colors.accent,
   deacon: Colors.presentationDeacon,
+  'asst. priest': Colors.presentationAsstPriest,
+  'asst. deacon': Colors.presentationAsstDeacon,
   congregation: Colors.presentationText,
   all: Colors.presentationText,
 };

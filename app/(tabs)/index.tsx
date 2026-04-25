@@ -24,11 +24,29 @@ import { Fonts } from '@/constants/fonts';
 import { contentColumn } from '@/constants/layout';
 import { hapticLight } from '@/utils/haptics';
 import CrossIcon from '@/components/CrossIcon';
+import { COMBINED_QIDASE_MODE } from '@/constants/features';
+
+const FLAT_CARDS = [
+  {
+    id: 'qidan',
+    title: 'Kidan',
+    geez: 'ኪዳን',
+    description: 'Prayer of the Covenant',
+    route: '/reader/qidan' as const,
+  },
+  {
+    id: 'qidase',
+    title: 'Qidase',
+    geez: 'ቅዳሴ',
+    description: 'Holy Liturgy',
+    route: '/qidase' as const,
+  },
+];
 
 const QIDASE_SUBSECTIONS = [
   {
     id: 'qidan',
-    title: 'Qidan',
+    title: 'Kidan',
     geez: 'ኪዳን',
     description: 'Prayer of the Covenant',
     route: '/reader/qidan' as const,
@@ -71,7 +89,7 @@ export default function HomeScreen() {
             <View style={{ marginTop: 6 }}>
               <CrossIcon size={isMobile ? 24 : 16} color={Colors.burgundy} />
             </View>
-            <Text style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}>Qidase Reader</Text>
+            <Text style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}>Ethiopic Reader</Text>
           </View>
         </View>
 
@@ -100,6 +118,32 @@ export default function HomeScreen() {
         {/* ── Content Library ── */}
         <Text style={styles.sectionTitle}>Content Library</Text>
 
+        {COMBINED_QIDASE_MODE ? (
+          // Feature: two flat cards — Kidan and Qidase
+          FLAT_CARDS.map((card) => (
+            <HoverableOpacity
+              key={card.id}
+              style={styles.parentItem}
+              hoverStyle={styles.parentItemHover}
+              activeOpacity={0.7}
+              onPress={() => {
+                hapticLight();
+                router.push(card.route);
+              }}
+            >
+              <View style={styles.parentIcon}>
+                <CrossIcon size={20} color="#E8DCC8" />
+              </View>
+              <View style={styles.parentText}>
+                <Text style={styles.parentTitle}>{card.title}</Text>
+                <Text style={styles.parentGeez}>{card.geez}</Text>
+                <Text style={styles.parentDesc}>{card.description}</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={Colors.textDim} />
+            </HoverableOpacity>
+          ))
+        ) : (
+          <>
         {/* Qidase — parent section */}
         <HoverableOpacity
           style={styles.parentItem}
@@ -153,6 +197,8 @@ export default function HomeScreen() {
               </HoverableOpacity>
             </Animated.View>
           ))}
+          </>
+        )}
       </ScrollView>
     </SafeAreaView>
   );

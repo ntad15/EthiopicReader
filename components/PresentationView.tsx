@@ -1,5 +1,5 @@
-import { useState, useRef, useCallback, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Platform, NativeSyntheticEvent, NativeScrollEvent, LayoutChangeEvent } from 'react-native';
+import { useState, useCallback, useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Platform, LayoutChangeEvent, NativeSyntheticEvent, TextLayoutEventData } from 'react-native';
 import HoverableOpacity from '@/components/HoverableOpacity';
 import Slider from '@react-native-community/slider';
 import { Colors, presentationSpeakerColors } from '@/constants/colors';
@@ -46,47 +46,82 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
     ? Math.max(0, visibleBlocks.findIndex((b) => b.id === startBlockId))
     : 0;
   const [index, setIndex] = useState(initialIndex);
+  const [pageIdx, setPageIdx] = useState(0);
+  // measuredLines[lang] = array of rendered lines from onTextLayout for the full text
+  const [measuredLines, setMeasuredLines] = useState<Record<string, Array<{ text: string }>>>({});
+  const [viewportHeight, setViewportHeight] = useState(0);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const [fontBarVisible, setFontBarVisible] = useState(false);
-
-  // Scroll tracking for overflow pagination
-  const scrollRef = useRef<ScrollView>(null);
-  const [contentHeight, setContentHeight] = useState(0);
-  const [viewportHeight, setViewportHeight] = useState(0);
-  const [scrollY, setScrollY] = useState(0);
-
-  const isScrollable = contentHeight > viewportHeight + 2;
-  const isAtBottom = scrollY >= contentHeight - viewportHeight - 2;
-  const isAtTop = scrollY <= 2;
 
   const current = visibleBlocks[index];
   const isFirst = index === 0;
   const isLast = index === visibleBlocks.length - 1;
 
+  const isRubricOrHeading = current?.type === 'rubric' || current?.type === 'heading';
+  const langEntries = isRubricOrHeading
+    ? []
+    : getLanguageEntries(activeLanguages, primaryLanguage, current ?? ({} as PrayerBlock));
+
+  // Reset measurement + page when block, font size, or active languages change
+  const langKey = activeLanguages.join(',');
+  useEffect(() => {
+    setMeasuredLines({});
+    setPageIdx(0);
+  }, [index, multiplier, langKey]);
+
+  // --- Pagination math ---
+  // We use the tallest script's line height (Ge'ez) so every page fits without overflow.
+  // Usable height = viewport minus fixed chrome (paddings + optional speaker label).
+  const PADDING_V = 100; // paddingTop 60 + paddingBottom 40
+  const SPEAKER_H = 40;  // speaker label + marginBottom
+  const hasSpeaker = !isRubricOrHeading && !!current?.speaker;
+  const usableHeight = Math.max(0, viewportHeight - PADDING_V - (hasSpeaker ? SPEAKER_H : 0));
+  const geezLineH = scale(23) * 1.5; // tallest line height used in any column
+  const linesPerPage = Math.max(1, Math.floor(usableHeight / geezLineH));
+
+  const allMeasured = langEntries.length === 0
+    || langEntries.every(({ lang }) => measuredLines[lang] !== undefined);
+
+  const maxLines = langEntries.reduce(
+    (m, { lang }) => Math.max(m, measuredLines[lang]?.length ?? 0), 0,
+  );
+  const totalPages = (allMeasured && maxLines > 0)
+    ? Math.max(1, Math.ceil(maxLines / linesPerPage))
+    : 1;
+
+  /** Return slice of text visible in column `lang` on the current page. */
+  function pageText(lang: string): string {
+    const lines = measuredLines[lang];
+    if (!lines || lines.length === 0) return '';
+    const start = pageIdx * linesPerPage;
+    if (start >= lines.length) return '';
+    const end = Math.min(start + linesPerPage, lines.length);
+    return lines.slice(start, end).map((l) => l.text).join('');
+  }
+
   const goToBlock = useCallback((newIndex: number) => {
     setIndex(newIndex);
-    setScrollY(0);
-    setContentHeight(0);
-    scrollRef.current?.scrollTo({ y: 0, animated: false });
+    setPageIdx(0);
+    setMeasuredLines({});
   }, []);
 
   const advance = useCallback(() => {
     hapticSelection();
-    if (isScrollable && !isAtBottom) {
-      scrollRef.current?.scrollTo({ y: scrollY + viewportHeight * 0.85, animated: true });
+    if (allMeasured && pageIdx < totalPages - 1) {
+      setPageIdx((p) => p + 1);
     } else if (!isLast) {
       goToBlock(index + 1);
     }
-  }, [isScrollable, isAtBottom, isLast, scrollY, viewportHeight, index, goToBlock]);
+  }, [allMeasured, pageIdx, totalPages, isLast, index, goToBlock]);
 
   const back = useCallback(() => {
     hapticSelection();
-    if (isScrollable && !isAtTop) {
-      scrollRef.current?.scrollTo({ y: Math.max(0, scrollY - viewportHeight * 0.85), animated: true });
+    if (pageIdx > 0) {
+      setPageIdx((p) => p - 1);
     } else if (!isFirst) {
       goToBlock(index - 1);
     }
-  }, [isScrollable, isAtTop, isFirst, scrollY, viewportHeight, index, goToBlock]);
+  }, [pageIdx, isFirst, index, goToBlock]);
 
   // Keyboard arrow support for web
   useEffect(() => {
@@ -103,21 +138,8 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
     if (!sections) return;
     const sec = sections[sectionIndex];
     if (!sec || sec.blocks.length === 0) return;
-    const firstBlockId = sec.blocks[0].id;
-    const blockIndex = visibleBlocks.findIndex((b) => b.id === firstBlockId);
+    const blockIndex = visibleBlocks.findIndex((b) => b.id === sec.blocks[0].id);
     if (blockIndex >= 0) goToBlock(blockIndex);
-  }
-
-  function onScroll(e: NativeSyntheticEvent<NativeScrollEvent>) {
-    setScrollY(e.nativeEvent.contentOffset.y);
-  }
-
-  function onContentSizeChange(_w: number, h: number) {
-    setContentHeight(h);
-  }
-
-  function onViewportLayout(e: LayoutChangeEvent) {
-    setViewportHeight(e.nativeEvent.layout.height);
   }
 
   if (!current) return null;
@@ -125,37 +147,16 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
   const speakerColor =
     current.speaker ? (presentationSpeakerColors[current.speaker] ?? PRES.text) : PRES.text;
 
-  const isRubricOrHeading = current.type === 'rubric' || current.type === 'heading';
-
-  const langEntries = isRubricOrHeading
-    ? []
-    : getLanguageEntries(activeLanguages, primaryLanguage, current);
-
-  const showMoreBelow = isScrollable && !isAtBottom;
-  const showMoreAbove = isScrollable && !isAtTop;
+  const showPageDots = allMeasured && totalPages > 1;
 
   return (
-    <View style={styles.container}>
-      {/* Tap left half to go back, right half to advance */}
+    <View style={styles.container} onLayout={(e: LayoutChangeEvent) => setViewportHeight(e.nativeEvent.layout.height)}>
+      {/* Tap zones — back on left 40%, forward on right 60% */}
       <TouchableOpacity style={styles.tapBack} onPress={back} activeOpacity={1} />
       <TouchableOpacity style={styles.tapForward} onPress={advance} activeOpacity={1} />
 
-      {/* Scroll overflow indicators */}
-      {showMoreAbove && <View style={styles.fadeTop} pointerEvents="none" />}
-      {showMoreBelow && <View style={styles.fadeBottom} pointerEvents="none" />}
-
-      {/* Content */}
-      <ScrollView
-        ref={scrollRef}
-        style={styles.scrollContainer}
-        contentContainerStyle={styles.content}
-        onScroll={onScroll}
-        onContentSizeChange={onContentSizeChange}
-        onLayout={onViewportLayout}
-        scrollEventThrottle={16}
-        showsVerticalScrollIndicator={false}
-        scrollEnabled={false}
-      >
+      {/* Content — plain View, no scroll; overflow clipped by container */}
+      <View style={styles.content}>
         {isRubricOrHeading ? (
           <Text style={[styles.rubricText, { fontSize: scale(16) }]}>
             {current.english ?? current.geez ?? ''}
@@ -168,29 +169,61 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
               </Text>
             )}
             <View style={styles.columnsRow}>
-              {langEntries.map(({ lang, text }) => (
-                <View key={lang} style={[styles.langColumn, langEntries.length === 1 && styles.langColumnFull]}>
-                  <Text
-                    style={[
-                      styles.prayerText,
-                      {
-                        fontSize: scale(lang === 'geez' || lang === 'amharic' ? 23 : 22),
-                        lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 23 : 22) * 1.5,
-                      },
-                      { color: speakerColor },
-                      lang === 'transliteration' && styles.transliteration,
-                    ]}
-                  >
-                    {text}
-                  </Text>
-                </View>
-              ))}
+              {langEntries.map(({ lang, text }) => {
+                const fontSize = scale(lang === 'geez' || lang === 'amharic' ? 23 : 22);
+                const lineHeight = fontSize * 1.5;
+                const textStyle = [
+                  styles.prayerText,
+                  { fontSize, lineHeight, color: speakerColor },
+                  lang === 'transliteration' && styles.transliteration,
+                ];
+
+                // What to show: sliced text for current page once measured;
+                // full text on first render so the invisible pre-render fires.
+                const visibleText = allMeasured ? pageText(lang) : text;
+
+                return (
+                  <View key={lang} style={[styles.langColumn, langEntries.length === 1 && styles.langColumnFull]}>
+                    {/*
+                     * Invisible full-text render — gives us actual rendered lines via
+                     * onTextLayout so we can compute exact page boundaries.
+                     * position: absolute so it doesn't affect column height.
+                     */}
+                    <Text
+                      style={[...textStyle, styles.measureText]}
+                      pointerEvents="none"
+                      onTextLayout={(e: NativeSyntheticEvent<TextLayoutEventData>) => {
+                        const lines = e.nativeEvent.lines as Array<{ text: string }>;
+                        setMeasuredLines((prev) => {
+                          // Skip update if line count hasn't changed (avoids loops)
+                          if (prev[lang]?.length === lines.length) return prev;
+                          return { ...prev, [lang]: lines };
+                        });
+                      }}
+                    >
+                      {text}
+                    </Text>
+
+                    {/* Visible sliced text for this page */}
+                    <Text style={textStyle}>{visibleText}</Text>
+                  </View>
+                );
+              })}
             </View>
           </>
         )}
-      </ScrollView>
+      </View>
 
-      {/* Font size bar (drops down from top right) */}
+      {/* Page progress dots — shown only when a block spans multiple pages */}
+      {showPageDots && (
+        <View style={styles.pageDots} pointerEvents="none">
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <View key={i} style={[styles.dot, i === pageIdx && styles.dotActive]} />
+          ))}
+        </View>
+      )}
+
+      {/* Font size bar */}
       {fontBarVisible && (
         <View style={styles.fontBar}>
           <Text style={styles.fontBarLabel}>A</Text>
@@ -209,7 +242,7 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
         </View>
       )}
 
-      {/* Top-right buttons */}
+      {/* Top-right controls */}
       <View style={styles.topRight}>
         <HoverableOpacity style={styles.topBtn} hoverStyle={styles.topBtnHover} onPress={() => setFontBarVisible((v) => !v)}>
           <Text style={styles.topBtnText}>Aa</Text>
@@ -257,34 +290,39 @@ const styles = StyleSheet.create({
     bottom: 0,
     zIndex: 1,
   },
-  scrollContainer: {
-    flex: 1,
-    zIndex: 0,
-  },
   content: {
-    justifyContent: 'center',
-    flexGrow: 1,
+    flex: 1,
     paddingHorizontal: 48,
     paddingTop: 60,
     paddingBottom: 40,
+    justifyContent: 'center',
+    overflow: 'hidden',
+    zIndex: 0,
   },
-  fadeTop: {
+  measureText: {
     position: 'absolute',
-    top: 0,
     left: 0,
     right: 0,
-    height: 40,
-    backgroundColor: 'rgba(10,10,10,0.6)',
-    zIndex: 2,
+    opacity: 0,
   },
-  fadeBottom: {
+  pageDots: {
     position: 'absolute',
-    bottom: 0,
+    bottom: 20,
     left: 0,
     right: 0,
-    height: 40,
-    backgroundColor: 'rgba(10,10,10,0.6)',
-    zIndex: 2,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
+    zIndex: 4,
+  },
+  dot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: PRES.border,
+  },
+  dotActive: {
+    backgroundColor: Colors.accent,
   },
   rubricText: {
     color: PRES.textMuted,

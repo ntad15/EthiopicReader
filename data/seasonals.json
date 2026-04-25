@@ -1,0 +1,68 @@
+{
+  "id": "seasonals",
+  "title": {
+    "english": "Seasonal Variations",
+    "geez": "",
+    "amharic": "",
+    "transliteration": ""
+  },
+  "sections": [
+    {
+      "id": "intro-day-of-week-overrides",
+      "title": {
+        "english": "Qidase Introduction",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
+      "blocks": [
+        {
+          "id": "intro-day-of-week-sunday",
+          "type": "prayer",
+          "speaker": "all",
+          "geez": "ኵሉ ዘገብራ ለጽድቅ ጻድቅ ውእቱ ወዘያከብር ሰንበተ፤ ኢይበል ፈላሲ ዘገብአ ኀበ እግዚአብሔር ይፈልጠኒኑ እምሕዝቡ፤ ኵሉ ዘገብራ ለጽድቅ፣ ጻድቅ ውእቱ ወዘያከብር ሰንበተ።",
+          "amharic": "ጽድቅን የሠራ ሰንበትን ያከበረም ሰው ሁሉ ጻድቅ ነው። ወደ እግዚአብሔር አምልኮት የገባ ከምዕመናን ይለየኝ ይሆን ፈጽሞ አይበል። ጽድቅን የሠራ ሰንበትን ያከበረም ሰው ሁሉ ጻድቅ ነው።",
+          "english": "Blessed is he who does blessed deeds and honors the Sabbath. Let him not question whether he will be outcast from the multitudes if he was to enter into the worship of God. Blessed is he who does blessed deeds and honors the Sabbath.",
+          "transliteration": "Kwulu zegebra letsidq tsadiq wi'itu wezeyakebir senbete eeybel felasee zegebi'a habe Igzee'abihér yifeliteneenu imhizbu kwulu zegebra letsidq tsadiq wi'itu wezeyakebir senbete.",
+          "conditions": {
+            "dayOfWeek": [
+              "sunday"
+            ]
+          }
+        },
+        {
+          "id": "intro-day-of-week-monday-to-friday",
+          "type": "prayer",
+          "speaker": "all",
+          "geez": "እምነ በሕ፣ ቅድስት ቤተክርስቲያን፣ ሥርጉት አረፋቲሃ በዕንቀ ዳዝዩን፣ እምነ በሕ፣ ቅድስት ቤተክርስቲያን።",
+          "amharic": "ሰላም ላንቼ ይሁን፣ እናታችን ክብርት ቤተ ክርስቲያን። ግድዋዳዎችሽ በዳዝዩን እንቀ የተጌጡ ናቸው፣ ሰላም ላንቼ ይሁን! እናታችን ክብርት ቤተ ክርስቲያን።",
+          "english": "Peace be unto you, our mother, O honorable church. Thy walls are embroidered with Topaz. Peace be unto you, our mother, O honorable church",
+          "transliteration": "Imine beha qidist bete kiristeeyan, sirgut arefateehu be'inqwu pazion, Imine beha qidist bete kiristeeyan.",
+          "conditions": {
+            "dayOfWeek": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ]
+          }
+        },
+        {
+          "id": "intro-day-of-week-saturday",
+          "type": "prayer",
+          "speaker": "all",
+          "geez": "መስቀል አብርሃ! በከዋዊት አሠርገወ ሰማዮ፣ እምኩሉስ ዑሕሊ አርአየ። መስቀል አብርሃ! በከዋብት አሠርገወ ሰማዮ።",
+          "amharic": "መስቀል አበራ! በከካቦች ሰማይን አስጌጠ። ከሁሉም ዑሕሊን አሳዩ። መስቀል አብራ በከካቦች ሰማይን አስጌጠ።",
+          "english": "The cross shined and had the heavens embroidered with stars. Of all the sun is seen. The cross shined and had the heavens embroidered with stars.",
+          "transliteration": "Meskqel abriha! Bekewakibt aserigewa semaye imkwuluse Íehay ar'aye. Mesqel abriha! Bekewakibt aserigewa semaye.",
+          "conditions": {
+            "dayOfWeek": [
+              "saturday"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

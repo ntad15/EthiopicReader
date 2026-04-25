@@ -26,7 +26,9 @@ import SectionDrawer from '@/components/SectionDrawer';
 import SettingsSheet from '@/components/SettingsSheet';
 import ReadingsPicker from '@/components/ReadingsPicker';
 import { useReadings } from '@/context/ReadingsContext';
-import { LiturgicalSection, PrayerBlock as PrayerBlockType } from '@/data/types';
+import { LiturgicalSection, PrayerBlock as PrayerBlockType, LiturgicalText } from '@/data/types';
+import { processSections } from '@/utils/seasonalResolver';
+import seasonalsData from '@/data/seasonals.json';
 
 interface ReaderLayoutProps {
   title: { english: string; geez?: string };
@@ -81,13 +83,23 @@ export default function ReaderLayout({
     })
     .runOnJS(true);
 
-  const allBlocks: PrayerBlockType[] = sections.flatMap((sec) => sec.blocks);
+  // Process sections with seasonal resolver to replace placeholders
+  const processedSections = useMemo(() => {
+    const context = {
+      date: new Date(),
+      // TODO: Add liturgical season from user settings or calendar calculation
+      // TODO: Add feast days for current date
+    };
+    return processSections(sections, seasonalsData as LiturgicalText, context);
+  }, [sections]);
+
+  const allBlocks: PrayerBlockType[] = processedSections.flatMap((sec) => sec.blocks);
 
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
     const q = searchQuery.toLowerCase();
     const results: Array<{ block: PrayerBlockType }> = [];
-    for (const sec of sections) {
+    for (const sec of processedSections) {
       for (const block of sec.blocks) {
         const haystack = [block.geez, block.amharic, block.english, block.transliteration]
           .filter(Boolean)
@@ -99,7 +111,7 @@ export default function ReaderLayout({
       }
     }
     return results;
-  }, [searchQuery, sections]);
+  }, [searchQuery, processedSections]);
 
   const navigateToResult = useCallback((idx: number) => {
     if (searchResults.length === 0) return;
@@ -238,7 +250,7 @@ export default function ReaderLayout({
             </View>
           </View>
 
-          {sections.map((sec, secIdx) => (
+          {processedSections.map((sec, secIdx) => (
             <View
               key={sec.id}
               onLayout={(e) => {
@@ -325,7 +337,7 @@ export default function ReaderLayout({
       {/* Section drawer — reader mode only */}
       {!isPresentationMode && (
         <SectionDrawer
-          sections={sections}
+          sections={processedSections}
           visible={drawerVisible}
           onClose={() => setDrawerVisible(false)}
           onSelect={scrollToSection}
@@ -344,7 +356,7 @@ export default function ReaderLayout({
           ) : (
             <PresentationView
               blocks={allBlocks}
-              sections={sections}
+              sections={processedSections}
               onExit={() => exitPresentation()}
               startBlockId={presentationStartBlockId}
             />

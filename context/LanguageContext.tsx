@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Language } from '@/data/types';
 import { DEFAULT_LANGUAGES } from '@/constants/languages';
 
-const MAX_LANGUAGES = 3;
+const MAX_LANGUAGES = 4;
 
 interface LanguageContextValue {
   activeLanguages: Language[];

@@ -50,17 +50,63 @@
     /* ── Layout ────────────────────────────────────── */
     .layout { display: flex; flex: 1; overflow: hidden; }
 
+    .sidebar-container {
+      display: flex;
+      position: relative;
+      transition: margin-left 0.3s ease;
+    }
+
     .panel {
       display: flex;
       flex-direction: column;
       border-right: 1px solid var(--border);
       overflow: hidden;
       flex-shrink: 0;
+      position: relative;
     }
-    .panel-files    { width: 190px; }
-    .panel-sections { width: 220px; }
-    .panel-blocks   { width: 240px; }
+    .panel-files    { width: 190px; min-width: 120px; }
+    .panel-sections { width: 220px; min-width: 150px; }
+    .panel-blocks   { width: 240px; min-width: 180px; }
     .panel-editor   { flex: 1; flex-shrink: 1; display: flex; flex-direction: column; border-right: none; }
+
+    /* Resize handles */
+    .resize-handle {
+      position: absolute;
+      top: 0;
+      right: -3px;
+      width: 6px;
+      height: 100%;
+      cursor: col-resize;
+      z-index: 10;
+      background: transparent;
+    }
+    .resize-handle:hover { background: var(--accent); opacity: 0.3; }
+    .resize-handle.active { background: var(--accent); opacity: 0.5; }
+
+    /* Collapse button */
+    .collapse-btn {
+      flex-shrink: 0;
+      width: 24px;
+      height: 60px;
+      margin-top: auto;
+      margin-bottom: auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: none;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+    .collapse-btn:hover {
+      background: var(--surface2);
+      color: var(--accent);
+      width: 28px;
+    }
 
     .panel-head {
       display: flex;
@@ -150,9 +196,20 @@
     }
     .b-priest  { background: #1a160a; color: #C9A84C; }
     .b-deacon  { background: #0d1420; color: #7B9FC4; }
+    .b-asst-priest  { background: #1f1b10; color: #D4B76A; }
+    .b-asst-deacon  { background: #0f1825; color: #93B3D6; }
     .b-congregation { background: #1a1a1a; color: #bbb; }
     .b-all     { background: #1a1a1a; color: #999; }
     .b-type    { background: #181818; color: #777; }
+    .b-section { background: #1a160a; color: #C9A84C; }
+    .b-blocks  { background: #0d1420; color: #7B9FC4; }
+    .b-placeholder { background: #1a1510; color: #9B885C; }
+    
+    .condition-summary {
+      font-size: 9px;
+      color: var(--muted);
+      text-transform: none;
+    }
 
     /* ── Editor panel ───────────────────────────────── */
     #editor-scroll { flex: 1; overflow-y: auto; }
@@ -225,25 +282,32 @@
 
 <div class="layout">
 
-  <!-- Column 1: Files -->
-  <div class="panel panel-files">
-    <div class="panel-head">Files</div>
-    <div class="panel-body" id="file-list"></div>
+  <div class="sidebar-container" id="sidebar">
+    <!-- Column 1: Files -->
+    <div class="panel panel-files" id="panel-files">
+      <div class="panel-head">Files</div>
+      <div class="panel-body" id="file-list"></div>
+      <div class="resize-handle" data-panel="files"></div>
+    </div>
+
+    <!-- Column 2: Sections / Entries -->
+    <div class="panel panel-sections" id="panel-sections">
+      <div class="panel-head"><span id="sec-label">Sections</span></div>
+      <div class="panel-body" id="sections-list"></div>
+      <button class="add-btn" id="add-sec-btn"></button>
+      <div class="resize-handle" data-panel="sections"></div>
+    </div>
+
+    <!-- Column 3: Blocks -->
+    <div class="panel panel-blocks" id="panel-blocks">
+      <div class="panel-head">Blocks</div>
+      <div class="panel-body" id="blocks-list"></div>
+      <button class="add-btn" id="add-block-btn" onclick="addBlock()">+ Add Block</button>
+      <div class="resize-handle" data-panel="blocks"></div>
+    </div>
   </div>
 
-  <!-- Column 2: Sections / Entries -->
-  <div class="panel panel-sections">
-    <div class="panel-head"><span id="sec-label">Sections</span></div>
-    <div class="panel-body" id="sections-list"></div>
-    <button class="add-btn" id="add-sec-btn"></button>
-  </div>
-
-  <!-- Column 3: Blocks -->
-  <div class="panel panel-blocks">
-    <div class="panel-head">Blocks</div>
-    <div class="panel-body" id="blocks-list"></div>
-    <button class="add-btn" id="add-block-btn" onclick="addBlock()">+ Add Block</button>
-  </div>
+  <button class="collapse-btn" id="collapse-btn" onclick="toggleSidebar()" title="Toggle sidebar">‹</button>
 
   <!-- Column 4: Editor -->
   <div class="panel panel-editor">
@@ -270,6 +334,71 @@ let selSection = null; // selected section or array-entry index
 let selBlock = null;   // block shown in editor (primary selection)
 let selBlocks = new Set(); // all selected block indices (for multi-drag)
 const drag = { fromSection: null, fromBlock: null, fromSectionReorder: null, draggedBlocks: null };
+
+// ── Sidebar Collapse & Resize ──────────────────────────────────────────────────
+let sidebarCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
+
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const btn = document.getElementById('collapse-btn');
+  sidebarCollapsed = !sidebarCollapsed;
+  
+  if (sidebarCollapsed) {
+    // Calculate actual width
+    const width = sidebar.offsetWidth;
+    sidebar.style.marginLeft = `-${width}px`;
+    sidebar.classList.add('collapsed');
+    btn.textContent = '›';
+    btn.title = 'Show sidebar';
+  } else {
+    sidebar.style.marginLeft = '0';
+    sidebar.classList.remove('collapsed');
+    btn.textContent = '‹';
+    btn.title = 'Hide sidebar';
+  }
+  
+  localStorage.setItem('sidebarCollapsed', sidebarCollapsed);
+}
+
+// Panel resize
+let resizing = null;
+document.querySelectorAll('.resize-handle').forEach(handle => {
+  handle.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    const panel = handle.dataset.panel;
+    const el = document.getElementById('panel-' + panel);
+    resizing = { panel: el, startX: e.pageX, startWidth: el.offsetWidth };
+    handle.classList.add('active');
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+  });
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (!resizing) return;
+  const delta = e.pageX - resizing.startX;
+  const newWidth = Math.max(120, resizing.startWidth + delta);
+  resizing.panel.style.width = newWidth + 'px';
+  localStorage.setItem('panelWidth-' + resizing.panel.id, newWidth);
+});
+
+document.addEventListener('mouseup', () => {
+  if (resizing) {
+    document.querySelectorAll('.resize-handle').forEach(h => h.classList.remove('active'));
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+    resizing = null;
+  }
+});
+
+// Restore widths and collapsed state on load
+window.addEventListener('DOMContentLoaded', () => {
+  ['files', 'sections', 'blocks'].forEach(name => {
+    const w = localStorage.getItem('panelWidth-panel-' + name);
+    if (w) document.getElementById('panel-' + name).style.width = w + 'px';
+  });
+  if (sidebarCollapsed) toggleSidebar();
+});
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 function isArray(d)      { return Array.isArray(d); }
@@ -328,6 +457,11 @@ async function apiFetch(method, path, body) {
 async function init() {
   files = await apiFetch('GET', '/api/files');
   renderFiles();
+}
+
+// ── Helper: Check if file is seasonals ───────────────────────────────────────
+function isSeasonalsFile() {
+  return currentFile && currentFile.includes('seasonals.json');
 }
 
 // ── File List ──────────────────────────────────────────────────────────────────
@@ -510,9 +644,35 @@ function renderBlocks() {
   addBtn.className = 'add-btn visible';
 
   list.innerHTML = blocks.map((b, i) => {
-    const preview = (b.english || b.geez || b.amharic || '—').slice(0, 45);
+    let preview;
+    if (b.type === 'placeholder') {
+      preview = `[Placeholder: ${b.overrideId || 'no ID'}]`;
+    } else {
+      preview = (b.english || b.geez || b.amharic || '—').slice(0, 45);
+    }
+    
     const cls = selBlock === i ? ' active' : (selBlocks.has(i) ? ' multi-sel' : '');
-    const speakerBadge = b.speaker ? '<span class="badge b-' + b.speaker + '">' + b.speaker + '</span>' : '';
+    const speakerClass = b.speaker ? b.speaker.replace(/\./g, '').replace(/\s+/g, '-') : '';
+    const speakerBadge = b.speaker ? '<span class="badge b-' + speakerClass + '">' + b.speaker + '</span>' : '';
+    
+    // Optional badge for placeholder blocks
+    const optionalBadge = (b.type === 'placeholder' && b.optional) ? '<span class="badge" style="background:#4a4034;color:#9B885C;">optional</span>' : '';
+    
+    // Show conditions summary for seasonals files
+    let conditionsBadge = '';
+    if (isSeasonalsFile() && b.conditions) {
+      const parts = [];
+      if (b.conditions.dayOfWeek && b.conditions.dayOfWeek.length > 0) {
+        parts.push(b.conditions.dayOfWeek.map(d => d.substring(0, 3)).join(','));
+      }
+      if (b.conditions.season && b.conditions.season.length > 0) {
+        parts.push(b.conditions.season[0]);
+      }
+      if (parts.length > 0) {
+        conditionsBadge = '<span class="badge b-type">' + parts.join(' · ') + '</span>';
+      }
+    }
+    
     return '<div class="list-item' + cls + '" draggable="true" ' +
       'ondragstart="blockDragStart(event,' + i + ')" ' +
       'ondragover="blockDragOver(event,' + i + ')" ' +
@@ -521,10 +681,12 @@ function renderBlocks() {
       'ondragend="blockDragEnd()" ' +
       'onclick="selectBlock(' + i + ',event)">' +
       '<div class="item-body">' +
-        '<div class="item-title">' + esc(preview) + (preview.length >= 45 ? '…' : '') + '</div>' +
+        '<div class="item-title">' + esc(preview) + (preview.length >= 45 && b.type !== 'placeholder' ? '…' : '') + '</div>' +
         '<div class="item-meta">' +
           '<span class="badge b-type">' + esc(b.type || '?') + '</span>' +
+          optionalBadge +
           speakerBadge +
+          conditionsBadge +
         '</div>' +
       '</div>' +
       '<div class="actions">' +
@@ -695,14 +857,55 @@ function renderEditor() {
     // Block selected — show full block editor
     const block = section.blocks[selBlock];
     const isInstr = block.type === 'heading' || block.type === 'rubric';
+    const isPlaceholder = block.type === 'placeholder';
 
-    const typeOpts = ['prayer','response','heading','rubric'].map(t =>
+    const typeOpts = ['prayer','response','heading','rubric','placeholder'].map(t =>
       '<option value="' + t + '"' + (block.type === t ? ' selected' : '') + '>' + t + '</option>'
     ).join('');
     const speakerOpts = '<option value="">— none —</option>' +
-      ['priest','deacon','congregation','all'].map(s =>
+      ['priest','deacon','asst. priest','asst. deacon','congregation','all'].map(s =>
         '<option value="' + s + '"' + (block.speaker === s ? ' selected' : '') + '>' + s + '</option>'
       ).join('');
+
+    let contentFields = '';
+    if (isPlaceholder) {
+      // Placeholder blocks only need override ID
+      contentFields = textField('Override ID', block.overrideId || '', 'setBlock("overrideId",this.value)');
+      // Add optional checkbox
+      const optionalChecked = block.optional ? ' checked' : '';
+      contentFields += '<div class="field"><label class="fl">Optional</label>' +
+        '<label><input type="checkbox"' + optionalChecked + ' onchange="setBlock(\'optional\',this.checked)"> ' +
+        'Skip if no matching override found</label></div>';
+    } else {
+      // Regular blocks show language text areas
+      contentFields = 
+        textArea("Ge\u02bcez", block.geez, 'setBlock("geez",this.value)') +
+        textArea('Amharic', block.amharic, 'setBlock("amharic",this.value)') +
+        textArea('English', block.english, 'setBlock("english",this.value)') +
+        textArea('Transliteration', block.transliteration, 'setBlock("transliteration",this.value)');
+    }
+
+    // Conditions UI for blocks with conditions (in seasonals files)
+    let conditionsUI = '';
+    if (isSeasonalsFile()) {
+      if (!block.conditions) block.conditions = {};
+      const conditions = block.conditions;
+      const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+      const dayChecks = daysOfWeek.map(day => {
+        const checked = conditions.dayOfWeek && conditions.dayOfWeek.includes(day);
+        return `<label style="display:inline-block;margin-right:12px;"><input type="checkbox" value="${day}" ${checked?'checked':''} onchange="setBlockCondition('dayOfWeek', '${day}', this.checked)"> ${day}</label>`;
+      }).join('');
+      
+      const seasons = ['ordinary', 'advent', 'christmas', 'lent', 'easter', 'pentecost'];
+      const seasonChecks = seasons.map(season => {
+        const checked = conditions.season && conditions.season.includes(season);
+        return `<label style="display:inline-block;margin-right:12px;"><input type="checkbox" value="${season}" ${checked?'checked':''} onchange="setBlockCondition('season', '${season}', this.checked)"> ${season}</label>`;
+      }).join('');
+      
+      conditionsUI = '<div class="editor-title">Conditions</div>' +
+        '<div class="field"><label class="fl">Day of Week</label><div>' + dayChecks + '</div></div>' +
+        '<div class="field"><label class="fl">Liturgical Season</label><div>' + seasonChecks + '</div></div>';
+    }
 
     panel.innerHTML = '<div class="editor-inner">' +
       '<div class="editor-title">Edit Block</div>' +
@@ -714,13 +917,11 @@ function renderEditor() {
         '</div>' +
         '<div class="field">' +
           '<label class="fl">Speaker</label>' +
-          '<select onchange="setBlock(\'speaker\',this.value);renderBlocks()"' + (isInstr ? ' disabled' : '') + '>' + speakerOpts + '</select>' +
+          '<select onchange="setBlock(\'speaker\',this.value);renderBlocks()"' + (isInstr || isPlaceholder ? ' disabled' : '') + '>' + speakerOpts + '</select>' +
         '</div>' +
       '</div>' +
-      textArea("Ge\u02bcez", block.geez, 'setBlock("geez",this.value)') +
-      textArea('Amharic', block.amharic, 'setBlock("amharic",this.value)') +
-      textArea('English', block.english, 'setBlock("english",this.value)') +
-      textArea('Transliteration', block.transliteration, 'setBlock("transliteration",this.value)') +
+      contentFields +
+      conditionsUI +
     '</div>';
     return;
   }
@@ -736,6 +937,21 @@ function setRoot(key, val)       { fileData[key] = val; markDirty(); }
 function setRootTitle(lang, val) { if (!fileData.title) fileData.title = {}; fileData.title[lang] = val; markDirty(); }
 function setMeta(key, val)       { fileData[selSection][key] = val; markDirty(); renderSections(); }
 function setMetaName(lang, val)  { const e = fileData[selSection]; if (!e.name) e.name = {}; e.name[lang] = val; markDirty(); renderSections(); }
+
+function setBlockCondition(field, value, checked) {
+  const block = fileData.sections[selSection].blocks[selBlock];
+  if (!block.conditions) block.conditions = {};
+  if (!block.conditions[field]) block.conditions[field] = [];
+  
+  if (checked) {
+    if (!block.conditions[field].includes(value)) {
+      block.conditions[field].push(value);
+    }
+  } else {
+    block.conditions[field] = block.conditions[field].filter(v => v !== value);
+  }
+  markDirty();
+}
 
 // ── Form field builders ────────────────────────────────────────────────────────
 function textField(label, value, onchange) {
