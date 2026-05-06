@@ -1,0 +1,263 @@
+kind,doc_id,doc_saint,doc_title_english,doc_title_geez,doc_title_amharic,doc_title_transliteration,section_id,section_title_english,section_title_geez,section_title_amharic,section_title_transliteration,block_id,block_type,speaker,geez,amharic,english,transliteration,dynamic,overrideId,optional
+anaphora,saint-cyril,\N,St. Cyril,ቅዱስ ቄርሎስ,ቅዱስ ቄርሎስ,\N,,,,,,,,,,,,,,,
+section,,,,,,,saint-cyril-opening,Opening,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-op-1,rubric,\N,,,"The Anaphora of St. Cyril; may his prayer and blessing be with our (head of state: King, Queen, President . . . ), unto endless ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,cy-op-2,prayer,priest,,,The Lord be with all of you.,,\N,\N,\N
+block,,,,,,,,,,,,cy-op-3,response,congregation,,,And with your spirit.,,\N,\N,\N
+block,,,,,,,,,,,,cy-op-4,prayer,priest,,,Give ye thanks unto our God.,,\N,\N,\N
+block,,,,,,,,,,,,cy-op-5,response,congregation,,,"It is right, it is just.",,\N,\N,\N
+block,,,,,,,,,,,,cy-op-6,prayer,priest,,,Lift up your hearts.,,\N,\N,\N
+block,,,,,,,,,,,,cy-op-7,response,congregation,,,We have lifted them up unto the Lord our God.,,\N,\N,\N
+section,,,,,,,saint-cyril-preface,Preface,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-pr-1,prayer,priest,,,"The Lord, God of gods, Lord of lords, the invisible God, Whose existence is unsearchable, is higher than all, yea, His nature is unfathomable.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pr-2,prayer,priest,,,"He is the consuming fire, the life-giving fire, the God of gods and the Lord of lords, Whose throne is above the heavens and Whose footstool is the earth, He is high and far away, and dwells in light.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pr-3,prayer,priest,,,"High and invisible is He Who dwells in heaven. He is clothed in garments of fire and adorned with flames of fire, His throne is on the heads of the angels, His going to and fro is through impalpable air, His high firmament is in heaven, clouds are His chariot, His way is in the stormy sea and on the heads of the angels who minister Him.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pr-4,rubric,\N,,,"Deacon: Ye that are sitting, stand up.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pr-5,prayer,priest,,,"With their two wings of fire they cover their face that the consuming fire may not consume them, with their two luminous wings they cover their feet that his terrible light may not burn them, and with their two spiritual wings they fly unto the ends of the world.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pr-6,prayer,priest,,,"Seraphim together with their leaders, cherubim according to their sanctification, the angels in their ranks, the watchful according to their armies, the heads of the watchful according to their tribes, the angels of fire according to their light, and the spiritual according to their position, give thanks and hallow with terrible voice, cry aloud, and on high, and while sanctifying they say : Holy, holy, holy, perfect Lord of hosts, heaven and earth are full of the holiness of Thy glory.",,\N,\N,\N
+section,,,,,,,saint-cyril-sanctus,Sanctus,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-san-1,rubric,\N,,,Deacon: Answer ye.,,\N,\N,\N
+block,,,,,,,,,,,,cy-san-2,response,congregation,,,"Holy, holy, holy, perfect Lord of hosts, heaven and earth are full of the holiness of Thy glory.",,\N,\N,\N
+block,,,,,,,,,,,,cy-san-3,prayer,priest,,,"And we say together with them, Thou art holy, and wonderful is the holiness of Thy glory, Father of our Lord and Saviour Jesus Christ. Truly He alone is Thy Son, and Thou alone truly art His Father.",,\N,\N,\N
+section,,,,,,,saint-cyril-post-sanctus,Post-Sanctus,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-ps-1,prayer,priest,,,"His birth from Thee is Unsearchable. As Thine existence has no beginning, so Thy Son has neither beginning nor end, and as Thy days have no beginning His days also have no beginning.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-2,prayer,priest,,,"None sits at Thy right hand except Thy Son born from Thee, and none sits on Thy throne but Thine image Who is like Thee and is Thy likeness.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-3,prayer,priest,,,"He is Thy Son and the messenger of Thy counsel, Thy beloved Who is of Thee, Thine image, Thine appearance, Thy mind, Thy power, Thy wisdom, Thy counsel, Thy right-hand, and Thine arm; He is true God from Thine essence, the truly only-begotten Son.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-4,prayer,priest,,,"He was born from Thine essence, the Word perfect in all, Who is Thine image born from Thee and equal to Thee; He is like Thee high and wonderful.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-5,prayer,priest,,,Angels and archangels worship Him; through Thy love for man Thou sent Him to us because Thou has loved us.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-6,prayer,priest,,,Humbling Himself He redeemed us. He who was born from Thee and is like Thee was born from us in our likeness which is in Thine image.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-7,prayer,priest,,,"He, who is perfect like Thee and is Thine image, walked among us in our image.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-8,prayer,priest,,,"He told us about Thy being, and was made flesh like us. He who overawes the seraphim from the highest heaven suffered at His own will.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-9,prayer,priest,,,"We saw Him and despised Him Who is great before Thee. He is the glorious Lord among us, yet He is hidden from the watchful. Truly He appeared, and was born openly of our nature.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-10,prayer,priest,,,"He resembles Thee in image and appearance, was made man, came in the likeness of our flesh, lived among us in our image, and He is glorious like Thee.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-11,prayer,priest,,,"He flew and descended unto us, and suffered insult as we do. He flew and ascended unto Thee and He is honourable as Thou art.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-12,prayer,priest,,,"He, to Whom the watchful give thanks in heaven, was crowned with a crown of thorns and was crucified on the tree of the cross with thieves. He, before Whom the high ones bow their heads in awe, bowed his head before the crucifiers to suffer.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-13,prayer,priest,,,"A weak tree carried Him who carries heaven and earth. A narrow grave contained Him, before whom heaven and earth tremble, when He was buried in it.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-14,prayer,priest,,,"Him who gathered the ends of earth in His palm and held the seas of the world in the hollow of His hand, they wrapped with linen cloths and buried in a grave of three cubits. He stretched forth His honourable head and the grave was filled with Him.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-15,prayer,priest,,,"He rose from the dead on the third day and entered where His disciples were, while the door was closed, and then departed from His disciples.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-16,prayer,priest,,,"While He was there, His glory covered the heavens. He ascended into heaven, sat at the right hand of His Father, heaven became His throne and the earth His footstool.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-17,prayer,priest,,,"He will come again to judge the living and the dead, He will thunder above and His voice will shake the foundations of the earth, and the dead will come out unto Him from their graves, to Whom be glory and honour, together with His Father and the Holy Spirit, unto the ages of ages.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ps-18,rubric,\N,,,Deacon: Look to the east.,,\N,\N,\N
+section,,,,,,,saint-cyril-intercessions,Intercessions,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-in-1,prayer,priest,,,"Yea, Lord, it is Thou Who raises all by Thy word, who raised the dead through Thy death. There are among the unbelievers those who believed in Thy cross, there are among the sinners those who returned through Thy death, there are among the unclean those who were sanctified through Thy suffering, there are among the dead those whom Thou raised through Thy resurrection, and among those who were gathered together to judge Thee there were those who believed in Thee.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-2,prayer,priest,,,"Thou did open the iron gate and will raise those whose bodies waxed old in the grave, and will awaken those who fell asleep in their life time, and will raise those lying in the earth, and will set free the slaves of sin, and will justify through Thy mercy those who were defiled.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-3,response,congregation,,,"According to Thy mercy, our God, and not according to our sins. (to be chanted thrice)",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-4,prayer,priest,,,"Through Thy mercy Thou reconciles the heretics, strengthens with Thy word those who return to Thee, causes the heretics to return that they may walk in Thy way, gatherers the scattered to enter into Thy paradise.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-5,prayer,priest,,,Those among Thy people who committed sin Thou causes to return unto Thy faith.,,\N,\N,\N
+block,,,,,,,,,,,,cy-in-6,prayer,priest,,,"O Lord, Thou strengthens the weak in spirit that all who live on earth may know that Thou art God and know Thy Son Jesus Christ Whom Thou sent, Thy beloved Son Whom Thou loves and who was born from Thee. Glory be to Thee with Him and with the invisible Holy Spirit, unto the ages of ages.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-7,rubric,\N,,,Deacon: Let us give heed.,,\N,\N,\N
+block,,,,,,,,,,,,cy-in-8,prayer,priest,,,"We offer before Thee this pure and holy offering for the sake of Abel Seth, Enoch, and Melchisedec, for the sake of Abraham, Isaac and Jacob, for the sake of Moses, Aaron and all the prophets.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-9,prayer,priest,,,"For the sake of Simon Peter, John the Baptist and all the apostles.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-10,prayer,priest,,,"For the sake of David, Hezekiah, Josiah, King Constantine and all the kings who have gone to their rest in the true faith.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-11,prayer,priest,,,"For the sake of all the bishops, priests, deacons, assistant deacons, anagnosts, young men and virgins.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-12,prayer,priest,,,For the sake of all souls in which the Holy Spirit dwelt and to which the perfect Spirit of life was given. For the sake of all creatures formed after the likeness of our Lord Jesus Christ Whom Thou loves.,,\N,\N,\N
+block,,,,,,,,,,,,cy-in-13,prayer,priest,,,For the sake of all holy men for whom this offering has been prepared and whom they have led unto Thy holy church and have drawn near before Thy great and holy altar.,,\N,\N,\N
+block,,,,,,,,,,,,cy-in-14,prayer,priest,,,"For the sake of all travelers, and wanderers on the face of the whole earth in true faith, and for the sake of those who have departed from this world.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-15,prayer,priest,,,"For the sake of every mouth and tongue which believed in the name of our Lord Jesus Christ Thy dear Son Whom Thou loves. Glory be to Thee with Him and with the invisible Holy Spirit, unto the ages of ages.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-1,prayer,deacon,በአንተ ብፁዕ ወቅዱስ አባ ማትያስ፣ ወብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ፣,ብፁዕ ቅዱስ ስለሚሆን ስለ ርእሰ ሊቃነ ጳጳሳት ስለ አባ ማትያስ ብፁዕም ስለሚሆን ስለ አባ ጴጥሮስ በጸሎታቸውና,"For the sake of the blessed and holy Patriarch Abba and the blessed Archbishop Abba, while they yet give Thee thanks in their prayer and their supplications: Stephen the first martyr, Zacharias the priest and John the Baptist.",Beinte bitsu'i weqidus Abba Matyas webitsu'i leeqe papasine Abba Petros,\N,\N,\N
+block,,,,,,,,,,,,ap-int-2,prayer,deacon,እንዘ የአኵቱከ በጸሎቶሙ ወበስእለቶሙ እስጢፋኖስ ቀዳሜ ሰማዕት፣ ዘካርያስ ካህን ወዮሐንስ መጥምቅ,በልመናቸው ሲያመስግኑህ የሰማዕታት መጀመሪያ እስጢፋኖስ። ካህን ዘካርያስና መጥምቁ ዩሐንስ,"And for the sake of all the saints and martyrs who have gone to their rest in faith: Matthew and Mark, Luke, and John, the four Evangelists; Mary the mother of God, Simon Peter and Andrew, James and John, Philip and Bartholomew, Thomas and Matthew, Thaddaeus and Nathanael, James the son of Alphaeus and Matthias, the twelve Apostles; and James the Apostle, brother of the Lord, Bishop of Jerusalem: Paul, Timothy, Silas, and Barnabas; Titus, Philemon, and Clement, the seventy-two disciples, the five hundred brethren, the three hundred and eighteen Orthodox; may the prayers of them all come unto us and visit us together with them.",inze ye'akwutuke betselotomu webes'iletomu Isteefanos qedame sema'it. Zekarias kahin weyohanis metmiq.,\N,\N,\N
+block,,,,,,,,,,,,ap-int-3,prayer,deacon,,,"And remember Thou the peace of the universal apostolic church, which was made by Christ through His precious blood.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-4,prayer,deacon,,,"Remember, Thou, all the patriarchs, archbishops, bishops, priests, and deacons who keep straight the way of the true word.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-17,rubric,\N,,,At this time he shall mention the names of those who have recently fallen asleep.,,\N,\N,\N
+block,,,,,,,,,,,,ap-int-5r,rubric,\N,\N,\N,The assistant priest shall say the Prayer of Benediction of St. Basil.,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-int-5,prayer,priest,,,"O holy Trinity, Father, Son, and Holy Spirit, bless Thy people, beloved Christians, with heavenly and earthly blessings.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-6,prayer,priest,,,"And send upon us the grace of the Holy Spirit, and keep the doors of Thy holy church open unto us in mercy and in faith; and perfect unto us the faith of Thy holy Trinity unto our last breath.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-7,prayer,priest,,,"O my Lord Jesus Christ, visit the sick of Thy people; heal them; and guide our fathers and our brethren who have journeyed, becoming strangers: bring them back to their dwelling places in peace and in health.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-8,prayer,priest,,,"Bless the airs of heaven, and the rains and the fruits of the earth of this year, in accordance with Thy grace, and make joy and gladness prevail perpetually on the face of the earth.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-9,prayer,priest,,,And confirm for us Thy peace. Turn the hearts of mighty kings to deal kindly with us always.,,\N,\N,\N
+block,,,,,,,,,,,,ap-int-10,prayer,priest,,,"Grant peace to the scholars of the church, who are continually gathered in Thy holy church; to all, to each by their several names, in the presence of powerful rulers, O our God, increase Thy peace.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-11,prayer,priest,,,"Rest the souls of our ancestors, both our brothers and sisters who have fallen asleep and gained their rest in the right faith.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-12,prayer,priest,,,"And bless those who give gifts of incense, bread and wine, ointment and oil, decorations and reading books, and vessels for the sanctuary, that Christ our God may give them their reward in the heavenly Jerusalem.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-13,prayer,priest,,,"And all of them that are assembled with us to entreat for mercy, Christ our God have mercy upon them: and all them that give alms before Thine awful and terrifying throne, receive.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-14,prayer,priest,,,"And comfort every straitened soul, they who are in chains, and they who are in exile or captivity.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-15,prayer,priest,,,"And them that are held in bitter servitude, our God, deliver them in Thy mercy. And all of them that have entrusted it to us to remember them in our supplications to Thee O our Master Jesus Christ, remember them in Thy heavenly kingdom, and remember me, thy sinful servant.",,\N,\N,\N
+block,,,,,,,,,,,,ap-int-16,prayer,priest,ኦ እግዚኦ አድኅን ሕዝበከ ወባርክ ርስተከ,አቤቱ ሕዝብህን አድን ርስትህንም ባርክ።,"O Lord, save thy people and bless Thine inheritance, feed them and lift them up for ever.",O igzio adihin hizibike webarik risteke,\N,\N,\N
+block,,,,,,,,,,,,cy-in-19,prayer,deacon,,,"Lord, pity and have mercy upon the patriarchs, archbishops, bishops, priests, deacons and all the Christian people.",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-20,prayer,priest,,,"For the sake of those and all our Lord and God Jesus Christ, Thy church worships Thee and Thy bride exalts Thee with the goodness of the high ones, with the sanctification of the seraphim, with the praise of the cherubim, with the thanksgiving of the angels, with the prayer of the watchful and with the perfection of the saints :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-21,prayer,priest,,,"With the purity of Adam, with the sacrifice of Noah, with the hospitality of Abraham, with the kindness of Isaac and with the vision of Jacob :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-22,prayer,priest,,,"With the imprisonment of Joseph, with the patience of Job, with the meekness of Moses and with the praise of Elijah :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-23,prayer,priest,,,"With the love of the apostles, with the prayer of the saints, with the labour of the anchorites, with the righteousness of the sinless, and with the humility of the pure :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-24,prayer,priest,,,"With the courage of the pure, with the bereavement of the bereaved, and with the righteousness of the perfect saints :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-25,prayer,priest,,,"With the remoteness of the ends of the earth; with the depth of the sea's whirlpools, with the flash of lightning, and with the flight of the clouds :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-26,prayer,priest,,,"With the thanksgiving of the angels, with the glory of the saints, with the purity of the watchful, with the agreement of the high ones, and with the light of the spiritual ones :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-27,prayer,priest,,,"With the right hand of the priests, with the death of the martyrs, with the blood of the believers, and with the greatness of the luminous angels :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-28,prayer,priest,,,"With the striking of Thy Son, with the suffering of Thine only One, and with Thine authority which holds all :",,\N,\N,\N
+block,,,,,,,,,,,,cy-in-29,prayer,priest,,,And with the prayer which ascends to the Father of our Lord and Saviour Jesus Christ.,,\N,\N,\N
+section,,,,,,,saint-cyril-institution,Institution Narrative,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-inst-1,rubric,\N,,,At this time he shall offer incense.,,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-2,response,congregation,,,"Remember us, Lord, in Thy kingdom.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-3,prayer,priest,,,In the same night in which they betrayed Him:,,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-4,rubric,\N,,,"Deacon: Priests, raise up your hands.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-5,prayer,priest,,,"He took bread in His holy, blessed and spotless hands, looked up unto heaven, towards Thee, His Father.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-6,response,congregation,,,"We believe that this is He, truly we believe.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-7,prayer,priest,,,"Gave thanks, blessed, broke (+ three times, then he shall indent the Host lightly with his thumb in five places without separation). And said unto them, Take, eat, this bread is My body which will be broken for you as a propitiation for all the world for the remission of sin.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-8,response,congregation,,,"Amen. Amen. Amen. We believe and confess, we glorify Thee, O our Lord and our God; that this is He we truly believe.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-9,prayer,priest,,,"Again after they had supped, He took a cup, gave thanks, blessed, hallowed (+ three times) and said unto His disciples, Take, drink, this cup is My blood of the new testament which will be shed for you and given as a propitiation for all the world for the remission of sin.",,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-10,rubric,\N,,,He shall move the cup with his right hand in the sign of the cross.,,\N,\N,\N
+block,,,,,,,,,,,,cy-inst-11,response,congregation,,,Amen. Amen. Amen.,,\N,\N,\N
+section,,,,,,,saint-cyril-anamnesis,Anamnesis,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-an-1,prayer,priest,,,"Yea, Lord our God, hearken to the prayer of Thy servants and accept those who worship Thee before Thy face.",,\N,\N,\N
+block,,,,,,,,,,,,cy-an-2,response,congregation,,,"We proclaim Thy death, Lord, and Thy holy resurrection; we believe thy ascension and Thy second advent. We glorify Thee, and confess Thee, we offer our prayer unto Thee and supplicate Thee, O our Lord and our God.",,\N,\N,\N
+section,,,,,,,saint-cyril-epiclesis,Epiclesis,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-ep-1,prayer,priest,,,"Let the flaming sword of fire, called ""Shining"" be drawn, and let the heaven of heavens be opened, through Thy righteousness, and with Thy will, let Thy living Holy Spirit descend, come and rest upon this bread and cup, bless and sanctify them to be the communion of the body and blood of Thine only-begotten Son, our Lord, God, and Saviour Jesus Christ (+ once over the bread and once over the cup and once more over both of them) for the forgiveness of the iniquity to those who draw near to it and remission of sin to those who partake of it.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-2,response,congregation,,,"Amen. Lord pity us, Lord spare us, Lord have mercy upon us.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-3,prayer,deacon,,,With all the heart let us beseech the Lord our God that he grant unto us the good communion of the Holy Spirit.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-4,response,congregation,,,"As it was, is, and shall be unto generations of generations, and endless ages.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-5,rubric,\N,,,At this time he shall dip his finger into the Blood and sign the Body.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-6,prayer,priest,,,"And to all those who in true faith partake of it and receive it may it be for mercy, compassion, healing, help, life of soul and body, forgiveness of iniquity, remission of sin, resurrection from the dead, and new life, unto the ages of ages.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-7,response,congregation,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-8,prayer,priest,,,"Grant us to be united through Thy Holy Spirit, and heal us by this oblation that we may live in Thee forever.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-9,rubric,\N,,,The people shall repeat his words.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-10,prayer,priest,,,"Blessed be the name of the Lord, and blessed be He that comes in the name of the Lord, and let the name of His glory be blessed. So be it. So be it. So be it blessed.",,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-11,rubric,\N,,,The people shall repeat his words.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-12,prayer,priest,,,Send the grace of the Holy Spirit upon us.,,\N,\N,\N
+block,,,,,,,,,,,,cy-ep-13,rubric,\N,,,The people shall repeat his words.,,\N,\N,\N
+section,,,,,,,saint-cyril-fraction,Prayer of Fraction,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-fr-1,rubric,\N,,,Deacon: Arise for prayer.,,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-2,response,congregation,,,Lord have mercy upon us.,,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-3,prayer,priest,,,Peace be unto all of you.,,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-4,response,congregation,,,And with your spirit.,,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-5,prayer,priest,,,"Again we beseech the almighty God, Father of our Lord and Saviour Jesus Christ, O Lord, we have lifted up our eyes unto Thee desiring the descent of the Holy Spirit, we kneel to Thee with the knees of our heart, and we bow unto Thee the heads of our minds and spirits.",,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-6,prayer,priest,,,"O Lord, sanctify us with Thy sanctification, and purify us through Thy mercy, and make us worthy to partake of Thy holy mystery.",,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-7,prayer,priest,,,"Let not this coal of fire, which we have laid before Thee upon Thy holy altar, be our accuser, and let not this bread of worship which we break be for vengeance because we did not purify our soul and our body.",,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-8,prayer,priest,,,"It is fearful to open the lips to eat burning fire and swallow glowing coal, if the belly is not purified from deceit.",,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-9,prayer,priest,,,It is fearful to see the slaughter of the pure bridegroom in his pavilion.,,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-10,prayer,priest,,,It is fearful to see the killing of the Son of the living God before His heavenly Father.,,\N,\N,\N
+block,,,,,,,,,,,,cy-fr-11,prayer,priest,,,It is fearful to draw near the flame of the Deity and to touch the lightning of glory.,,\N,\N,\N
+section,,,,,,,saint-cyril-lords-prayer,Lord's Prayer,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-lp-1,rubric,\N,,,Deacon: Pray ye.,,\N,\N,\N
+block,,,,,,,,,,,,cy-lp-2,response,congregation,,,"Our Father who art in heaven . . . (see Anaphora of the Lord, #69)",,\N,\N,\N
+section,,,,,,,saint-cyril-pre-communion,Pre-Communion,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-pc-1,prayer,priest,,,"Let us, therefore, purify ourselves to take it and sanctify our souls to receive it and say :
+Glory be to the Father who has been pleased that the pure fatted calf may be killed.
+Glory be to the Son who is the pure fatted Calf.
+Glory be to the Holy Spirit Who has made this bread the flesh of the pure fatted Calf.
+Three names and one God,
+Three likenesses and one appearance,
+Three persons and one essence.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-2,prayer,priest,,,"Worthy is He to be glorified by the mouths of the watchful angels, worthy is He to be sanctified by the mouths of the prophets and apostles from now till the end of the world and till the second advent.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-3,response,congregation,,,"The hosts of the angels of the Saviour of the world stand before the Saviour of the world, and encircle the Saviour of the world, even the body and blood of the Saviour of the world. Let us draw near the face of the Saviour of the world. In the faith that is of Him, let us submit ourselves to Christ.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-4,rubric,\N,,,"Asst. Deacon: Open ye the gates, princes.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-5,rubric,\N,,,"Deacon: Ye who are standing, bow your heads.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-6,prayer,priest,,,"The Father was with His Son and the Holy Spirit before there were hours and days, before there were months and years.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-7,prayer,priest,,,"The One was not before the Other, and the Second was not before the Third. How swift is the speed of lightning and how swift is the movement of eagles' wings.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-8,prayer,priest,,,"They are united without separation, connected without being mixed, They live in Trinity, They are joined in oneness, equal in persons and similar in light and appearance.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-9,prayer,priest,,,"The Father did not beget His Son to help Him in His work before the world was created, and the existence of the Holy Spirit is not to contribute wisdom and work.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-10,prayer,priest,,,"Let us speak of His birth from God the Father only. In that instance He had no mother because the existence of the creatures had not yet appeared. Again, let us speak of and proclaim the birth of Him Who is alone the Son of God, and, Who alone was born without an earthly Father from the Virgin, the daughter of David.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-11,prayer,priest,,,"His humanity was not inferior because He had no Father to be born of his seed, but was perfectly incarnate from a virgin only.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-12,prayer,priest,,,"As Eve's female nature was not inferior through having had no mother when she was formed from the bone of Adam's side, and as the building of the body of the first Adam did not lose anything when a bone of his side was taken away, so also the seal of Mary's virginity was not destroyed when she gave birth to the Father of Adam in the flesh;",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-13,prayer,priest,,,"And as Adam did not feel pain when a bone was taken from his side, also the Galilean Mother of God did not feel travail.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-14,prayer,priest,,,Thus we believe and thus we affirm that this bread which we break is the body of Christ which He took from the daughter of the Hebrews.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-15,prayer,priest,,,We also believe that this cup is the blood of the Deity shed from the side of God's Lamb. We also believe that this sign of the cross is the image of Christ's crucifixion when He was stretched out at the time of His suffering.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-16,prayer,priest,,,"We bow before the altar of Him who is clothed with a vesture dipped in blood and before that vesture dipped in blood, unto the ages of ages.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-17,rubric,\N,,,Deacon: Worship the Lord with fear.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-18,response,congregation,,,"Before Thee, Lord, we worship, and Thee do we glorify.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-1,prayer,deacon,,,Worship the Lord with fear.,,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-2,response,congregation,,,"Before Thee, Lord, we worship, and Thee do we glorify.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-3,prayer,priest,,,"O Lord God, the Father almighty, Thou it is Who heals the wounds of our soul, body, and spirit,",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-4,prayer,priest,,,"because Thou has said, by the mouth of Thine only-begotten Son, our Lord, God, and Saviour Jesus Christ, that which He said to our father Peter, you are a rock, and upon this rock I will build My holy church, and the gates of hell shall not prevail against it; and unto you do I give the keys of the Kingdom of heaven; what you shall have bound on earth shall be bound in heaven, and what you shall have loosed on earth shall be loosed in heaven.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-5,prayer,priest,,,"Let all Thy servants and Thy handmaids, according to their several names, be absolved and set free out of the mouth of the Holy Spirit, and out of the mouth of me also, Thy sinful and guilty servant, whether they have wrought wittingly or unwittingly.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-6,prayer,priest,,,"Keep them, Lord, and defend them, thy servants, my fathers, brothers and sisters.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-7,prayer,priest,,,"And also loose me, thy humble and sinful servant.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-8,prayer,priest,,,"Both absolve them and set them free: out of the mouth of the holy Trinity: the Father, Son, and Holy Spirit, and out of the mouth of me Thy sinful and unrighteous servant.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-9,prayer,priest,,,"O propitious, merciful and lover of man, Lord our God, that takes away the sin of the world, accept the penitence of Thy servants and Thy handmaids, and shine upon them with the light of everlasting life, and forgive them, Lord, all their sins; for Thou art good and the lover of man.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-10,prayer,priest,,,"O Lord our God, merciful, slow to anger, plenteous in mercy and righteous, forgive me my sins,",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-11,prayer,priest,,,"and deliver all thy servants and handmaids from all transgression and curse. If we have transgressed against Thee, Lord, whether in our word, deed, or thought, release, remit, pardon and have mercy, for Thou art good and the lover of man, Lord our God.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pen-12,prayer,priest,,,"O Lord, absolve us and set us free, and absolve all Thy people, and absolve me Thy sinful servant.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-1r,rubric,\N,\N,\N,"Then he shall turn his face towards the people, bless them three times, make mention of them that are with him and say also:",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-1,prayer,priest,,,"Remember, Lord, the honourable father, our Patriarch Abba and the blessed Archbishop Abba. Our God, keep them for us for many years and length of days in righteousness and peace.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-2,prayer,priest,,,"Remember, Lord, all our civil authorities, and loose them from all the chains of sin which they have committed wittingly or unwittingly, quickly subdue their adversaries and enemies under their feet.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-3,prayer,priest,,,"Remember, Lord, the patriarchs, archbishops, bishops, priests and deacons, anagnosts and singers, virgins and monks, widows and orphans, men and women, aged and children; and all Christian people that are standing in this holy church; strengthen them in the faith of Christ.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-4r,rubric,\N,\N,\N,At this moment he shall mention those that have lately been laid to rest.,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-4,prayer,priest,,,"Remember, Lord, all our fathers, brothers and sisters that are asleep and resting in the orthodox faith, and lay their souls in the bosom of Abraham, Isaac and Jacob.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-5,prayer,priest,,,"And as for us, deliver us from every transgression and curse and from all wickedness and from all rebellion and from all false swearing and from all anathemas and from all perjury and from mingling with heretics and gentiles in error and defilement.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-6,prayer,priest,,,"Grant us, Lord, wisdom, power, reason, understanding and knowledge, that we may depart and flee for evermore from all works of Satan, the tempter.",,\N,\N,\N
+block,,,,,,,,,,,,ap-rem-7,prayer,priest,,,"Grant us, Lord, to do Thy will and good pleasure at all times, and write our names in the book of life in the kingdom of heaven with all saints and martyrs, through Jesus Christ our Lord, through whom to Thee with Him and the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-20,rubric,\N,,,Deacon: Give heed.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-21,prayer,priest,,,Holy things for the holy.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-22,response,congregation,,,"One is the holy Father, one is the holy Son, one is the Holy Spirit.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-23,prayer,priest,,,The Lord be with all of you.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pc-24,response,congregation,,,And with your spirit.,,\N,\N,\N
+section,,,,,,,saint-cyril-communion,Communion,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-co-1,rubric,\N,,,"The priest shall then lift up the whole Host with his hands and say: Lord, have compassion upon us, O Christ. (three times in a loud chant and fifteen times in a low chant). The people shall repeat his words. Then the priest shall repeat them three times and the people twice.",,\N,\N,\N
+block,,,,,,,,,,,,cy-co-2,rubric,\N,,,"Deacon: Ye that are penitent, bow your heads.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-8r,rubric,\N,\N,\N,The priest shall turn toward the people and say:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-8,prayer,priest,,,"Lord our God, look upon Thy people that are penitent, and according to Thy great mercy, have mercy upon them, and according to the multitude of Thy compassion blot out their iniquity, cover them and keep them from all evil.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-9,prayer,priest,,,"And redeem their souls in peace, forgive their former works, join them with Thy holy church, through the grace and compassion of Thine only-begotten Son our Lord, God, and Saviour Jesus Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-10,prayer,deacon,,,Arise for prayer.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-11,response,congregation,,,Lord have mercy upon us.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-12,prayer,priest,እግዚአብሔር ምስለ ኵልክሙ።,እግዚአብሔር ከሁላችሁ ጋር ይሁን።,Peace be unto all of you.,Igzee'abihér misle kwulikimu.,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-13,response,congregation,ምስለ መንፈስከ።,ከመንፈስህ ጋራ።,And with your spirit.,Misle menfesike.,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-14,prayer,priest,,,"This is the true holy body of our Lord, God, and Saviour Jesus Christ, that is given for life, salvation, remission of sin unto them that receive of it in faith.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-14r,response,congregation,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-15,prayer,priest,,,"This is the true precious blood of our Lord, God, and Saviour Jesus Christ, which is given for life, salvation, and remission of sins into those who drink of it in faith.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-15r,response,congregation,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-16,prayer,priest,,,For this is the body and blood of Emmanuel our very God.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-16r,response,congregation,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-17,prayer,priest,,,"I believe, I believe, I believe and I confess, unto my last breath, that this is the body and blood of our Lord, God, and Saviour Jesus Christ, which He took from the Lady of us all, the holy Mary of twofold virginity, and made it one with His godhead without mixture or confusion, without division or alteration; and He verily confessed with a good testimony in the days of Pontius Pilate, and this body He gave up for our sakes and for the life of us all.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-17r,response,congregation,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-18,prayer,priest,,,"I believe, I believe, I believe and I confess that His godhead was not separated from His manhood, not for an hour nor for the twinkling of an eye, but He gave it up for our sakes for life, salvation, and remission of sin unto them that partake of it in faith.",,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-18r,response,congregation,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-prec-19,prayer,priest,,,"I believe, I believe, I believe and I confess that this is the body and blood of our Lord, God, and Saviour Jesus Christ, and that to Him are rightly due honour and glory and adoration with His kind heavenly Father and the Holy Spirit, the life-giver, both now and ever and unto the ages of ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-1r,rubric,\N,\N,\N,"Then the priest shall take in his hand the asbadikon which bears the sign of the cross, dip it into the chalice into the blood, and with it make the sign of the cross on the Body. Then, with the Body, he shall make the sign of the cross over the Blood and say:",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-1,prayer,priest,,,"Blessed be God, almighty Father, our God. And blessed be the only-begotten Son, our Lord and Saviour Jesus Christ. And blessed be the Holy Spirit the Paraclete, the comforter and cleanser of us all.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-1b,rubric,\N,\N,\N,"Then the assistant deacon shall offer water to the priests and deacons to wash their hands, signifying that they should be holy in their souls.",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-2,prayer,priest,,,"Lord my God, behold the sacrifice of Thy Son's body, which pleases Thee. Through it blot out all my sins because Thine only-begotten Son died for me.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-3,prayer,priest,,,"And behold the pure blood of Thy Messiah, which was shed for me upon Calvary, cries aloud in my stead. Grant that the testimony of this blood may be unto the forgiveness of me Thy servant.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-4,prayer,priest,,,"And accept my prayers for its sake, because thy beloved accepted the spear and the nails for my sake, and suffered to please Thee. But after I was saved, Satan returned to my heart and pierced me through with his darts. Grant me, Lord, Thy mercy, because he is a powerful accuser.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-5,prayer,priest,,,And by the provision of sin he slew me. Avenge me of the audacious one who is not satisfied with my being led astray from my life.,,\N,\N,\N
+block,,,,,,,,,,,,ap-com-6,prayer,priest,,,"Thou, Lord, my King, God, Saviour bind up the wounds of soul and body of me Thy servant.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-7r,rubric,\N,\N,\N,"Before receiving the Holy Communion, all communicants shall say:",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-7,prayer,all,,,"O my Lord Jesus Christ, it in no wise befits Thee to enter under the roof of my polluted house, for I have provoked Thee to wrath, for I have done evil in Thy sight, and through the transgression of Thy commandment have polluted my soul and body which Thou created after Thine image and likeness, yet in me dwells no good thing.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-8,prayer,all,,,"But for the sake of Thy plan, and Thine incarnation for my salvation, for the sake of thy precious cross and Thy life-giving death, for the sake of Thy resurrection on the third day, I pray thee and beseech Thee, O my Lord, that Thou would purge me from all guilt and curse, and from all sin and defilement.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-9,prayer,all,,,"And when I have received Thy holy mystery, let it not be unto me for judgement nor for condemnation, but have compassion upon me and have mercy upon me; and through it grant me remission of my sin and life for my soul, O life of the world, through the petition of our Lady, the holy Mary His mother of twofold virginity, and of John the Baptist, and through the prayer of all the holy angels, all the martyrs, and righteous who have fought for the good, unto ages of ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-9r,rubric,\N,\N,\N,"The priest shall come out of the sanctuary and distribute the Holy Communion to the faithful in order. Then the men, then the women. But the babies who have already been baptized shall receive before the other faithful.",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-10r,rubric,\N,\N,\N,"While receiving the Holy Communion, the priest shall say to himself:",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-10,prayer,priest,,,"O my Lord Jesus Christ, let not this Thy mystery be iniquity in me, rather let it be for the purifying of my soul and my body.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-11r,rubric,\N,\N,\N,"The celebrant receives of the Host first, next he shall give it to the assistant priest, who gives him the Blood; the assistant priest shall himself receive of the Blood. The celebrant shall give the priests of the Body, the assistant priest shall give them of the Blood.",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-12r,rubric,\N,\N,\N,"While offering the Holy Qurban at the time of the Anaphora of the Apostles, the priest shall say:",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-12,prayer,priest,,,"The bread of life which came down from heaven, the holy body of Christ.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-12b,response,all,,,Amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-com-13,prayer,all,,,"Holy, holy, holy Trinity ineffable, grant me to receive this body and His blood for life and not for condemnation. Grant me to bring forth fruit that shall be well-pleasing unto Thee, to the end that I may appear in Thy glory, and live unto Thee, doing Thy will.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-14,prayer,all,,,"In faith I call upon Thee, Father, and call upon Thy Kingdom: hallowed, Lord, be Thy name upon us, for mighty art Thou, praised and glorious, and to Thee be glory, unto endless ages.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-15r,rubric,\N,\N,\N,Then he shall consume what he has received. While chewing he shall put his hand on his mouth. He shall chew in fear and trembling without making any sound till he finishes. Then he shall say:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-15,prayer,all,,,"Fill my mouth with praise, my heart with joy, and my soul with gladness, fill me who have received of this divine mystery, O Thou Who became man for the salvation of man.",,\N,\N,\N
+block,,,,,,,,,,,,ap-com-16r,rubric,\N,\N,\N,When the assistant priest gives the blood he shall say:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-com-16,prayer,priest,,,This is the cup of life that came down from heaven; this is the precious blood of Christ.,,\N,\N,\N
+block,,,,,,,,,,,,ap-com-17,response,all,,,Amen and amen.,,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-1r,rubric,\N,\N,\N,The Prayer of Basil. When the blood is in his mouth he shall say in his heart:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-1,prayer,priest,,,"O my Lord and my God Jesus Christ, behold I have received Thy holy Body and Thy precious Blood. May they be for the remission of my sins and the blotting out of my trespasses.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-2,prayer,priest,,,"O only-begotten Son and lover of man, fill my mouth with Thy praise that I may praise Thy glory, for Thou art He Who once became man and declared Himself through His incarnation in order to save me for ever. Thou has redeemed me for ever for the sake of Thy holy Name.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-3,prayer,priest,,,"Glory be to Thee, O my Lord and my God Jesus Christ, Who has granted me Thy Body and Thy Blood at the hand of Thy servant. I glorify thee and pray thee that I may be in the midst of Thy flock, and that accepting me, Thou will number me with Thy sheep.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-4,prayer,priest,,,"And now remember not my trespasses. I give thanks for Thy grace which has been granted unto me, and for Thy help which has been with me.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-5r,rubric,\N,\N,\N,When the deacon receives the cup he shall say:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-5,prayer,deacon,,,"I will take the cup of life, and call upon the name of the Lord. Pray ye for us and for all Christians who ask us to mention them. Praise ye and sing in the peace and love of Jesus Christ.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-6r,rubric,\N,\N,\N,"And then the clergy shall chant Psalm 150. They shall chant one by one or two by two according to their number, without ceasing.",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-7r,rubric,\N,\N,\N,The priest shall say as he goes out:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-7,prayer,priest,,,"Those whom Thou has called, Lord, and hallowed, make happy with Thy call, confirm with Thy power, keep with Thy love, join in Thine everlasting kingdom through Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-8r,rubric,\N,\N,\N,"When the priest goes out he shall bless over the Paten once. Then he shall offer the Body to the people, and the deacon shall offer the Blood.",\N,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-9,prayer,priest,,,"O eternal God, light of life, Thou has given, Lord, unto us Thy servants strength and protection, during the present days and nights, keeping all in peace. Bless them on this present day, and on those to come hereafter, through our Lord Jesus Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-10,prayer,deacon,,,We thank God that we have partaken of His holy things; we pray and trust that which we have received may be healing for the life of the soul while we glorify the Lord our God.,,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-11,prayer,priest,,,"My mouth shall speak the praise of the Lord, and let all flesh bless His holy Name for ever and ever.",,\N,\N,\N
+block,,,,,,,,,,,,ap-pcom-12,response,congregation,,,"Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-1,prayer,deacon,,,We have received of the holy body and the precious blood of Christ.,,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-2,prayer,priest,,,"My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-3,response,congregation,,,"Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-4,prayer,deacon,,,And let us give thanks unto Him that makes us ready to communicate in the precious and holy mystery.,,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-5,prayer,priest,,,"My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-6,response,congregation,,,"Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-7r,rubric,\N,\N,\N,The priest shall sing in Izl:,\N,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-7,prayer,priest,,,"I will extol Thee, my King and my God, and I will bless Thy name for ever and ever.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-8,response,congregation,,,"Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-9,prayer,priest,,,"Every day will I bless Thee, and I will praise Thy name for ever and ever.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-10,response,congregation,,,"Our Father who art in heaven, lead us, Lord, that we may not enter into temptation.",,\N,\N,\N
+block,,,,,,,,,,,,ap-thk-11,prayer,priest,,,"My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever.",,\N,\N,\N
+section,,,,,,,saint-cyril-post-communion,Post-Communion,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-pco-1,rubric,\N,,,After receiving the Holy Communion.,,\N,\N,\N
+block,,,,,,,,,,,,cy-pco-2,heading,\N,,,Pilot of the Soul,,\N,\N,\N
+block,,,,,,,,,,,,cy-pco-3,prayer,priest,,,"Then was our mouth filled with laughter and our tongue with singing, we who have received this indistructible mystery. O Lord, that which eye has not seen, nor ear heard, neither has it entered into the heart of man, Thou has prepared, O God, for them that love Thy holy Name; and has revealed unto us tiny infants in Thy holy church : even so, Father, for so it seemed good in Thy sight, because Thou art compassionate, O Lord our God.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pco-4,prayer,priest,,,"To Thee we send, unto the highest heaven, glory and honour, Father, Son and the Holy Spirit, both now and ever and unto endless ages.",,\N,\N,\N
+block,,,,,,,,,,,,cy-pco-5,response,congregation,,,Amen.,,\N,\N,\N
+section,,,,,,,saint-cyril-dismissal,Laying on of the Hand,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,cy-di-1,prayer,priest,,,"O Lord, make us, we whom Thou has called and sanctified, worthy of Thy call, keep us through Thy love, and strengthen us in hallowing Thee.",,\N,\N,\N
+block,,,,,,,,,,,,cy-di-2,prayer,priest,,,"Keep us far from every evil and save us with Thy right hand in Thine eternal kingdom, through Christ Thy Son, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen.",,\N,\N,\N

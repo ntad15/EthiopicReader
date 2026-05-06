@@ -1,0 +1,4 @@
+kind,doc_id,doc_saint,doc_title_english,doc_title_geez,doc_title_amharic,doc_title_transliteration,section_id,section_title_english,section_title_geez,section_title_amharic,section_title_transliteration,block_id,block_type,speaker,geez,amharic,english,transliteration,dynamic,overrideId,optional
+anaphora,our-lord,\N,Our Lord Jesus Christ,ጌታ ኢየሱስ ክርስቶስ,ጌታ ኢየሱስ ክርስቶስ,\N,,,,,,,,,,,,,,,
+section,,,,,,,our-lord-placeholder,Coming Soon,\N,\N,\N,,,,,,,,,,
+block,,,,,,,,,,,,our-lord-placeholder-1,rubric,\N,\N,\N,[Placeholder — contribute the full text via a Pull Request on GitHub],\N,\N,\N,\N
