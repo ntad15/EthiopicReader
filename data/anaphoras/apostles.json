@@ -1,10 +1,19 @@
 {
   "id": "apostles",
-  "name": { "english": "Anaphora of the Apostles", "geez": "ቅዳሴ ሐዋርያት", "amharic": "ቅዳሴ ሐዋርያት" },
+  "name": {
+    "english": "Anaphora of the Apostles",
+    "geez": "ቅዳሴ ሐዋርያት",
+    "amharic": "ቅዳሴ ሐዋርያት"
+  },
   "sections": [
     {
       "id": "apostles-opening",
-      "title": { "english": "Opening", "geez": "መጀመሪያ", "amharic": "መጀመሪያ", "transliteration": "" },
+      "title": {
+        "english": "Opening",
+        "geez": "መጀመሪያ",
+        "amharic": "መጀመሪያ",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-op-1",
@@ -73,7 +82,12 @@
     },
     {
       "id": "apostles-lords-prayer",
-      "title": { "english": "Lord's Prayer", "geez": "አቡነ ዘበሰማያት", "amharic": "አባታችን ሆይ", "transliteration": "" },
+      "title": {
+        "english": "Lord's Prayer",
+        "geez": "አቡነ ዘበሰማያት",
+        "amharic": "አባታችን ሆይ",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-lp-1",
@@ -124,7 +138,12 @@
     },
     {
       "id": "apostles-hail-mary",
-      "title": { "english": "Hail Mary", "geez": "ሰላም ለኪ ማርያም", "amharic": "ሰላም ለኪ ማርያም", "transliteration": "" },
+      "title": {
+        "english": "Hail Mary",
+        "geez": "ሰላም ለኪ ማርያም",
+        "amharic": "ሰላም ለኪ ማርያም",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-hm-1",
@@ -184,7 +203,12 @@
     },
     {
       "id": "apostles-preface",
-      "title": { "english": "Preface", "geez": "ምስጋና", "amharic": "ምስጋና", "transliteration": "" },
+      "title": {
+        "english": "Preface",
+        "geez": "ምስጋና",
+        "amharic": "ምስጋና",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-pref-1",
@@ -208,7 +232,12 @@
     },
     {
       "id": "apostles-intercessions",
-      "title": { "english": "Intercessions", "geez": "ልቡናውን ጸሎት", "amharic": "ልቡናውን ጸሎት", "transliteration": "" },
+      "title": {
+        "english": "Intercessions",
+        "geez": "ልቡናውን ጸሎት",
+        "amharic": "ልቡናውን ጸሎት",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-int-1",
@@ -363,7 +392,12 @@
     },
     {
       "id": "apostles-sanctus",
-      "title": { "english": "Sanctus", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Sanctus",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-san-1",
@@ -468,7 +502,12 @@
     },
     {
       "id": "apostles-post-sanctus",
-      "title": { "english": "Post-Sanctus", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Post-Sanctus",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-psn-1",
@@ -492,7 +531,12 @@
     },
     {
       "id": "apostles-institution",
-      "title": { "english": "Institution Narrative", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Institution Narrative",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-inst-1r",
@@ -626,7 +670,12 @@
     },
     {
       "id": "apostles-anamnesis",
-      "title": { "english": "Anamnesis (Hymns of the Sacrifice)", "geez": "ዝክረ ሞት", "amharic": "ዝክረ ሞት", "transliteration": "" },
+      "title": {
+        "english": "Anamnesis (Hymns of the Sacrifice)",
+        "geez": "ዝክረ ሞት",
+        "amharic": "ዝክረ ሞት",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-an-rubric",
@@ -727,7 +776,12 @@
     },
     {
       "id": "apostles-epiclesis",
-      "title": { "english": "Anamnesis and Epiclesis", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Anamnesis and Epiclesis",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-epic-1",
@@ -848,7 +902,12 @@
     },
     {
       "id": "apostles-fraction",
-      "title": { "english": "Prayer of Fraction", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Prayer of Fraction",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-frac-1",
@@ -926,7 +985,12 @@
     },
     {
       "id": "apostles-absolution",
-      "title": { "english": "Absolution", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Absolution",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-abs-1",
@@ -1023,7 +1087,12 @@
     },
     {
       "id": "apostles-penitence",
-      "title": { "english": "Prayer of Penitence", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Prayer of Penitence",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-pen-1",
@@ -1137,7 +1206,12 @@
     },
     {
       "id": "apostles-remembrances",
-      "title": { "english": "Remembrances", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Remembrances",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-rem-1r",
@@ -1216,7 +1290,12 @@
     },
     {
       "id": "apostles-pre-communion",
-      "title": { "english": "Pre-Communion", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Pre-Communion",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-prec-1",
@@ -1453,7 +1532,12 @@
     },
     {
       "id": "apostles-communion",
-      "title": { "english": "Holy Communion", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Holy Communion",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-com-1r",
@@ -1657,7 +1741,12 @@
     },
     {
       "id": "apostles-post-communion",
-      "title": { "english": "Post-Communion Prayers", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Post-Communion Prayers",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-pcom-1r",
@@ -1778,7 +1867,12 @@
     },
     {
       "id": "apostles-thanksgiving",
-      "title": { "english": "Thanksgiving", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Thanksgiving",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-thk-1",
@@ -1939,7 +2033,12 @@
     },
     {
       "id": "apostles-post-consumption",
-      "title": { "english": "Post-Consumption Prayers", "geez": "", "amharic": "", "transliteration": "" },
+      "title": {
+        "english": "Post-Consumption Prayers",
+        "geez": "",
+        "amharic": "",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-pcon-1",
@@ -1995,7 +2094,12 @@
     },
     {
       "id": "apostles-dismissal",
-      "title": { "english": "Final Prayers and Dismissal", "geez": "መጨረሻ ጸሎቶች", "amharic": "መጨረሻ ጸሎቶች", "transliteration": "" },
+      "title": {
+        "english": "Final Prayers and Dismissal",
+        "geez": "መጨረሻ ጸሎቶች",
+        "amharic": "መጨረሻ ጸሎቶች",
+        "transliteration": ""
+      },
       "blocks": [
         {
           "id": "ap-dis-1",
