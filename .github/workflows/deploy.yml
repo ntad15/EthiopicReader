@@ -53,7 +53,7 @@ jobs:
       - name: Encrypt admin tool with staticrypt
         env:
           STATICRYPT_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-        run: npx staticrypt dist/admin/index.html -d dist/admin --template-title "Qidase Admin" --remember 15 --config false
+        run: npx staticrypt dist/admin/index.html -d dist/admin --template-title "EthiopicReader Admin" --template-color-primary "#C9A84C" --template-color-secondary "#0a0a0a" --remember 15 --config false
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
