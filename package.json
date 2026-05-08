@@ -11,7 +11,7 @@
     "lint": "expo lint",
     "admin": "node admin-server.js",
     "admin:manifest": "node scripts/build-admin-manifest.js",
-    "admin:encrypt": "staticrypt dist/admin/index.html --password \"$ADMIN_PASSWORD\" --output dist/admin/index.html --template-title 'Qidase Admin'"
+    "admin:encrypt": "staticrypt dist/admin/index.html -d dist/admin --template-title 'Qidase Admin' --config false"
   },
   "dependencies": {
     "@expo-google-fonts/eb-garamond": "^0.4.2",
