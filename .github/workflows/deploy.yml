@@ -39,6 +39,17 @@ jobs:
       - name: Disable Jekyll
         run: touch dist/.nojekyll
 
+      - name: Build admin tool (manifest + common blocks)
+        run: node scripts/build-admin-manifest.js
+
+      - name: Stage admin tool into dist/admin
+        run: |
+          mkdir -p dist/admin/data
+          cp admin-ui.html dist/admin/index.html
+          # Copy every data file the admin tool may load. Excludes scripts/ and data_csv/
+          # (already filtered by the manifest builder). Use rsync to preserve subdirs.
+          rsync -a --exclude='scripts' --exclude='data_csv' data/ dist/admin/data/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

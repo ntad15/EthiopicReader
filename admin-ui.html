@@ -271,6 +271,66 @@
     .btn-save:hover { opacity: 0.88; }
     #save-hint { font-size: 11px; color: var(--muted); }
 
+    /* ── Header right side ───────────────────────────── */
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    .btn-ghost {
+      padding: 5px 11px; border-radius: 4px;
+      background: var(--surface2); border: 1px solid var(--border);
+      color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Search & Insert modal ───────────────────────── */
+    .modal-backdrop {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+      display: none; align-items: center; justify-content: center; z-index: 100;
+    }
+    .modal-backdrop.visible { display: flex; }
+    .modal {
+      width: min(720px, 92vw); max-height: 80vh; display: flex; flex-direction: column;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6); overflow: hidden;
+    }
+    .modal-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 16px; border-bottom: 1px solid var(--border);
+    }
+    .modal-head h2 { font-size: 14px; font-weight: 600; color: var(--accent); }
+    .modal-close { background: none; border: none; color: var(--muted); font-size: 20px; cursor: pointer; }
+    .modal-close:hover { color: var(--text); }
+    .modal-tabs { display: flex; border-bottom: 1px solid var(--border); }
+    .modal-tab {
+      flex: 1; padding: 8px 12px; font-size: 12px; font-weight: 600; background: none; border: none;
+      border-bottom: 2px solid transparent; color: var(--muted); cursor: pointer; transition: color 0.15s;
+    }
+    .modal-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .modal-tab:hover:not(.active) { color: var(--text); }
+    .modal-search { padding: 10px 16px; border-bottom: 1px solid var(--border); }
+    .modal-search input { width: 100%; box-sizing: border-box; }
+    .modal-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+    .common-row {
+      padding: 10px 16px; border-bottom: 1px solid var(--border); cursor: pointer;
+      display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: start;
+    }
+    .common-row:hover { background: var(--surface2); }
+    .common-row .meta { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; min-width: 80px; }
+    .common-row .chip {
+      font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+      padding: 2px 6px; border-radius: 3px; background: var(--surface2); color: var(--muted); border: 1px solid var(--border);
+    }
+    .common-row .text { font-size: 12px; line-height: 1.5; color: var(--text); overflow: hidden; }
+    .common-row .text .geez { color: var(--accent); margin-bottom: 2px; }
+    .common-row .text .english { color: var(--text); }
+    .common-row .count { font-size: 11px; color: var(--muted); white-space: nowrap; }
+    .section-row {
+      padding: 10px 16px; border-bottom: 1px solid var(--border); cursor: pointer;
+    }
+    .section-row:hover { background: var(--surface2); }
+    .section-row .sec-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+    .section-row .sec-meta { font-size: 11px; color: var(--muted); }
+    .modal-empty { padding: 30px; text-align: center; color: var(--muted); font-size: 12px; }
+    .modal-hint { padding: 10px 16px 4px; font-size: 11px; color: var(--muted); }
+
     /* ── Toast ───────────────────────────────────────── */
     #toast {
       position: fixed; bottom: 18px; right: 18px;
@@ -285,7 +345,10 @@
 
 <header>
   <h1>ቅዳሴ Admin</h1>
-  <span id="status">Select a file to begin</span>
+  <div class="header-right">
+    <button id="common-blocks-btn" class="btn btn-ghost" onclick="openCommonBlocks()" title="Search and insert blocks or sections from the corpus" style="display:none">Search &amp; insert</button>
+    <span id="status">Select a file to begin</span>
+  </div>
 </header>
 
 <div class="layout">
@@ -331,6 +394,24 @@
 </div>
 
 <div id="toast"></div>
+
+<!-- Search & Insert modal -->
+<div class="modal-backdrop" id="common-blocks-modal" onclick="if(event.target===this)closeCommonBlocks()">
+  <div class="modal">
+    <div class="modal-head">
+      <h2>Search &amp; Insert</h2>
+      <button class="modal-close" onclick="closeCommonBlocks()" title="Close">×</button>
+    </div>
+    <div class="modal-tabs">
+      <button class="modal-tab active" id="tab-blocks" onclick="switchSearchTab('blocks')">Blocks</button>
+      <button class="modal-tab" id="tab-sections" onclick="switchSearchTab('sections')">Sections</button>
+    </div>
+    <div class="modal-search">
+      <input type="text" id="common-blocks-search" placeholder="Search by English, Ge'ez, or Amharic…" oninput="renderSearchResults()">
+    </div>
+    <div class="modal-list" id="common-blocks-list"></div>
+  </div>
+</div>
 
 <script>
 // ── Block-length thresholds (match data/scripts/lint_block_length.py) ─────────
@@ -379,6 +460,18 @@ let selSection = null; // selected section or array-entry index
 let selBlock = null;   // block shown in editor (primary selection)
 let selBlocks = new Set(); // all selected block indices (for multi-drag)
 const drag = { fromSection: null, fromBlock: null, fromSectionReorder: null, draggedBlocks: null };
+
+// Static mode: no Node server, files come from data/manifest.json + relative fetches,
+// and "save" becomes a browser download. Detected at boot.
+let STATIC_MODE = false;
+let commonBlocks = [];
+
+// Search & Insert modal state
+let searchTab = 'blocks';        // 'blocks' | 'sections'
+let allFilesCache = null;        // null = not loaded; {path: data} = loaded
+let allFilesLoading = false;
+let allBlocksIndex = [];         // [{block, file, secTitle}, ...]
+let allSectionsIndex = [];       // [{section, file, secTitle}, ...]
 
 // ── Sidebar Collapse & Resize ──────────────────────────────────────────────────
 let sidebarCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
@@ -498,16 +591,80 @@ async function apiFetch(method, path, body) {
   return res.json();
 }
 
+async function fetchJson(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error('Failed to fetch ' + path + ' (' + res.status + ')');
+  return res.json();
+}
+
 // ── Boot ───────────────────────────────────────────────────────────────────────
 async function init() {
-  files = await apiFetch('GET', '/api/files');
+  // Probe the dynamic API. If absent, fall back to static manifest.
+  try {
+    files = await apiFetch('GET', '/api/files');
+    STATIC_MODE = false;
+  } catch (e) {
+    STATIC_MODE = true;
+    try {
+      files = await fetchJson('data/manifest.json');
+    } catch (e2) {
+      toast('Failed to load manifest: ' + e2.message, 'err');
+      files = [];
+    }
+  }
+  applyModeToUI();
   renderFiles();
   refreshLint();
+  loadCommonBlocks();
+}
+
+function applyModeToUI() {
+  const btn = document.querySelector('#save-bar .btn-save');
+  if (btn) btn.textContent = STATIC_MODE ? 'Download JSON' : 'Save to Disk';
+}
+
+async function loadCommonBlocks() {
+  try {
+    commonBlocks = STATIC_MODE
+      ? await fetchJson('data/common-blocks.json')
+      : await apiFetch('GET', '/api/file?path=common-blocks.json');
+  } catch (e) {
+    commonBlocks = [];
+  }
+  // Show the button now that files are loaded — modal works even without common blocks
+  const btn = document.getElementById('common-blocks-btn');
+  if (btn) btn.style.display = '';
+}
+
+function computeFileLint(data) {
+  if (!data || !Array.isArray(data.sections)) return 0;
+  const SKIP = new Set(['heading', 'rubric', 'placeholder']);
+  let errors = 0;
+  for (const sec of data.sections) {
+    for (const b of (sec.blocks || [])) {
+      if (SKIP.has(b.type)) continue;
+      if (maxBlockLen(b) > HARD_LIMIT) errors++;
+    }
+  }
+  return errors;
 }
 
 async function refreshLint() {
+  if (STATIC_MODE) {
+    // In static mode we can't fetch all files at once; lint is computed per-file
+    // as files are opened (see updateCurrentFileLint).
+    return;
+  }
   try { lintMap = await apiFetch('GET', '/api/lint'); }
   catch (e) { lintMap = {}; }
+  renderFiles();
+}
+
+function updateCurrentFileLint() {
+  if (!currentFile) return;
+  const errs = computeFileLint(fileData);
+  if (errs > 0) lintMap[currentFile] = errs;
+  else delete lintMap[currentFile];
   renderFiles();
 }
 
@@ -534,8 +691,12 @@ async function selectFile(path) {
   selBlock = null;
   selBlocks = new Set();
   dirty = false;
-  fileData = await apiFetch('GET', '/api/file?path=' + encodeURIComponent(path));
-  renderFiles();
+  if (STATIC_MODE) {
+    fileData = await fetchJson('data/' + path);
+  } else {
+    fileData = await apiFetch('GET', '/api/file?path=' + encodeURIComponent(path));
+  }
+  updateCurrentFileLint();
   renderSections();
   renderBlocks();
   renderEditor();
@@ -545,6 +706,10 @@ async function selectFile(path) {
 
 // ── Save ───────────────────────────────────────────────────────────────────────
 async function saveFile() {
+  if (STATIC_MODE) {
+    downloadCurrentFile();
+    return;
+  }
   try {
     await apiFetch('PUT', '/api/file?path=' + encodeURIComponent(currentFile), fileData);
     dirty = false;
@@ -554,6 +719,23 @@ async function saveFile() {
   } catch (e) {
     toast('Save failed: ' + e.message, 'err');
   }
+}
+
+function downloadCurrentFile() {
+  if (!currentFile || !fileData) return;
+  const json = JSON.stringify(fileData, null, 2) + '\n';
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = currentFile.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  dirty = false;
+  updateStatus();
+  toast('Downloaded ' + a.download + ' — email it to the maintainer', 'ok');
 }
 
 // ── Sections / Entries ─────────────────────────────────────────────────────────
@@ -807,6 +989,261 @@ function addBlock() {
   renderEditor();
 }
 
+// ── Common blocks (recurring text editors can insert with one click) ──────────
+function openCommonBlocks() {
+  if (!isLiturgical(fileData)) {
+    toast('Open a liturgical file with sections first', 'err');
+    return;
+  }
+  document.getElementById('common-blocks-modal').classList.add('visible');
+  document.getElementById('common-blocks-search').value = '';
+  switchSearchTab('blocks');
+  setTimeout(() => document.getElementById('common-blocks-search').focus(), 0);
+}
+
+function closeCommonBlocks() {
+  document.getElementById('common-blocks-modal').classList.remove('visible');
+}
+
+function switchSearchTab(tab) {
+  searchTab = tab;
+  document.getElementById('tab-blocks').className = 'modal-tab' + (tab === 'blocks' ? ' active' : '');
+  document.getElementById('tab-sections').className = 'modal-tab' + (tab === 'sections' ? ' active' : '');
+  renderSearchResults();
+}
+
+// ── Corpus lazy-loader ────────────────────────────────────────────────────────
+function buildSearchIndex() {
+  allBlocksIndex = [];
+  allSectionsIndex = [];
+  for (const [file, data] of Object.entries(allFilesCache)) {
+    if (!data || !Array.isArray(data.sections)) continue;
+    for (const section of data.sections) {
+      const secTitle = (section.title && (section.title.english || section.title.geez || section.title.amharic)) || section.id || '';
+      allSectionsIndex.push({ section, file, secTitle });
+      for (const block of (section.blocks || [])) {
+        allBlocksIndex.push({ block, file, secTitle });
+      }
+    }
+  }
+}
+
+async function loadAllFilesForSearch() {
+  if (allFilesCache !== null) return true;
+  if (allFilesLoading) return false;
+  allFilesLoading = true;
+  allFilesCache = {};
+  // Seed with whatever is already in memory
+  if (currentFile && fileData) allFilesCache[currentFile] = fileData;
+  for (const f of files) {
+    if (allFilesCache[f]) continue;
+    try {
+      allFilesCache[f] = STATIC_MODE
+        ? await fetchJson('data/' + f)
+        : await apiFetch('GET', '/api/file?path=' + encodeURIComponent(f));
+    } catch (e) { /* skip unreadable files */ }
+  }
+  buildSearchIndex();
+  allFilesLoading = false;
+  return true;
+}
+
+// ── Main search renderer ──────────────────────────────────────────────────────
+function renderSearchResults() {
+  if (searchTab === 'sections') {
+    renderSectionResults();
+  } else {
+    renderBlockResults();
+  }
+}
+
+function renderBlockResults() {
+  const q = (document.getElementById('common-blocks-search').value || '').trim().toLowerCase();
+  const list = document.getElementById('common-blocks-list');
+
+  // No query → show common blocks immediately (already loaded, no corpus needed)
+  if (!q) {
+    if (!commonBlocks.length) {
+      list.innerHTML = '<div class="modal-empty">No common blocks loaded</div>';
+      return;
+    }
+    list.innerHTML = '<div class="modal-hint">Common blocks (appear 3+ times across all files). Type to search all blocks.</div>' +
+      commonBlocks.map((entry, origIdx) => blockRowHtml(entry.block, origIdx, entry.count + '×')).join('');
+    return;
+  }
+
+  // Query present → search full corpus
+  if (allFilesLoading) {
+    list.innerHTML = '<div class="modal-empty">Loading corpus…</div>';
+    return;
+  }
+  if (allFilesCache === null) {
+    list.innerHTML = '<div class="modal-empty">Loading corpus…</div>';
+    loadAllFilesForSearch().then(done => { if (done) renderBlockResults(); });
+    return;
+  }
+
+  const matches = allBlocksIndex.filter(({ block: b }) =>
+    (b.english || '').toLowerCase().includes(q)
+    || (b.geez || '').toLowerCase().includes(q)
+    || (b.amharic || '').toLowerCase().includes(q)
+    || (b.transliteration || '').toLowerCase().includes(q)
+    || (b.type || '').toLowerCase().includes(q)
+    || (b.speaker || '').toLowerCase().includes(q)
+  );
+
+  if (!matches.length) {
+    list.innerHTML = '<div class="modal-empty">No matches</div>';
+    return;
+  }
+
+  // Show up to 200 results to avoid DOM thrash
+  const shown = matches.slice(0, 200);
+  list.innerHTML = shown.map(({ block: b, file, secTitle }, i) => {
+    const meta = esc(file.split('/').pop().replace('.json','')) + (secTitle ? ' · ' + esc(secTitle) : '');
+    return blockRowHtml(b, i, meta, shown);
+  }).join('') + (matches.length > 200 ? '<div class="modal-hint">+ ' + (matches.length - 200) + ' more — refine your search</div>' : '');
+}
+
+function blockRowHtml(b, idx, rightLabel, sourceArray) {
+  const chips = [
+    '<span class="chip">' + esc(b.type || 'prayer') + '</span>',
+    b.speaker ? '<span class="chip">' + esc(b.speaker) + '</span>' : ''
+  ].join('');
+  const text = [
+    b.geez   ? '<div class="geez">'    + esc(b.geez)    + '</div>' : '',
+    b.english ? '<div class="english">' + esc(b.english) + '</div>' : '',
+    (!b.geez && !b.english && b.amharic) ? '<div>' + esc(b.amharic) + '</div>' : ''
+  ].join('');
+  // If sourceArray is provided, onclick uses the array index into allBlocksIndex (search results)
+  // otherwise idx is an index into commonBlocks
+  const handler = sourceArray
+    ? 'insertSearchBlock(' + idx + ')'
+    : 'insertCommonBlock(' + idx + ')';
+  return '<div class="common-row" onclick="' + handler + '">' +
+    '<div class="meta">' + chips + '</div>' +
+    '<div class="text">' + text + '</div>' +
+    '<div class="count">' + rightLabel + '</div>' +
+  '</div>';
+}
+
+function renderSectionResults() {
+  const q = (document.getElementById('common-blocks-search').value || '').trim().toLowerCase();
+  const list = document.getElementById('common-blocks-list');
+
+  if (allFilesLoading) {
+    list.innerHTML = '<div class="modal-empty">Loading corpus…</div>';
+    return;
+  }
+  if (allFilesCache === null) {
+    list.innerHTML = '<div class="modal-empty">Loading corpus…</div>';
+    loadAllFilesForSearch().then(done => { if (done) renderSectionResults(); });
+    return;
+  }
+
+  const src = q
+    ? allSectionsIndex.filter(({ secTitle, file }) =>
+        secTitle.toLowerCase().includes(q) || file.toLowerCase().includes(q))
+    : allSectionsIndex;
+
+  if (!src.length) {
+    list.innerHTML = '<div class="modal-empty">No matches</div>';
+    return;
+  }
+
+  list.innerHTML = src.slice(0, 300).map(({ section, file, secTitle }, i) => {
+    const blockCount = (section.blocks || []).length;
+    return '<div class="section-row" onclick="insertSearchSection(' + i + ')">' +
+      '<div class="sec-title">' + esc(secTitle || section.id || '(unnamed)') + '</div>' +
+      '<div class="sec-meta">' + esc(file.split('/').pop().replace('.json','')) + ' · ' + blockCount + ' block' + (blockCount !== 1 ? 's' : '') + '</div>' +
+    '</div>';
+  }).join('') + (src.length > 300 ? '<div class="modal-hint">+ ' + (src.length - 300) + ' more — refine your search</div>' : '');
+}
+
+// ── Insertion helpers ─────────────────────────────────────────────────────────
+function insertCommonBlock(idx) {
+  const entry = commonBlocks[idx];
+  if (!entry) return;
+  _insertBlock(entry.block);
+  toast('Inserted block', 'ok');
+}
+
+function insertSearchBlock(idx) {
+  const q = (document.getElementById('common-blocks-search').value || '').trim().toLowerCase();
+  const matches = allBlocksIndex.filter(({ block: b }) =>
+    (b.english || '').toLowerCase().includes(q)
+    || (b.geez || '').toLowerCase().includes(q)
+    || (b.amharic || '').toLowerCase().includes(q)
+    || (b.transliteration || '').toLowerCase().includes(q)
+    || (b.type || '').toLowerCase().includes(q)
+    || (b.speaker || '').toLowerCase().includes(q)
+  );
+  const entry = matches[idx];
+  if (!entry) return;
+  _insertBlock(entry.block);
+  toast('Inserted block', 'ok');
+}
+
+function _insertBlock(blockTemplate) {
+  if (selSection === null || !isLiturgical(fileData)) {
+    toast('Select a section first', 'err');
+    return;
+  }
+  const section = fileData.sections[selSection];
+  if (!section.blocks) section.blocks = [];
+  const newBlock = JSON.parse(JSON.stringify(blockTemplate));
+  newBlock.id = uid(fileData.id || 'block');
+  if (newBlock.geez == null)            newBlock.geez = '';
+  if (newBlock.amharic == null)         newBlock.amharic = '';
+  if (newBlock.english == null)         newBlock.english = '';
+  if (newBlock.transliteration == null) newBlock.transliteration = '';
+  const insertAt = (selBlock != null && selBlock >= 0 && selBlock < section.blocks.length)
+    ? selBlock + 1 : section.blocks.length;
+  section.blocks.splice(insertAt, 0, newBlock);
+  selBlock = insertAt;
+  selBlocks = new Set([insertAt]);
+  markDirty();
+  renderBlocks();
+  renderEditor();
+  closeCommonBlocks();
+}
+
+function insertSearchSection(idx) {
+  if (!isLiturgical(fileData)) { toast('Open a liturgical file first', 'err'); return; }
+  const q = (document.getElementById('common-blocks-search').value || '').trim().toLowerCase();
+  const src = q
+    ? allSectionsIndex.filter(({ secTitle, file }) =>
+        secTitle.toLowerCase().includes(q) || file.toLowerCase().includes(q))
+    : allSectionsIndex;
+  const entry = src[idx];
+  if (!entry) return;
+  // Deep-copy with fresh IDs
+  const newSection = JSON.parse(JSON.stringify(entry.section));
+  newSection.id = uid('sec');
+  for (const b of (newSection.blocks || [])) {
+    b.id = uid(fileData.id || 'block');
+  }
+  const insertAt = (selSection != null && selSection >= 0 && selSection < fileData.sections.length)
+    ? selSection + 1 : fileData.sections.length;
+  fileData.sections.splice(insertAt, 0, newSection);
+  selSection = insertAt;
+  selBlock = null;
+  selBlocks = new Set();
+  markDirty();
+  renderSections();
+  renderBlocks();
+  renderEditor();
+  closeCommonBlocks();
+  toast('Inserted section (' + (newSection.blocks || []).length + ' blocks)', 'ok');
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const modal = document.getElementById('common-blocks-modal');
+    if (modal && modal.classList.contains('visible')) closeCommonBlocks();
+  }
+});
+
 function deleteBlock(idx) {
   if (!confirm('Delete this block?')) return;
   const blocks = fileData.sections[selSection].blocks;
@@ -1002,6 +1439,7 @@ function setBlockText(key, val)  {
   markDirty();
   renderBlocks();
   renderSections();
+  updateCurrentFileLint();
 }
 function setSection(key, val)    { fileData.sections[selSection][key] = val; markDirty(); renderSections(); }
 function setSecTitle(lang, val)  { const s = fileData.sections[selSection]; if (!s.title) s.title = {}; s.title[lang] = val; markDirty(); renderSections(); }
