@@ -10,7 +10,8 @@
     "build:web": "expo export --platform web",
     "lint": "expo lint",
     "admin": "node admin-server.js",
-    "admin:manifest": "node scripts/build-admin-manifest.js"
+    "admin:manifest": "node scripts/build-admin-manifest.js",
+    "admin:encrypt": "staticrypt dist/admin/index.html --password \"$ADMIN_PASSWORD\" --output dist/admin/index.html --template-title 'Qidase Admin'"
   },
   "dependencies": {
     "@expo-google-fonts/eb-garamond": "^0.4.2",
@@ -43,6 +44,7 @@
     "@babel/core": "^7.25.2",
     "@types/react": "~19.1.0",
     "expo-module-scripts": "~4.0.2",
+    "staticrypt": "^3.5.4",
     "typescript": "~5.9.2"
   },
   "private": true

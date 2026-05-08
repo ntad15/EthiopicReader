@@ -50,6 +50,11 @@ jobs:
           # (already filtered by the manifest builder). Use rsync to preserve subdirs.
           rsync -a --exclude='scripts' --exclude='data_csv' data/ dist/admin/data/
 
+      - name: Encrypt admin tool with staticrypt
+        env:
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: npx staticrypt dist/admin/index.html --password "$ADMIN_PASSWORD" --output dist/admin/index.html --template-title "Qidase Admin"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
