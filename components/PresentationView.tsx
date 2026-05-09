@@ -1,14 +1,19 @@
 import { useState, useCallback, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Platform, LayoutChangeEvent, NativeSyntheticEvent, TextLayoutEventData } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Platform, ScrollView } from 'react-native';
 import HoverableOpacity from '@/components/HoverableOpacity';
 import Slider from '@react-native-community/slider';
 import { Colors, presentationSpeakerColors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
 import { useLanguage } from '@/context/LanguageContext';
 import { useFontSize, FONT_SIZE_MIN, FONT_SIZE_MAX } from '@/context/FontSizeContext';
+import { useReadings } from '@/context/ReadingsContext';
 import { hapticSelection } from '@/utils/haptics';
 import { PrayerBlock, LiturgicalSection } from '@/data/types';
 import { getLanguageEntries } from '@/utils/language';
+import { ReadingSlotKey } from '@/data/bibleBooks';
+import { getSlotConfig } from '@/data/readingSlots';
+import { formatReading, formatReadingChapterVerse, bookDisplayName } from '@/utils/readingFormatter';
+import { getVerses, formatVersesWithNumbers } from '@/utils/bibleService';
 import SectionDrawer from '@/components/SectionDrawer';
 
 // Presentation mode stays dark for projector/screen use
@@ -31,14 +36,17 @@ interface Props {
 export default function PresentationView({ blocks, sections, onExit, startBlockId }: Props) {
   const { activeLanguages, primaryLanguage } = useLanguage();
   const { scale, multiplier, setMultiplier } = useFontSize();
+  const { slots } = useReadings();
 
   // Skip empty blocks and headings (headings are section markers, not useful as slides)
-  // Must be defined before useState so initialIndex uses the same array as rendering
+  // Include reading blocks now
   const visibleBlocks = blocks.filter((b) => {
     if (b.type === 'heading') return false;
     if (b.type === 'rubric') {
-      return !!(b.english || b.geez || b.amharic || b.transliteration);
+      // Include rubrics with content OR dynamic reading references
+      return !!(b.english || b.geez || b.amharic || b.transliteration || b.dynamic);
     }
+    if (b.type === 'reading') return true; // Always include reading blocks
     return activeLanguages.some((lang) => !!b[lang]);
   });
 
@@ -46,82 +54,64 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
     ? Math.max(0, visibleBlocks.findIndex((b) => b.id === startBlockId))
     : 0;
   const [index, setIndex] = useState(initialIndex);
-  const [pageIdx, setPageIdx] = useState(0);
-  // measuredLines[lang] = array of rendered lines from onTextLayout for the full text
-  const [measuredLines, setMeasuredLines] = useState<Record<string, Array<{ text: string }>>>({});
-  const [viewportHeight, setViewportHeight] = useState(0);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const [fontBarVisible, setFontBarVisible] = useState(false);
+  const [expandedVerses, setExpandedVerses] = useState<Record<string, any>>({});
+  const [readingExpanded, setReadingExpanded] = useState(false);
 
   const current = visibleBlocks[index];
   const isFirst = index === 0;
   const isLast = index === visibleBlocks.length - 1;
 
-  const isRubricOrHeading = current?.type === 'rubric' || current?.type === 'heading';
-  const langEntries = isRubricOrHeading
-    ? []
-    : getLanguageEntries(activeLanguages, primaryLanguage, current ?? ({} as PrayerBlock));
+  const isRubric = current?.type === 'rubric';
+  const isReading = current?.type === 'reading';
 
-  // Reset measurement + page when block, font size, or active languages change
-  const langKey = activeLanguages.join(',');
+  // Load verses for reading blocks when expanded
   useEffect(() => {
-    setMeasuredLines({});
-    setPageIdx(0);
-  }, [index, multiplier, langKey]);
+    if (!isReading || !current?.readingSlot || !readingExpanded) return;
+    const slotKey = current.readingSlot as ReadingSlotKey;
+    const reading = slots[slotKey];
+    if (!reading || expandedVerses[slotKey]) return;
 
-  // --- Pagination math ---
-  // We use the tallest script's line height (Ge'ez) so every page fits without overflow.
-  // Usable height = viewport minus fixed chrome (paddings + optional speaker label).
-  const PADDING_V = 100; // paddingTop 60 + paddingBottom 40
-  const SPEAKER_H = 40;  // speaker label + marginBottom
-  const hasSpeaker = !isRubricOrHeading && !!current?.speaker;
-  const usableHeight = Math.max(0, viewportHeight - PADDING_V - (hasSpeaker ? SPEAKER_H : 0));
-  const geezLineH = scale(23) * 1.5; // tallest line height used in any column
-  const linesPerPage = Math.max(1, Math.floor(usableHeight / geezLineH));
+    // Fetch verses for English and Amharic only (matching ReadingCard behavior)
+    const readingLanguages = activeLanguages.filter(lang => lang === 'english' || lang === 'amharic');
+    
+    const fetchVerses = async () => {
+      const results: Record<string, any> = {};
+      for (const lang of readingLanguages) {
+        try {
+          const verses = await getVerses(reading, lang);
+          if (verses) {
+            results[lang] = verses;
+          }
+        } catch (err) {
+          console.warn(`Failed to load verses for ${lang}:`, err);
+        }
+      }
+      setExpandedVerses(prev => ({ ...prev, [slotKey]: results }));
+    };
 
-  const allMeasured = langEntries.length === 0
-    || langEntries.every(({ lang }) => measuredLines[lang] !== undefined);
-
-  const maxLines = langEntries.reduce(
-    (m, { lang }) => Math.max(m, measuredLines[lang]?.length ?? 0), 0,
-  );
-  const totalPages = (allMeasured && maxLines > 0)
-    ? Math.max(1, Math.ceil(maxLines / linesPerPage))
-    : 1;
-
-  /** Return slice of text visible in column `lang` on the current page. */
-  function pageText(lang: string): string {
-    const lines = measuredLines[lang];
-    if (!lines || lines.length === 0) return '';
-    const start = pageIdx * linesPerPage;
-    if (start >= lines.length) return '';
-    const end = Math.min(start + linesPerPage, lines.length);
-    return lines.slice(start, end).map((l) => l.text).join('');
-  }
+    fetchVerses();
+  }, [index, isReading, current, slots, activeLanguages, readingExpanded]);
 
   const goToBlock = useCallback((newIndex: number) => {
     setIndex(newIndex);
-    setPageIdx(0);
-    setMeasuredLines({});
+    setReadingExpanded(false); // Collapse when switching blocks
   }, []);
 
   const advance = useCallback(() => {
     hapticSelection();
-    if (allMeasured && pageIdx < totalPages - 1) {
-      setPageIdx((p) => p + 1);
-    } else if (!isLast) {
+    if (!isLast) {
       goToBlock(index + 1);
     }
-  }, [allMeasured, pageIdx, totalPages, isLast, index, goToBlock]);
+  }, [isLast, index, goToBlock]);
 
   const back = useCallback(() => {
     hapticSelection();
-    if (pageIdx > 0) {
-      setPageIdx((p) => p - 1);
-    } else if (!isFirst) {
+    if (!isFirst) {
       goToBlock(index - 1);
     }
-  }, [pageIdx, isFirst, index, goToBlock]);
+  }, [isFirst, index, goToBlock]);
 
   // Keyboard arrow support for web
   useEffect(() => {
@@ -147,20 +137,98 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
   const speakerColor =
     current.speaker ? (presentationSpeakerColors[current.speaker] ?? PRES.text) : PRES.text;
 
-  const showPageDots = allMeasured && totalPages > 1;
+  // Get content for dynamic rubrics or headings
+  let rubricText = '';
+  if (isRubric && current.dynamic) {
+    const slotKey = current.dynamic as ReadingSlotKey;
+    const reading = slots[slotKey];
+    if (reading) {
+      rubricText = formatReading(reading, primaryLanguage);
+    }
+  } else if (isRubric) {
+    rubricText = current.english ?? current.geez ?? '';
+  }
+
+  // Get content for reading blocks
+  let readingRef = '';
+  let readingVerses: Record<string, any> = {};
+  if (isReading && current.readingSlot) {
+    const slotKey = current.readingSlot as ReadingSlotKey;
+    const reading = slots[slotKey];
+    if (reading) {
+      readingRef = formatReading(reading, primaryLanguage);
+      readingVerses = expandedVerses[slotKey] || {};
+    }
+  }
+
+  // For prayer blocks, get language entries
+  const langEntries = (!isRubric && !isReading)
+    ? getLanguageEntries(activeLanguages, primaryLanguage, current)
+    : [];
 
   return (
-    <View style={styles.container} onLayout={(e: LayoutChangeEvent) => setViewportHeight(e.nativeEvent.layout.height)}>
-      {/* Tap zones — back on left 40%, forward on right 60% */}
-      <TouchableOpacity style={styles.tapBack} onPress={back} activeOpacity={1} />
-      <TouchableOpacity style={styles.tapForward} onPress={advance} activeOpacity={1} />
+    <View style={styles.container}>
+      {/* Tap zones — only active for non-reading blocks */}
+      {!isReading && (
+        <>
+          <TouchableOpacity style={styles.tapBack} onPress={back} activeOpacity={1} />
+          <TouchableOpacity style={styles.tapForward} onPress={advance} activeOpacity={1} />
+        </>
+      )}
 
-      {/* Content — plain View, no scroll; overflow clipped by container */}
-      <View style={styles.content}>
-        {isRubricOrHeading ? (
+      {/* Content — scrollable for long readings */}
+      <ScrollView 
+        style={styles.contentScroll}
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
+        {isRubric ? (
           <Text style={[styles.rubricText, { fontSize: scale(16) }]}>
-            {current.english ?? current.geez ?? ''}
+            {rubricText}
           </Text>
+        ) : isReading ? (
+          <>
+            <TouchableOpacity 
+              style={styles.readingHeader}
+              onPress={() => {
+                hapticSelection();
+                setReadingExpanded(!readingExpanded);
+              }}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.expandIcon, { fontSize: scale(24) }]}>
+                {readingExpanded ? '−' : '+'}
+              </Text>
+              <View style={styles.readingHeaderContent}>
+                <Text style={[styles.readingLabel, { fontSize: scale(11) }]}>
+                  {current.readingSlot?.toUpperCase()}
+                </Text>
+                <Text style={[styles.readingRef, { fontSize: scale(16), color: PRES.text }]}>
+                  {readingRef}
+                </Text>
+              </View>
+            </TouchableOpacity>
+            {readingExpanded && Object.keys(readingVerses).length > 0 && (
+              <View style={styles.versesRow}>
+                {activeLanguages
+                  .filter(lang => lang === 'english' || lang === 'amharic')
+                  .map(lang => {
+                    const verses = readingVerses[lang];
+                    if (!verses || verses.length === 0) return null;
+                    const formattedText = formatVersesWithNumbers(verses);
+                    const fontSize = scale(lang === 'amharic' ? 19 : 19);
+                    const lineHeight = fontSize * 1.6;
+                    return (
+                      <View key={lang} style={styles.versesColumn}>
+                        <Text style={[styles.versesText, { fontSize, lineHeight, color: PRES.text }]}>
+                          {formattedText}
+                        </Text>
+                      </View>
+                    );
+                  })}
+              </View>
+            )}
+          </>
         ) : (
           <>
             {current.speaker && (
@@ -170,7 +238,7 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
             )}
             <View style={styles.columnsRow}>
               {langEntries.map(({ lang, text }) => {
-                const fontSize = scale(lang === 'geez' || lang === 'amharic' ? 23 : 22);
+                const fontSize = scale(lang === 'geez' || lang === 'amharic' ? 22 : 22);
                 const lineHeight = fontSize * 1.5;
                 const textStyle = [
                   styles.prayerText,
@@ -178,48 +246,40 @@ export default function PresentationView({ blocks, sections, onExit, startBlockI
                   lang === 'transliteration' && styles.transliteration,
                 ];
 
-                // What to show: sliced text for current page once measured;
-                // full text on first render so the invisible pre-render fires.
-                const visibleText = allMeasured ? pageText(lang) : text;
-
                 return (
                   <View key={lang} style={[styles.langColumn, langEntries.length === 1 && styles.langColumnFull]}>
-                    {/*
-                     * Invisible full-text render — gives us actual rendered lines via
-                     * onTextLayout so we can compute exact page boundaries.
-                     * position: absolute so it doesn't affect column height.
-                     */}
-                    <Text
-                      style={[...textStyle, styles.measureText]}
-                      pointerEvents="none"
-                      onTextLayout={(e: NativeSyntheticEvent<TextLayoutEventData>) => {
-                        const lines = e.nativeEvent.lines as Array<{ text: string }>;
-                        setMeasuredLines((prev) => {
-                          // Skip update if line count hasn't changed (avoids loops)
-                          if (prev[lang]?.length === lines.length) return prev;
-                          return { ...prev, [lang]: lines };
-                        });
-                      }}
-                    >
-                      {text}
-                    </Text>
-
-                    {/* Visible sliced text for this page */}
-                    <Text style={textStyle}>{visibleText}</Text>
+                    <Text style={textStyle}>{text}</Text>
                   </View>
                 );
               })}
             </View>
           </>
         )}
-      </View>
+      </ScrollView>
 
-      {/* Page progress dots — shown only when a block spans multiple pages */}
-      {showPageDots && (
-        <View style={styles.pageDots} pointerEvents="none">
-          {Array.from({ length: totalPages }).map((_, i) => (
-            <View key={i} style={[styles.dot, i === pageIdx && styles.dotActive]} />
-          ))}
+      {/* Navigation arrows for reading blocks */}
+      {isReading && (
+        <View style={styles.readingNav}>
+          <TouchableOpacity 
+            style={[styles.navBtn, isFirst && styles.navBtnDisabled]} 
+            onPress={back}
+            disabled={isFirst}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.navBtnText, isFirst && styles.navBtnTextDisabled]}>
+              {'\u2190'}
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity 
+            style={[styles.navBtn, isLast && styles.navBtnDisabled]} 
+            onPress={advance}
+            disabled={isLast}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.navBtnText, isLast && styles.navBtnTextDisabled]}>
+              {'\u2192'}
+            </Text>
+          </TouchableOpacity>
         </View>
       )}
 
@@ -290,39 +350,16 @@ const styles = StyleSheet.create({
     bottom: 0,
     zIndex: 1,
   },
-  content: {
+  contentScroll: {
     flex: 1,
+    zIndex: 0,
+  },
+  content: {
+    flexGrow: 1,
     paddingHorizontal: 48,
     paddingTop: 60,
     paddingBottom: 40,
     justifyContent: 'center',
-    overflow: 'hidden',
-    zIndex: 0,
-  },
-  measureText: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    opacity: 0,
-  },
-  pageDots: {
-    position: 'absolute',
-    bottom: 20,
-    left: 0,
-    right: 0,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 6,
-    zIndex: 4,
-  },
-  dot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: PRES.border,
-  },
-  dotActive: {
-    backgroundColor: Colors.accent,
   },
   rubricText: {
     color: PRES.textMuted,
@@ -330,6 +367,41 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     textAlign: 'center',
     lineHeight: 28,
+  },
+  readingHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 16,
+    marginBottom: 24,
+  },
+  readingHeaderContent: {
+    alignItems: 'center',
+  },
+  expandIcon: {
+    color: Colors.accent,
+    fontWeight: '700',
+    lineHeight: 24,
+  },
+  readingLabel: {
+    color: PRES.textMuted,
+    fontWeight: '700',
+    letterSpacing: 2,
+    marginBottom: 8,
+  },
+  readingRef: {
+    fontFamily: Fonts.serifBold,
+  },
+  versesRow: {
+    flexDirection: 'row',
+    gap: 40,
+    width: '100%',
+  },
+  versesColumn: {
+    flex: 1,
+  },
+  versesText: {
+    fontFamily: Fonts.bodyRegular,
   },
   speaker: {
     fontWeight: '700',
@@ -408,5 +480,37 @@ const styles = StyleSheet.create({
     color: Colors.accent,
     fontWeight: '700',
     fontSize: 14,
+  },
+  readingNav: {
+    position: 'absolute',
+    bottom: 30,
+    left: 0,
+    right: 0,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 80,
+    zIndex: 3,
+  },
+  navBtn: {
+    backgroundColor: 'rgba(181, 148, 91, 0.2)',
+    borderWidth: 1,
+    borderColor: Colors.accent,
+    borderRadius: 24,
+    width: 48,
+    height: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  navBtnDisabled: {
+    backgroundColor: 'rgba(181, 148, 91, 0.05)',
+    borderColor: PRES.border,
+  },
+  navBtnText: {
+    color: Colors.accent,
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  navBtnTextDisabled: {
+    color: PRES.border,
   },
 });

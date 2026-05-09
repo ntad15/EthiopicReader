@@ -12,7 +12,7 @@ export interface ConditionalConditions {
 
 export interface PrayerBlock {
   id: string;
-  type: 'heading' | 'rubric' | 'prayer' | 'response' | 'placeholder';
+  type: 'heading' | 'rubric' | 'prayer' | 'response' | 'placeholder' | 'reading';
   speaker?: 'priest' | 'deacon' | 'asst. priest' | 'asst. deacon' | 'congregation' | 'all';
   geez?: string;
   amharic?: string;
@@ -20,6 +20,8 @@ export interface PrayerBlock {
   transliteration?: string;
   /** ReadingSlotKey — marks a heading/rubric block that shows a dynamic reading reference */
   dynamic?: string;
+  /** Reading slot identifier — for reading blocks: which reading to display (pauline, catholic, acts, psalm, gospel) */
+  readingSlot?: 'pauline' | 'catholic' | 'acts' | 'psalm' | 'gospel';
   /** Override ID — for placeholder blocks: references section ID in seasonals.json */
   overrideId?: string;
   /** Optional — for placeholder blocks: if true, skip silently when no matching override found */

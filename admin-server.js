@@ -11,6 +11,7 @@ const DATA_DIR = path.join(__dirname, 'data');
 const UI_FILE = path.join(__dirname, 'admin-ui.html');
 
 // Walk data dir and collect all .json file paths (relative to DATA_DIR)
+// Excludes bible/ directory
 function walkDir(dir, base) {
   base = base || '';
   const results = [];
@@ -22,6 +23,12 @@ function walkDir(dir, base) {
   }
   for (const entry of entries) {
     const rel = base ? base + '/' + entry.name : entry.name;
+    
+    // Skip bible directory
+    if (entry.isDirectory() && entry.name === 'bible') {
+      continue;
+    }
+    
     if (entry.isDirectory()) {
       results.push(...walkDir(path.join(dir, entry.name), rel));
     } else if (entry.name.endsWith('.json')) {

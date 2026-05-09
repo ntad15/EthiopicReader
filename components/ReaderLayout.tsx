@@ -27,7 +27,7 @@ import SettingsSheet from '@/components/SettingsSheet';
 import ReadingsPicker from '@/components/ReadingsPicker';
 import { useReadings } from '@/context/ReadingsContext';
 import { LiturgicalSection, PrayerBlock as PrayerBlockType, LiturgicalText } from '@/data/types';
-import { processSections } from '@/utils/seasonalResolver';
+import { processSections, calculateLiturgicalSeason } from '@/utils/seasonalResolver';
 import seasonalsData from '@/data/seasonals.json';
 
 interface ReaderLayoutProps {
@@ -85,9 +85,10 @@ export default function ReaderLayout({
 
   // Process sections with seasonal resolver to replace placeholders
   const processedSections = useMemo(() => {
+    const currentDate = new Date();
     const context = {
-      date: new Date(),
-      // TODO: Add liturgical season from user settings or calendar calculation
+      date: currentDate,
+      season: calculateLiturgicalSeason(currentDate),
       // TODO: Add feast days for current date
     };
     return processSections(sections, seasonalsData as LiturgicalText, context);
