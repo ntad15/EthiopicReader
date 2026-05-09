@@ -63,6 +63,45 @@
           }
         }
       ]
+    },
+    {
+      "id": "section-mokpndt8vl1",
+      "title": {
+        "english": "Halleluia",
+        "geez": "ሃሌ ሉያ",
+        "amharic": "ሃሌ ሉያ",
+        "transliteration": "Halleluia"
+      },
+      "blocks": [
+        {
+          "id": "seasonals-mokpnsbk1a7",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ሃሌ ሉያ! እመቦ ብእሲ እምእመናን ዘቦአ ቤተ ክርስቲያን፤ በጊዜ ቅዳሴ ወኢሰምዐ መጻሕፍተ ቅዱሳተ ወኢተዐገሠ እስከ ይፌጽሙ ጸሎተ ቅዳሴ ወኢተመጠወ እምቍርባን ይሰደድ እምቤተ ክርስቲያን እስመ አማሰነ ሕገ እግዚአብሔር፤ ወአስተሐቀረ ቁመተ ቅድመ ንጉሥ ሰማያዊ፤ ንጉሠ ሥጋ ወመንፈስ፤ ከመዝ መሐሩነ ሐዋርያት በአብጥሊሶሙ።",
+          "amharic": "ሃሌ ሉያ! በቅዳሴ ጊዜ ከምዕመናን ወገን ወደ ቤተ ክርስቲያን የገባ ሰው ቢኖር፣ ቅዱሳት መጻሕፍትን ሳይሰማ፣ የቅዳሴው ጸሎት እስኪፈጸም ባይታገሥ፣ ከቁርባኑም ባይቀበል፣ ከቤተ ክርስቲያን ይለይ፣ የእግዚአብሔርን ሕግ አፍርሷልና። የሥጋና የነፍስ ፈጣሪ በሚሆን በሰማያዊ ንጉሥ ፊት መቆምንም አቃሏልና። ሐዋርያት በሲኖዶሳቸው እንዲህ ብለው አስተምረውናል።",
+          "english": "Halleluia! If there be anyone of the faithful that has entered the church at the time of mass and and has not heard the holy Scriptures, and hath not waited until they finish the prayer of the Mass, and hath not received the holy communion, let him be driven out of the church: for he hath violated the law of God and disdained to Stand Before the heavenly King, the King of Body and Spirit. This the Apostles have taught us in their canons.",
+          "transliteration": "Halléluya! imebo bi'isee im'imenan zebo'a béte kiristeeyan Begeezé qidase we’i’sem’a metsa’hifte qidusate we'eete'agese iske yifetsimu tselote qidasé We'eetemetewe imqwurban yiseded imbéte kiristeeyan isme amasene hige Igzee'abihér we'astehaqere qemete Qidme nigus semayawee nigus siga wemenfes kemez meharune",
+          "conditions": {
+            "season": [
+              "ordinary"
+            ]
+          }
+        },
+        {
+          "id": "seasonals-mokppub7549",
+          "type": "response",
+          "speaker": "congregation",
+          "geez": "ሃሌ ሉያ! ዮሴፍ ወኒቆዲሞስ ገነዝዎ ለኢየሱስ በሰንዱናት ለዘ ተንሣአ እሙታን በመንክር ኪን።",
+          "amharic": "ሃሌ ሉያ! ዮሴፍና ኒቆዲሞስ ድንቅ በሚሆን ጥበብ ከሙታን ተለይቶ የተነሣ ኢየሱስን በበፍታ ገነዙት።",
+          "english": "Halleluia, Joseph and Nicodemus wrapped with linen cloths Jesus who rose from the dead in a wondrous fashion",
+          "transliteration": "Halléluya, Yoséf weneeqodeemos geneziwo le'Eeyesus besendunat lezetensi'a imutan lemenkir keen.",
+          "conditions": {
+            "season": [
+              "easter"
+            ]
+          }
+        }
+      ]
     }
   ]
 }

@@ -352,6 +352,80 @@
     #toast.ok  { background: var(--success); color: #000; opacity: 1; }
     #toast.err { background: var(--danger);  color: #000; opacity: 1; }
 
+    /* ── Modals ───────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      display: none; align-items: center; justify-content: center;
+      z-index: 100;
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      width: 600px;
+      max-width: 90vw;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-header h3 { font-size: 14px; font-weight: 600; }
+    .modal-close {
+      background: transparent; border: none; color: var(--muted);
+      cursor: pointer; font-size: 18px; padding: 0 4px;
+    }
+    .modal-close:hover { color: var(--text); }
+    .modal-body {
+      flex: 1; overflow-y: auto; padding: 16px 20px;
+    }
+    .modal-footer {
+      padding: 12px 20px;
+      border-top: 1px solid var(--border);
+      display: flex; gap: 8px; justify-content: flex-end;
+    }
+    .modal-item {
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .modal-item:hover { background: var(--surface2); }
+    .modal-item-title { font-weight: 500; margin-bottom: 4px; }
+    .modal-item-meta { font-size: 11px; color: var(--muted); }
+    .modal-search {
+      width: 100%;
+      padding: 8px 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    .modal-btn {
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--surface2);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .modal-btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    .modal-btn.secondary { background: transparent; }
+    .modal-btn.secondary:hover { background: var(--surface2); color: var(--text); border-color: var(--border); }
   </style>
 </head>
 <body>
@@ -405,22 +479,39 @@
 
 <div id="toast"></div>
 
-
-<!-- Search & Insert modal -->
-<div class="modal-backdrop" id="common-blocks-modal" onclick="if(event.target===this)closeCommonBlocks()">
+<!-- Block Selection Modal -->
+<div id="block-modal" class="modal-overlay">
   <div class="modal">
-    <div class="modal-head">
-      <h2>Search &amp; Insert</h2>
-      <button class="modal-close" onclick="closeCommonBlocks()" title="Close">×</button>
+    <div class="modal-header">
+      <h3>Add Block From Template</h3>
+      <button class="modal-close" onclick="hideBlockModal()">&times;</button>
     </div>
-    <div class="modal-tabs">
-      <button class="modal-tab active" id="tab-blocks" onclick="switchSearchTab('blocks')">Blocks</button>
-      <button class="modal-tab" id="tab-sections" onclick="switchSearchTab('sections')">Sections</button>
+    <div class="modal-body">
+      <input type="text" id="block-search" class="modal-search" placeholder="Search blocks..." oninput="renderBlockTemplates()">
+      <div id="block-list"></div>
     </div>
-    <div class="modal-search">
-      <input type="text" id="common-blocks-search" placeholder="Search by English, Ge'ez, or Amharic…" oninput="renderSearchResults()">
+    <div class="modal-footer">
+      <button class="modal-btn secondary" onclick="hideBlockModal()">Cancel</button>
+      <button class="modal-btn" onclick="addBlankBlock()">Create Blank Block</button>
     </div>
-    <div class="modal-list" id="common-blocks-list"></div>
+  </div>
+</div>
+
+<!-- Section Selection Modal -->
+<div id="section-modal" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Add Section From Template</h3>
+      <button class="modal-close" onclick="hideSectionModal()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <input type="text" id="section-search" class="modal-search" placeholder="Search sections..." oninput="renderSectionTemplates()">
+      <div id="section-list"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-btn secondary" onclick="hideSectionModal()">Cancel</button>
+      <button class="modal-btn" onclick="addBlankSection()">Create Blank Section</button>
+    </div>
   </div>
 </div>
 
@@ -677,6 +768,33 @@ function updateCurrentFileLint() {
   if (errs > 0) lintMap[currentFile] = errs;
   else delete lintMap[currentFile];
   renderFiles();
+  
+  // Preload all files into cache for template browsing (async, non-blocking)
+  preloadFilesCache();
+}
+
+async function preloadFilesCache() {
+  // Skip preloading in static mode (files aren't available via API)
+  if (STATIC_MODE) return;
+  
+  for (const filePath of files) {
+    // Skip if already cached
+    if (localStorage.getItem('fileCache_' + filePath)) continue;
+    
+    try {
+      const data = await apiFetch('GET', '/api/file?path=' + encodeURIComponent(filePath));
+      try {
+        localStorage.setItem('fileCache_' + filePath, JSON.stringify(data));
+      } catch (storageErr) {
+        // Skip caching if quota exceeded (large files)
+        if (storageErr.name === 'QuotaExceededError') {
+          console.log('Skipping cache for large file: ' + filePath);
+        }
+      }
+    } catch (e) {
+      console.warn('Failed to preload ' + filePath, e);
+    }
+  }
 }
 
 // ── Helper: Check if file is seasonals ───────────────────────────────────────
@@ -694,7 +812,11 @@ async function loadAnaphoraDropdown() {
   // ── Main liturgies ──
   const grpMain = document.createElement('optgroup');
   grpMain.label = 'Liturgies';
-  for (const [path, label] of [['qidan.json', 'Qidan'], ['serate-qidase.json', 'Serate Qidase']]) {
+  for (const [path, label] of [
+    ['qidan.json', 'Qidan'], 
+    ['serate-qidase.json', 'Serate Qidase'],
+    ['seasonals.json', 'Seasonal Variations']
+  ]) {
     const opt = document.createElement('option');
     opt.value = path;
     opt.textContent = label;
@@ -737,11 +859,25 @@ async function selectFile(path) {
   selBlock = null;
   selBlocks = new Set();
   dirty = false;
+  
+  // Load file (static or from server)
   if (STATIC_MODE) {
     fileData = await fetchJson('data/' + path);
   } else {
     fileData = await apiFetch('GET', '/api/file?path=' + encodeURIComponent(path));
   }
+  
+  // Cache file data for template browsing (skip if quota exceeded)
+  try {
+    localStorage.setItem('fileCache_' + path, JSON.stringify(fileData));
+  } catch (e) {
+    // Silently skip caching for large files
+    if (e.name === 'QuotaExceededError') {
+      console.log('File too large to cache: ' + path);
+    }
+  }
+  
+  renderFiles();
   updateCurrentFileLint();
   renderSections();
   renderBlocks();
@@ -759,6 +895,17 @@ async function saveFile() {
   try {
     await apiFetch('PUT', '/api/file?path=' + encodeURIComponent(currentFile), fileData);
     dirty = false;
+    
+    // Update cache after save (skip if quota exceeded)
+    try {
+      localStorage.setItem('fileCache_' + currentFile, JSON.stringify(fileData));
+    } catch (e) {
+      // Silently skip caching for large files
+      if (e.name === 'QuotaExceededError') {
+        console.log('File too large to cache: ' + currentFile);
+      }
+    }
+    
     updateStatus();
     toast('Saved!', 'ok');
     refreshLint();
@@ -857,13 +1004,19 @@ function selectSection(idx) {
 
 function addSection() {
   if (!isLiturgical(fileData)) return;
-  fileData.sections.push({ id: uid('section'), title: { english: 'New Section', geez: '', amharic: '' }, blocks: [] });
+  showSectionModal();
+}
+
+function addBlankSection() {
+  if (!isLiturgical(fileData)) return;
+  fileData.sections.push({ id: uid('section'), title: { english: 'New Section', geez: '', amharic: '', transliteration: '' }, blocks: [] });
   selSection = fileData.sections.length - 1;
   selBlock = null;
   markDirty();
   renderSections();
   renderBlocks();
   renderEditor();
+  hideSectionModal();
 }
 
 function addMetaEntry() {
@@ -932,6 +1085,8 @@ function renderBlocks() {
     let preview;
     if (b.type === 'placeholder') {
       preview = `[Placeholder: ${b.overrideId || 'no ID'}]`;
+    } else if (b.type === 'reading') {
+      preview = `[Reading: ${b.readingSlot || 'no slot'}]`;
     } else {
       preview = (b.english || b.geez || b.amharic || '—').slice(0, 45);
     }
@@ -1019,6 +1174,11 @@ function selectBlock(idx, e) {
 
 function addBlock() {
   if (selSection === null || !isLiturgical(fileData)) return;
+  showBlockModal();
+}
+
+function addBlankBlock() {
+  if (selSection === null || !isLiturgical(fileData)) return;
   const section = fileData.sections[selSection];
   if (!section.blocks) section.blocks = [];
   section.blocks.push({
@@ -1033,6 +1193,7 @@ function addBlock() {
   markDirty();
   renderBlocks();
   renderEditor();
+  hideBlockModal();
 }
 
 // ── Common blocks (recurring text editors can insert with one click) ──────────
@@ -1341,6 +1502,177 @@ function moveBlock(idx, dir) {
   renderBlocks();
 }
 
+// ── Block & Section Templates ──────────────────────────────────────────────────
+function getAllBlocks() {
+  const allBlocks = [];
+  for (const filePath of files) {
+    const data = JSON.parse(localStorage.getItem('fileCache_' + filePath) || 'null');
+    if (data && data.sections) {
+      for (const section of data.sections) {
+        if (section.blocks) {
+          for (const block of section.blocks) {
+            allBlocks.push({
+              block: block,
+              fileName: filePath.split('/').pop(),
+              sectionTitle: section.title?.english || section.id
+            });
+          }
+        }
+      }
+    }
+  }
+  return allBlocks;
+}
+
+function getAllSections() {
+  const allSections = [];
+  for (const filePath of files) {
+    const data = JSON.parse(localStorage.getItem('fileCache_' + filePath) || 'null');
+    if (data && data.sections) {
+      for (const section of data.sections) {
+        allSections.push({
+          section: section,
+          fileName: filePath.split('/').pop()
+        });
+      }
+    }
+  }
+  return allSections;
+}
+
+function showBlockModal() {
+  document.getElementById('block-modal').classList.add('visible');
+  document.getElementById('block-search').value = '';
+  renderBlockTemplates();
+}
+
+function hideBlockModal() {
+  document.getElementById('block-modal').classList.remove('visible');
+}
+
+function showSectionModal() {
+  document.getElementById('section-modal').classList.add('visible');
+  document.getElementById('section-search').value = '';
+  renderSectionTemplates();
+}
+
+function hideSectionModal() {
+  document.getElementById('section-modal').classList.remove('visible');
+}
+
+function renderBlockTemplates() {
+  const searchTerm = document.getElementById('block-search').value.toLowerCase();
+  const allBlocks = getAllBlocks();
+  const filtered = allBlocks.filter(item => {
+    const block = item.block;
+    const text = [
+      block.english, block.geez, block.amharic, block.transliteration,
+      block.type, block.speaker, block.readingSlot, item.fileName, item.sectionTitle
+    ].filter(Boolean).join(' ').toLowerCase();
+    return text.includes(searchTerm);
+  });
+
+  const list = document.getElementById('block-list');
+  if (filtered.length === 0) {
+    list.innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px;">No blocks found</div>';
+    return;
+  }
+
+  list.innerHTML = filtered.map(item => {
+    const block = item.block;
+    let preview;
+    if (block.type === 'reading') {
+      preview = `[Reading: ${block.readingSlot || 'no slot'}]`;
+    } else if (block.type === 'placeholder') {
+      preview = `[Placeholder: ${block.overrideId || 'no ID'}]`;
+    } else {
+      preview = block.english || block.geez || block.amharic || block.transliteration || '(empty)';
+    }
+    const meta = `${block.type || 'prayer'}${block.speaker ? ' · ' + block.speaker : ''} · ${item.sectionTitle} · ${item.fileName}`;
+    return `
+      <div class="modal-item" onclick='duplicateBlockFromTemplate(${JSON.stringify(block).replace(/'/g, "&apos;")})'>
+        <div class="modal-item-title">${esc(preview.slice(0, 80))}${preview.length > 80 ? '...' : ''}</div>
+        <div class="modal-item-meta">${esc(meta)}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderSectionTemplates() {
+  const searchTerm = document.getElementById('section-search').value.toLowerCase();
+  const allSections = getAllSections();
+  const filtered = allSections.filter(item => {
+    const section = item.section;
+    const text = [
+      section.title?.english, section.title?.geez, section.title?.amharic,
+      section.id, item.fileName
+    ].filter(Boolean).join(' ').toLowerCase();
+    return text.includes(searchTerm);
+  });
+
+  const list = document.getElementById('section-list');
+  if (filtered.length === 0) {
+    list.innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px;">No sections found</div>';
+    return;
+  }
+
+  list.innerHTML = filtered.map(item => {
+    const section = item.section;
+    const title = section.title?.english || section.title?.geez || section.id;
+    const blockCount = (section.blocks || []).length;
+    const meta = `${blockCount} block${blockCount !== 1 ? 's' : ''} · ${item.fileName}`;
+    return `
+      <div class="modal-item" onclick='duplicateSectionFromTemplate(${JSON.stringify(section).replace(/'/g, "&apos;")})'>
+        <div class="modal-item-title">${esc(title)}</div>
+        <div class="modal-item-meta">${esc(meta)}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function duplicateBlockFromTemplate(templateBlock) {
+  if (selSection === null || !isLiturgical(fileData)) return;
+  const section = fileData.sections[selSection];
+  if (!section.blocks) section.blocks = [];
+  
+  // Deep copy and assign new ID
+  const newBlock = JSON.parse(JSON.stringify(templateBlock));
+  newBlock.id = uid(fileData.id || 'block');
+  
+  section.blocks.push(newBlock);
+  const newIdx = section.blocks.length - 1;
+  selBlock = newIdx;
+  selBlocks = new Set([newIdx]);
+  markDirty();
+  renderBlocks();
+  renderEditor();
+  hideBlockModal();
+}
+
+function duplicateSectionFromTemplate(templateSection) {
+  if (!isLiturgical(fileData)) return;
+  
+  // Deep copy and assign new IDs
+  const newSection = JSON.parse(JSON.stringify(templateSection));
+  newSection.id = uid('section');
+  
+  // Assign new IDs to all blocks
+  if (newSection.blocks) {
+    for (const block of newSection.blocks) {
+      block.id = uid(fileData.id || 'block');
+    }
+  }
+  
+  fileData.sections.push(newSection);
+  selSection = fileData.sections.length - 1;
+  selBlock = null;
+  markDirty();
+  renderSections();
+  renderBlocks();
+  renderEditor();
+  hideSectionModal();
+}
+
 // ── Editor ─────────────────────────────────────────────────────────────────────
 function renderEditor() {
   const panel = document.getElementById('editor-panel');
@@ -1406,8 +1738,9 @@ function renderEditor() {
     const block = section.blocks[selBlock];
     const isInstr = block.type === 'heading' || block.type === 'rubric';
     const isPlaceholder = block.type === 'placeholder';
+    const isReading = block.type === 'reading';
 
-    const typeOpts = ['prayer','response','heading','rubric','placeholder'].map(t =>
+    const typeOpts = ['prayer','response','heading','rubric','placeholder','reading'].map(t =>
       '<option value="' + t + '"' + (block.type === t ? ' selected' : '') + '>' + t + '</option>'
     ).join('');
     const speakerOpts = '<option value="">— none —</option>' +
@@ -1424,6 +1757,20 @@ function renderEditor() {
       contentFields += '<div class="field"><label class="fl">Optional</label>' +
         '<label><input type="checkbox"' + optionalChecked + ' onchange="setBlock(\'optional\',this.checked)"> ' +
         'Skip if no matching override found</label></div>';
+    } else if (isReading) {
+      // Reading blocks only need reading slot selector
+      const readingSlots = ['pauline', 'catholic', 'acts', 'psalm', 'gospel'];
+      const slotOpts = '<option value="">— select reading —</option>' +
+        readingSlots.map(slot =>
+          '<option value="' + slot + '"' + (block.readingSlot === slot ? ' selected' : '') + '>' + slot + '</option>'
+        ).join('');
+      contentFields = '<div class="field">' +
+        '<label class="fl">Reading Slot</label>' +
+        '<select onchange="setBlock(\'readingSlot\',this.value);renderBlocks()">' + slotOpts + '</select>' +
+        '</div>';
+      contentFields += '<div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;line-height:1.4;">' +
+        'Reading blocks are placeholders for dynamic Bible readings. The app will display an expandable reading card here with the actual scripture text based on the selected reading slot.' +
+        '</div>';
     } else {
       // Regular blocks show language text areas side-by-side for easy comparison.
       contentFields = '<div class="lang-grid">' +
@@ -1451,9 +1798,11 @@ function renderEditor() {
         return `<label style="display:inline-block;margin-right:12px;"><input type="checkbox" value="${season}" ${checked?'checked':''} onchange="setBlockCondition('season', '${season}', this.checked)"> ${season}</label>`;
       }).join('');
       
+      const seasonNote = '<div style="font-size:11px;color:var(--muted);margin-top:6px;font-style:italic;">Note: "ordinary" matches all times except special seasons (advent, christmas, lent, easter, pentecost)</div>';
+      
       conditionsUI = '<div class="editor-title">Conditions</div>' +
         '<div class="field"><label class="fl">Day of Week</label><div>' + dayChecks + '</div></div>' +
-        '<div class="field"><label class="fl">Liturgical Season</label><div>' + seasonChecks + '</div></div>';
+        '<div class="field"><label class="fl">Liturgical Season</label><div>' + seasonChecks + seasonNote + '</div></div>';
     }
 
     panel.innerHTML = '<div class="editor-inner">' +
@@ -1466,7 +1815,7 @@ function renderEditor() {
         '</div>' +
         '<div class="field">' +
           '<label class="fl">Speaker</label>' +
-          '<select onchange="setBlock(\'speaker\',this.value);renderBlocks()"' + (isInstr || isPlaceholder ? ' disabled' : '') + '>' + speakerOpts + '</select>' +
+          '<select onchange="setBlock(\'speaker\',this.value);renderBlocks()"' + (isInstr || isPlaceholder || isReading ? ' disabled' : '') + '>' + speakerOpts + '</select>' +
         '</div>' +
       '</div>' +
       contentFields +

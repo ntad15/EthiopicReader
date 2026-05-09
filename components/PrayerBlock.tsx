@@ -9,6 +9,7 @@ import { useReadings } from '@/context/ReadingsContext';
 import { formatReading, formatReadingChapterVerse, bookDisplayName } from '@/utils/readingFormatter';
 import { ReadingSlotKey } from '@/data/bibleBooks';
 import { getSlotConfig } from '@/data/readingSlots';
+import ReadingCard from '@/components/ReadingCard';
 
 interface Props {
   block: PrayerBlockType;
@@ -68,6 +69,26 @@ export default function PrayerBlock({ block }: Props) {
     );
   }
 
+  // Reading block — expandable dynamic Bible reading
+  if (block.type === 'reading') {
+    const slotKey = block.readingSlot as ReadingSlotKey | undefined;
+    const reading = slotKey ? (slots[slotKey] ?? null) : null;
+    
+    if (!reading) {
+      // No reading selected yet - show placeholder
+      return (
+        <View style={styles.readingPlaceholder}>
+          <Text style={[styles.readingPlaceholderText, { fontSize: scale(14) }]}>
+            {slotKey ? `[${slotKey} reading not selected]` : '[Reading slot not configured]'}
+          </Text>
+        </View>
+      );
+    }
+
+    // Render expandable reading card with full Bible text
+    return <ReadingCard slot={slotKey!} reading={reading} />;
+  }
+
   const speakerColor =
     block.speaker ? (speakerColors[block.speaker] ?? Colors.text) : Colors.text;
 
@@ -96,8 +117,8 @@ export default function PrayerBlock({ block }: Props) {
               style={[
                 styles.prayerText,
                 {
-                  fontSize: scale(lang === 'geez' || lang === 'amharic' ? 17 : 16),
-                  lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 17 : 16) * 1.6,
+                  fontSize: scale(lang === 'geez' || lang === 'amharic' ? 16 : 16),
+                  lineHeight: scale(lang === 'geez' || lang === 'amharic' ? 16 : 16) * 1.6,
                 },
                 (lang === 'geez' || lang === 'amharic') && styles.geezText,
                 lang === 'english' && styles.englishText,
@@ -215,6 +236,20 @@ const styles = StyleSheet.create({
   transliterationText: {
     fontFamily: Fonts.bodyRegular,
     color: Colors.textMuted,
+  },
+
+  /* ── Reading placeholder (when no reading selected) ── */
+  readingPlaceholder: {
+    marginVertical: 16,
+    padding: 16,
+    backgroundColor: Colors.surfaceElevated,
+    borderRadius: 8,
+  },
+  readingPlaceholderText: {
+    fontFamily: Fonts.bodyItalic,
+    fontStyle: 'italic',
+    color: Colors.textMuted,
+    textAlign: 'center',
   },
 
 });
