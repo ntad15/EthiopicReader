@@ -741,9 +741,6 @@ async function loadCommonBlocks() {
   } catch (e) {
     commonBlocks = [];
   }
-  // Show the button now that files are loaded — modal works even without common blocks
-  const btn = document.getElementById('common-blocks-btn');
-  if (btn) btn.style.display = '';
 }
 
 function computeFileLint(data) {
