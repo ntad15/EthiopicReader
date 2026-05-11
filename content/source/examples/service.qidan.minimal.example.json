@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "kind": "service",
+  "id": "service.qidan",
+  "slug": "qidan",
+  "titles": {
+    "en": "Qidan",
+    "gez": "ጸሎተ ኪዳን",
+    "am": "ጸሎተ ኪዳን"
+  },
+  "sections": [
+    {
+      "id": "opening",
+      "titles": {
+        "en": "Opening",
+        "gez": "መጀመሪያ"
+      },
+      "nodes": [
+        {
+          "id": "opening-heading",
+          "kind": "heading",
+          "content": {
+            "en": "Trisagion",
+            "gez": "ቅዱስ"
+          }
+        },
+        {
+          "id": "trisagion-priest-1",
+          "kind": "text",
+          "role": "prayer",
+          "speaker": "priest",
+          "content": {
+            "en": "Holy.",
+            "gez": "ቅዱስ።",
+            "gez-Latn": "Qidus."
+          }
+        },
+        {
+          "id": "intro-day-of-week",
+          "kind": "seasonal-ref",
+          "slot": "intro-day-of-week"
+        },
+        {
+          "id": "gospel-label",
+          "kind": "reading-ref",
+          "slot": "gospel",
+          "labels": {
+            "en": "Holy Gospel",
+            "am": "ቅዱስ ወንጌል"
+          }
+        },
+        {
+          "id": "gospel-body",
+          "kind": "reading-body",
+          "slot": "gospel"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "manual"
+    }
+  }
+}

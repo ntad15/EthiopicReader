@@ -2,28 +2,24 @@
   "id": "seasonals",
   "title": {
     "english": "Seasonal Variations",
-    "geez": "",
-    "amharic": "",
-    "transliteration": ""
+    "geez": "ወቅታዊ ልዩነቶች",
+    "amharic": "ወቅታዊ ልዩነቶች"
   },
   "sections": [
     {
-      "id": "intro-day-of-week-overrides",
+      "id": "intro-day-of-week",
       "title": {
-        "english": "Qidase Introduction",
-        "geez": "",
-        "amharic": "",
-        "transliteration": ""
+        "english": "Qidase Introduction"
       },
       "blocks": [
         {
           "id": "intro-day-of-week-sunday",
           "type": "prayer",
-          "speaker": "all",
           "geez": "ኵሉ ዘገብራ ለጽድቅ ጻድቅ ውእቱ ወዘያከብር ሰንበተ፤ ኢይበል ፈላሲ ዘገብአ ኀበ እግዚአብሔር ይፈልጠኒኑ እምሕዝቡ፤ ኵሉ ዘገብራ ለጽድቅ፣ ጻድቅ ውእቱ ወዘያከብር ሰንበተ።",
           "amharic": "ጽድቅን የሠራ ሰንበትን ያከበረም ሰው ሁሉ ጻድቅ ነው። ወደ እግዚአብሔር አምልኮት የገባ ከምዕመናን ይለየኝ ይሆን ፈጽሞ አይበል። ጽድቅን የሠራ ሰንበትን ያከበረም ሰው ሁሉ ጻድቅ ነው።",
           "english": "Blessed is he who does blessed deeds and honors the Sabbath. Let him not question whether he will be outcast from the multitudes if he was to enter into the worship of God. Blessed is he who does blessed deeds and honors the Sabbath.",
           "transliteration": "Kwulu zegebra letsidq tsadiq wi'itu wezeyakebir senbete eeybel felasee zegebi'a habe Igzee'abihér yifeliteneenu imhizbu kwulu zegebra letsidq tsadiq wi'itu wezeyakebir senbete.",
+          "speaker": "all",
           "conditions": {
             "dayOfWeek": [
               "sunday"
@@ -33,11 +29,11 @@
         {
           "id": "intro-day-of-week-monday-to-friday",
           "type": "prayer",
-          "speaker": "all",
           "geez": "እምነ በሕ፣ ቅድስት ቤተክርስቲያን፣ ሥርጉት አረፋቲሃ በዕንቀ ዳዝዩን፣ እምነ በሕ፣ ቅድስት ቤተክርስቲያን።",
           "amharic": "ሰላም ላንቼ ይሁን፣ እናታችን ክብርት ቤተ ክርስቲያን። ግድዋዳዎችሽ በዳዝዩን እንቀ የተጌጡ ናቸው፣ ሰላም ላንቼ ይሁን! እናታችን ክብርት ቤተ ክርስቲያን።",
           "english": "Peace be unto you, our mother, O honorable church. Thy walls are embroidered with Topaz. Peace be unto you, our mother, O honorable church",
           "transliteration": "Imine beha qidist bete kiristeeyan, sirgut arefateehu be'inqwu pazion, Imine beha qidist bete kiristeeyan.",
+          "speaker": "all",
           "conditions": {
             "dayOfWeek": [
               "monday",
@@ -51,11 +47,11 @@
         {
           "id": "intro-day-of-week-saturday",
           "type": "prayer",
-          "speaker": "all",
           "geez": "መስቀል አብርሃ! በከዋዊት አሠርገወ ሰማዮ፣ እምኩሉስ ዑሕሊ አርአየ። መስቀል አብርሃ! በከዋብት አሠርገወ ሰማዮ።",
           "amharic": "መስቀል አበራ! በከካቦች ሰማይን አስጌጠ። ከሁሉም ዑሕሊን አሳዩ። መስቀል አብራ በከካቦች ሰማይን አስጌጠ።",
           "english": "The cross shined and had the heavens embroidered with stars. Of all the sun is seen. The cross shined and had the heavens embroidered with stars.",
           "transliteration": "Meskqel abriha! Bekewakibt aserigewa semaye imkwuluse Íehay ar'aye. Mesqel abriha! Bekewakibt aserigewa semaye.",
+          "speaker": "all",
           "conditions": {
             "dayOfWeek": [
               "saturday"
@@ -65,22 +61,22 @@
       ]
     },
     {
-      "id": "section-mokpndt8vl1",
+      "id": "halleluia-seasonal",
       "title": {
-        "english": "Halleluia",
         "geez": "ሃሌ ሉያ",
         "amharic": "ሃሌ ሉያ",
+        "english": "Halleluia",
         "transliteration": "Halleluia"
       },
       "blocks": [
         {
           "id": "seasonals-mokpnsbk1a7",
           "type": "response",
-          "speaker": "congregation",
           "geez": "ሃሌ ሉያ! እመቦ ብእሲ እምእመናን ዘቦአ ቤተ ክርስቲያን፤ በጊዜ ቅዳሴ ወኢሰምዐ መጻሕፍተ ቅዱሳተ ወኢተዐገሠ እስከ ይፌጽሙ ጸሎተ ቅዳሴ ወኢተመጠወ እምቍርባን ይሰደድ እምቤተ ክርስቲያን እስመ አማሰነ ሕገ እግዚአብሔር፤ ወአስተሐቀረ ቁመተ ቅድመ ንጉሥ ሰማያዊ፤ ንጉሠ ሥጋ ወመንፈስ፤ ከመዝ መሐሩነ ሐዋርያት በአብጥሊሶሙ።",
           "amharic": "ሃሌ ሉያ! በቅዳሴ ጊዜ ከምዕመናን ወገን ወደ ቤተ ክርስቲያን የገባ ሰው ቢኖር፣ ቅዱሳት መጻሕፍትን ሳይሰማ፣ የቅዳሴው ጸሎት እስኪፈጸም ባይታገሥ፣ ከቁርባኑም ባይቀበል፣ ከቤተ ክርስቲያን ይለይ፣ የእግዚአብሔርን ሕግ አፍርሷልና። የሥጋና የነፍስ ፈጣሪ በሚሆን በሰማያዊ ንጉሥ ፊት መቆምንም አቃሏልና። ሐዋርያት በሲኖዶሳቸው እንዲህ ብለው አስተምረውናል።",
           "english": "Halleluia! If there be anyone of the faithful that has entered the church at the time of mass and and has not heard the holy Scriptures, and hath not waited until they finish the prayer of the Mass, and hath not received the holy communion, let him be driven out of the church: for he hath violated the law of God and disdained to Stand Before the heavenly King, the King of Body and Spirit. This the Apostles have taught us in their canons.",
           "transliteration": "Halléluya! imebo bi'isee im'imenan zebo'a béte kiristeeyan Begeezé qidase we’i’sem’a metsa’hifte qidusate we'eete'agese iske yifetsimu tselote qidasé We'eetemetewe imqwurban yiseded imbéte kiristeeyan isme amasene hige Igzee'abihér we'astehaqere qemete Qidme nigus semayawee nigus siga wemenfes kemez meharune",
+          "speaker": "congregation",
           "conditions": {
             "season": [
               "ordinary"
@@ -90,11 +86,11 @@
         {
           "id": "seasonals-mokppub7549",
           "type": "response",
-          "speaker": "congregation",
           "geez": "ሃሌ ሉያ! ዮሴፍ ወኒቆዲሞስ ገነዝዎ ለኢየሱስ በሰንዱናት ለዘ ተንሣአ እሙታን በመንክር ኪን።",
           "amharic": "ሃሌ ሉያ! ዮሴፍና ኒቆዲሞስ ድንቅ በሚሆን ጥበብ ከሙታን ተለይቶ የተነሣ ኢየሱስን በበፍታ ገነዙት።",
           "english": "Halleluia, Joseph and Nicodemus wrapped with linen cloths Jesus who rose from the dead in a wondrous fashion",
           "transliteration": "Halléluya, Yoséf weneeqodeemos geneziwo le'Eeyesus besendunat lezetensi'a imutan lemenkir keen.",
+          "speaker": "congregation",
           "conditions": {
             "season": [
               "easter"

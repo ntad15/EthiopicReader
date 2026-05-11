@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "kind": "seasonal",
+  "id": "seasonal.serate-qidase",
+  "slug": "serate-qidase",
+  "titles": {
+    "en": "Seasonal Variations"
+  },
+  "slots": [
+    {
+      "id": "intro-day-of-week",
+      "titles": {
+        "en": "Qidase Introduction"
+      },
+      "rules": [
+        {
+          "id": "sunday",
+          "when": {
+            "daysOfWeek": [
+              "sunday"
+            ]
+          },
+          "nodes": [
+            {
+              "id": "intro-day-of-week-sunday",
+              "kind": "text",
+              "role": "prayer",
+              "content": {
+                "gez": "ኵሉ ዘገብራ ለጽድቅ ጻድቅ ውእቱ ወዘያከብር ሰንበተ፤ ኢይበል ፈላሲ ዘገብአ ኀበ እግዚአብሔር ይፈልጠኒኑ እምሕዝቡ፤ ኵሉ ዘገብራ ለጽድቅ፣ ጻድቅ ውእቱ ወዘያከብር ሰንበተ።",
+                "am": "ጽድቅን የሠራ ሰንበትን ያከበረም ሰው ሁሉ ጻድቅ ነው። ወደ እግዚአብሔር አምልኮት የገባ ከምዕመናን ይለየኝ ይሆን ፈጽሞ አይበል። ጽድቅን የሠራ ሰንበትን ያከበረም ሰው ሁሉ ጻድቅ ነው።",
+                "en": "Blessed is he who does blessed deeds and honors the Sabbath. Let him not question whether he will be outcast from the multitudes if he was to enter into the worship of God. Blessed is he who does blessed deeds and honors the Sabbath.",
+                "gez-Latn": "Kwulu zegebra letsidq tsadiq wi'itu wezeyakebir senbete eeybel felasee zegebi'a habe Igzee'abihér yifeliteneenu imhizbu kwulu zegebra letsidq tsadiq wi'itu wezeyakebir senbete."
+              },
+              "speaker": "all"
+            }
+          ]
+        },
+        {
+          "id": "monday-through-friday",
+          "when": {
+            "daysOfWeek": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ]
+          },
+          "nodes": [
+            {
+              "id": "intro-day-of-week-monday-to-friday",
+              "kind": "text",
+              "role": "prayer",
+              "content": {
+                "gez": "እምነ በሕ፣ ቅድስት ቤተክርስቲያን፣ ሥርጉት አረፋቲሃ በዕንቀ ዳዝዩን፣ እምነ በሕ፣ ቅድስት ቤተክርስቲያን።",
+                "am": "ሰላም ላንቼ ይሁን፣ እናታችን ክብርት ቤተ ክርስቲያን። ግድዋዳዎችሽ በዳዝዩን እንቀ የተጌጡ ናቸው፣ ሰላም ላንቼ ይሁን! እናታችን ክብርት ቤተ ክርስቲያን።",
+                "en": "Peace be unto you, our mother, O honorable church. Thy walls are embroidered with Topaz. Peace be unto you, our mother, O honorable church",
+                "gez-Latn": "Imine beha qidist bete kiristeeyan, sirgut arefateehu be'inqwu pazion, Imine beha qidist bete kiristeeyan."
+              },
+              "speaker": "all"
+            }
+          ]
+        },
+        {
+          "id": "saturday",
+          "when": {
+            "daysOfWeek": [
+              "saturday"
+            ]
+          },
+          "nodes": [
+            {
+              "id": "intro-day-of-week-saturday",
+              "kind": "text",
+              "role": "prayer",
+              "content": {
+                "gez": "መስቀል አብርሃ! በከዋዊት አሠርገወ ሰማዮ፣ እምኩሉስ ዑሕሊ አርአየ። መስቀል አብርሃ! በከዋብት አሠርገወ ሰማዮ።",
+                "am": "መስቀል አበራ! በከካቦች ሰማይን አስጌጠ። ከሁሉም ዑሕሊን አሳዩ። መስቀል አብራ በከካቦች ሰማይን አስጌጠ።",
+                "en": "The cross shined and had the heavens embroidered with stars. Of all the sun is seen. The cross shined and had the heavens embroidered with stars.",
+                "gez-Latn": "Meskqel abriha! Bekewakibt aserigewa semaye imkwuluse Íehay ar'aye. Mesqel abriha! Bekewakibt aserigewa semaye."
+              },
+              "speaker": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "halleluia-seasonal",
+      "titles": {
+        "gez": "ሃሌ ሉያ",
+        "am": "ሃሌ ሉያ",
+        "en": "Halleluia",
+        "gez-Latn": "Halleluia"
+      },
+      "rules": [
+        {
+          "id": "ordinary",
+          "when": {
+            "seasons": [
+              "ordinary"
+            ]
+          },
+          "nodes": [
+            {
+              "id": "seasonals-mokpnsbk1a7",
+              "kind": "text",
+              "role": "response",
+              "content": {
+                "gez": "ሃሌ ሉያ! እመቦ ብእሲ እምእመናን ዘቦአ ቤተ ክርስቲያን፤ በጊዜ ቅዳሴ ወኢሰምዐ መጻሕፍተ ቅዱሳተ ወኢተዐገሠ እስከ ይፌጽሙ ጸሎተ ቅዳሴ ወኢተመጠወ እምቍርባን ይሰደድ እምቤተ ክርስቲያን እስመ አማሰነ ሕገ እግዚአብሔር፤ ወአስተሐቀረ ቁመተ ቅድመ ንጉሥ ሰማያዊ፤ ንጉሠ ሥጋ ወመንፈስ፤ ከመዝ መሐሩነ ሐዋርያት በአብጥሊሶሙ።",
+                "am": "ሃሌ ሉያ! በቅዳሴ ጊዜ ከምዕመናን ወገን ወደ ቤተ ክርስቲያን የገባ ሰው ቢኖር፣ ቅዱሳት መጻሕፍትን ሳይሰማ፣ የቅዳሴው ጸሎት እስኪፈጸም ባይታገሥ፣ ከቁርባኑም ባይቀበል፣ ከቤተ ክርስቲያን ይለይ፣ የእግዚአብሔርን ሕግ አፍርሷልና። የሥጋና የነፍስ ፈጣሪ በሚሆን በሰማያዊ ንጉሥ ፊት መቆምንም አቃሏልና። ሐዋርያት በሲኖዶሳቸው እንዲህ ብለው አስተምረውናል።",
+                "en": "Halleluia! If there be anyone of the faithful that has entered the church at the time of mass and and has not heard the holy Scriptures, and hath not waited until they finish the prayer of the Mass, and hath not received the holy communion, let him be driven out of the church: for he hath violated the law of God and disdained to Stand Before the heavenly King, the King of Body and Spirit. This the Apostles have taught us in their canons.",
+                "gez-Latn": "Halléluya! imebo bi'isee im'imenan zebo'a béte kiristeeyan Begeezé qidase we’i’sem’a metsa’hifte qidusate we'eete'agese iske yifetsimu tselote qidasé We'eetemetewe imqwurban yiseded imbéte kiristeeyan isme amasene hige Igzee'abihér we'astehaqere qemete Qidme nigus semayawee nigus siga wemenfes kemez meharune"
+              },
+              "speaker": "assembly"
+            }
+          ]
+        },
+        {
+          "id": "easter",
+          "when": {
+            "seasons": [
+              "easter"
+            ]
+          },
+          "nodes": [
+            {
+              "id": "seasonals-mokppub7549",
+              "kind": "text",
+              "role": "response",
+              "content": {
+                "gez": "ሃሌ ሉያ! ዮሴፍ ወኒቆዲሞስ ገነዝዎ ለኢየሱስ በሰንዱናት ለዘ ተንሣአ እሙታን በመንክር ኪን።",
+                "am": "ሃሌ ሉያ! ዮሴፍና ኒቆዲሞስ ድንቅ በሚሆን ጥበብ ከሙታን ተለይቶ የተነሣ ኢየሱስን በበፍታ ገነዙት።",
+                "en": "Halleluia, Joseph and Nicodemus wrapped with linen cloths Jesus who rose from the dead in a wondrous fashion",
+                "gez-Latn": "Halléluya, Yoséf weneeqodeemos geneziwo le'Eeyesus besendunat lezetensi'a imutan lemenkir keen."
+              },
+              "speaker": "assembly"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "imported",
+      "ref": "data/seasonals.json"
+    }
+  }
+}

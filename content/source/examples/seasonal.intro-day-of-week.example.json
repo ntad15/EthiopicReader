@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "kind": "seasonal",
+  "id": "seasonal.serate-qidase",
+  "slug": "serate-qidase",
+  "titles": {
+    "en": "Serate Qidase Seasonal Slots"
+  },
+  "slots": [
+    {
+      "id": "intro-day-of-week",
+      "titles": {
+        "en": "Introduction by Day of Week"
+      },
+      "rules": [
+        {
+          "id": "sunday",
+          "when": {
+            "daysOfWeek": ["sunday"]
+          },
+          "nodes": [
+            {
+              "id": "intro-sunday-1",
+              "kind": "text",
+              "role": "prayer",
+              "speaker": "all",
+              "content": {
+                "en": "Blessed is he who honors the Sabbath.",
+                "am": "ሰንበትን ያከበረ ብፁዕ ነው።"
+              }
+            }
+          ]
+        },
+        {
+          "id": "weekday",
+          "when": {
+            "daysOfWeek": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+          },
+          "nodes": [
+            {
+              "id": "intro-weekday-1",
+              "kind": "text",
+              "role": "prayer",
+              "speaker": "all",
+              "content": {
+                "en": "Peace be unto you, our mother, O honorable church.",
+                "am": "ሰላም ላንቺ ይሁን ክብርት ቤተ ክርስቲያን።"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "manual"
+    }
+  }
+}

@@ -1,0 +1,2206 @@
+{
+  "schemaVersion": 1,
+  "kind": "anaphora",
+  "id": "anaphora.saint-james-sarugh",
+  "slug": "saint-james-sarugh",
+  "titles": {
+    "gez": "ቅዱስ ያዕቆብ ዘሱሩጅ",
+    "am": "ቅዱስ ያዕቆብ ዘሱሩጅ",
+    "en": "St. Jacob of Sarug"
+  },
+  "sections": [
+    {
+      "id": "saint-james-sarugh-opening",
+      "titles": {
+        "en": "Opening"
+      },
+      "nodes": [
+        {
+          "id": "js-op-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "The Anaphora of Jacob, Bishop of Serough; may his prayer and blessing be with our (head of state: King, Queen, President . . .) unto the ages of ages. Amen."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-op-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "The Lord be with all of you."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-op-3",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "And with your spirit."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-op-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Give ye thanks unto our God."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-op-5",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "It is right, it is just."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-op-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Lift up your hearts."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-op-7",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "We have lifted them up unto the Lord our God."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-op-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Stand up in the fear of God, open the windows of your ears that you may attend, and awaken your hearts. Our being here in this place is not in vain. God sees and examines every one of us."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-op-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Let us draw near and offer our prayer to God remembering the ancient fathers who gained their rest in the right faith; and we begin from the present honourable father, the Patriarch Abba ( _______ ) and his fellow, Archbishop Abba (________)."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "በአንተ ብፁዕ ወቅዱስ አባ ማትያስ፣ ወብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ፣",
+            "am": "ብፁዕ ቅዱስ ስለሚሆን ስለ ርእሰ ሊቃነ ጳጳሳት ስለ አባ ማትያስ ብፁዕም ስለሚሆን ስለ አባ ጴጥሮስ በጸሎታቸውና",
+            "en": "For the sake of the blessed and holy Patriarch Abba and the blessed Archbishop Abba, while they yet give Thee thanks in their prayer and their supplications: Stephen the first martyr, Zacharias the priest and John the Baptist.",
+            "gez-Latn": "Beinte bitsu'i weqidus Abba Matyas webitsu'i leeqe papasine Abba Petros"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-int-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "እንዘ የአኵቱከ በጸሎቶሙ ወበስእለቶሙ እስጢፋኖስ ቀዳሜ ሰማዕት፣ ዘካርያስ ካህን ወዮሐንስ መጥምቅ",
+            "am": "በልመናቸው ሲያመስግኑህ የሰማዕታት መጀመሪያ እስጢፋኖስ። ካህን ዘካርያስና መጥምቁ ዩሐንስ",
+            "en": "And for the sake of all the saints and martyrs who have gone to their rest in faith: Matthew and Mark, Luke, and John, the four Evangelists; Mary the mother of God, Simon Peter and Andrew, James and John, Philip and Bartholomew, Thomas and Matthew, Thaddaeus and Nathanael, James the son of Alphaeus and Matthias, the twelve Apostles; and James the Apostle, brother of the Lord, Bishop of Jerusalem: Paul, Timothy, Silas, and Barnabas; Titus, Philemon, and Clement, the seventy-two disciples, the five hundred brethren, the three hundred and eighteen Orthodox; may the prayers of them all come unto us and visit us together with them.",
+            "gez-Latn": "inze ye'akwutuke betselotomu webes'iletomu Isteefanos qedame sema'it. Zekarias kahin weyohanis metmiq."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-int-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And remember Thou the peace of the universal apostolic church, which was made by Christ through His precious blood."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-int-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Remember, Thou, all the patriarchs, archbishops, bishops, priests, and deacons who keep straight the way of the true word."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-int-5r",
+          "kind": "rubric",
+          "content": {
+            "en": "The assistant priest shall say the Prayer of Benediction of St. Basil."
+          }
+        },
+        {
+          "id": "ap-int-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O holy Trinity, Father, Son, and Holy Spirit, bless Thy people, beloved Christians, with heavenly and earthly blessings."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And send upon us the grace of the Holy Spirit, and keep the doors of Thy holy church open unto us in mercy and in faith; and perfect unto us the faith of Thy holy Trinity unto our last breath."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O my Lord Jesus Christ, visit the sick of Thy people; heal them; and guide our fathers and our brethren who have journeyed, becoming strangers: bring them back to their dwelling places in peace and in health."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Bless the airs of heaven, and the rains and the fruits of the earth of this year, in accordance with Thy grace, and make joy and gladness prevail perpetually on the face of the earth."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And confirm for us Thy peace. Turn the hearts of mighty kings to deal kindly with us always."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Grant peace to the scholars of the church, who are continually gathered in Thy holy church; to all, to each by their several names, in the presence of powerful rulers, O our God, increase Thy peace."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Rest the souls of our ancestors, both our brothers and sisters who have fallen asleep and gained their rest in the right faith."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-12",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And bless those who give gifts of incense, bread and wine, ointment and oil, decorations and reading books, and vessels for the sanctuary, that Christ our God may give them their reward in the heavenly Jerusalem."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-13",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And all of them that are assembled with us to entreat for mercy, Christ our God have mercy upon them: and all them that give alms before Thine awful and terrifying throne, receive."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And comfort every straitened soul, they who are in chains, and they who are in exile or captivity."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-15",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And them that are held in bitter servitude, our God, deliver them in Thy mercy. And all of them that have entrusted it to us to remember them in our supplications to Thee O our Master Jesus Christ, remember them in Thy heavenly kingdom, and remember me, thy sinful servant."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-int-16",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ኦ እግዚኦ አድኅን ሕዝበከ ወባርክ ርስተከ",
+            "am": "አቤቱ ሕዝብህን አድን ርስትህንም ባርክ።",
+            "en": "O Lord, save thy people and bless Thine inheritance, feed them and lift them up for ever.",
+            "gez-Latn": "O igzio adihin hizibike webarik risteke"
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-intercessions",
+      "titles": {
+        "en": "Intercessions"
+      },
+      "nodes": [
+        {
+          "id": "js-ic-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Lord, pity and have mercy upon the patriarchs, archbishops, bishops, priests, deacons, and all the Christian people."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-ic-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Rest the souls of these and all those whose names have or have not been called, and those on behalf of whom this good memorial has been made before Thee, and have mercy upon them."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-preface",
+      "titles": {
+        "en": "Preface"
+      },
+      "nodes": [
+        {
+          "id": "js-pf-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou Who sent Thy Son from heaven into the womb of the Virgin to fulfill Thy will:"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pf-2",
+          "kind": "rubric",
+          "content": {
+            "en": "Ye that are sitting, stand up."
+          }
+        },
+        {
+          "id": "js-pf-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "To Him, to Thy Son, Thou did grant authority to judge heaven and earth, even so, He had the authority before the world was created."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pf-4",
+          "kind": "rubric",
+          "content": {
+            "en": "Look to the east."
+          }
+        },
+        {
+          "id": "js-pf-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "How profound is the greatness of Thine only One, and of His honour, humility, patience with might."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pf-6",
+          "kind": "rubric",
+          "content": {
+            "en": "Let us give heed."
+          }
+        },
+        {
+          "id": "js-pf-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "To Him, to Thy Beloved bow the angels, archangels, ten thousand times ten thousand, and every name under heaven and on earth."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pf-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "The hosts of Michael in their tribes, and the hosts of Gabriel in their congregation, the cherubim in their might, and the seraphim in their sanctification, and all the hosts of angels in their ranks glorify God Who is glorified with the glory of the saints."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-sanctus",
+      "titles": {
+        "en": "Sanctus"
+      },
+      "nodes": [
+        {
+          "id": "js-san-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Answer ye."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-san-2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Holy, holy, holy, perfect Lord of hosts, heaven and earth are full of the holiness of Thy glory."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-post-sanctus",
+      "titles": {
+        "en": "Post-Sanctus"
+      },
+      "nodes": [
+        {
+          "id": "js-ps-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Let us also say together with them, Holy, holy, holy, Lord, Thou art truly our Lord, God, and Saviour Jesus Christ, holy in Thy holiness, great in Thy greatness, praised in Thy thanksgiving and glorified with the glory of Thy holy angels."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, He Who begot Thee resembles Thee in image and appearance, Thou was sent by Thy Father, and Thou art a spring, from the spring, sprung from heaven."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou art the long cord that will not be severed from the Father. Thou art the creator of heaven and earth. Thou came down from heaven by Thy will. The womb of the Virgin contained Thee. A little daughter, who was the daughter of the poor, carried Thee. The Galilean embraced Thee. Thou did sanctify her soul, purify her body, and strengthen her so she was not afraid of Thee."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou was born at Bethlehem and Thou appeared like a man. Thou was baptized by John, walked on the sea, rebuked the winds and quickened souls."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou joined Thy disciples in the celebration of Hosanna, satisfied many people with five loaves and two fishes through the power of Thy divinity."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord Who cannot be affronted, Thou was affronted by Judas, Thou was reviled by Ananias, disdained by Caiaphas, examined by Pilate and was numbered with the sinners."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At that time, on Friday, the evil Jews crucified Thee on the tree of the cross in the likeness of this sign of the cross which we make raising our hands over this table."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, Thou was struck with the hands of a servant, beaten with sticks, pierced with a spear, and they caused Thee to drink bitter gall with vinegar. While Thou was God, able to prevent them, Thou did not prevent them, Thou became patient even to death; all this Thou accepted for the love of man."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou rose from the dead and raised the dead, Thou did lead captivity captive to be presented to Thy Father. Being clothed in flesh Thou ascended to heaven, Thy accustomed position, through the power of divinity."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, pity Thy people and remember Thy covenant for the sake of Thy beloved Abraham, Thy servant Isaac and Thy holy Israel whom Thou called in Thy name."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, for the sake of the holy prophets, for the sake of the apostles, preachers, for the sake of the ordained priests, for the sake of the victorious martyrs, for the sake of the blessed righteous, and for the sake of the patient virgins and monks."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-12",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, for the sake of these four Evangelists, the likeness of those throne bearers abiding in heaven:"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-13",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Matthew in the likeness of a man, who preached Thy birth in flesh from the seed of David starting from the patriarch of the ancient fathers:"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Mark in the likeness of a roaring lion, who propagated Thy preaching to the Egyptians in the Orthodox faith."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-15",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Luke in the likeness of an ox, who preached Thy humility, Thy lying among asses and oxen, Thy being wrapped in swaddling cloths and Thy dwelling in a stable with the Virgin, Thy mother."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-16",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "John in the likeness of an eagle flying high and crying aloud, who interprets the nature of the Deity, and who is the sea of wisdom and the depth of prophecy."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-17",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "It is Thou who chose Him from among His fellows and decorated Him with holiness and girded Him with Thy girdle of virginity to be blameless like the angels."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-18",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, what mouth, what lips, what tongue can praise Thine exaltation?"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ps-19",
+          "kind": "rubric",
+          "content": {
+            "en": "At this time he shall raise incense."
+          }
+        },
+        {
+          "id": "ap-psn-2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Remember us all in Thy kingdom; remember us, Lord, Master, in Thy kingdom; remember us, Lord, in Thy kingdom, as Thou remembered the thief on the right hand when Thou was on the tree of the holy cross."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-ps-21",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Glory be to Thee, thanksgiving to Thy kingdom, power to Thy Father, honour and glory with dominion to the Holy Spirit Who is equal with and not inferior to Thee, and to Him who begot Thee, unto endless ages."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-institution",
+      "titles": {
+        "en": "Institution"
+      },
+      "nodes": [
+        {
+          "id": "js-in-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Priests, raise up your hands."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-in-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou did take bread in Thy holy hands to give to Thy pure disciples."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-3",
+          "kind": "rubric",
+          "content": {
+            "en": "At this time he shall raise the Bread."
+          }
+        },
+        {
+          "id": "js-in-4",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "We believe that this is he, truly we believe."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-in-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Thou Who did bless at that time, now bless this (pointing) bread with blessing. (+ three times)"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Thou Who did break at that time with thanksgiving, now break this (pointing) bread."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-7",
+          "kind": "rubric",
+          "content": {
+            "en": "Then he shall indent the Host lightly with his thumb in five places without separation."
+          }
+        },
+        {
+          "id": "js-in-8",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen. Amen. Amen. We believe and confess, we glorify Thee, O our Lord and our God; that this is He we truly believe."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-in-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou also mixed the cup of wine with water to give to Thy pure disciples."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Thou Who sanctified at that time, now sanctify this (pointing) cup. (+ three times)"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Thou Who did grant at that time, now grant this cup."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-12",
+          "kind": "rubric",
+          "content": {
+            "en": "He shall then move the cup with his right hand in the sign of the cross."
+          }
+        },
+        {
+          "id": "js-in-13",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen. Amen. Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-in-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Thou Who did unite at that time, now unite this bread with this (pointing) cup to be Thy body and Thy blood."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-in-15",
+          "kind": "rubric",
+          "content": {
+            "en": "At this time he shall dip his finger into the blood and sign the Body."
+          }
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-anamnesis",
+      "titles": {
+        "en": "Anamnesis"
+      },
+      "nodes": [
+        {
+          "id": "js-an-1",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "We proclaim Thy death, Lord, and Thy holy resurrection: we believe Thine ascension and Thy second advent. We glorify Thee and confess Thee, we offer our prayer unto Thee and supplicate Thee, O our Lord and our God."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-an-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Let your heart be in heaven."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-an-3",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "According to Thy mercy, our God, and not according to our sins. (to be chanted thrice)"
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-epiclesis",
+      "titles": {
+        "en": "Epiclesis"
+      },
+      "nodes": [
+        {
+          "id": "js-ep-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Let the gate of light be opened and the doors of glory be unlocked and the curtain before the face of the Father be withdrawn, and let the Lamb of God descend and sit on this (pointing) holy table prepared before me, Thy servant. Let \"Melos,\" the fearful sword of fire be sent and appear over this (pointing) bread and cup: (+ once over the bread, once over the cup, and once more over both) to fulfill this offering."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ep-2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen. Lord pity us, Lord spare us, Lord have mercy upon us."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-ep-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "With all the heart let us beseech the Lord our God that He grant unto us the good communion of the Holy Spirit."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-ep-4",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "As it was, is, and shall be unto generations of generations, and endless ages."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-ep-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Grant it together unto all them that take of it, that it may be unto them for life and for remission of sin."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ep-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Grant us to be united through Thy Holy Spirit, and heal us by this oblation that we may live in Thee for ever."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ep-7",
+          "kind": "rubric",
+          "content": {
+            "en": "The people shall repeat his words."
+          }
+        },
+        {
+          "id": "js-ep-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Blessed be the name of the Lord, and blessed be He that comes in the name of the Lord, and let the name of His glory be blessed. So be it. So be it. So be it blessed."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ep-9",
+          "kind": "rubric",
+          "content": {
+            "en": "The people shall repeat his words."
+          }
+        },
+        {
+          "id": "js-ep-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Send the grace of the Holy Spirit upon us."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-ep-11",
+          "kind": "rubric",
+          "content": {
+            "en": "The people shall repeat his words."
+          }
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-fraction",
+      "titles": {
+        "en": "Fraction"
+      },
+      "nodes": [
+        {
+          "id": "js-fr-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Arise for prayer."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-fr-2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Lord have mercy upon us."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-fr-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Peace be unto all of you."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-fr-4",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "And with your spirit."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-fr-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Prayer of Fraction. Again we supplicate thee, O Lover of man, and we serve Thee in all things and for all things, and let not Thy body and blood accuse anyone of us because of the impurity of our soul and body."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-fr-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "As Thy body was stretched on the cross up and down, right and left, like the corners of the earth, for the life of all the world, so also we hold and see this sign of the cross on this bread; and let it not be for accusation and destruction to anyone who partakes of it."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-fr-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, how clearly Thou knows the foolishness of man, none has been found who has not transgressed Thy commandment from the first Adam till the present days, because Thou, Lord our God, art far from anger, plenteous in mercy, and righteous."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-lords-prayer",
+      "titles": {
+        "en": "Lord's Prayer"
+      },
+      "nodes": [
+        {
+          "id": "js-lp-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Pray ye."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-lp-2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Our Father who art in heaven . . . (see Anaphora #2, #69: p. 62)"
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-pre-communion",
+      "titles": {
+        "en": "Pre-Communion"
+      },
+      "nodes": [
+        {
+          "id": "js-pc-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Truly, I offer prayer according to the first order given by God that Moses and Aaron, the priests, might pray on behalf of Thy people and inheritance."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Like them I pray unto Thee on behalf of Thy people and inheritance who have come into Thy church, priests and deacons, and on behalf of Thy people and inheritance who are outside. If there is here anyone of the priests or the people whose mind is far from Thee, let Thy will overwhelm him."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "As Thou has gathered this bread which had been scattered on the mountains and the little hills, in the forests and the valleys, and being gathered together, it became one bread for oblation."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-4",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "The hosts of the angels of the Saviour of the world, stand before the Saviour of the world, and the angels encircle the Saviour of the world, Whose curtain is fire for the sake of His holy body and His precious blood. Let us draw near before His face to enter into the house of the holiness of the Saviour of the world and to live believing in Him and trusting in Him."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-pc-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Open ye the gates, princes."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-pc-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Ye who are standing, bow your heads."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-pc-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Truly we bow and serve Thee Who sits in the highest heaven which neither the mind of man nor the knowledge of angels can reach."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We supplicate the kindness of Thy goodness on behalf of Thy people and Thine inheritance who have today come unto Thy sanctuary, the priests and deacons who have bowed their heads before Thine majesty, to receive Thy body and Thy blood by the hand of me, Thy servant, whom Thou has called through Thy grace, though unfit, unworthy and pitiable."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "This is the covenant of Thy word which Thou uttered to the priests saying, \"You are the salt of the earth;\" Thou said to the priests, \"You are the light of the world;\" Thou said to the priests, \"You are the eyes of the house of God.\" Thou said to the priests, \"You are the candles of the church;\" Thou said to the priests, \"You are the likeness of the angels.\" Come, O High Priest Jesus Christ, to bless Thy people and Thine inheritance, unto the ages of ages."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Worship the Lord with fear."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-pc-11",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Before Thee, Lord, we worship, and Thee do we glorify."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-pen-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Worship the Lord with fear."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-pen-2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Before Thee, Lord, we worship, and Thee do we glorify."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-pen-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord God, the Father almighty, Thou it is Who heals the wounds of our soul, body, and spirit,"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "because Thou has said, by the mouth of Thine only-begotten Son, our Lord, God, and Saviour Jesus Christ, that which He said to our father Peter, you are a rock, and upon this rock I will build My holy church, and the gates of hell shall not prevail against it; and unto you do I give the keys of the Kingdom of heaven; what you shall have bound on earth shall be bound in heaven, and what you shall have loosed on earth shall be loosed in heaven."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Let all Thy servants and Thy handmaids, according to their several names, be absolved and set free out of the mouth of the Holy Spirit, and out of the mouth of me also, Thy sinful and guilty servant, whether they have wrought wittingly or unwittingly."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Keep them, Lord, and defend them, thy servants, my fathers, brothers and sisters."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And also loose me, thy humble and sinful servant."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Both absolve them and set them free: out of the mouth of the holy Trinity: the Father, Son, and Holy Spirit, and out of the mouth of me Thy sinful and unrighteous servant."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O propitious, merciful and lover of man, Lord our God, that takes away the sin of the world, accept the penitence of Thy servants and Thy handmaids, and shine upon them with the light of everlasting life, and forgive them, Lord, all their sins; for Thou art good and the lover of man."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord our God, merciful, slow to anger, plenteous in mercy and righteous, forgive me my sins,"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "and deliver all thy servants and handmaids from all transgression and curse. If we have transgressed against Thee, Lord, whether in our word, deed, or thought, release, remit, pardon and have mercy, for Thou art good and the lover of man, Lord our God."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pen-12",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, absolve us and set us free, and absolve all Thy people, and absolve me Thy sinful servant."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-1r",
+          "kind": "rubric",
+          "content": {
+            "en": "Then he shall turn his face towards the people, bless them three times, make mention of them that are with him and say also:"
+          }
+        },
+        {
+          "id": "ap-rem-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Remember, Lord, the honourable father, our Patriarch Abba and the blessed Archbishop Abba. Our God, keep them for us for many years and length of days in righteousness and peace."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Remember, Lord, all our civil authorities, and loose them from all the chains of sin which they have committed wittingly or unwittingly, quickly subdue their adversaries and enemies under their feet."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Remember, Lord, the patriarchs, archbishops, bishops, priests and deacons, anagnosts and singers, virgins and monks, widows and orphans, men and women, aged and children; and all Christian people that are standing in this holy church; strengthen them in the faith of Christ."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-4r",
+          "kind": "rubric",
+          "content": {
+            "en": "At this moment he shall mention those that have lately been laid to rest."
+          }
+        },
+        {
+          "id": "ap-rem-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Remember, Lord, all our fathers, brothers and sisters that are asleep and resting in the orthodox faith, and lay their souls in the bosom of Abraham, Isaac and Jacob."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And as for us, deliver us from every transgression and curse and from all wickedness and from all rebellion and from all false swearing and from all anathemas and from all perjury and from mingling with heretics and gentiles in error and defilement."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Grant us, Lord, wisdom, power, reason, understanding and knowledge, that we may depart and flee for evermore from all works of Satan, the tempter."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-rem-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Grant us, Lord, to do Thy will and good pleasure at all times, and write our names in the book of life in the kingdom of heaven with all saints and martyrs, through Jesus Christ our Lord, through whom to Thee with Him and the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-13",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Give heed."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-pc-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Holy things for the holy."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-15",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "One is the holy Father, one is the holy Son, one is the Holy Spirit."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-pc-16",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "The Lord be with all of you."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-pc-17",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "And with your spirit."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "js-pc-18",
+          "kind": "rubric",
+          "content": {
+            "en": "The priest shall then lift up the whole Host with his hand and say: Lord, have compassion upon us, O Christ. (three times in a loud chant and fifteen times in a low chant) The people shall repeat his words. Then he shall repeat them three times and the people twice."
+          }
+        },
+        {
+          "id": "js-pc-19",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Ye that are penitent, bow your heads."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-prec-8r",
+          "kind": "rubric",
+          "content": {
+            "en": "The priest shall turn toward the people and say:"
+          }
+        },
+        {
+          "id": "ap-prec-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Lord our God, look upon Thy people that are penitent, and according to Thy great mercy, have mercy upon them, and according to the multitude of Thy compassion blot out their iniquity, cover them and keep them from all evil."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And redeem their souls in peace, forgive their former works, join them with Thy holy church, through the grace and compassion of Thine only-begotten Son our Lord, God, and Saviour Jesus Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Arise for prayer."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-prec-11",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Lord have mercy upon us."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-12",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "እግዚአብሔር ምስለ ኵልክሙ።",
+            "am": "እግዚአብሔር ከሁላችሁ ጋር ይሁን።",
+            "en": "Peace be unto all of you.",
+            "gez-Latn": "Igzee'abihér misle kwulikimu."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-13",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ።",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with your spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "This is the true holy body of our Lord, God, and Saviour Jesus Christ, that is given for life, salvation, remission of sin unto them that receive of it in faith."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-14r",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-15",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "This is the true precious blood of our Lord, God, and Saviour Jesus Christ, which is given for life, salvation, and remission of sins into those who drink of it in faith."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-15r",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-16",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "For this is the body and blood of Emmanuel our very God."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-16r",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-17",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "I believe, I believe, I believe and I confess, unto my last breath, that this is the body and blood of our Lord, God, and Saviour Jesus Christ, which He took from the Lady of us all, the holy Mary of twofold virginity, and made it one with His godhead without mixture or confusion, without division or alteration; and He verily confessed with a good testimony in the days of Pontius Pilate, and this body He gave up for our sakes and for the life of us all."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-17r",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-18",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "I believe, I believe, I believe and I confess that His godhead was not separated from His manhood, not for an hour nor for the twinkling of an eye, but He gave it up for our sakes for life, salvation, and remission of sin unto them that partake of it in faith."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-prec-18r",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-prec-19",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "I believe, I believe, I believe and I confess that this is the body and blood of our Lord, God, and Saviour Jesus Christ, and that to Him are rightly due honour and glory and adoration with His kind heavenly Father and the Holy Spirit, the life-giver, both now and ever and unto the ages of ages. Amen."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-1r",
+          "kind": "rubric",
+          "content": {
+            "en": "Then the priest shall take in his hand the asbadikon which bears the sign of the cross, dip it into the chalice into the blood, and with it make the sign of the cross on the Body. Then, with the Body, he shall make the sign of the cross over the Blood and say:"
+          }
+        },
+        {
+          "id": "ap-com-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Blessed be God, almighty Father, our God. And blessed be the only-begotten Son, our Lord and Saviour Jesus Christ. And blessed be the Holy Spirit the Paraclete, the comforter and cleanser of us all."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-1b",
+          "kind": "rubric",
+          "content": {
+            "en": "Then the assistant deacon shall offer water to the priests and deacons to wash their hands, signifying that they should be holy in their souls."
+          }
+        },
+        {
+          "id": "ap-com-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Lord my God, behold the sacrifice of Thy Son's body, which pleases Thee. Through it blot out all my sins because Thine only-begotten Son died for me."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And behold the pure blood of Thy Messiah, which was shed for me upon Calvary, cries aloud in my stead. Grant that the testimony of this blood may be unto the forgiveness of me Thy servant."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And accept my prayers for its sake, because thy beloved accepted the spear and the nails for my sake, and suffered to please Thee. But after I was saved, Satan returned to my heart and pierced me through with his darts. Grant me, Lord, Thy mercy, because he is a powerful accuser."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And by the provision of sin he slew me. Avenge me of the audacious one who is not satisfied with my being led astray from my life."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou, Lord, my King, God, Saviour bind up the wounds of soul and body of me Thy servant."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-7r",
+          "kind": "rubric",
+          "content": {
+            "en": "Before receiving the Holy Communion, all communicants shall say:"
+          }
+        },
+        {
+          "id": "ap-com-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O my Lord Jesus Christ, it in no wise befits Thee to enter under the roof of my polluted house, for I have provoked Thee to wrath, for I have done evil in Thy sight, and through the transgression of Thy commandment have polluted my soul and body which Thou created after Thine image and likeness, yet in me dwells no good thing."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "But for the sake of Thy plan, and Thine incarnation for my salvation, for the sake of thy precious cross and Thy life-giving death, for the sake of Thy resurrection on the third day, I pray thee and beseech Thee, O my Lord, that Thou would purge me from all guilt and curse, and from all sin and defilement."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And when I have received Thy holy mystery, let it not be unto me for judgement nor for condemnation, but have compassion upon me and have mercy upon me; and through it grant me remission of my sin and life for my soul, O life of the world, through the petition of our Lady, the holy Mary His mother of twofold virginity, and of John the Baptist, and through the prayer of all the holy angels, all the martyrs, and righteous who have fought for the good, unto ages of ages. Amen."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-9r",
+          "kind": "rubric",
+          "content": {
+            "en": "The priest shall come out of the sanctuary and distribute the Holy Communion to the faithful in order. Then the men, then the women. But the babies who have already been baptized shall receive before the other faithful."
+          }
+        },
+        {
+          "id": "ap-com-10r",
+          "kind": "rubric",
+          "content": {
+            "en": "While receiving the Holy Communion, the priest shall say to himself:"
+          }
+        },
+        {
+          "id": "ap-com-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O my Lord Jesus Christ, let not this Thy mystery be iniquity in me, rather let it be for the purifying of my soul and my body."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-11r",
+          "kind": "rubric",
+          "content": {
+            "en": "The celebrant receives of the Host first, next he shall give it to the assistant priest, who gives him the Blood; the assistant priest shall himself receive of the Blood. The celebrant shall give the priests of the Body, the assistant priest shall give them of the Blood."
+          }
+        },
+        {
+          "id": "ap-com-12r",
+          "kind": "rubric",
+          "content": {
+            "en": "While offering the Holy Qurban at the time of the Anaphora of the Apostles, the priest shall say:"
+          }
+        },
+        {
+          "id": "ap-com-12",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "The bread of life which came down from heaven, the holy body of Christ."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-12b",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-13",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Holy, holy, holy Trinity ineffable, grant me to receive this body and His blood for life and not for condemnation. Grant me to bring forth fruit that shall be well-pleasing unto Thee, to the end that I may appear in Thy glory, and live unto Thee, doing Thy will."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "In faith I call upon Thee, Father, and call upon Thy Kingdom: hallowed, Lord, be Thy name upon us, for mighty art Thou, praised and glorious, and to Thee be glory, unto endless ages."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-15r",
+          "kind": "rubric",
+          "content": {
+            "en": "Then he shall consume what he has received. While chewing he shall put his hand on his mouth. He shall chew in fear and trembling without making any sound till he finishes. Then he shall say:"
+          }
+        },
+        {
+          "id": "ap-com-15",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Fill my mouth with praise, my heart with joy, and my soul with gladness, fill me who have received of this divine mystery, O Thou Who became man for the salvation of man."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-com-16r",
+          "kind": "rubric",
+          "content": {
+            "en": "When the assistant priest gives the blood he shall say:"
+          }
+        },
+        {
+          "id": "ap-com-16",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "This is the cup of life that came down from heaven; this is the precious blood of Christ."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-com-17",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen and amen."
+          },
+          "speaker": "all"
+        },
+        {
+          "id": "ap-pcom-1r",
+          "kind": "rubric",
+          "content": {
+            "en": "The Prayer of Basil. When the blood is in his mouth he shall say in his heart:"
+          }
+        },
+        {
+          "id": "ap-pcom-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O my Lord and my God Jesus Christ, behold I have received Thy holy Body and Thy precious Blood. May they be for the remission of my sins and the blotting out of my trespasses."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O only-begotten Son and lover of man, fill my mouth with Thy praise that I may praise Thy glory, for Thou art He Who once became man and declared Himself through His incarnation in order to save me for ever. Thou has redeemed me for ever for the sake of Thy holy Name."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Glory be to Thee, O my Lord and my God Jesus Christ, Who has granted me Thy Body and Thy Blood at the hand of Thy servant. I glorify thee and pray thee that I may be in the midst of Thy flock, and that accepting me, Thou will number me with Thy sheep."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And now remember not my trespasses. I give thanks for Thy grace which has been granted unto me, and for Thy help which has been with me."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-5r",
+          "kind": "rubric",
+          "content": {
+            "en": "When the deacon receives the cup he shall say:"
+          }
+        },
+        {
+          "id": "ap-pcom-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "I will take the cup of life, and call upon the name of the Lord. Pray ye for us and for all Christians who ask us to mention them. Praise ye and sing in the peace and love of Jesus Christ."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-pcom-6r",
+          "kind": "rubric",
+          "content": {
+            "en": "And then the clergy shall chant Psalm 150. They shall chant one by one or two by two according to their number, without ceasing."
+          }
+        },
+        {
+          "id": "ap-pcom-7r",
+          "kind": "rubric",
+          "content": {
+            "en": "The priest shall say as he goes out:"
+          }
+        },
+        {
+          "id": "ap-pcom-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Those whom Thou has called, Lord, and hallowed, make happy with Thy call, confirm with Thy power, keep with Thy love, join in Thine everlasting kingdom through Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-8r",
+          "kind": "rubric",
+          "content": {
+            "en": "When the priest goes out he shall bless over the Paten once. Then he shall offer the Body to the people, and the deacon shall offer the Blood."
+          }
+        },
+        {
+          "id": "ap-pcom-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O eternal God, light of life, Thou has given, Lord, unto us Thy servants strength and protection, during the present days and nights, keeping all in peace. Bless them on this present day, and on those to come hereafter, through our Lord Jesus Christ, through Whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and unto the ages of ages. Amen."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We thank God that we have partaken of His holy things; we pray and trust that which we have received may be healing for the life of the soul while we glorify the Lord our God."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-pcom-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "My mouth shall speak the praise of the Lord, and let all flesh bless His holy Name for ever and ever."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-pcom-12",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Our Father who art in heaven, lead us, Lord, that we may not enter into temptation."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-thk-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We have received of the holy body and the precious blood of Christ."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-thk-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-thk-3",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Our Father who art in heaven, lead us, Lord, that we may not enter into temptation."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-thk-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And let us give thanks unto Him that makes us ready to communicate in the precious and holy mystery."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "ap-thk-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-thk-6",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Our Father who art in heaven, lead us, Lord, that we may not enter into temptation."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-thk-7r",
+          "kind": "rubric",
+          "content": {
+            "en": "The priest shall sing in Izl:"
+          }
+        },
+        {
+          "id": "ap-thk-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "I will extol Thee, my King and my God, and I will bless Thy name for ever and ever."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-thk-8",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Our Father who art in heaven, lead us, Lord, that we may not enter into temptation."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-thk-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Every day will I bless Thee, and I will praise Thy name for ever and ever."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "ap-thk-10",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Our Father who art in heaven, lead us, Lord, that we may not enter into temptation."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "ap-thk-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "My mouth shall speak the praise of the Lord, and let all flesh bless His holy name for ever and ever."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-communion",
+      "titles": {
+        "en": "Communion"
+      },
+      "nodes": [
+        {
+          "id": "js-co-1",
+          "kind": "rubric",
+          "content": {
+            "en": "After receiving the Holy Communion."
+          }
+        },
+        {
+          "id": "js-co-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Pilot of the soul: O Creator of lights, Who did cast away the darkness and degrade the idols and destroyed death through Thy death."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-post-communion",
+      "titles": {
+        "en": "Post-Communion"
+      },
+      "nodes": [
+        {
+          "id": "js-poc-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We supplicate the kindness of Thy goodness on behalf of Thy people and Thine inheritance who have come unto Thy sanctuary to receive Thy body and Thy blood from thy honourable table which is the hope of sinners."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Keep them, by day, from trespassing and from error of sight and of the bodily members, and keep them by night that the vain thoughts thereof, which destroy the soul may not come unto them."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "When they sleep let the wings of the angels cover them in order that oversleeping, which is the likeness of death, may not overwhelm them. O Lord, awaken them through Thy love to glorify Thine honourable and strong name, almighty Lord our God."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Pray ye."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "js-poc-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "O Lord, this corruptible and transient world of hoping is not for us, Thy Christian people; but we hope and wait for that which is to come."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Because Thou said, \"Heaven and earth shall pass away, but my words shall not pass away.\""
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou also said, The horn will be blown three times to awaken the dead;"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-8",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At the first blowing of the horn there will be gathered the dust of bodies scattered through all the ends of the world, above and beneath, in the sea and on the land, that which is in the stomachs of the beasts and that which waxed old and perished after death, and the pieces of the body, fallen on earth, will be gathered in their previous position."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At the second blowing of the horn the bones will be joined with the flesh and blood and they will be perfect dead bodies without movement until the appointed time."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-10",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At the third blowing of the horn the dead will rise in the twinkling of an eye, the righteous and the sinners, carrying their works which followed them from the earth and which they did in all the days of their life, good or bad. Thou wilt make the righteous to stand at Thy right hand, and the sinners at Thy left hand."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-11",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Thou wilt answer Thine elect with the words of blessing saying, \"Come to me, ye blessed of my Father, inherit the kingdom of heaven prepared for you from the foundation of the world: For I was an hungry, and ye gave me food: I was thirsty, and you gave me drink: I was a stranger, and you took me in: I was naked, and you clothed me: I was sick, and you visited me: I was in prison, and you came unto me and spoke on my behalf.\""
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-12",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Afterwards Thou will turn to Thy left hand and rebuke the sinners with the word of accusation saying, \"Depart from me, ye cursed, into everlasting fire prepared for the Devil and his angels. For I was an hungry, and you gave me no food; I was thirsty, and you gave me no drink; I was a stranger, and you did not take me in; I was naked, and you did not clothe me; I was sick, and you did not visit me; I was in prison, and you spoke not on my behalf.\""
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-13",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At that time every mouth and tongue which spoke misbelief and deceit will be stopped. At that time there will be sorrow but vain sorrow."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-14",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At that time there will be a cry, but a vain cry: at that time there will be wailing, but vain wailing; at that time there will be lamentation, but vain lamentation; at that time tears will be shed like the water of winter, which has no end and does not stop. There will be sent to them swift lightning and a fearful sound of thunder and a powerful flash which cuts, separates and divides — this is the portion of sinners."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-15",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At that time, the earth will restore that which was entrusted to it and the mother will not hear the cry of her daughter. At that time there will be revealed the work of the soul, which she did during all the days of her life."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-16",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We have trusted on Thy body which we have eaten and Thy blood which we have drunk that Thou at that time may have compassion and mercy upon us, because Thou said, \"Whoever eats My flesh, and drinks My blood, has eternal life.\""
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-17",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We have also trusted on Thy Mother our Lady Mary, the shield of our race in giving birth to Thee, because Thou told her, that whoever remembers you and calls upon your name will have eternal life."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-18",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "We have also trusted on the archangels, the persecution of the prophets, the preaching of the apostles, the right hand of the priests, the blood of the martyrs, the patience of the young men, virgins and monks, and on the faith of the faithful men and women."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-19",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "At that time have compassion, pity and mercy upon us. Glory be to the Father who sent, thanksgiving be to the Son who was sent, and honour and glory be to the life-giving Holy Spirit, both now and ever and unto the ages of ages."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-poc-20",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "saint-james-sarugh-dismissal",
+      "titles": {
+        "en": "Dismissal"
+      },
+      "nodes": [
+        {
+          "id": "js-di-1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "The Laying on of the Hand. God has authority in power and name, and there is no name like His under the four foundations, and over the seven heavens. It is He Who created all, visible, and invisible, known and unknown, palpable and impalpable, hidden and open, above and beneath."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-di-2",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "He created all, even Adam the handiwork of God, without being wearied."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-di-3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "And now, O Lord, our God and Saviour Jesus Christ, we pray Thee and beseech Thee on behalf of those who have bowed their heads before Thee to dismiss them:"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-di-4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Make their infants to grow, let their adults come to their full stature, support their aged ones, strengthen their feeble ones, keep their women, and let their children be entrusted to Thee."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-di-5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Satisfy their hungry ones, give drink to their thirsty ones, clothe their naked ones, give rest to their troubled ones, comfort their sad ones, and gladden their sorrowful ones."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-di-6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Give life to their sick, heal their diseased, give light to the eyes of their blind, make the ears of their deaf hear, loosen their prisoners and give freedom to their captives."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "js-di-7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "en": "Purify their bodies, sanctify their souls, and when they go back to their homes, O Lord, guide that they may reach them, feed them and lift them up for ever."
+          },
+          "speaker": "priest"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "imported",
+      "ref": "data/anaphoras/saint-james-sarugh.json"
+    }
+  }
+}

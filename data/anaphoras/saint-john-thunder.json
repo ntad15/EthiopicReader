@@ -1,10 +1,5 @@
 {
   "id": "saint-john-thunder",
-  "name": {
-    "english": "St. John Son of Thunder",
-    "geez": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
-    "amharic": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ"
-  },
   "sections": [
     {
       "id": "saint-john-thunder-placeholder",
@@ -19,5 +14,10 @@
         }
       ]
     }
-  ]
+  ],
+  "name": {
+    "geez": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
+    "amharic": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
+    "english": "St. John Son of Thunder"
+  }
 }

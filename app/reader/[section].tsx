@@ -3,23 +3,14 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Colors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
 import ReaderLayout from '@/components/ReaderLayout';
-import { LiturgicalText } from '@/data/types';
+import { loadServiceRuntime } from '@/data/runtimeIndex';
 import { ReadingsProvider } from '@/context/ReadingsContext';
-
-function loadSection(id: string): LiturgicalText | null {
-  switch (id) {
-    case 'qidan':
-      return require('@/data/qidan.json');
-    case 'serate-qidase':
-      return require('@/data/serate-qidase.json');
-    default:
-      return null;
-  }
-}
 
 export default function ReaderScreen() {
   const { section } = useLocalSearchParams<{ section: string }>();
-  const data = loadSection(section);
+  // Reader routes now load committed compiled runtime by slug, which keeps the
+  // canonical source schema and compiler details outside the Expo app.
+  const data = loadServiceRuntime(section);
 
   if (!data) {
     return (

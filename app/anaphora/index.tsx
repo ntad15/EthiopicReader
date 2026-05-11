@@ -7,9 +7,7 @@ import { Fonts } from '@/constants/fonts';
 import { contentColumn, CONTENT_MAX_WIDTH } from '@/constants/layout';
 import CrossIcon from '@/components/CrossIcon';
 import { hapticLight } from '@/utils/haptics';
-import { AnaphoraMetadata } from '@/data/types';
-
-const ANAPHORAS: AnaphoraMetadata[] = require('@/data/anaphoras/anaphoras.json');
+import { ANAPHORA_METADATA } from '@/data/runtimeIndex';
 
 const GAP = 10;
 
@@ -31,7 +29,7 @@ export default function AnaphoraListScreen() {
           </View>
 
           <View style={styles.grid}>
-            {ANAPHORAS.map((anaphora) => (
+            {ANAPHORA_METADATA.map((anaphora) => (
               <HoverableOpacity
                 key={anaphora.id}
                 style={[styles.card, { width: cardWidth }]}

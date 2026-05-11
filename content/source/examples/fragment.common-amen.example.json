@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "fragment",
+  "id": "fragment.common-amen",
+  "slug": "common-amen",
+  "titles": {
+    "en": "Common Amen"
+  },
+  "sections": [
+    {
+      "id": "amen",
+      "titles": {
+        "en": "Amen"
+      },
+      "nodes": [
+        {
+          "id": "amen-response",
+          "kind": "text",
+          "role": "response",
+          "speaker": "assembly",
+          "content": {
+            "en": "Amen.",
+            "am": "አሜን።",
+            "gez": "አሜን።"
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "manual"
+    }
+  }
+}

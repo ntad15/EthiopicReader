@@ -1,0 +1,3568 @@
+{
+  "schemaVersion": 1,
+  "kind": "service",
+  "id": "service.serate-qidase",
+  "slug": "serate-qidase",
+  "titles": {
+    "gez": "ሥርዓተ ቅዳሴ",
+    "am": "ሥርዓተ ቅዳሴ",
+    "en": "Serate Qidase"
+  },
+  "sections": [
+    {
+      "id": "introduction-to-qidase",
+      "titles": {
+        "am": "የቅዳሴ ምገቢያ",
+        "en": "Introduction to Qidase"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moeszqmyi5u",
+          "kind": "seasonal-ref",
+          "slot": "intro-day-of-week"
+        }
+      ]
+    },
+    {
+      "id": "how-awful-is-this-day",
+      "titles": {
+        "en": "How awful is this day"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-mokpaqt56m9",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሚመጠን ግርምት ዛቲ ዕለት ወዕፅበት ዛቲ ሰዓት እንተ ባቲ ይወርድ መንፈስ ቅዱስ አመልዕልት ሰማያት ወይጼልሎ ለዝንቱ መሥዋዕት ወይቄድሶ ፣ በጽሙና ወበፍርሃት ቁሙ ወጸልዩ ከመ ሰላሙ ለእግዚኣብሔር የሃሉ ምስሌየ ወምስለ ኩልክሙ",
+            "am": "ይህች ቀን ምን ያህል የምታስፈራ ናት? ይህችስ ሰዓት ምን ያህል የምታስጨንቅ ናት? መንፈስ ቅዱስ ከሰማየ ሰማያት የሚወርድባት፣ ይህን መሥዋዕቱን የሚሰውርባትና የሚያከብርባት ፣ በጽሙናና በመፍራት ቁሙ፣ የእግዚኣብሔር ሰላም ከእኛና ከእናንት ጋራ ይሁን ዘንድ ጸለዩ፣\n",
+            "en": "How awful is this day and how marvelous this hour wherein the Holy Spirit will descend from heaven and over-shadow and hallow this sacrifice. In quietness and in fear stand up and pray that the peace of God be with me and with all of you",
+            "gez-Latn": "Mimeten giremt zati ilet we'itsbet zati se'at inte bati yiwerd menfes qidus ameli'ilte semayat weyitselilo lezintu mesqa'it weyiqediso betsimuna webefirhat qumu wetseliyu keme selamu le'igzee'abher yehalu msleye wemisle kulikimu"
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "halleluia",
+      "titles": {
+        "gez": "ሃሌ ሉያ",
+        "am": "ሃሌ ሉያ",
+        "en": "Halleluia",
+        "gez-Latn": "Halleluia"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-mokpzbikhn4",
+          "kind": "seasonal-ref",
+          "slot": "halleluia-seasonal"
+        }
+      ]
+    },
+    {
+      "id": "you-are-the-pot-of-pure-gold",
+      "titles": {
+        "en": "You are the Pot of pure gold"
+      },
+      "nodes": [
+        {
+          "id": "serate-preparatory-service-014",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አንቲ ውእቱ መሶበ ወርቅ ንጹሕ እንተ ውስቴታ መና ኅቡዕ ኅብስት ዘወረደ እምሰማያት ወሀቤ ሕይወት ለኵሉ ዓለም።",
+            "am": "ለዓለም ሁሉ ሕይወት የሚሰጥ ከሰማይ የወረደ ኅብስት የተሠወረ መና ያለብሽ፣ ንጹሕ የወርቅ መሶብ አንቺ ነሽ።",
+            "en": "Thou art the pot of pure gold wherein is hidden the manna, the bread which came down from heaven giving life unto all the world.",
+            "gez-Latn": "Antee wi'itu mesobewerq nitsuh inte wistéta mena hibu'i hibist zewerede imsemayat wehabé hiywet lekwulu alem. "
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "preparation-for-start",
+      "titles": {
+        "am": "ዝግጅት ለመጀመር",
+        "en": "Preparation for start"
+      },
+      "nodes": [
+        {
+          "id": "serate-preparatory-service-016",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ቡሩክ እግዚአብሔር አብ አኃዜ ኵሉ ዓለም አምላክነ።",
+            "am": "ዓለምን የያዘ እግዚአብሔር አብ ቡሩክ ነው።",
+            "en": "Blessed be the Lord, Almighty Father, our God.",
+            "gez-Latn": "Buruk Igzee'abihér Ab ahazé kwulu alem amlakine."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moefr5oj5ub",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን።",
+            "am": "አሜን።",
+            "en": "Amen.",
+            "gez-Latn": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moefsu923lz",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ወቡሩክ ወልድ ዋሕድ እግዚእነ ኢየሱስ ክርስቶስ መድኃኒነ።",
+            "am": "ጌታችን መድኃኒታችን ኢየሱስ ክርስቶስ ወልድ ዋሕድም ቡሩክ ነው።",
+            "en": "And blessed be the only Son, our Lord and our Savior Jesus Christ.",
+            "gez-Latn": "Weburuk weld wahid igzee'ine Eeyesus Kiristos medhaneene."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moefsxv9mew",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን።",
+            "am": "አሜን።",
+            "en": "Amen.",
+            "gez-Latn": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moefug1dpxc",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ወቡሩክ መንፈስ ቅዱስ ጰራቅሊጦስ መጽንዒ ወመንጽሔ ኵልነ።",
+            "am": "ሁላችንን የሚያነጻ፣ የሚያጸና መንፈስ ቅዱስም ቡሩክ ነው።",
+            "en": "And blessed be the Holy Spirit, the Paraclete, the comforter and cleanser of us all.",
+            "gez-Latn": "Weburuk Menfes Qidus peraqleetos mentsi'ee wementsihé kwuline."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moefu8b1qy9",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን።",
+            "am": "አሜን።",
+            "en": "Amen.",
+            "gez-Latn": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moefx9gi1gc",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስብሐት ወክብር ይደሉ ለሥሉስ ቅዱስ አብ ወወልድ ወመንፈስ ቅዱስ ዕሩይ ኵሉ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም አሜን።",
+            "am": "ልዩ ሦስት ለሚሆኑ ሁልጊዜም ለተካከሉ ለአብ ለወልድ ለመንፈስ ቅዱስ ክብር ምስጋና ይገባል። ዛሬም ዘወትርም ለዘላለሙ አሜን",
+            "en": "Glory and honor are due to the Holy Trinity, the Father and the Son and the Holy Spirit, always coequal, both now and ever and world without end. Amen.",
+            "gez-Latn": "Sibhat wekibir yidelu lesilus qidus Ab weWeld weMenfes Qidus iruy kwulo geezé yi'izénee wezelfenee wele'aleme alem amén."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeg257cdg4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ አበውየ ወአኀውየ ላዕሌየ ወላዕለ ዝንቱ መሥዋዕት።",
+            "am": "አባቶቼና ወንድሞቼ በእኔ ላይ በመሥዋዕቱም ላይ ጸልዩ።",
+            "en": "My fathers and my brothers, pray for me and for this sacrifice.",
+            "gez-Latn": "Íeliyu abewiye we'ahawiye la'iléye wela'ilezintu meswa'it."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeg5s7vycz",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "እግዚአብሔር ይስማዕከ ኵሎ ዘሰአልከ ወይትወከፍ መስዋዕተከ ወቍርባነከ ከመ መሥዋዕተ መልከ ጼዴቅ ወአሮን ወዘካርያስ ካህናተ ቤተክርስቲያኑ ለበኵር።",
+            "am": "እግዚአብሔር የለመንከውን ሁሉ ይስማህ። የበኵር የቤተክርስቲያኑ ካህናቱ የሚሆኑ የመልከ ጼዴቅንና የአሮንን የዘካርያስንም መሥዋዕት እንደተቀበለ መሥዋዕትህን ቍርባንህንም ይቀበልልህ።",
+            "en": "May God hear thee in all that thou hast asked and accept thy sacrifice and offering like the sacrifice of Melchisedek and Aaron and\nZacharias, the priests of the church of the First-born;",
+            "gez-Latn": "Igzee'abihér yisma'ike kwulo zese'alike weyitwekef meswa'iteke weqwurbaneke keme meswa'ite Melke Íédék we'Aaron weZekariyas kahinate béte kiristeeyanu lebekwur."
+          },
+          "speaker": "assistant-priest"
+        }
+      ]
+    },
+    {
+      "id": "our-father",
+      "titles": {
+        "gez": "አቡነ ዘበሰማያት",
+        "am": "አባታችን ሆይ",
+        "en": "Our Father"
+      },
+      "nodes": [
+        {
+          "id": "serate-preparatory-service-021",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አቡነ ዘበሰማያት ይትቀደስ ስምከ ትምጻእ መንግሥትከ ወይኩን ፈቃድከ በከመ በሰማይ ከማሁ በምድር። ሲሳየነ ዘለለ ዕለትነ ሀበነ ዮም።  ኅድግ ለነ አበሳነ ወጌጋየነ ከመ ንሕነኒ ንኅድግ ለዘአበሰ ለነ። ",
+            "am": "አባታችን ሆይ! በሰማይ የምትኖር፣ ስምህ ይቀደስ፣ መንገሥትህ ትምጣ፣ ፈቃድህ በሰማይ እንደ ሆነ እንዲሁም በምድር ይሁን! የዕለት እንጀራችንን ስጠን ዛሬ፣በደላችንን ይቅር በለን፣ እኛም የበደሉንን ይቅር እንደምንል፣  ",
+            "en": "Our father who art in heaven, hallowed be thy name, Thy kingdom come  Thy will be done on earth as it is in heaven; give us this day our daily bread, and forgive us our trespasses as we forgive them that trespass against us,",
+            "gez-Latn": "Abune zebesemayat yitqedes simike timtsa'i mengistike weyikun feqadike bekeme besemay kemahu medir. Seesayene zelele'iletine habene yom.  Hidig lene abesane wegégayene keme nihinenee nihidig leze'abese lene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moxdgwzvc6r",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ኢታብአነ እግዚኦ ውስተ መንሱት አላ አድኅነነ ወባልሐነ እምኵሉ እኩይ እስመ ዚኣከ ይእቲ መንግሥት ኃይል ወስብሐት ለዓለመ ዓለም።",
+            "am": "አቤቱ ወደ ፈተና አታግባን፣ ከክፉ ሁሉ አድነን እንጂ፣  መንግሥት ያንተ ናትና። ኃይል፣ ምስጋና ለዘለዓለም በእውነት። ",
+            "en": "and lead us not into temptation but deliver us and rescue us from all evil; for Thine is the kingdom, the power and the glory for ever and ever. ",
+            "gez-Latn": "eetabi'ane egzi’o weste mensut ala adihinene webalihane imkwulu iku’y isme zee'ake yi'itee mengist hayl wesibihat le'alem alem. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moxdjbr9olv",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "በሰላመ ቅዱስ ገብርኤል መልአክ ኦ እግዝእትየ ማርያም ሰላም ለኪ እመ እግዚአብሔር ጸባዖት ሰላም ለኪ ቡርክት አንቲ እምአንስት ወቡሩክ ፍሬ ከርሥኪ። ተፈሥሒ ፍሥሕት ኦ ምልእተ ጸጋ እግዚአብሔር ምስሌኪ። ሰአሊ ወጸልዪ ኀበ ፍቁር ወልድኪ ኢየሱስ ክርስቶስ ከመ ይሥረይ ለነ ኃጣውኢነ።",
+            "am": "እመቤታችን ቅድስት ድንግል ማርያም ሆይ በመልአኩ በቅዱስ ገብረኤል ሰላምታ ሰላም እልሻለሁ ድንግል በኅሊናኪ ወድንግል በሥጋኪ።  በሃሳብሽ ድንግል ነሽ በሥጋሽም ድንግል ነሽ። የአሸናፊ የእግዚአብሔር እናት ሆይ ሰላምታ ላንቺ ይገባል። ከሴቶች ሁሉ ተለይተሽ አንቺ የትባረክሽ ነሽ የማኅፀንሽም ፍሬ የተባረከ ነው። ጸጋን የተመላሽ ሆይ ደስ ይበልሽ እግዚአብሔር ከአንቺ ጋር ነውና ከተወደደው ልጅሽ ከጌታችን ከመድኃኒታችን ከኢየሱስ ክርስቶስ ዘንድ ይቅርታን ለምኝልን ኃጢአታችንን ያስተሠርይልን ዘንድ ለዘለዓለሙ አሜን።",
+            "en": "O Holy Virgin Mary, in the peace of the Angel Gabriel, peace be unto Thee. Thou art virgin in spirit as well as in body. O Thou Mother of Perfect God peace be unto Thee. Blessed art Thou among women and blessed is the Fruit of Thy womb. Rejoice O Thou who art full of grace the Lord is with Thee. ",
+            "gez-Latn": "Beselame qidus gebriel mel’ak o egzi’etiye Mariyam selam leki dingil behilinaki wedingil besigaki eme egziabiheir tseba’ot selam leki burikt anti em’a’nist weburuk fire kersike tefesihi fisiht o meli’i’te tsega egziabihear misle’ki seali wetseliye habe fiqur weldike eyesus kristos keme y’sre’y lene hatawi’ine"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moxdmksf8sa",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ሰአሊ ወጸልዪ ኀበ ፍቁር ወልድኪ ኢየሱስ ክርስቶስ ከመ ይሥረይ ለነ ኃጣውኢነ።",
+            "am": "ከተወደደው ልጅሽ ከጌታችን ከመድኃኒታችን ከኢየሱስ ክርስቶስ ዘንድ ይቅርታን ለምኝልን ኃጢአታችንን ያስተሠርይልን ዘንድ ለዘለዓለሙ አሜን።",
+            "en": "Ask and pray for us to Thy beloved Son, Jesus Christ that He may have mercy upon our souls and forgive us our sins. Amen.",
+            "gez-Latn": "seali wetseliye habe fiqur weldike eyesus kristos keme y’sre’y lene hatawi’ine"
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "one-is-the-holy-father",
+      "titles": {
+        "gez": "አሐዱ",
+        "am": "አሐዱ",
+        "en": "One is the Holy Father"
+      },
+      "nodes": [
+        {
+          "id": "serate-kidase-mlydtmr6uhy",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አሐዱ አብ ቅዱስ፤ አሐዱ ወልድ ቅዱስ፤ አሐዱ ውእቱ መንፈስ ቅዱስ። ",
+            "am": "አንዱ ቅዱስ አብ ነው፤ አንዱ ቅዱስ ወልድ ነው፤ አንዱ ቅዱስ መንፈስ ቅዱስ ነው።",
+            "en": "One is the Holy Father, one is the Holy Son, one is the Holy Spirit.",
+            "gez-Latn": "Ahadu Ab Qidus, Ahadu Weld Qidus, Ahadu wi'itu Menfes Qidus."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-033",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "በአማን አብ ቅዱስ፤ በአማን ወልድ ቅዱስ፤ በአማን ውእቱ መንፈስ ቅዱስ።",
+            "am": "አብ በእውነት ቅዱስ ነው፤ ወልድ በእውነት ቅዱስ ነው፡ መንፈስ ቅዱስም በእውነት ቅዱስ ነው።",
+            "en": "Truly the Father is Holy, truly the Son is Holy, truly the Holy Spirit is Holy.",
+            "gez-Latn": "Be'aman Ab qidus, be'Aman Wold qidus, be'aman wi'itu Menfes Qidus."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-034",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰብሕዎ ለእግዚአብሔር ኵልክሙ አሕዛብ።",
+            "am": "ሕዝቦችም ሁላችሁ እግዚአብሔርን አመስግኑት።",
+            "en": "Praise the Lord, all you nations.",
+            "gez-Latn": "Sebihiwo le'Igzee'abihér kwulikimu ahizab."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-035",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ወይሴብሕዎ ኵሎሙ ሕዝብ።",
+            "am": "ሕዝቡ ሁሉ ያመሰግኑታል።",
+            "en": "And praise him, all you people.",
+            "gez-Latn": "Weyisébihwo kwulomu hizbi. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-036",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "እስመ ጸንዐት ምሕረቱ ላዕሌነ።",
+            "am": "ምሕረቱ በእኛ ላይ ጸንታለችና።",
+            "en": "For his merciful kindness is great toward us.",
+            "gez-Latn": "Isme tsin'ate mihretu la'iléne."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-037",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ጽድቁሰ ለእግዚአብሔር ይሄሉ ለዓለም።",
+            "am": "የእግዚአብሔር ቸርነቱ ለዘለዓለም ይኖራል።",
+            "en": "And the Truth of the Lord endures for ever.",
+            "gez-Latn": "Tsedikuse Le’igziabher yihelu le’alem"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-038",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስብሐት ለአብ፣ ወወልድ፣ ወመንፈስ ቅዱስ።",
+            "am": "ለአብ፣ ለወልድ፣ ለመንፈስ ቅዱስ ምስጋና ይገባል።",
+            "en": "Glory be to the Father and to the Son and to the Holy Spirit",
+            "gez-Latn": "Sibhat le'Ab, weWold, weMenfes Qidus."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlz0ogsfsc9",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ስብሐት ለአብ፣ ወወልድ፣ ወመንፈስ ቅዱስ።",
+            "am": "ለአብ፣ ለወልድ፣ ለመንፈስ ቅዱስ ምስጋና ይገባል። (ካህኑ ያለውን መልሰው ይበሉ።)",
+            "en": "Glory be to the Father and to the Son and to the Holy Spirit",
+            "gez-Latn": "Sibhat le'Ab, weWold, weMenfes Qidus. (Shall repeat priests words)"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-039",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም አሜን ሃሌ ሉያ።",
+            "am": "ዛሬም ዘወትርም ለዘለዓለሙ አሜን ሃሌ ሉያ። ካህኑ ያለውን መልሰው ይበሉ",
+            "en": "Both now and ever and world without end. Amen.",
+            "gez-Latn": "Yi'izénee wezelfenee wele'alem alem amen halléluya."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlz0p5jtzg0",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም አሜን ሃሌ ሉያ።",
+            "am": "ዛሬም ዘወትርም ለዘለዓለሙ አሜን ሃሌ ሉያ። ካህኑ ያለውን መልሰው ይበሉ",
+            "en": "Both now and ever and world without end. Amen.",
+            "gez-Latn": "Yi'izénee wezelfenee wele'alem alem amen halléluya."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayer",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moeh9bwghig",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeh9bwgib2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeh9bwgnxx",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeh9bwgfm6",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "the-prayer-of-thanksgiving",
+      "titles": {
+        "am": "የምስጋና ጸሎት",
+        "en": "The Prayer of Thanksgiving"
+      },
+      "nodes": [
+        {
+          "id": "serate-kidase-mlyyjkjoipa",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ለኛ በጎ ነገርን ያደረገ ይቅር ባይ እግዚአብሔርን እናመሰግነዋለን። ይቅር ባይ የጌታችን የአምላካችንና የመድኃኒታችን የኢየሱስ ከርስቶስ አባት ሰውሮናልና ረድቶናልና ጠብቆ አቅርቦናልና ወደ እርሱም ተቀብሎናልና አጽንቶ ጠብቆናልና። እስከዚች ሰዓት አድርሶናልና። አሁንም ክብርት በምትሆን በዚች ዕለት በሕይወታችን ዘመን ሁሉ በፍጹም ሰላም ሁሉን የሚይዝ አምላካችን እግዚአብሔር ይጠብቀን ዘንድ እንለምነው።",
+            "en": "We give thanks unto the doer of good things unto us, the merciful God, the Father of our Lord and our God and our Savior Jesus Christ: for He hath covered us and succored us, He hath kept us and brought us nigh and received us unto Himself, and undertaken our defense, and strengthened us, and brought us unto this hour. Let us therefore pray unto Him that the Almighty Lord our God keep us in this holy day and all the days of our life in all peace."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-044",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ",
+            "am": "ጸልዩ",
+            "en": "All you pray",
+            "gez-Latn": "Tseliyu"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-preparatory-service-045",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሁሉን የያዝህ ጌታችን እግዚአብሔር የጌታችንና የአምላካችን የመድኃኒታችን የኢየሱስ ክርስቶስ አባት በሥራው ሁሉ ላይ ስለ ሥራው ሁሉ በሥራውም ሁሉ ውስጥ እናመሰግንሃለን፣ ሰውረኸናልና፣ ረድተኸናልና፣ ጠብቀኸናልና፣ ወዳንተ አቅርበኸናልና፣ ጥግ ሆነኸናልና፣ አጽንተኸናልና፣ እስከዚችም ሰዓት አድርሰኸናልና።",
+            "en": "Master, Lord God Almighty, the Father of our Lord and our God and our Savior Jesus Christ, we render Thee thanks upon everything, for everything and in everything, for Thou hast covered us and succored us, hast kept us and brought us nigh, and received us unto Thyself, and undertaken our defense, and strengthened us and brought us unto this hour."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-047",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ኅሡ ወአስተብቍዑ ከመ ይምሐረነ እግዚአብሔር ወይሣሃል ላዕሌነ፡ ወይትወከፍ ጸሎተ ወስእለተ እምነ ቅዱሳኒሁ በእንቲአነ በዘይሤኒ ኵሎ ጊዜ ይረስየነ ድልዋነ ከመ ንንሣእ እምሱታፌ ምስጢር ቡሩክ ወይሥረይ ለነ ኃጣውኢነ።",
+            "am": "እግዚአብሔር ይምረን ዘንድ ይቅርም ይለን ዘንድ ደጅ ጥኑ ተማለዱ። ስለእኛ ከቅዱሳን ጸሎትን ልመናንም ይቀበል ዘንድ ሁልጊዜ ባማረ ነገር ቡሩክ ከሚሆን ምስጢር አንድነት እንድንቀበል የበቃን ያደርገን ዘንድ።",
+            "en": "Entreat and beseech that the Lord have pity upon us and be merciful to us and receive prayer and supplication from his saints on our behalf according to what is expedient at all times, so that he may make us meet to partake of the communion of the blessed sacrament and forgive us our sins.",
+            "gez-Latn": "Hisu we'astebiqwu'u keme yimharene Igzee'abihér weyisahal la'iléne. Weyitwekef Tselote wesi'ilete imine qidusaneehu be'intee'ane bezeyisénee kwulu geezé yiresiyene dilwane Keme ninisa'i imsutafé misteer buruk weyisirey hataweene."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-preparatory-service-050",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ኪርያላይሶን።",
+            "am": "ኪርያላይሶን።",
+            "en": "Lord have mercy",
+            "gez-Latn": "Kyrie eleison."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeq2um8zhe",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ስለዚህ እንለምንኃለን ከቸርነትህም እንሻለን፤ ሰውን የምትወድ ሆይ ከብር የምትሆን ይህችን ዕለት እንድንፈጽም ስጠን፤ የሕይወታችንን ዘመን ሁሉ በፍጹም ሰላም አንተን ከመፍራት ጋራ።\nቅንዓትን ሁሉ መከራውንም ሁሉ የሰይጣንንም ሥራ ሁሉ፤ የክፎች ሰዎችንም ምክር የጠላትንም መነሳት የተሰወረውንና የተገለጸውን። አቤቱ ከእነ አርቅ። ከሕዝቢህም ሁሉ ያንተ ከሚሆን ከዚህም ቅዱስ ቦታ  በጎውን ነገር ሁሉ ያማረውንና የሚሻለውን እዘዝልን፤ እባቡን ጊንጡንም የጠላትንም ኃይል ሁሉ አንረግጥ ዘንድ ሥልጣንን የሰጠኸን አንተ ነህና። ወደ መከራ አታግባን ከክፉ ነገር ሁሉ አድነን እንጂ።። አንድ ልጅህ ጌታችንና አምላካችን መድኃኒታችንም ኢየሱስ ክርስቶስ ለሰው ፍቅር ብሎ ባደረገው ቸርነትና ይቅርታ። በርሱ ያለ ምስጋና ክብር ጽንዕ ከእርሱ ጋራ ላንተ ይገባል፣ ካንተ ጋራ ትክክልና ማሕየዊ ከሚሆን ከምንፈስ ቅዱስም ጋራ ዛሬም፤ ዘወትርም ለዘላለሙ አሜን።",
+            "en": "For this cause we pray and entreat of Thy goodness, O lover of man, grant us to complete this holy day and all the days of our life in all peace along with thy fear. All envy, all trial, all the working of Satan, the counsel of evil, and all the uprisings of adversaries, secret and open. Remove far from me and from all Thy people and from this Thy holy place (benediction over those things which are on the altar). All good things, that are expedient and excellent, command Thou for us, for Thou art He that hath given us power to tread upon serpents and scorpions and upon all the power of the enemy. Lead us not into temptation, but deliver us and rescue us from all evil: in the grace and loving kindness which were shown by the love towards man-kind of Thy only-begotten Son, our lord and our God and our Savior Jesus Christ, through whom to Thee with Him and with the Holy Spirit, the life-giver, who is coequal with Thee are fitting glory and honor and dominion, both now and ever and world without end. Amen."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayera",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moeh94sk99q",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "assistant-deacon"
+        },
+        {
+          "id": "serate-qidase-moeh94skhhb",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeh94skfxl",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeh94sku6o",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "the-prayer-of-oblation",
+      "titles": {
+        "en": "The prayer of Oblation"
+      },
+      "nodes": [
+        {
+          "id": "serate-kidase-mlyyya6ul7p",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ዳግመኛም ሁሉን የሚይዝ የጌታችንና የመድኃኒታችን የኢየሱስ ክርስቶስን አባት እግዚአብሔርን እንማልዳለን። ከሁሉ በላይ በምትሆን በከበረች በአንዲት ቤተ ክርስቲያን መባ ሰለሚያገቡ፣ መሥዋዕቱን፣ ቀዳምያቱንም ካሥር አንዱን፣ የመታሰቢያ ምስጋናን፣ ብዙውንና ጥቂቱን፣ የተሰወረውንና የተገለጸውን፣ ይሰጡ ዘንድ ሲወዱ የሚሰጡት ከሌላቸው ላይ ፈቃዳቸውን ተቀብሎ መንግሥተ ሰማያትን ይሰጥ ዘንድ ለሁሉ በረከትን የሚያድልበት ሥልጣን ገንዘቡ የሚሆን አምላካችን እግዚአብሔር።",
+            "en": "And again let us beseech the almighty Lord, the Father of the Lord our Savior Jesus Christ, on behalf of those who bring an oblation within the one holy universal church, a sacrifice, first fruits, tithes, a thank offering, a memorial, whether much or little, in secret or openly, and of those who wish to give and have not wherewith to give, that He accept their ready mind, that He vouchsafe to them the heavenly kingdom; power over all works of blessing belongs to the Lord our God."
+          },
+          "speaker": "assistant-priest"
+        },
+        {
+          "id": "serate-preparatory-service-056",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ እለ ያበውኡ መባአ።",
+            "am": "መባ ስለሚያቀርቡ ሰዎች ጸልዩ።",
+            "en": "Pray for them who bring an oblation.",
+            "gez-Latn": "Tseliyu be'inte ile yabewi'u meba'i."
+          },
+          "speaker": "assistant-deacon"
+        },
+        {
+          "id": "serate-preparatory-service-057",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ተወከፍ መባኦሙ ለአኃው ወተወከፍ መባኦን ለአኃት ለነኒ ተወከፍ መባአነ ወቍርባነነ።",
+            "am": "የወንዶችን መባቸውን ተቀበል። የሴቶችንም መባቸውን ተቀበል። የኛንም መባችንን ቁርባናችንንም ተቀበል።",
+            "en": "Accept the oblation of our brethren, accept the oblation of our sisters, and ours also accept, our oblation and our offering.",
+            "gez-Latn": "Tewekef meba'omu le'ahaw wetewekef meba'on le'ahat lenenee tewekef meba'ane weqwurbanene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-058",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሁሉን የምትገዛ አምላካችን እግዚአብሔር ሆይ! እንለምንሃለን እንማልድሃለንም ከሁሉ በላይ በምትሆን ባንዲት ቅድስት ቤተ ክርስቲያን ውስጥ መባ ስለሚያገቡ ሰዎች። መሥዋዕቱ፣ መጀመሪያውን፣ ካሥር አንዱን፣ የመታሰቢያ ምስጋናውን፣ ብዙውንና ጥቂቱን የተሰወረውንና የተገለጸውን ይሰጡም ዘንድ ሊወዱ የሚሰጡት ከሌላቸው ላይ ፈቃዳቸውን ተቀብለህ ለሁሉም የበረከት ዋጋን ስጥ፤ ዕድል ፈንታ ትሆን ዘንድ። በአንድ ልጅህ በርሱ ያለ ክብር ጽንዕ ላንተ ይገባል ከርሱ ጋራ ከመንፈስ ቅዱስም ጋራ ዛሬም ዘወትርም ለዘላለሙ በእውነት።",
+            "en": "Lord our God who art almighty, we pray Thee and beseech Thee for them that bring an oblation within the one holy universal church, a sacrifice, first-fruits, tithes, a thank offering, a memorial, whether much or little, in secret or openly, and for those who wish to give and have not wherewith to give. Thy acceptance of their ready mind grant Thou unto every one: let the recompense of blessing be a portion to all of them: through Thy only begotten Son, through whom to Thee with Him and with the Holy Spirit be glory and dominion, both now and ever and world without end. Amen."
+          },
+          "speaker": "assistant-priest"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerb",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moeh8ys8ulh",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeh8ys83ag",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeh8ys8i51",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeh8ys8nxk",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "the-prayer-of-oblationa",
+      "titles": {
+        "en": "The Prayer of Oblation"
+      },
+      "nodes": [
+        {
+          "id": "serate-kidase-mlyzawah3kf",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "መምህራ ኢየሱስ ክርስቶስ ሆይ ከቀዳማዊ አብ ጋራ አንድ የምትሆን፤ ንጹሕ የሚሆን የአብ ቃል፤ የማሕየዊ መንፈስ ቅዱስም ቃል፤ ከሰማያት የወረድህ የሕይወት ኅብስት አንተ ነህ።። ስለ ዓለሙ መዳን ነፍሮ የሊለበት መሥዋዕት እንድትሆን መናገርን አስቀድመህ።። አሁንም ከበጎነትህ ቸርነት እንለምናለን እንማልዳለንም።። ሰው ወዳጅ ሆይ ያንተ በሚሆን በዚህ በመንፈሳዊ ጠቦት ሳይ ባፍርነው በዚህ \"እማሬ\" ኅብስት ሳይና በዚህ \"እማሬ\" ጽዋ ሳይ ፊትህን ግለጽ።। ይህንን ኅብስት ባርከው ይህንንም ጽዋ አክብረው ሁለቱንም አንጻቸው።።\nይህ \"እማሬ\" ንጹሕ ሥጋህን ይሆን ዘንድ ለውጠው።። በዚህ \"እማሬ\" ጽዋ ውስጥ የተቀዳውም ወይን የከበረ ደምህን ይሁን፤ ለሃሳችንም ያረገ ለነፍሳችንና ለሥጋችን ለልቡናችንም ፈውስ ይሆን ዘንድ።።\nአምላካችን ክርስቶስ የሃሳችን ንጉሥ አንተ ነህ።። ከፉ ያለ ምስጋናንና ክብርን ስግደትንም ፃንት እንልካለን።። ቸር ከሚሆን ከሰማያዊ አባትህ ጋራ ካንተ ጋራ ከሚተካከል ከማሕየዊ መንፈስ ቅዱስም ጋራ ዛሬም ዘወትርም ለዘሳለሙ፤ አሜን።",
+            "en": "O my Master, Jesus Christ, co-eternal pure Word of the Father, and Word of the Holy Spirit, the life giver, Thou art the bread of life which didst come down from heaven, and didst foretell that Thou wouldest be the Lamb without Spot for the life of the world. We now pray and beseech of Thine excellent goodness, O lover of man, make Thy face to shine upon this bread, and upon this cup, which we have set upon this spiritual ark of Thine. Bless this bread, and hallow this cup, and cleanse them both. And change this bread to become Thy pure body, and what is mingled in this cup to become Thy precious blood, let them be offered for us all for healing and for the salvation of our soul and our body and our spirit. Thou art the King of us all, Christ our God, and to Thee we send up high praise and glory and worship, with Thy good heavenly Father and the Holy Spirit, the life giver, who is coequal with Thee, both now and ever and world without end. Amen."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "the-absolution-of-the-son",
+      "titles": {
+        "gez": "ፍትሐት ዘወልድ",
+        "en": "The Absolution of the Son",
+        "gez-Latn": "Fithat zeweld"
+      },
+      "nodes": [
+        {
+          "id": "serate-preparatory-service-067",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ያባቶቻችን የሐዋርያት ትእዛዝ ነው። ሰው በልቦናው ቂምንና በቀልን ቅንዓትንና ጠብን በባልንጀራው ላይ በማንም ላይ ቢሆን አይያዝ።",
+            "en": "This is the order of our fathers the Apostles: Let none Keep in his heart malice or revenge or envy or hatred towards his neighbor, or towards any other body.",
+            "gez-Latn": "Yabatochachin yeHawaryat ti’ezaz new. Sew be-libonaw qimna beqelna qin’atna tabna be-balenjraw lay be-manim lay bihon ayiyaz."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moehec2r0j7",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስግዱ ለእግዚአብሔር በፍርሀት።",
+            "am": "በፍርሀት ለእግዚአብሔር ስገዱ።",
+            "en": "Worship the Lord with fear.",
+            "gez-Latn": "Sigidu le'Igzee'abihér befirihat."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-preparatory-service-069",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ቅድሜከ እግዚኦ ንሰግድ ወንሴብሐከ።",
+            "am": "አቤቱ በፊትህ ወድቀን እንሰግዳለን። እናመሰግንሃለን። ",
+            "en": "Before you, Lord, we worship, and we glorify you",
+            "gez-Latn": "Qidméke igzee'o nisegid wenisébihake."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moehk9l7nob",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "አቤቱ ጌታችን ኢየሱስ ክርስቶስ ወልድ ዋሕድ የእግዚአብሔር አብ ቃል ማሕየዊ መድኃኒትም በምትሆን በሕማምህ ከእኛ የኃጢአታችንን ሁሉ ማስረያ ያጠፋህ።። ንጹሕን በሚሆን ደቀ መጃሙርትህና በንጹሕን አገልጋዮችህ ፊት እፍ ያልሃቸው መንፈስ ቅዱስን ተቀበሉ፤ ይቅር ሃሳቻቸቸው ኃጢአታቸው ይቅርም ሃሃሳቻቸቸው ኃጢአታቸው አይቅርሳቸውም ያልካቸው።።\nአሁንም በክብርት ቤተ ክርስቲያንህ ሕልጊዜ የካህነቱን ሥራ ለሚሠሩ ለንጹሕን አገልጋዮችህ አቤቱ አንተ ካህነትን ስጠህ፤ በምድር ሳይ ኃጢአትን ይቅር ይሉ ዘንድ።। ያስሩ ዘንድ የበደልንም ማስረያ ሁሉ ይፈቱ ዘንድ።።\nአሁንም አቤቱ ሰው ወዳጅ ሆይ፤ ዳግመኛ ከቸርነትህ እንለምናለን እንሻለንም።። ስለነዚህ ስለ ወንዶችም ስለ ሴቶችም ባሮችህ አባቶቻቸና ወንድሞቻቸ እንቶቻቸም ደካማ ስለምሆን ስለ እነም ስለ ባርያህ፤ በቅዱስ መሠዊያህም ፊት ርሳቸውን ዝቅ ስለ አደርጉ ሰዎች የምሕረቱህን ጡዳና ጥሪጋልን፤ የኃጢአታቸንን ማስረያም ሁሉ ፈጽመህ አጥፋልን፤ አቤቱ አንትን ዝንበድל በማወቅ ወይም ባለማወቅ በተንኮልም ቢሆን በልቡና ካፍትም ቢሆን በመሥራትም ቢሆን በመናገርም ቢሆን በዕውቀት ማንኛም ቢሆን የሰሙን ድካሙን አንተ ታውቃለህና።።\nቸር ሰው ወዳጅ ሆይ የፍቅሬቱ ሁሉ ጌታ አቤቱ የኃጢአታቸንን ሥርዮት ስጠን፤ ባርክን፤ አክብረንም ነጽም የወጣን አድርገን ሕዝቡንም ሁሉ ፍታቸው።። (በዚህ ጊዜ አዲስ የምቅቱን ያስታወስ) ስምህን መፍራትን የተመሉን አድርገን ቅዱስ ፈቃድህንም በመፍራት አጽናን።።\nቸር ሆይ ጌታችንና አምላካችን መድኃኒታችን አንተ ኢየሱስ ክርስቶስ ነህና።። ምስጋናና ክብርን ፃንት እናቀርባለን።። ሰማያዊ ከሚሆን ከቸር አባትህ ጋራ፤ ማሕየዊ ከሚሆን ከመንፈስ ቅዱስም ጋራ ትክክል የሚሆን ዛሬም ዘወትርም ለዘሳለሙ፤ አሜን።።\nበዚህ ቀን ያገለገሉህ ባሮችህ ቁስና ዲያቆኑ ካህናቱም (ካህናቱን ይባርክ) ሕዝቡም ሁሉ (ሕዝቡን ይባርክ) እነም ድኃው ባርያህ (ሩሱን ይባርክ) የተፈቱና ነጻ የወጡ ይኑጹ።። ልዩ ሃሥት በሚሆን በአብ በወልድ በመንፈስ ቅዱስ አፍ ሕዋርያት በሰቦሳሊት በቅድስት ቤተ ክርስቲያን አፍ በዓሥሩ አምስቱ ነቢያት አፍ በዓሥሩ ሁለቱ ሕዋርያት አፍ፤ ሥልጣን አገልጋዮች በሃኑ በሳባ ሁሉቱ አርድእት አፍ መልኮትን በትናገሬ ወንጌላዊ ሕዋርያና ሰማዕቱም በሃን በማርቆስ አፍ።\nንጹሕ ክቡር አባት በሚሆን በጳጳሳቱ አለቃ በሳዊሮስና በቅዱስ ዲዮስቆሮስ በቅዱስ አትናቴዎስም በቅዱስ ዮሐንስ አፈ ወርቅና በቅዱስ ቄርሎስ በቅዱስ ጎርጎርዮስና በቅዱስ ባስልዮስ ቃል።།\nአርዮስን ለማውገዝ በኒቂያ በትሰቦሳቡ ሃይማኖታቸው በቀና ቢሆን ሃሥስ ምዕት ዐሠሩ ሦሥንት ሊቀዉንትም ቃል።። መቅዶንዮስን ለማውገዝ በቁስጥንጥንያ በትሰቦሳቡ ሃሥምቱ ዐሠሩ ሊቀዉንትም ቃል።། ንስጥሮስን ለማውገዝ በኤፌሶን በትሰቦሳቡ ሁለት ምዕት ሊቀዉንትም ቃል በክቡር የሊቃነ ጳጳሳቱ አለቃ በአባ .... ንዑድ ክቡር በሚሆን ሊቀ ጳጳሳቻችን አባ ...... ቃል ድኃ ክቡር በሚሆን ሊቀ ጳጳሳቸን አባ ...... ቃል ከኔም በኃጥኡ ሊቀ ጳጳሳቸን አባ .... ቃል ይቱ ክቡር በሚሆን ሊቀ ጳጳሳቸን አባ ..... ቃል ድኃ ምስኪን በምሆን በኔም ቃል የተፈቱ ነጻም የወጡ ይኑጹ።།\nአምሳክን በወለዶች በሁለት ወገን ድንግል ባዲሲቱ መሃሪያ በክብርት እመቤታችን በማርያም ቃል።።\nየቅዱስም ስምህ ምስጋና ቡሩክ ፍጹም ነውና፤ ልዩ ሃሥት የምትሆን አብ ወልድ መንፈስ ቅዱስ ሆይ ዛሬም ዘወትርም ለዘሳለሙ አሜን።",
+            "en": "Master, Lord Jesus Christ, the Only-begotten Son, the Word of God the Father, who hast broken off from us all the bonds of our sins through Thy life-giving and saving sufferings, who didst breathe upon the face of Thy holy disciples and pure misisters saying to them: Receive the Holy Spirit: whatso-ever men's sins ye remit they are remitted unto them, and whatsoever sins ye retain they are retained: \nThou, therefore, O Lord, hast now granted the priesthood to Thy pure ministers that do the priests’ office at all times in Thy holy church that they may remit sin on earth, may bind and loosen all the bonds of iniquity. \nNow again we pray and entreat of Thy goodness, O lover of man, on behalf of these Thy servants and handmaids, my fathers and my brothers and my sisters, and also on my own behalf, on me Thy feeble servant, and on behalf of them that bow their heads before Thy holy altar: prepare for us the way of Thy holy altar: prepare for us the way of Thy mercy, break and sever all the bonds of our sins, whether we have trespassed against Thee, O Lord, wittingly or unwittingly or in deceit or in evilness of heart, whether in deed or in word or through smallness of understanding, for Thou knowest the feebleness of man. \nO good lover of man and Lord of all creation, grant us, O Lord, forgive-\nness of our sins, bless us and purify us and set us free and absolve all Thy people, (here he shall mention those lately dead) and fill us with the fear of\nThy name, and establish us in the doing of Thy holy will. \nO Good, for Thou art our Lord and our God and our Saviour Jesus Christ, to Thee we send glory and honor with Thy good heavenly Father, and the Holy Spirit, the life-giver, who is coequal with Thee, both now and ever and world without end. Amen.\nMay Thy servants who serve on this day, the priest and the deacon and the clergy and all the people, and I myself Thy poor servant, be absolved and set free and cleansed out of the mouth of the Holy Trinity, the Father and the Son and the Holy Spirit, and out of the mouth of the one holy apostolic church, and out of the mouths of the fifteen prophets, and out of the mouths of the twelve apostles, and out of the mouths of the seventy-two disciples the ministers, and out of the mouth of the speaker of divinity, the evangelist Mark the apostle and martyr: and out of the mouths of the honored Patriarchs St. Severus and St. Dioscorus and St. Athanasius ans St. John Chrysostom and St. Cyril and St. Gregory and St. Basil: and out of the mouths of 318 orthodox that assembled in Nicaea to condemn Arius, and out of the mouths of the 150 that assembled in Constantinople to condemn Macedonius, and out of the mouths of the 200 that assembled in Ephesus to condemn Nestor, and out of the mouth of the honored Patriarch Abba .... and the blessed Archbishop Abba ......., and out of the mouth of me also the sinful and miserable and poor — may they be absolved and set free, and out of the Mouth of our Lady holy Mary, of twofold virginity, mother of God, the new loom; For Thy holy name is blessed and full of glory, O Holy Trinity, Father and Son and Holy Spirit, both now and ever and world without end. Amen."
+          },
+          "speaker": "assistant-priest"
+        },
+        {
+          "id": "serate-preparatory-service-071",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "አንድ ስለምታደርግ ሥጋውና ደሙ፤ እግዚአብሔር በይቅርታው አንድ ያደርጋን ዘንድ ሰላምን እንማልዳለን።",
+            "en": "For the peacful holy things we beseech, that God may grant us peace\nthrough His mercy."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-kidase-mlyzemvsaad",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeilcl4a8h",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር የሱን ሃይማኖት ብንጹሕ እንድንጠብቅ ይሰጠን ዘንድ ስለ ሃይማኖታችን እንማልዳለን።",
+            "en": "For our Faith we beseech, that God may grant us to keep the faith in\npurity."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeildywize",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeilk5klsh",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እስከ ፍጻሜያችን ድረስ እግዚአብሔር በመንፈስ ቅዱስ አንድነት ይጠብቀን ዘንድ ስለ አንድነታችን እንማልዳለን።",
+            "en": "For our congregation we beseech, that God may keep us unto the end in\nthe communion of the Holy Spirit."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeilmgxy04",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeims3mb35",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በመከራችን ሁሉ እግዚአብሔር የትዕግሥትን ፍጻሜ ይሰጠን ዘንድ ስለ ነፍሳችን ትዕግሥት እንማልዳለን።",
+            "en": "For patience of soul we beseech, that God may vouchsafe us perfect pa-\ntience in all our tribulation."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeimub55jr",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moein98rwpa",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ቅዱሳን ስለሚሆን ነቢያት ከሳቸው ጋራ እግዚአብሔር ይቆጥረን ዘንድ እንማልዳለን።",
+            "en": "For the holy prophets we beseech, that God may number us with them."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeio1ykoi9",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeio0ks54z",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እነሱ ደስ እንዳሰኛቸ ደስ ልናሰኛው እግዚአብሔር (ማገልገሉን) ይሰጠን ዘንድ ዕድል ፈንታቸውንም ያድለን ዘንድ አገልጋዮች ስለሚሆን ሕዋርያት እንማልዳለን።",
+            "en": "For the ministering Apostles we beseech, that God may grant us to be\nwellpleasing even as they were well pleasing, and apportion unto us a lot with\nthem."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeinflghxe",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeioub18ef",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር ለኛ የሰማዕቱትን ሥራ ይሰጠን ዘንድ ቅዱሳን ስለሚሆን ሰማዕታት እንማልዳለን።",
+            "en": "For the Holy martyrs we beseech, that God may grant us to perfect the\nsame conversation."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeiowdoh88",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeipf2mk09",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "የቤተ ክርስቲያን አገልጋዮች እነሱ ናቸውና እግዚአብሔር እነሱን ለረጅም ወራት ይሰጠን ዘንድ ያለ ነፍሮና ሃኑው በዕውቀት የሃይማኖትን ቃል ያቁኑ ዘንድ ስለ ርእሰ ሊቃነ ጳጳሳቱ ስለ አባ ..... ብጹዕ ስለሚሆን ስለ ሊቀ ጳጳሳቻችንም ስለ አባ .... እንማልዳለን።",
+            "en": "For our Patriarch Abba .... and the blessed Archbishop Abba ... we beseech, that God grant them length of days to be over us, that with understanding they may rightly speak the word of faith in purity without spot for that they are the defenders of the church."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeiph7tddq",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeivjhzqcq",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "የካህነቱን ሥልጣን ከእነሱ እግዚአብሔር እንዳያርቅ መትጋትን እሱን መፍራትንም እስከ ፍጻሜ ይሰጥልን ዘንድ ድካማቸውንም ይቀበል ዘንድ ስለ ቃሳውስት እንማልዳለን።",
+            "en": "For the priests we beseech, that God may never take from them the spirit of priesthood, and may give them the grace of zeal and fear of Him unto the end and accept their labor."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeivlm5zbm",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeiwbxdumo",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ፈጹሞ ሊቆጠኑ መፈጠሮን እግዚአብሔር ይሰጣቸው ዘንድ በቅድስናም ይቅርቡ ዘንድ ድካማቸውንና ፍቅራቸውንም ያስብ ዘንድ ስለ ዲያቆናት እንማልዳለን።",
+            "en": "For the deacons we beseech, that God may grant them to run a perfect course, and draw them nigh unto Him in holiness, and remember their labor and their love."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeiwep59il",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeix6o2qj5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "የሃይማኖታቸውን ትጋት ሊፈጹሙ እግዚአብሔር ይሰጣቸው ዘንድ ስለ ንፍቅ ዲያቆናት ስለ አንባቢዮችም ስለ መዘምራንም እንማልዳለን።",
+            "en": "For the assistant deacons and the anagnosts and the singers we beseech, that God may grant them to perfect the diligence of their faith."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeixacy6ew",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeiyf2ooyk",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ልመናቸውን ይሰማቸው ዘንድ ይልቀንም የመንፈስ ቅዱስን ሂብት በልቡናቸው ያሳድርባቸው ዘንድ ድካማቸውንም ይቀበል ዘንድ ስለ ባልቴቶች ሬዳትም ስለሴሳቻው እንማልዳለን።",
+            "en": "For the widows and the bereaved we beseech, that God may hear their prayers and vouchsafe them abundantly in their hearts the grace of the Holy Spirit and accept their labor."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeiygxg7s5",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeiz3jt5u3",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር የድንግላናቸውን ዋጋ (አክሊል) ይሰጣቸው ዘንድ ለእግዚአብሔርም ወንዶችም ሴቶች ልጆች ይሆኑት ዘንድ ድካማቸውንም ይቀበል ዘንድ ስለ ድንግል እንማልዳለን።",
+            "en": "For the virgins we beseech, that God may grant them the crown of virginity, and that they may be unto God sons and daughters and that He may accept their labor."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeiz4yi2ur",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeizya6576",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በምታገሃቸው ዋጋቸውን ይቀበሉ ዘንድ እግዚአብሔር እንዲሰጣቸው ስለ ሚታገሁ ሰዎች እንማልዳለን።",
+            "en": "For those who suffer patiently we beseech, that God grant them to receive their rewards through patience."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej01cpy3i",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moej0lylbmk",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በንጹሕና ሃኑው ይጠብቅ ዘንድ እግዚአብሔር ፍጹም ሃይማኖትን እንዲሰጣቸው ስለ ሕዝባውያንና ስለ መሃይምናን እንማልዳለን።",
+            "en": "For the laity and faithful we beseech, that God may grant them complete faith which they may keep in purity."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej0n8bb3m",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moej1et0iqc",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በጎውን ዕድል ኃጢአትን ለማስተሥረይ ሁለተኛ መወልድ የሚጎኙቶን ሕፍቦት እግዚአብሔር ይሰጣቸው ዘንድ በቅድስት ሥሳሊም ማንትም ያክብራቸው ያቅሙቸው ዘንድ ስለ ንኡስ ክርስቲያን እንማልዳለን።",
+            "en": "For the catechumens we beseech, that God may grant them a good portion and the washing of regeneration for the remission of sin, and seal them with the seal of the Holy Trinity."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej1io5cmh",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moej31uh426",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በዘሙን ፍጹም ሰላምን እግዚአብሔር ይሰጠው ዘንድ ስለ (መሪያችን) ......... እንማልዳለን።",
+            "en": "For our leader ....... we beseech, that God may vouchsafe him much peace in his days."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej30eznap",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moej8pof4t0",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ዕውቀትን እሱን መፍራትንም እግዚአብሔር ይሰጣቸው ዘንድ ስለ መኳንንትና ሥልጣን ስሳቻው እንማልዳለን።",
+            "en": "For the rulers and those in authority we beseech, that God may grant them of His wisdom and His fear."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej8r7vhah",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moej94kf8cz",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ስለ ዓለሙ ሁሉ እግዚአብሔር ማሳብን ያስቀድሙ ዘንድ ሊያንዳንዱም የሚያስፈልጋቸውን ያማሩን የሚሻቸውንም ያስብ ዘንድ ስለ ዓለም ሁሉ እንማልዳለን።",
+            "en": "For the whole world we beseech, that God should hasten His purpose and put into the mind of all and each to desire that which is good and expedient."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej96i3eoj",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moej9nnccuk",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር ይቅርታ ባለው ቀኝ መርቱ በፍቅርና በደጎንነት ወደ ማደሪያቸው ይምልሳቸው ዘንድ በባሕርና በደረቅ ስለሚሄዱ ሰዎች እንማልዳለን።",
+            "en": "For them that travel by sea and by land we beseech, that God should guide them with a merciful right hand and let them enter their home in safety and peace."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moej9orye7b",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejad1oot0",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር የልት የልት ምሃቻቸውን ይሰጣቸው ዘንድ ስለ ተራቡና ስለ ተጠሙ ሰዎች እንማልዳለን።",
+            "en": "For the hungry and the thirsty we beseech, that God should grant them their daily food."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejaensplb",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejd2udu79",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር ፈጹሞ ያረጋጋቸው ዘንድ ስለ አዞኑና ስለ ተከዙ ሰዎች እንማልዳለን።",
+            "en": "For the sad and the sorrowful we beseech, that God may give them perfect consolation."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejd44xs3d",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejdkrz8yj",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር ከእሥራታቸው ይፈታቸው ዘንድ ስለ ታሠሩ ሰዎች እንማልዳለን።",
+            "en": "For the prisoners we beseech, that God may loose them from their bonds."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejdm0wdu0",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeje26u3st",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር በሰላም ወደ አገራቸው ይመልሳቸው ዘንድ ስለ ተሳደሩ ሰዎች እንማልዳለን።",
+            "en": "For the captives, we beseech, that God may restore them to their country in peace."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeje3quh17",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejelwwac4",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር ትዕግሥትን በጎ ትምህርትንም ይሰጣቸው ዘንድ የድካማቸውንም ፍጹም ዋጋ ይሰጣቸው ዘንድ ስለ ተሰደዱ ሰዎች እንማልዳለን።",
+            "en": "For those who were sent away we beseech, that God should grant them patience and good instruction, and give them complete reward for their labor."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejeng8hgn",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejfe8thfy",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር ፈጥኖ ያድናቸው ዘንድ ይቅርታውንና ቸርነቱንም ይልካላቸው ዘንድ ስለ ታመሙትና ስለ ድውያኑ እንማልዳለን።",
+            "en": "For the sick and the diseased we beseech, that God should heal them speedily and send upon them mercy and compassion."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejffjk87m",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejg57iawd",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ከቅድስት ቤተ ክርስቲያን ወገን ስለ ሞቱ ሰዎች እግዚአብሔር የዕረፍት ቦታ ይሰጣቸው ዘንድ እንማልዳለን።",
+            "en": "For those who have fallen asleep in his holy church we beseech, that God may vouchsafe them a place of rest."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejg6klcr2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejgonzy20",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "እግዚአብሔር እንዳይቀማቸው ከመዓቱም ተመልሶ ፍጹም ዕረፍትን ይሰጣቸው ዘንድ ስለ በደሉ አባታቻችንና ወንድማቻችን እንማልዳለን።",
+            "en": "For those who have sinned, our fathers and our brothers we beseech, that God cherish not anger against them, but grant them rest and relief from His wrath."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejgq5kn2v",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejhcoshiy",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በሚሻቦት ቦታ እግዚአብሔር ዝናሙን ያዘንም ዘንድ ስለ ዝናም እንማልዳለን።",
+            "en": "For the rains we beseech, that God may send rain on the place that need it."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejhe5kqix",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejhz8xuvl",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "የወንኙን ውኃ ምሳልንብለን እግዚአብሔር እነሱን እስከ ልካቸውና እስከ ወሰናቸው ይመሳ ዘንድ ስለ ወንዙ ውኃ እንማልዳለን።",
+            "en": "For the waters of the rivers we beseech, that God should fill them unto their due measure and bounds."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeji0s9ohe",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejipj4bd0",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ለዘርና ለመከር ሊሆን እግዚአብሔር ለምድር ፍሬዎን ይሰጣት ዘንድ ስለ ምድር ፍሬ እንማልዳለን።። በጸሎት የምንለምንና የምንማልድ ሃሳችንንም በሰላም በመንፈስ ይጠብቅን፤ ፍቅርንም ይስጠን፤ ዓይነ ልቡናችንንም ያበሩልን።። ፈቃዱም ሆኖ ጸሎታችንን ይቀበል ዘንድ ቀርቦን እግዚአብሔርን እንለምነው።",
+            "en": "For the fruits of the earth we beseech, that God may grant to the earth her fruit for sowing and for harvest. And all of us who ask and beseech in prayer, may He cover us with the spirit of peace, and give us grace, and enlighten the eyes of our hearts. Let us draw nigh and ask God to accept our prayers according to His will."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moejir00j2a",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Amen Kyrie eleison Lord have mercy on us",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moejp7c8k0u",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "አውቀን በሃብቱ እናድግ ዘንድ በእርሱም ስም እንመካ ዘንድ በነቢያት በሕዋፐርያትም መሠረት ሳይ እንታነጽ ዘንድ እንግዲህ በመንፈስ ቅዱስ እንኖሃ።። ቀርቦን አምላካችን እግዚአብሔርን እንለምነው፤ ወዳ ጸሎታችንን ይቀበል ዘንድ።",
+            "en": "Let us therefore rise in the Holy Spirit, growing in His grace, with understanding, glorying in His name and built upon the foundation of the prophets and the apostles. Let us draw nigh and ask the Lord God to accept our prayers according to His will."
+          },
+          "speaker": "deacon"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerc",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moeh5kbkgut",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeh5kbkpr3",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeh5kbkyhf",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeh5kbk0uj",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "let-us-worship",
+      "titles": {
+        "gez": "ንስግድ",
+        "am": "እንስገድ",
+        "en": "Let us Worship",
+        "gez-Latn": "Nisgid"
+      },
+      "nodes": [
+        {
+          "id": "serate-preparatory-service-074",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ንስግድ። (፫ ጊዜ)",
+            "am": "እንስገድ። (ሦስት ጊዜ)",
+            "en": "Nisigid (3 times) ",
+            "gez-Latn": "Let us worship (3 times)"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-075",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ለአብ፣ ወወልድ፣ ወመንፈስ ቅዱስ እንዘ ሠለስቱ አሐዱ። (፫ ጊዜ)",
+            "am": "ሦስት ሲሆኑ አንድ ለሚሆኑ ለአብና ለወልድ ለመንፈስ ቅዱስም። (ሦስት ጊዜ)",
+            "en": "The Father and the Son and the Holy Spirit, three in one. (3 times)",
+            "gez-Latn": "Le'Ab, weWeld, weMenfes Qidus inze selestu ahadu. (3 times)"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-076",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኪ።",
+            "am": "ሰላም ላንቺ ይኹን።",
+            "en": "Peace be unto Thee",
+            "gez-Latn": "Selam lekee"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-077",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ቅድስት ቤተ ክርስቲያን ማኅደረ መለኮት።",
+            "am": "የመለኮት ማደሪያ የሆንሽ ክብርት ቤተ ክርስቲያን።",
+            "en": "Holy church, dwellingplace of the godhead.",
+            "gez-Latn": "Qidist béte kiristeeyan mahidere melekot. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-preparatory-service-078",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰአሊ ለነ።",
+            "am": "ለምኚልን።",
+            "en": "Ask for us:",
+            "gez-Latn": "Se'alee lene. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-079",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ድንግል ማርያም ወላዲተ አምላክ።",
+            "am": "አምላክን የወለድሽ ድንግል ማርያም።",
+            "en": "Virgin Mary, mother of God, Antee wi'itu.",
+            "gez-Latn": "Dingil Mariam weladeete amlak. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-kidase-mlz203nq1ra",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አንቲ ውእቱ። ",
+            "am": "አንቺ ነሽ።",
+            "en": "Thou art",
+            "gez-Latn": "Antee wi'itu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-preparatory-service-080",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ማዕጠንት ዘወርቅ እንተ ፆርኪ ፍሕመ እሳተ ቡሩክ ዘነሥኣ እመቅደስ ዘይሠሪ ኃጢአተ ወይደመስስ ጌጋየ ። ዝውእቱ ዘእግዚአብሔር ቃል ዘተሰብአ እምኔኪ ዘአዕረገ ለአቡሁ ርእሶ ዕጣነ ወመሥዋዕተ ሥሙረ። ንሰግድ ለከ ክርስቶስ ምስለ አቡከ ኄር ሰማያዊ ወመንፈስከ ቅዱስ ማሕየዊ እስመ መጻእከ ወአድኀንከነ።",
+            "am": "ቡሩክ ከቤተ መቅደስ የተቀበላት የወርቅ ጽና አንቺ ነሽ፣ የእሳት ፍሕም የያዝሽ፣ ኃጢአትን የሚያስተሰርይ፤ በደልንም የሚያጠፋ። ይኸውም ካንቺ ሰው የሆነው የእግዚአብሔር ቃል ነው። ራሱን ያማረ ዕጣንና መሥዋዕት አድርጎ ለአባቱ ያቀረበ። ክርስቶስ ሆይ! ሰማያዊ ከሚሆን ከቸር ራሱን ያማረ ዕጣንና መሥዋዕት አድርጎ ለአባቱ ያቀረበ። ክርስቶስ ሆይ! ሰማያዊ ከሚሆን ከቸር",
+            "en": "The golden censer which didst bear the coal of fire which the blessed took from the sanctuary, and which forgiveth sin and blotteth out error, who is God's Word that was, made man from thee, who offered himself to his Father for incense and an acceptable sacrifice. We worship Thee, Christ, with Thy good heavenly Father and Thy Holy Spirit, the life-giver, for Thou didst come and save us.",
+            "gez-Latn": "Ma'itente zewerq inte tsorqee fihime isate buruk zenesi'a imeqdesi zeyseri hati'yat Weyidemesis gégaye. Ziwi'itu ze'Igzee'abihér qal zetesebi'a imnekee ze'a'irege le'abuhu. ri'iso itane wemeswa'it simure. Nisegid leke Kiristos misle abuke hér semayawee wemenfesike qidus mahiyewee isme metsa'ike we'adhankene."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerd",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moek9pgwdod",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moek9pgw2y5",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moek9pgw52x",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moek9pgw2w2",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "serate-preparatory-service",
+      "titles": {
+        "en": "Glory and honor",
+        "gez-Latn": "Sibhat wekibir"
+      },
+      "nodes": [
+        {
+          "id": "serate-preparatory-service-086",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስብሐት ወክብር ለሥሉስ ቅዱስ ይደሉ",
+            "am": "ሦስት ለሚሆኑ ለቅድስት ሥላሲ ምስጋና ይገባቸዋል",
+            "en": "Glory and honor are meet to he Holy Trinity, ",
+            "gez-Latn": "Sebhat wekibir lesilus kidus yidelu"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moelvsxohap",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ይደልዎሙ ለአብ ወወልድ ወመንፈስ ቅዱስ",
+            "am": "ለአብ ለወልድ ለመንፈስ ቅዱስ ይገባቸዋል",
+            "en": "It is due unto the Father, the son, and the Holy Spirit",
+            "gez-Latn": "Yidelwomu le’ab wewold wemenfes kidus"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moelvubs5yb",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አብ ወወልድ ወመንፈስ ቅዱስ ኩሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
+            "am": "ለአብና ለወልድ ለመንፈስ ቅዱስም ሁልጊዜ ዛሬም ዘወትርም ለዘለዓለሙ",
+            "en": "To the Father, the Son, and the Holy Spirit at all times, both now and ever and world without end",
+            "gez-Latn": "Ab we-Weld we-Menfes Qidus kulo gize yīʾezeni we-zelifeni we-leʿaleme ʿalem."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moem5u4y23f",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን",
+            "am": "አሜን",
+            "en": "Amem",
+            "gez-Latn": "Amen"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moelvr8w1lr",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስብሐት ወክብር ለሥሉስ ቅዱስ ይደሉ",
+            "am": "ሦስት ለሚሆኑ ለቅድስት ሥላሲ ምስጋና ይገባቸዋል",
+            "en": "Glory and honor are meet to he Holy Trinity, ",
+            "gez-Latn": "Sebhat wekibir lesilus kidus yidelu"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moekbwyp2kh",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ይደልዎሙ ለአብ ወወልድ ወመንፈስ ቅዱስ",
+            "am": "ለአብ ለወልድ ለመንፈስ ቅዱስ ይገባቸዋል",
+            "en": "It is due unto the Father, the son, and the Holy Spirit",
+            "gez-Latn": "Yidelwomu le’ab wewold wemenfes kidus"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moelvu45tq6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አብ ወወልድ ወመንፈስ ቅዱስ ኩሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
+            "am": "ለአብና ለወልድ ለመንፈስ ቅዱስም ሁልጊዜ ዛሬም ዘወትርም ለዘለዓለሙ",
+            "en": "To the Father, the Son, and the Holy Spirit at all times, both now and ever and world without end",
+            "gez-Latn": "Ab we-Weld we-Menfes Qidus kulo gize yīʾezeni we-zelifeni we-leʿaleme ʿalem."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moem6jjzfb3",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን",
+            "am": "አሜን",
+            "en": "Amem",
+            "gez-Latn": "Amen"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moelvqqe1pj",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስብሐት ወክብር ለሥሉስ ቅዱስ ይደሉ",
+            "am": "ሦስት ለሚሆኑ ለቅድስት ሥላሲ ምስጋና ይገባቸዋል",
+            "en": "Glory and honor are meet to he Holy Trinity, ",
+            "gez-Latn": "Sebhat wekibir lesilus kidus yidelu"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moelvso66dn",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ይደልዎሙ ለአብ ወወልድ ወመንፈስ ቅዱስ",
+            "am": "ለአብ ለወልድ ለመንፈስ ቅዱስ ይገባቸዋል",
+            "en": "It is due unto the Father, the son, and the Holy Spirit",
+            "gez-Latn": "Yidelwomu le’ab wewold wemenfes kidus"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-kidase-mlz2c4d3fg0",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም",
+            "am": "ሁል ጊዜ ክብር ምስጋና ይገባቸዋል ዛሬም ዘወትርም ለዘለዓለሙ\n",
+            "en": "the Father and the Son and the Holy Spirit at all times. Both now and ever and world without end. Amen.",
+            "gez-Latn": "Ab wewold wemenfes kidus kulo gize yi’izeni wezelfeni wele’aleme alem"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moem6s5y330",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን",
+            "am": "አሜን",
+            "en": "Amem",
+            "gez-Latn": "Amen"
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "1st-reading-pauline-epistle",
+      "titles": {
+        "am": "1ኛ ምንባብ - የጳውሎስ መልዕክት",
+        "en": "1st Reading - Pauline Epistle"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moobsls2p05",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ጌታችንንና መድኃኒታችንን ኢየሱስ ክርስቶስን የማይወደው የመንፈስ ቅዱስ ማዳሪያ በሁለት ወገን ድንግል ከምትሆን ከቅድስት ማርያም መወለዱንም የማያምን ሰው ሁሱ እንግዳ እስከሚሆን ምጽአቱ ድረሰ ጳውሎስ እንደ ተናገረ የተለየ ይሁን።",
+            "en": "Everyone that loves not our Lord and Saviour Jesus Christ, and believes not in his birth from holy Mary , of twofold virginity, the ark of the Holy Spirit, until his coming again, let him be \"anathema\" as Paul said"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-readings-092-label",
+          "kind": "reading-ref",
+          "slot": "pauline",
+          "labels": {
+            "gez": "1ኛ ምንባብ",
+            "am": "ወደ ኤፌሶን ሰዎች",
+            "en": "1st Reading: Ephesians Ch. 6 : 1 - 9"
+          },
+          "style": "heading"
+        },
+        {
+          "id": "serate-readings-092",
+          "kind": "reading-body",
+          "slot": "pauline"
+        },
+        {
+          "id": "serate-qidase-moobudydma1",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ቅድስት በምትሆን በጽርሐ ጽዮን በሐዋርያት ላይ የወረደው የአብ በረከት የወልድም ፍቅር የመንፈስ ቅዱስም ሁበት በሁላችሁም ላይ ይውረድ ዕፅፍ ድርብም ይሁን።",
+            "en": "The blessing of the Father and the Love of the Son and the gift of the Holy Spirit who came down upon the apostles in the upper room of holy Zion, in like sort come down and be multiplied upon me and all of you"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moobvmsp1vy",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ቅዱስ ሐዋርያ ጳውሎስ ሠናየ መልእክት ፈዋሴ ዱያን ዘነሣእከ አክሊለ ሰአል ወጸሊ በእንቲኣነ ያድኅን ነፍሳተነ በብዛኅ ሣህሉ ወምሕረቱ በእንተ ስሙ ቅዱስ።",
+            "am": "ሐዋርያ ቅዱስ ጳውልስ መልእክትህ የበጀ፣ የታመሙትን ያዳንክ፣ አክሊልን የተቀበልህ፤ ስለእኛ ለምንልን፣ ጸልይልን። ስለቅዱስ ስሙ ብሎ በቸርነቱ በይቅርታው ብዛት ሰውነታችንን ያድነን ዘንድ።",
+            "en": "Holy Apostle Paul, good messenger, healer of the sick, who hast received the crown, ask and pray for us in order that He may save our souls in the multitude of His mercies and in His pity for His holy name's sake.",
+            "gez-Latn": "Qidus hawariya Pawulos senaye mel'ikti fewasé duyane zenesa'ike akleele se'al wetselee be'intee'ane yadihin nefsatene bebiziha sahilu wemihretu be'inte simu qidus."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayere",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-mokp0035a6f",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "assistant-deacon"
+        },
+        {
+          "id": "serate-qidase-mokp0035zo1",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-mokp0035w7v",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "assistant-priest"
+        },
+        {
+          "id": "serate-qidase-mokp0035g1x",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "2nd-reading-catholic-epistle",
+      "titles": {
+        "am": "2ኛ ምንባብ - የሐዋርያት መልዕክት",
+        "en": "2nd Reading - Catholic Epistle"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-mooe5r5li6f",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "የኢየሱስ ክርስቶስ ሕዋርያውና ረድኡ ከሚሆን ከ... መልእክት የተገኘ ቃል ይህ ነው። ጸሎቱና በረከቱ በሁላችን ላይ ይኑር። ለዘለዓለሙ አሜን።",
+            "en": "The word from the epistle of ... disciple and apostle of our Lord Jesus Christ, his prayer and blessing be with us all forever, Amen"
+          },
+          "speaker": "assistant-deacon"
+        },
+        {
+          "id": "serate-qidase-mooe5r5lmlw-label",
+          "kind": "reading-ref",
+          "slot": "catholic",
+          "labels": {
+            "gez": "1ኛ ምንባብ",
+            "am": "ወደ ኤፌሶን ሰዎች",
+            "en": "1st Reading: Ephesians Ch. 6 : 1 - 9"
+          },
+          "style": "heading"
+        },
+        {
+          "id": "serate-qidase-mooe5r5lmlw",
+          "kind": "reading-body",
+          "slot": "catholic"
+        },
+        {
+          "id": "serate-qidase-mooe5r5l6bg",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ወንድሞቼ ይህን ዓለም አትውደዱት በዓለሙ ውስጥ ያለውንም። ዓለሙም ኃላፊ ነው። ፈቃዱም ኃላፊ ነው። ሁሉም ኃላፊ ነውና።",
+            "en": "O my brothers, love not the world neither the things that are in the world. The world passes away and the lust thereof, for all is passing."
+          },
+          "speaker": "assistant-deacon"
+        },
+        {
+          "id": "serate-qidase-mooen81zkej",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ቅዱስ ሥሉስ ዘኅቡር ህላዌከ ዕቀብ ማኅበረነ በእንተ ቅዱሳን ኅሩያን አርዳኢከ ናዝዘነ በሣህልከ በእንተ ቅዱስ ስምከ።",
+            "am": "ባሕርይህ አንድ የሚሆን፣ በሦስትነት ያለህ ቅዱስ ሆይ! አንድነታችንን ጠብቅልን፤ ስለተመረጡ ክቡራን ደቀመዛሙርትህ፤ ሰለቅዱስ ስምህም ብለህ በይቅርታህ አረጋጋን።",
+            "en": "Holy con substantial Trinity, preserve our congregation for Your holy elect disciples' sake: comfort us in Your mercy, for Your holy name's sake.",
+            "gez-Latn": "Qidus silus zehibur hilawéke iqeb mahiberene be'inte qidusan hiruyan arda'eeke nazizene besahilike be'inteqidus simike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerf",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moeka3nj2c5",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moeka3nj0of",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moeka3nj6it",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moeka3nj9iy",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "3rd-reading-acts-of-the-apostles",
+      "titles": {
+        "am": "3ኛ ምንባብ - የሐዋርያት ሥራ",
+        "en": "3rd Reading - Acts of the Apostles"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-mooeuv3s50q",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ንጹሐን ከሚሆኑ ከሕግ ምንጮት የተገኘ ጥሩ ምንጭ ይኸውም የሐዋርያት የሥራቸው ነገር ነው። የጸሎታቸው በረከት ከሁላችን ጋር ይሁን ለዘለዓለሙ አሜን ።",
+            "en": "The word from the epistle of ... disciple and apostle of our Lord Jesus Christ, his prayer and blessing be with us all forever, Amen"
+          },
+          "speaker": "assistant-priest"
+        },
+        {
+          "id": "serate-qidase-mooeuv3st90-label",
+          "kind": "reading-ref",
+          "slot": "acts",
+          "labels": {
+            "gez": "1ኛ ምንባብ",
+            "am": "ወደ ኤፌሶን ሰዎች",
+            "en": "1st Reading: Ephesians Ch. 6 : 1 - 9"
+          },
+          "style": "heading"
+        },
+        {
+          "id": "serate-qidase-mooeuv3st90",
+          "kind": "reading-body",
+          "slot": "acts"
+        },
+        {
+          "id": "serate-qidase-mooeuv3sczu",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "የእግዚአብሔር ቃል ፈጽሞ መላ። ከፍ ከፍ አለ። በቅድስት ቤት ክርስቲያንም በዝቶ ተጨመረ። ምስጋና ገንዘቡ በሚሆን በጌታችን በኢየሱስ ክርስቶስ ያመኑት ሕዝብም በዙ። ለዘለዓለሙ አሜን።",
+            "en": "Full and great and exalted is the Word of God, and it has increased in the holy church, and many are they that believe in our Lord Jesus Christ to whom be glory, world without end, Amen."
+          },
+          "speaker": "assistant-priest"
+        },
+        {
+          "id": "serate-qidase-moof5dv98ds",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ቅዱስ፣ ቅዱስ፣ ቅዱስ አንተ ወልድ ዋሕድ ዘአንተ ቃለ አብ ሕያው። ቅዱስ፣ ቅዱስ፣ ቅዱስ አንተ መንፈስ ቅዱስ ዘተአምር ኵሎ።",
+            "am": "የሕያው አብ ቃል ተቀዳሚ ተከታይ የሌለህ ወልድ ሆይ፣ ቅዱስ፣ ቅዱስ፣ ቅዱስ አንተ ነህ። ሁሉን የምታውቅ መንፈስ ቅዱስ ሆይ! ቅዱስ፣ ቅዱስ፣ ቅዱስ አንተ ነህ።",
+            "en": "Holy Holy Holy are You, only-begotten Son, who are the Word of the living Father. Holy Holy Holy are You, Holy Spirit who knows all things.",
+            "gez-Latn": "Qidus qidus qidus ante weld wahid ze'ante qal Ab hiyaw. Qidus qidus qidus ante Menfes Qidus zete'amir kwulo."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerg",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moekafdrsfz",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moekafdrv1s",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moekafdrp0v",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moekafdr7m8",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "pray-for-the",
+      "titles": {
+        "en": "Pray for the..."
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-108",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ጸልዩ በእንተ …",
+            "am": "አሜን ኪርያላይሶን እግዚኦ ተሣሃለነ።",
+            "en": "Pray for …,",
+            "gez-Latn": "Amen Kyrie eleison Igzio tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-mooggowu0aa",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ ሰላመ ቤተ ክርስቲያን አሐቲ ቅድስት ጉባኤ እንተ ሐዋርያት ርትዕት በኀበ እግዚአብሔር",
+            "am": "ሐዋርያት ለሰበሰቧት በእግዚአብሔር ዘንድ ስለቀናች ክብርት ስለምትሆን አንዲት ቤተ ክርስቲያን ስላም ጸልዩ።",
+            "en": "Pray for the peace of the one holy apostolic church orthodox in the Lord.",
+            "gez-Latn": "Tseliyu be'inte selame béte kiristeeyan ahatee qidist guba'é inte hawariyat riti'it behabe Igzee'abihér."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-mooggs519je",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ፃኡ ንኡሰ ክርስቲያን። ዘሀገር ዓባይ ኢትዮጵያ ወዲበ ርእሰ ሀገረ አበዊነ ብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ ወኵሎሙ ኤጲስ ቆጶሳት ቀሳውስት ወዲያቆናት ርቱዓነ ሃይማኖት።",
+            "am": "የክርስቲያን ታናናሾች በሰላም ሂዱ። ተንሥኡ ለጸሎት ፖለጸሎት ተነሡ። እግዚኦ ተሣሃለነ። አቤቱ ይቅር በለን። ሰላም ለኵልክሙ። ሰላም ለሁላችሁም። ምስለ መንፈስከ። ከመንፈስህ ጋራ። ጸልዩ በእንተ ሰላመ ቤተ ክርስቲያን አሐቲ ቅድስት ጉባኤ እንተ ሐዋርያት ርትዕት በኀበ እግዚአብሔር ሐዋርያት ለሰበሰቡዋት በእግዚአብሔር ዘንድ ስለቀናች ክብርት ስለምትሆን አንዲት ቤተ ክርስቲያን ስላም ጸልዩ። ኪርያላይሶን። ጸልዩ በእንተ ርእሰ ሊቃነ ጳጳሳት አባ ማትያስ እግዚእነ ርእሰ ሊቃነ ጳጳሳት ብፁዕ ስለሚሆን ስለ ሊቀ ጳጳሳቱ ስለ አባ ማትያስ የደገኛዩቱ አገር ኢትዮጵያ ፓትርያርክ የሊቃነ ጳጳሳቱ አለቃ ጌታ ስለሚሆን ባባቶቻችን አገርም ብፁዕ ስለሚሆን ስለ አባ ጴጥሮስ ሃይማኖታቸው ስለ ቀና ስለ ኤጲስ ቆጶሳቱ ስለ ቀሳውስቱና ስለ ዲያቆናቱም ሁሉ ጸልዩ።",
+            "en": "Tsasu ni'use kiristeeyan. Go forth, ye catechumens. Stand up for prayer. Lord have mercy upon us. Peace be unto you all. And with Thy spirit. Pray for the peace of the one holy apostolic church orthodox in the Lord. Pray for the Patriarch Abba Matthias lord chief of the bishops of the great country Ethiopia, and for the blessed Primate of the country of our fathers Abba Peter and all wekwulomu épees qoposat qesawist wedeeyaqonat ritu'ane haymanot. the orthodox bishops, priests and deacons.",
+            "gez-Latn": "Tensi'u letselot Igzee'o tesahalene. Selam lekwulikimu. Misle menfesike. Tseliyu be'inte selame béte kiristeeyan ahatee qidist guba'é inte hawariyat riti'it behabe Igzee'abihér. Kyrie eleison. Tseliyu be'inte ri'ise leeqane papasat Abba Matyas Egziene ri'ise leeqane papasat zehager abayi Ethiopia wedeebe ri'ise hagere abeweene bisu'i leeqe papasine abba Petros"
+          },
+          "speaker": "deacon"
+        }
+      ]
+    },
+    {
+      "id": "rejoice",
+      "titles": {
+        "en": "Rejoice",
+        "gez-Latn": "Tefesihee"
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-109",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ደኅንነትን የምንለምንሽ ክብርን የተመላሽ ሆይ ደስ ይበልሽ።",
+            "en": "Rejoice, O thou of whom we ask healing, O holy, full of honor, Rejoice.",
+            "gez-Latn": "Dihninetin yeminleminish kibrin yetemelash hoy des yibelish"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzd50prd0q",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "am": "ደስ ይበልሽ።",
+            "en": "Rejoice.",
+            "gez-Latn": "Des yibelish. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-110",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ሁልጊዜ ድንግል የምትሆኝ አምላክን የወለድሽ የክርስቶስ እናት ሆይ ኃጢአታችንን ያስተሠርይልን ዘንድ ወደ ልጅሽ ወደ ወዳጅሽ ወደ ላይ ጸሎታችንን አሳርጊ።",
+            "en": "Ever-virgin, parent of God, mother of Christ, offer up our prayer on high to your beloved Son that He may forgive us our sin. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzd61k715q",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን።",
+            "am": "አሜን።",
+            "en": "Amen.",
+            "gez-Latn": "Amen."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-111",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "በእውነት የጽድቅ ብርሃን የሚሆን አምላካችንን ክርስቶስን የወለድሽልን (ንጽሕት) ሆይ ደስ ይበልሽ።",
+            "en": "Rejoice, O thou who didst bear for us the very light of righteousness, even Christ our God: "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzd6u4dx25",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ደስ ይበልሽ።",
+            "am": "ደስ ይበልሽ።",
+            "en": "Rejoice.",
+            "gez-Latn": "Des yibelish. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-112",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ንጽሕት ድንግል ሆይ ለነፍሳችን ይቅርታን ያደርግልን ዘንድ ኃጢአታችንንም ያስተሠርይልን ዘንድ ወደ ጌታችን ለምኝልን።",
+            "en": "O Virgin pure, plead for us unto our Lord that He may have mercy upon our souls and forgive us our sins."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzd7zagxjv",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ለምኝልን።",
+            "am": "ለምኝልን።",
+            "en": "Plead for us",
+            "gez-Latn": "lemignilin"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-kidase-mlzd9h11l3x",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "በእውነት ለሰው ወገን አማላጅ የምትሆኝ አምላክን የወለድሽ ንጽሕት ቅድስት ድንግል ማርያም ሆይ ደስ ይበልሽ።",
+            "en": "Rejoice, O Virgin Mary, parent of God, holy and pure, very pleader for the race of mankind; "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-113",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "am": "ደስ ይበልሽ።",
+            "en": "Rejoice.",
+            "gez-Latn": "Des yibelish. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-114",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "የኃጢአታችንን ሥርየት ይሰጠን ዘንድ በልጅሽ በክርስቶስ ፊት ለምኝልን።",
+            "en": "Plead for us before Christ thy Son, that He may vouchsafe us remission of our sins. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzdavtrqbx",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "am": "ለምኝልን።",
+            "en": "Plead for us",
+            "gez-Latn": "lemigni'ln"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-115",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "በእውነት ንግሥት የምትሆኝ ንጽሕት ድንግል ሆይ ደስ ይበልሽ።",
+            "en": "Rejoice, O Virgin pure, very Queen;"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzderd2wnv",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "am": "ደስ ይበልሽ።",
+            "en": "Rejoice.",
+            "gez-Latn": "Des yibelish."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-116",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "የባሕርያችን መመኪያ ሆይ ደስ ይበልሽ። ",
+            "en": "Rejoice, O pride of our kind;"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzdg24ed4v",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "am": "ደስ ይበልሽ።",
+            "en": "Rejoice.",
+            "gez-Latn": "Des yibelish. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-117",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አምላካችንን አማኑኤልን የወለድሽልን ሆይ ደስ ይበልሽ።",
+            "en": "Rejoice, O thou that barest for us Emmanuel our God."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzdj8pwd6y",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "am": "ደስ ይበልሽ።",
+            "en": "Rejoice.",
+            "gez-Latn": "Des yibelish. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-118",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "በጌታችን በኢየሱስ ፊት እውነተኛ አስታራቂ ሆነሽ ታስቢን ዘንድ እንለምንሻለን። ለነፍሳችን ይቅርታን ያደርግልን ዘንድ ኃጢአታችንንም ያስተሠርይልን ዘንድ።",
+            "en": "We ask thee to remember us, O true Mediatrix, before our Lord Jesus Christ that He may have mercy upon our souls and forgive us our sins."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-119",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አሜን።",
+            "en": "Amen."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "the-angel-went-in-unto-her",
+      "titles": {
+        "en": "The angel went in unto her"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moko9m1qnwt",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አ መልአክ ኀቤሃ ወቆመ ቅድሜሃ ወይቤላ ተፈሥሒ ተፈሥሒ ተፈሥሒ ኦ ምልዕት ጸጋ።ስ",
+            "am": "መልአክ ወደርስዋ ገብቶ በፊቷ ቆሞ ጸጋን የተመላሸ ሆይ ደስ ይበልሽ አላት።",
+            "en": "The angel went in unto her and stood in front of her and said to her: Rejoice, rejoice, rejoice, You who are full of grace.",
+            "gez-Latn": "O meli'ak habéha weqome qidméha weyibéla tefesihee tefesihee tefesihee o mil'ate Íega."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-mokojl0tifp",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኣብሔር ምስሌኪ።",
+            "am": "እግዚኣብሔር ካንቺ ጋራ ነው።",
+            "en": "The Lord is with thee.",
+            "gez-Latn": "Igzee'abihér mislékee."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-mokokhy7iyt",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ቡሩክት አንቲ እምአንስት።",
+            "am": "ከሴቶች ተለይተሽ የተባረክሽ ናሽ።",
+            "en": "Blessed are you among women.",
+            "gez-Latn": "burukt antee im'anist."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-mokolfovuxu",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ወቡሩክ ፍሬ ክርሥኪ።",
+            "am": "የማኅፀንሽም ፍሬ የተባረክ ነው።",
+            "en": "And blessed is the fruit of your womb.",
+            "gez-Latn": "weburuk firé kersikee."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-mokome1471v",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰኣሊ ለነ ኀበ ክርስቶስ ወልድኪ።",
+            "am": "ከልጅሽ ከክርስቶስ ዘንድ ለምኝልን።",
+            "en": "Pray for us to Christ your Son.",
+            "gez-Latn": "se'alee lene habe kiristos weldikee."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-mokou5anlmv",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ከመ ይሥሬይ ለነ ኃጣዉኢኑ።",
+            "am": "ኃጢኣታችንን ያስተሥርይልን ዘንድ።",
+            "en": "To forgive us our sins.",
+            "gez-Latn": "Keme yisrey lene hataw'eene."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerh",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moek9vftule",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moek9vftr3u",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moek9vfttkw",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moek9vftjst",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "this-is-the-time-of-blessing",
+      "titles": {
+        "gez": "ዝውእቱ ጊዜ ባርኮት ",
+        "am": "ይህ የማመስገን ጊዜ ነው፣ ",
+        "en": "This is the time of blessing",
+        "gez-Latn": "Ziwi'itu geezé barkot "
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-120",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ዝውእቱ ጊዜ ባርኮት ወዝውእቱ ጊዜ ዕጣን ኅሩይ ጊዜ ሰብሖቱ ለመድኃኒነ መፍቀሬ ሰብእ ክርስቶስ።",
+            "am": "ይህ የማመስገን ጊዜ ነው፣ የተመረጠ የዕጣን ጊዜም ነው፣ ሰውን የሚወድ መድኃኒታችን ክርስቶስ የሚመሰገንበት ጊዜ ነው።",
+            "en": "This is the time of blessing; this is the time of chosen incense, the time of the praise of our Savior, lover of man, Christ.",
+            "gez-Latn": "Ziwi'itu geezé barkot wez wi'itu geezé itan hiruy geezé sebihotu lemedhaneene mefeqeré seb'i kiristos."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-121",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ዕጣን ይእቲ ማርያም ዕጣን ውእቱ እስመ ዘውስተ ከርሣ ዘይትሜዐዝ እምኵሉ ዕጣን ዘወለደቶ መጽአ ወአድኀነነ።",
+            "am": "ማርያም ዕጣን ናት፣ በማኅፀንዋ ያደረው ዕጣን እርሱ ነው። ከዕጣን ሁሉ የሚሸት ነውና፣ የወለደችው መጥቶ አዳነን።",
+            "en": "Mary is the incense, and the incense is He, because He who was in her womb is more fragrant than all chosen incense. He whom she bare came and saved us.",
+            "gez-Latn": "Itan yi'itee Mariam iTan wi'itu isme zewiste kersa zeyitimé'az imkwulu iTan zeweledeto metsi'a we'adhanene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-122",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ዕፍረት ምዑዝ ኢየሱስ ክርስቶስ ንዑ ንስግድ ሎቱ ወንዕቀብ ትእዛዛቲሁ ከመ ይሥረይ ለነ ኃጣውኢነ።",
+            "am": "መዓዛ ያለው ሽቱ ኢየሱስ ክርስቶስ ነው። እንስገድለት ዘንድ ኑ! ትእዛዞቹንም እንጠብቅ ኃጢአታችንን ይቅር ይለን ዘንድ።",
+            "en": "The fragrant ointment is Jesus Christ. O come let us worship Him and keep His commandments that He may forgive us our sins.",
+            "gez-Latn": "Ireft mi'uz Eeyesus Kiristos ni'u nisigid lotu weni'iqeb ti'izazateehu keme yisirey lene haTaw'eene."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-123",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ተውህቦ ምሕረት ለሚካኤል ወብሥራት ለገብርኤል ወሀብተ ሰማያት ለማርያም ድንግል።",
+            "am": "ምሕረት ለሚካኤል ተሰጠው። ማብሠር ለገብርኤል፣ ሰማያዊ ሀብትም ለድንግል ማርያም።",
+            "en": "To Michael was given mercy, and glad tidings to Gabriel, and a heavenly gift to the Virgin Mary.",
+            "gez-Latn": "Tewihibo mihiret leMeeka'él webisrat leGebri'él wehabte semayat leMariam Dingil."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-124",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተውህቦ ልቡና ለዳዊት ወጥበብ ለሰሎሞን ወቀርነ ቅብዕ ለሳሙኤል እስመ ውእቱ ዘይቀብዕ ነገሥተ።",
+            "am": "ልቦና ለዳዊት ተሰጠው። ጥበብ ለሰሎሞን። የሽቱ ቀንድም ለሳሙኤል ንጉሦችን የቀባ ነውና።",
+            "en": "To David was given understanding, and wisdom to Solomon, and an horn of oil to Samuel for he was the anointer of kings.",
+            "gez-Latn": "Tewihibo libuna leDaweet weTibeb leSelomon weqerine qib'I leSamu'el isme wi'itu zeyiqbi'a negeste."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-125",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ተውህቦ መራኁት ለአቡነ ጴጥሮስ ወድንግልና ለዮሐንስ ወመልእክት ለአቡነ ጳውሎስ እስመ ውእቱ ብርሃና ለቤተ ክርስቲያን።",
+            "am": "ሥልጣን ለአባታችን ጴጥሮስ ተሰጠው፣ ድንግልና ለዮሐንስ፣ መልእክት መጻፍ ለጳውሎስ፣ የቤተ ክርስቲያን ብርሃኗ ነውና።",
+            "en": "To our father Peter were given the keys, and virginity to John, and apostleship to our father Paul, for he was the light of the church.",
+            "gez-Latn": "Tewihibo merahut le'abune PeTros wedingilina leYohanis wemeli'ikt le'abune Pawlos isme wi'itu birhana lebéte kiristeeyan."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-126",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ዕፍረት ምዕዝት ይእቲ ማርያም እስመ ዘውስተ ከርሣ ዘይትሌዐል እምኵሉ ዕጣን መጽአ ወተሠገወ እምኔሃ።",
+            "am": "መዓዛ ያላት ሽቱ ማርያም ናት። የማኅፀንዋ ፍሬ ከዕጣን ሁሉ የሚበልጥ ነውና መጥቶ ከርሷ ሰው ሆነ።",
+            "en": "The fragrant ointment is Mary, for He that was in her womb, who is more fragrant than all incense, came and was incarnate of her.",
+            "gez-Latn": "Ireft mi'izit yi'itee Mariam isme zewiste kersa zeyitlé'al imkwulu iTan meÍi'a wetesegewe imnéha."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-127",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ለማርያም ድንግል ንጽሕት ሠምራ አብ ወአሠርገዋ ደብተራ ለማኅደረ ፍቁር ወልዱ።",
+            "am": "ንጽሕት ድንግል ማርያምን አብ ወደዳት፤ ለተወደደ ልጁ ማደሪያ እንድትሆን አስጌጣት።",
+            "en": "In Mary virgin pure the Father was well-pleased, and He decked her to be a tabernacle for the habitation of His beloved Son.",
+            "gez-Latn": "LeMariam Dingil nitshit semra ab we'aserigewa debtera lemahidere fiqur weldu."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-128",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተውህቦ ሕግ ለሙሴ ወክህነት ለአሮን ተውህቦ ዕጣን ኅሩይ ለዘካርያስ ካህን።",
+            "am": "ሕግ ለሙሴ ተሰጠው፤ ክህነት ለአሮን፣ የተመረጠም ዕጣን ለካህኑ ለዘካርያስ።",
+            "en": "Tewihibo hig leMusé wekihinet le'Aron tewihibo iÊan hiruy leZekariyas kahin. To Moses was given the law, and priesthood to Aaron. To Zacharias the priest was given chosen incense."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-129",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ደብተራ ስምዕ ገብርዋ በከመ ነገረ እግዚእ ወአሮን ካህን በማእከላ የዐርግ ዕጣነ ኅሩየ።",
+            "am": "ጌታ እንደተናገረ የምስክር ድንኳን አደረጓት፣ ካህኑ አሮን በመካከሏ የተመረጠ ዕጣን ያሳርጋል።",
+            "en": "They made a tabernacle of testimony according to the word of God; and Aaron the priest, in the midst thereof, made the chosen incense to go up.",
+            "gez-Latn": "Debtera sim'i gebriwa bekeme negere igzee'I we'Aron kahin bema'ikela ye'arig iTan hiruye."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-130",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ሱራፌል ይሰግዱ ሎቱ ወኪሩቤል ይሴብሕዎ ይጸርሑ እንዘ ይብሉ። ቅዱስ፣ ቅዱስ፣ ቅዱስ እግዚአብሔር በኀበ አእላፍ ወክቡር በውስተ ረበዋት። አንተ ውእቱ ዕጣን ኦ መድኃኒነ እስመ መጻእከ ወአድኃንከነ ተሣሃለነ።",
+            "am": "ሱራፌል ይሰግዱለታል። ኪሩቤልም ያመሰግኑታል። እንዲህ እያሉ፣ ይዘምራሉ እግዚአብሔር በአእላፍ መላእክት ዘንድ ቅዱስ፣ ቅዱስ፣ ቅዱስ ነው። በአለቆችም ዘንድ ክቡር ነው። መድኃኒታችን ሆይ! ዕጣን አንተ ነህ፤ መጥተህ አድነኸናልና። ይቅር በለን።",
+            "en": "The seraphim worship Him, and cherubim praise Him and cry saying: Holy Holy Holy is the Lord among the thousands and honored among the tens of thousands. Thou art the incense, O our savior, for Thou didst come and save us. Have mercy upon us.",
+            "gez-Latn": "Surafel yisegidulotu wekeerubél yisébihwo yiÍerhu inze yiblu. Qidus qidus qidus Igzee'abihér behabe a'ilaf wekibur bewiste rebewat. Ante wi'itu iTan o medhaneene isme meÍa'ike we'adhankene tesahalene."
+          },
+          "speaker": "all"
+        }
+      ]
+    },
+    {
+      "id": "trisagion-holy-holy-holy",
+      "titles": {
+        "gez": "ቅዱስ ቅዱስ ቅዱስ",
+        "am": "ቅዱስ ቅዱስ ቅዱስ",
+        "en": "Trisagion (Holy Holy Holy)",
+        "gez-Latn": "Qidus Qidus Qidus"
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-133",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ቅዱስ።",
+            "am": "ቅዱስ።",
+            "en": "Holy",
+            "gez-Latn": "Qidus"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-134",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተወልደ እማርያም እምቅድስት ድንግል ተሣሃለነ እግዚኦ። ቅዱስ እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተጠምቀ በዮርዳኖስ ወተሰቅለ ዲበ ዕፀ መስቀል። ተሣሃለነ እግዚኦ። ቅዱስ እግዚአብሔር ቅዱስ ኃያል ቅዱስ ሕያው ዘኢይመውት ዘተንሥአ እሙታን አመ ሣልስት ዕለት ዐርገ በስብሐት ውስተ ሰማያት ወነበረ በየማነ አቡሁ ዳግመ ይመጽእ በስብሐት ይኰንን ሕያዋነ ወሙታነ ተሣሃለነ እግዚኦ። ስብሐት ለአብ ስብሐት ለወልድ ስብሐት ለመንፈስ ቅዱስ ይእዜኒ ወዘልፈኒ ለዓለመ ዓለም አሜን ወአሜን ለይኩን፣ ለይኩን። ቅዱስ ሥሉስ እግዚአብሔር ሕያው ተሣሃለነ።",
+            "am": "እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ ከቅድስት ድንግል ማርያም የተወለደ፣ አቤቱ ይቅር በለን። ቅዱስ እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ በዮርዳኖስ የተጠመቀ፣ በመስቀል ላይ የተሰቀለ አቤቱ ይቅር በለን። ቅዱስ እግዚአብሔር፣ ቅዱስ ኃያል ቅዱስ ሕያው የማይሞት፤ በሦስተኛው ቀን ከሙታን ተለይቶ የተነሣ፣ በክብር በምስጋና ወደ ሰማይ የወጣ፣ በአባቱ ቀኝ የተቀመጠ፣ በሕያዋንና በሙታን ይፈርድ ዘንድ ዳግመኛ በጌትነት ይመጣል አቤቱ ይቅር በለን። ለአብ ምስጋና ለወልድ ምስጋና፣ ለመንፈስ ቅዱስ ምስጋና ዛሬም፣ ዘወትርም ለዘለዓለም እውነት በእውነት ይሁን፣ ይሁን። በሦስትነት ያለህ ቅዱስ ሕያው እግዚአብሔር ሆይ! ይቅር በለን።",
+            "en": "God, holy Mighty, holy Living, Immortal, who was born from the holy Virgin Mary, have mercy upon us, Lord. Holy God, Holy Mighty, Holy Living, Immortal, who was baptized in Jordan and crucified on the tree of the cross, have mercy upon us, Lord. Holy God, Holy Mighty, Holy Living, Immortal, who didst rise from the dead on the third day, Arge besibihat wiste semayat wenebere beyemane abuhu again wilt come in glory to judge the quick and the dead, have mercy upon us, Lord. Glory be to the Father, glory be to the Son, glory be to the Holy Spirit, both now and ever and world without end. Amen and Amen, so be it, so be it. O Holy Trinity, living God have mercy on us.",
+            "gez-Latn": "Igzee'abihér, qidus hayal qidus hiyaw ze'eeyimewit zetewelde iMariam imqidist dingil tesahalene igzee'o. Qidus Igzee'abiher qidus hayal qidus hiyaw ze'iymewit zeteTemqe beYordanos weteseqle deebe itSe mesqel tesahalene igzio. Qidus Igzee'abihér qidus hayal qidus hiyaw ze'eeyimewit zetensi'a imutan ame salist ilet Ascend into heaven in glory, sit at the right hand of thy Father and Dagime yimeÍ'i besibhat yikwonin hiyawane wemutane tesahalene igzee'o. Sibhat le'Ab sibhat leWeld sibhat leMenfes Qidus Yi'izénee wezelfenee wele'alem alem amen we'amen leyikun leyikun. Qidus silus Igzee'abihér hiyaw tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-142",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸጋ ዘእግዚአብሔር የሀሉ ምስሌክሙ።",
+            "am": "የእግዚአብሔር ጸጋ ከእናንተ ጋር ይሁን።",
+            "en": "The grace of God be with you. ",
+            "gez-Latn": "Tsega ze'Igzee'abihér yehalu misle’kimu."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzdxxg1urw",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ።",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-143",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ንሰብሖ ለአምላክነ።",
+            "am": "ለእግዚአብሔር ምስጋና ይሁን።",
+            "en": "Let us glorify our God ",
+            "gez-Latn": "Nisebiho le'amlakine. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-kidase-mlzdw5mu1u0",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ርቱዕ ይደሉ።",
+            "am": "እውነት ነው ይገባል።",
+            "en": "It is right, it is just.",
+            "gez-Latn": "Ritu'i yidelu."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-144",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አጽንዑ ሕሊና ልብክሙ።",
+            "am": "የልባችሁን አሳብ አጽኑ።",
+            "en": "Strengthen the thought of your heart,",
+            "gez-Latn": "Atsni'u hileena libikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-145",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ብነ ኀበ እግዚአብሔር አቡነ ዘበሰማያት፣ አቡነ ዘበሰማያት፣ አቡነ ዘበሰማያት ኢታብአነ እግዚኦ ውስተ መንሱት።",
+            "am": "በእግዚአብሔር ዘንድ አለን። አባታችን ሆይ! አባታችን ሆይ! አባታችን ሆይ! አቤቱ ወደ ፈተና አታግባን።",
+            "en": "We lift them unto the Lord our God. Our Father who art in heaven, Our Father who art in heaven, Our Father who art in heaven, lead us not into temptation.",
+            "gez-Latn": "Bine habe Igzee'abihér abune zebesemayat, abune zebesemayat, Abune zebesemayat, eetabi'ane igzee'o wiste mensut."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-147",
+          "kind": "rubric",
+          "content": {
+            "am": "ካህኑ የኪዳን ጸሎት “እግዚአብሔር አብ …” የሚለውን በንባብ ሲያሰማ፤",
+            "en": "As the priest starts to read the “O God theFather...” Prayer of the Covenant "
+          }
+        },
+        {
+          "id": "serate-kidase-mlze1sog31c",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ኪያከ ንሴብሕ እግዚኦ።",
+            "am": "አቤቱ አንተን እናመሰግንሃለን።",
+            "en": "Oh we thank Thee.",
+            "gez-Latn": "keeyake nisébih igzee'o"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-148",
+          "kind": "rubric",
+          "content": {
+            "am": "ካህኑ የኪዳን ጸሎት “እግዚኦ ኢየሱስ ክርስቶስ …” በንባብ ሲያሰማ፤",
+            "en": "As the priest starts to read the ”O Lord, Jesus Christ ” Prayer of the Covenant "
+          }
+        },
+        {
+          "id": "serate-kidase-mlze380ra2v",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ኪያከ ንዌድስ እግዚኦ።",
+            "am": "አቤቱ አንተን እናወድስሃለን።",
+            "en": "Oh Lord, we praise Thee.",
+            "gez-Latn": "keeyake niwédis igzee'o"
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-149",
+          "kind": "rubric",
+          "content": {
+            "gez": "ካህኑ የኪዳን ጸሎት “ንሤልስ ለከ ዘንተ ቅዱስ …” አሰምቶ እንዳበቃ",
+            "en": "After the priest finishes reading the “Thrice over...” Prayer of the Covenant”"
+          }
+        },
+        {
+          "id": "serate-kidase-mlze4f3mhua",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "በእውነት።",
+            "am": "አሜን። ",
+            "en": "Amen",
+            "gez-Latn": "Amen"
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "our-fathera",
+      "titles": {
+        "gez": "አቡነ ዘበሰማያት",
+        "am": "አባታችን ሆይ",
+        "en": "Our Father"
+      },
+      "nodes": [
+        {
+          "id": "serate-kidase-mlze5dy90ox",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "አቡነ ዘበሰማያት ይትቀደስ ስምከ ትምጻእ መንግሥትከ ወይኩን ፈቃድከ በከመ በሰማይ ከማሁ በምድር። ሲሳየነ ዘለለ ዕለትነ ሀበነ ዮም።  ኅድግ ለነ አበሳነ ወጌጋየነ ከመ ንሕነኒ ንኅድግ ለዘአበሰ ለነ። ኢታብአነ እግዚኦ ውስተ መንሱት አላ አድኅነነ ወባልሐነ እምኵሉ እኩይ እስመ ዚኣከ ይእቲ መንግሥት ኃይል ወስብሐት ለዓለመ ዓለም። በሰላመ ቅዱስ ገብርኤል መልአክ ኦ እግዝእትየ ማርያም ሰላም ለኪ እመ እግዚአብሔር ጸባዖት ሰላም ለኪ ቡርክት አንቲ እምአንስት ወቡሩክ ፍሬ ከርሥኪ። ተፈሥሒ ፍሥሕት ኦ ምልእተ ጸጋ እግዚአብሔር ምስሌኪ። ሰአሊ ወጸልዪ ኀበ ፍቁር ወልድኪ ኢየሱስ ክርስቶስ ከመ ይሥረይ ለነ ኃጣውኢነ።",
+            "am": "አባታችን ሆይ! በሰማይ የምትኖር፣ ስምህ ይቀደስ፣ መንገሥትህ ትምጣ፣ ፈቃድህ በሰማይ እንደ ሆነ እንዲሁም በምድር ይሁን! የዕለት እንጀራችንን ስጠን ዛሬ፣በደላችንን ይቅር በለን፣ እኛም የበደሉንን ይቅር እንደምንል፣  አቤቱ ወደ ፈተና አታግባን፣ ከክፉ ሁሉ አድነን እንጂ፣  መንግሥት ያንተ ናትና። ኃይል፣ ምስጋና ለዘለዓለም በእውነት። እመቤታችን ቅድስት ድንግል ማርያም ሆይ በመልአኩ በቅዱስ ገብረኤል ሰላምታ ሰላም እልሻለሁ ድንግል በኅሊናኪ ወድንግል በሥጋኪ።  በሃሳብሽ ድንግል ነሽ በሥጋሽም ድንግል ነሽ። የአሸናፊ የእግዚአብሔር እናት ሆይ ሰላምታ ላንቺ ይገባል። ከሴቶች ሁሉ ተለይተሽ አንቺ የትባረክሽ ነሽ የማኅፀንሽም ፍሬ የተባረከ ነው። ጸጋን የተመላሽ ሆይ ደስ ይበልሽ እግዚአብሔር ከአንቺ ጋር ነውና ከተወደደው ልጅሽ ከጌታችን ከመድኃኒታችን ከኢየሱስ ክርስቶስ ዘንድ ይቅርታን ለምኝልን ኃጢአታችንን ያስተሠርይልን ዘንድ ለዘለዓለሙ አሜን።",
+            "en": "Our father who art in heaven, hallowed be thy name, Thy kingdom come  Thy will be done on earth as it is in heaven; give us this day our daily bread, and forgive us our trespasses as we forgive them that trespass against us, and lead us not into temptation but deliver us and rescue us from all evil; for Thine is the kingdom, the power and the glory for ever and ever. O Holy Virgin Mary, in the peace of the Angel Gabriel, peace be unto Thee. Thou art virgin in spirit as well as in body. O Thou Mother of Perfect God peace be unto Thee. Blessed art Thou among women and blessed is the Fruit of Thy womb. Rejoice O Thou who art full of grace the Lord is with Thee. Ask and pray for us to Thy beloved Son, Jesus Christ that He may have mercy upon our souls and forgive us our sins. Amen.",
+            "gez-Latn": "Abune zebesemayat yitqedes simike timtsa'i mengistike weyikun feqadike bekeme besemay kemahu medir. Seesayene zelele'iletine habene yom.  Hidig lene abesane wegégayene keme nihinenee nihidig leze'abese lene.\neetabi'ane egzi’o weste mensut ala adihinene webalihane imkwulu iku’y isme zee'ake yi'itee mengist hayl wesibihat le'alem alem. Beselame qidus gebriel mel’ak o egzi’etiye Mariyam selam leki dingil behilinaki wedingil besigaki eme egziabiheir tseba’ot selam leki burikt anti em’a’nist weburuk fire kersike tefesihi fisiht o meli’i’te tsega egziabihear misle’ki seali wetseliye habe fiqur weldike eyesus kristos keme y’sre’y lene hatawi’ine"
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "rejoicea",
+      "titles": {
+        "en": "Rejoice"
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-162",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተፈሥሒ፣ ተፈሥሒ፣ ተፈሥሒ ኦ ማርያም ድንግል ምልዕተ ጸጋ።",
+            "am": "ጸጋን የተመላሽ ድንግል ማርያም ሆይ ደስ ይበልሽ፣ ደስ ይበልሽ፣ ደስ ይበልሽ።",
+            "en": "Tefesihee tefesihee tefesihee o Mariam dingil mil'ite tsega. Rejoice, rejoice, rejoice, O Virgin Mary, full of grace."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-163",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚአብሔር ምስሌኪ",
+            "am": "እግዚአብሔር ካንቺ ጋር ነው።",
+            "en": "The Lord is with thee.",
+            "gez-Latn": "Igzee'abihér mislékee."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-164",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንብሊ ወሰአሊ ኀበ ፍቁር ወልድ።",
+            "am": "ወደ ተወደደ ልጅሽ ለምኝልን አማልጅንም።",
+            "en": "Intercede and pray to thy beloved Son;",
+            "gez-Latn": "tenbilee wese'alee habe fiqur weld."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-165",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ከመ ይሥረይ ለነ ኃጣውኢነ።",
+            "am": "ኃጢአታችንን ያስተሠርይልን ዝንድ።",
+            "en": "That he may forgive us our sins.",
+            "gez-Latn": "Keme yisrey lene hataweene. "
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-166",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ስብሐት ወክቡር ለሥሉስ ቅዱስ ይደሉ አብ ወወልድ ወመንፈስ ቅዱስ ኵሎ ጊዜ ይእዜኒ ወዘልፈኒ ወለዓለመ ዓለም አሜን።",
+            "am": "ልዩ ሦስት ለሚሆን ለአብና ለወልድ ለመንፈስ ቅዱስም ሁልጊዜ ክብር ምስጋና ይገባቸዋል ዛሬም ዘወትርም ለዘላለሙ አሜን።",
+            "en": "Glory and honor are meet to the Holy Trinity, the Father and the Son and the Holy Spirit at all times, both now and ever and world without end. Amen.",
+            "gez-Latn": "Sibhat wekibir lesilus qidus yidelu Ab weWeld weMenfes Qidus kwulo geezé yi'izénee wezelfenee wele'alem alem amen."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayeri",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moekak4prbi",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moekak4p94j",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moekak4pw7a",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moekak4pn8j",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Your Spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "prayer-of-the-gospel",
+      "titles": {
+        "en": "Prayer of the Gospel"
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-170",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "አቤቱ ፈጣሪያችን እግዚአብሔር ኢየሱስ ክርስቶስ ሆይ! ክቡራን ንጹሐን ለሚሆኑ ደቀመዝሙሮችህ ለሐዋርያት እንዲህ ያልካቸው። (በንባብ) እናንተ የምታዩትን ያዩ ዘንድ ብዙ ነቢያት ጻድቃን ወደዱ፤ አላዩም። እናንት ዛሬ የምትሰሙትንም ይሰሙ ዘንድ ወደዱ፤ አልሰሙም። የናንተ ያዩ ዓይኖቻችሁና የሰሙ ጆሮቻችሁ ግን የተመሰገኑ ናቸው። እኛንም እንደ እነሱ የበቃን አድርገን፤ በቅዱሳን ጸሎት የከበረ የወንጌልን ቃል ሰምተን እንሠራ ዘንድ።",
+            "en": "O Lord Jesus Christ, our God, who didst say to Thy holy disciples and Thy pure apostles: Many prophets and righteous men have desired to see the things which ye see and have not seen them, and have desired to hear the things which ye hear and have not heard them, but you, blessed are your eyes that have seen and your ears that have heard, Do Thou make us also like them meet to hear and to do the word of Thy holy gospel through the prayer of the saints."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-173",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ ወንጌል ቅዱስ።",
+            "am": "ክቡር ስለሚሆን ወንጌል ጸልዩ።",
+            "en": "Pray for the holy gospel.",
+            "gez-Latn": "Tseliyu be'inte wengél qidus."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-readings-174",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ይረስየነ ድልዋነ ለሰሚዐ ወንጌል ቅዱስ።",
+            "am": "የከበረ ወንጌልን ለመስማት የበቃን ያድርገን።",
+            "en": "May He make us meet to hear the holy gospel.",
+            "gez-Latn": "Yiresiyene dilwane leseme'ea wengél qidus."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-175",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ዳግመኛ አቤቱ ካንተ ዘንድ የምንሻውን በምንለምንበትና በምንጸልይበት ጊዜ እናስባቸው ዘንድ አስቡን ያሉንን ዳግመኛ አስብ። አቤቱ አምላካችን እግዚአብሔር ሆይ ከእኛ አስቀድመው የሞቱትን አሳርፋቸው የታመሙትንም ፈጥነህ አድናቸው። የሁላችን ሕይወት የሁላችንም ተስፋ የሁላችንም አዳኝ የሁላችንም አስነሽ አንተ ነህና። ላንተ ምስጋና እስከ አርያም ድረስ እንልካለን።",
+            "en": "Remember again, Lord them that have bidden us to remember them at the time of our prayers and supplications wherewith we make request of Thee. O Lord our God, give rest to them that have fallen asleep before us, heal speedily them that are sick, for Thou art the life of us all, the hope of us all, the deliverer of us all and the raiser of us all, and to Thee we lift up thanksgiving unto the highest heaven, world without end."
+          },
+          "speaker": "priest"
+        }
+      ]
+    },
+    {
+      "id": "serate-readings",
+      "titles": {
+        "gez": "ምንባባት",
+        "am": "ምንባባት",
+        "en": "Gospel Readings"
+      },
+      "nodes": [
+        {
+          "id": "serate-readings-177",
+          "kind": "reading-ref",
+          "slot": "psalm",
+          "labels": {
+            "gez": "መዝሙር 102(103) : 14-15",
+            "am": "ተዘከር እግዚኦ ከመ መሬት ንሕነ። ወሰብእሰ ከመ ሣዕር መዋዕሊሁ። ወከመ ጽጌ ገዳም ከማሁ ይፈሪ።",
+            "en": "Psalm 102(103) : 14b-15",
+            "gez-Latn": "teze’ker I’gzio ke’me me’reit ni’hene. wese’bise keme sa’iri mewa’i’leehu. we’keme tsi’gei ge’dami kema’hu yi’fe’ri."
+          },
+          "style": "rubric"
+        },
+        {
+          "id": "serate-readings-178",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተዘከር እግዚኦ ከመ መሬት ንሕነ። \nወሰብእሰ ከመ ሣዕር መዋዕሊሁ። \nወከመ ጽጌ ገዳም ከማሁ ይፈሪ። ሃሌ ሉያ! ቁሙ ወአጽምኡ ወንጌለ ቅዱሰ፣ ዜናሁ ለእግዚእነ ወመድኃኒነ ኢየሱስ ክርስቶስ",
+            "am": "አቤቱ፤ እኛ ዐፈር እንደ ሆንን ዐስብ።\nሰውስ ዘመኑ እንደ ሣር ነው። \nእንደ ዱ ሃሌ ሉያ! ጌታችን የመድኃኒታችን ኢየሱስ ክርስቶስ የተናገረውን ክቡር የሚሆን ወንጌል ቆማችሁ አድምጡ።",
+            "en": "Remember, O Lord, that we are dust. \nAs for man, his days are as grass; \nAs a flower of the field, so shall he flourish. Halleluia, stand up and hearken to the holy gospel, the message of our Lord and Savior Jesus Christ.",
+            "gez-Latn": "Halléluya qumu we'atsmi'u wengéle qiduse zenahu le'igzee'ine wemedhaneene Eeyesus Kiristos."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-readings-180",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚአብሔር ምስለ ኵልክሙ።",
+            "am": "እግዚአብሔር ከሁላችሁ ጋር ይሁን። ምስለ መንፈስከ። ከመንፈስህ ጋራ።",
+            "en": "The Lord be with you all. And with Thy spirit.",
+            "gez-Latn": "Igzee'abihér misle kwulikimu. Misle menfesike."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-readings-181",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ወንጌል ቅዱስ ዘዜነወ ቃለ ወልድ እግዚአብሔር።",
+            "am": "ክቡር የሚሆን ይህ ወንጌል የእግዚአብሔር ልጅ ቃል ነው።",
+            "en": "The Holy Gospel the Word of the Son of God.",
+            "gez-Latn": "wengèl qidus zezènewe qale weld igzee’abihèr."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-readings-182",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ስብሐት ለከ ክርስቶስ እግዚእየ ወአምላኪየ ኵሉ ጊዜ ተፈስሑ በእግዚአብሔር ዘረዳአነ ወየብቡ ለአምላከ ያዕቆብ ንሥኡ መዝሙረ ወሀቡ ከበሮ። መዝሙር ሐዋዝ ዘምስለ መሰንቆ።",
+            "am": "ጌታዬ ፈጣሪዬ ክርስቶስ ሆይ ሁልጊዜ ምስጋና ይገባሃል። ረዳት በሆነን በእግዚአብሔር ደስ ይበላችሁ፤ የያዕቆብንም አምላክ አመስግኑ፤ መዝሙር በሉ፤ ከበሮም ያዙ፤ መዝሙር ከበገና ጋራ የተስማማ ነው።",
+            "en": "Glory be to Thee, Christ my Lord and my God, at all times. Sing aloud unto God our strength make a joyful noise unto the God of Jacob Take a psalm, and bring hither the timbrel, the pleasant harp with the psaltery.",
+            "gez-Latn": "Sibhat leke Kiristos igzee'iye we'amlakeeye kwulu geezé tefesihu be’Igzee’abihèr zeredi’ane weyebibu le-amlake Ya’iqob nisi’u mezmure wehabu kebero. Mezmur hawaz zemisle mesenqo."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-daily-gospel-185",
+          "kind": "reading-ref",
+          "slot": "gospel",
+          "labels": {
+            "am": "ቅዱስ ሉቃስ 12 ፡ 16 – 31",
+            "en": "Reading from The Gospel St. Luke Ch. 12 : 16 - 31"
+          },
+          "style": "heading"
+        },
+        {
+          "id": "serate-daily-gospel-186",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "መኑ ይመስለከ እምነ አማልክት እግዚኦ አንተ ውእቱ ዘትገብር መንከረ አርአይኮሙ ለሕዝብከ በመዝራዕትከ። ሖርከ ውስተ ሲኦል ወአዕረገ ጼዋ እምህየ ወጸጎከነ ምዕረ ዳግመ ግዕዛነ እስመ መጻእከ ወአድኅከነ በእንተ ዝንቱ ንሴብሓከ ወንጸርሕ ኅቤከ እንዘ ንብል ብሩክ አንተ እግዚኦ ኢየሱስ ክርስቶስ እስመ መጻእከ ወአድኅንከነ",
+            "am": "አቤቱ ከአማልክት ወገን የሚመስልህ ማነው፤ ተአምራትን የምታደርግ አንት ነህ፤ ኃይልህን ለወገኖችህ አሳየሃቸው፤ ወደ ሲዖል ወርደህ ምርኮን ከዚያ አወጣህ፤ ነፃነትንም ዳግመኛ ለዘለዓለም ሰጠህን። መጥተህ አድነህናልና። ስለዚህ እናመሰግንሃለን፤ ወዳንተም እንዲህ እያልን እንጠራለን፡ አቤቱ ኢየሱስ ክርስቶስ፡ ቡሩክ አንተ ነህ፤ ሰው ሆነህ አድነህናልና።",
+            "en": "Who is like unto Thee, O Lord, among the gods? Thou art the God that doest wonders: Thou hast declared Thy strength among the people. Thou hast with Thine arm redeemed Thy people. Thou didst go into Kades and the Captives rose up from there, and thou didst grant us again to be set free, for Thou didst come and save us. For this cause we glorify Thee and cry unto Thee saying, Blessed art Thou, Lord Jesus Christ, for Thou didst come and save us.",
+            "gez-Latn": "menu yimesileke inine amalikt igzee'o ante wi'itu zetigebir menkire ar'ayikomu lehizbike hayleke we'adhankomu lehizibike bemezra'itike. horke wiste see'ol we'a'irege séwa imhiye wesegokene mi ire dagime gilizane isme mesa'ike we'adhankene. be inte zintu nisébihake weniserih habéke inze nibl buruk ante igzee'o Eeyesus Kiristos isme mesa'ike we'adhankene."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "go-forth-cathecumens",
+      "titles": {
+        "en": "Go forth Cathecumens",
+        "gez-Latn": "Tsa'u"
+      },
+      "nodes": [
+        {
+          "id": "serate-daily-gospel-189",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ፃኡ ንኡሰ ክርስቲያን። ዘሀገር ዓባይ ኢትዮጵያ ወዲበ ርእሰ ሀገረ አበዊነ ብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ ወኵሎሙ ኤጲስ ቆጶሳት ቀሳውስት ወዲያቆናት ርቱዓነ ሃይማኖት።",
+            "am": "የክርስቲያን ታናናሾች በሰላም ሂዱ። ተንሥኡ ለጸሎት ፖለጸሎት ተነሡ። እግዚኦ ተሣሃለነ። አቤቱ ይቅር በለን። ሰላም ለኵልክሙ። ሰላም ለሁላችሁም። ምስለ መንፈስከ። ከመንፈስህ ጋራ። ጸልዩ በእንተ ሰላመ ቤተ ክርስቲያን አሐቲ ቅድስት ጉባኤ እንተ ሐዋርያት ርትዕት በኀበ እግዚአብሔር ሐዋርያት ለሰበሰቡዋት በእግዚአብሔር ዘንድ ስለቀናች ክብርት ስለምትሆን አንዲት ቤተ ክርስቲያን ስላም ጸልዩ። ኪርያላይሶን። ጸልዩ በእንተ ርእሰ ሊቃነ ጳጳሳት አባ ማትያስ እግዚእነ ርእሰ ሊቃነ ጳጳሳት ብፁዕ ስለሚሆን ስለ ሊቀ ጳጳሳቱ ስለ አባ ማትያስ የደገኛዩቱ አገር ኢትዮጵያ ፓትርያርክ የሊቃነ ጳጳሳቱ አለቃ ጌታ ስለሚሆን ባባቶቻችን አገርም ብፁዕ ስለሚሆን ስለ አባ ጴጥሮስ ሃይማኖታቸው ስለ ቀና ስለ ኤጲስ ቆጶሳቱ ስለ ቀሳውስቱና ስለ ዲያቆናቱም ሁሉ ጸልዩ።",
+            "en": "Tsasu ni'use kiristeeyan. Go forth, ye catechumens. Stand up for prayer. Lord have mercy upon us. Peace be unto you all. And with Thy spirit. Pray for the peace of the one holy apostolic church orthodox in the Lord. Pray for the Patriarch Abba Matthias lord chief of the bishops of the great country Ethiopia, and for the blessed Primate of the country of our fathers Abba Peter and all wekwulomu épees qoposat qesawist wedeeyaqonat ritu'ane haymanot. the orthodox bishops, priests and deacons.",
+            "gez-Latn": "Tensi'u letselot Igzee'o tesahalene. Selam lekwulikimu. Misle menfesike. Tseliyu be'inte selame béte kiristeeyan ahatee qidist guba'é inte hawariyat riti'it behabe Igzee'abihér. Kyrie eleison. Tseliyu be'inte ri'ise leeqane papasat Abba Matyas Egziene ri'ise leeqane papasat zehager abayi Ethiopia wedeebe ri'ise hagere abeweene bisu'i leeqe papasine abba Petros"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-daily-gospel-197",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት አመክኒዩ ዘሃዋርያት",
+            "am": "ለጸሎት ተነሡ። እግዚኦ ተሣሃለነ። አቤቱ ይቅር በለን። ሰላም ለኵልክሙ። ሰላም ለሁላችሁም። ምስለ መንፈስከ። ከመንፈስህ ጋራ። ጸልዩ በእንተ ዛቲ ቤተ ክርስቲያን ቅድስት ወማኅበርነ በውስቴታ። ክብር ስለምትሆን ስለዚች ቤተ ክርስቲያን በውስጥዋም ስላለ አንድነታችንም ጸልዪ ማኅበርነ ባርከ ዕቀብ በሰላም። አንድነታችንን ባርክ በስላም ጠብቅ። ንበል ኵልነ በጥበበ እግዚአብሔር ጸሎተ ሃይማኖት። በእግዚአብሔር ጥበብ ሆነን ሁላችን የሃይማኖትን ጸሎት እንበል። ንጹሕ የሆነ ከቍርባኑ ይቀበል፤ … ይህን የቄሱን ቃል ያቀለለ ወይም የሳቀና የተነጋገረ ወይም በቤተ ክርስቲያን ውስጥ በክፋት የቆመ ቢኖር ጌታችንን ኢየሱስ ክርስቶስን እንዳሳዘንው በርሱም እንደ ተነሣሣ ይወቅ ይረዳ ስለ በረከት ፈንታ መርገምን ስለ ኃጢአት ሥርየት ፈንታም ገሃነመ እሳትን ከእግዚአብሔር ዘንድ ይቀበላል ተንሥኡ ለጸሎት ለጸሎት ተነሡ። እግዚኦ ተሣሃለነ። አቤቱ ይቅር በለን። ሰላም ለኵልክሙ። ሰላም ለሁላችሁም። ምስለ መንፈስከ። ከመንፈስህ ጋራ። ባስልዮስ የተናገረው የአምኃ ጸሎት ለዘላለሙ ገናና የምትሆን እግዚአብሔር ሆይ ያለጥፋት ሰውን የፈጠርኸው። አስቀድሞ በሰይጣን ቅንዓት የገባውን ሞት … ስብሐት ለእግዚአብሔር በሰማያት ወሰላም በምድር ሥምረቱ ለስብእ በሰማይ ለእግዚአብሔር ምስጋና ይገባል ሰላም በምድር ፍቅሩ ለሰው ሆነ። አቤቱ ፈቃድህን በሁላችን ልቡና ሙላ፤ ጸልዩ በእንተ ሰላም ፍጽምት ወፍቅር ተአምኁ በበይናቲክሙ በአምኃ ቅድሳት። ፍጽምት ስልምትሆን ሰላምና ፍቅር ጸልዪ እርስ በርሳችሁ በተለየች ሰላምታ እጅ ተነሳሱ። ክርስቶስ አምላክነ ረስየነ ድልዋነ ከመ ንትአማኅ በበይናቲነ በአምኃ ቅድሳት ፈጣሪያችን ክርስቶስ ሆይ እርስ በርሳችን  በከበረች ሰላምታ እጅ እንነሳሳ ዘንድ የበቃን አድርገን።",
+            "en": "Stand up for prayer. Lord have mercy upon us. Peace be unto you all. And with Thy spirit. kiristeeyan qidist wemahiberene bewisteta. Pray for this holy church and our congregation therein. Mahiberene barike iqeb beselam. Bless our congregation and keep them in peace. Nibel kwuline betibebe Let us all say, in the wisdom of God, the prayer of faith Apostle’s Creed He that is pure let him receive of the oblation and he that is not pure let him not receive it, that he may not be consumed by the fire of the Godhead which is prepared for the devil and his angels. Who so hath revenge in his heart and who so hath in him strange thoughts and fornication let him not draw nigh. As I have cleansed my hands from outward pollution, so also I am pure from the blood of you all. If you presumptuously draw nigh to the body and blood of Christ I will not be responsible for your reception thereof. I am pure of your wickedness but your sin will return upon your head if you do not draw nigh in purity. If there be any who disdains this word of the priest or laughs or speaks or stands in the church in an evil manner, let him know and understand that he is provoking to wrath our Lord Jesus Christ, and bringing upon himself a curse instead of a blessing, and will get from God the fire of hell instead of the remission of sin. Stand up for prayer. Lord have mercy upon us. Peace be unto you all. And with Thy spirit. “Prayer of Salutation” of St. Basil: God, great eternal, who didst form a man uncorrupt, Glory to God in heaven and on earth peace, His goodwill toward men. Pray for the perfect peace and love. Salute one another with a holy salutation Christ our God, make us meet to salute one another with a holy salutation. ANAPHORA OF OUR LORD",
+            "gez-Latn": "Tensi'u letselot Igzee'o tesahalene. Selam lekwulikimu. Misle menfesike. Tseliyu be'inte zatee béte Igzee'abihér tselote haymanot. Tensi'u letselot Igzee'o tesahalene. Selam lekwulikimu. Misle menfesike. Sibhat le'Igzee'abihér besemayat weselam bemidir simretu leseb'i. Tseliyu be'inte selam fitsimt wefiqir te'amihu bebeyinateekimu be'amiha qidisat. Kiristos amlakine resiyene diliwane keme niti'amah bebeyinateene be'amiha qidisat."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-daily-gospel-212",
+          "kind": "rubric",
+          "content": {
+            "gez": "የመጀመሪያ ንባብ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-catec",
+      "titles": {
+        "gez": "ፃኡ ንኡሰ ክርስቲያን",
+        "am": "ካቴኩሜኖች",
+        "en": "Go Forth Catechumens",
+        "gez-Latn": "Tsa'u ni'use kiristeeyan"
+      },
+      "nodes": [
+        {
+          "id": "catec-001",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ፃኡ ንኡሰ ክርስቲያን። ተንሥኡ ለጸሎት",
+            "am": "የክርስቲያን ታናናሾች በሰላም ሂዱ። ለጸሎት ተነሡ።",
+            "en": "Go forth, ye catechumens. Stand up for prayer.",
+            "gez-Latn": "Tsasu ni'use kiristeeyan. Tensi'u letselot"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "catec-003",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ።",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-004",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም።",
+            "en": "Peace be unto you all.",
+            "gez-Latn": "Selam lekwulikimu."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "catec-005",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ።",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Thy spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-006",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ ሰላመ ቤተ ክርስቲያን አሐቲ ቅድስት ጉባኤ እንተ ሐዋርያት ርትዕት በኀበ እግዚአብሔር",
+            "am": "ሐዋርያት ለሰበሰቡዋት በእግዚአብሔር ዘንድ ስለቀናች ክብርት ስለምትሆን አንዲት ቤተ ክርስቲያን ስላም ጸልዩ።",
+            "en": "Pray for the peace of the one holy apostolic church orthodox in the Lord.",
+            "gez-Latn": "Tseliyu be'inte selame béte kiristeeyan ahatee qidist guba'é inte hawariyat riti'it behabe Igzee'abihér."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "catec-007",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ኪርያላይሶን።",
+            "en": "Kyrie eleison.",
+            "gez-Latn": "Kyrie eleison."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-008",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ ርእሰ ሊቃነ ጳጳሳት አባ ማትያስ እግዚእነ ርእሰ ሊቃነ ጳጳሳት ዘሀገር ዓባይ ኢትዮጵያ ወዲበ ርእሰ ሀገረ አበዊነ ብፁዕ ሊቀ ጳጳስነ አባ ጴጥሮስ ወኵሎሙ ኤጲስ ቆጶሳት ቀሳውስት ወዲያቆናት ርቱዓነ ሃይማኖት። ተንሥኡ ለጸሎት",
+            "am": "ብፁዕ ስለሚሆን ስለ ሊቀ ጳጳሳቱ ስለ አባ ማትያስ የደገኛዩቱ አገር ኢትዮጵያ ፓትርያርክ የሊቃነ ጳጳሳቱ አለቃ ጌታ ስለሚሆን ባባቶቻችን አገርም ብፁዕ ስለሚሆን ስለ አባ ጴጥሮስ ሃይማኖታቸው ስለ ቀና ስለ ኤጲስ ቆጶሳቱ ስለ ቀሳውስቱና ስለ ዲያቆናቱም ሁሉ ጸልዩ። ለጸሎት ተነሡ።",
+            "en": "Pray for the Patriarch Abba Matthias lord chief of the bishops of the great country Ethiopia, and for the blessed Primate of the country of our fathers Abba Peter and all the orthodox bishops, priests and deacons. Stand up for prayer.",
+            "gez-Latn": "Tseliyu be'inte ri'ise leeqane papasat Abba Matyas Egziene ri'ise leeqane papasat zehager abayi Ethiopia wedeebe ri'ise hagere abeweene bisu'i leeqe papasine abba Petros wekwulomu épees qoposat qesawist wedeeyaqonat ritu'ane haymanot. Tensi'u letselot"
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "catec-012",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ።",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-013",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም።",
+            "en": "Peace be unto you all.",
+            "gez-Latn": "Selam lekwulikimu."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "catec-014",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ።",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Thy spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-015",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ ዛቲ ቤተ ክርስቲያን ቅድስት ወማኅበርነ በውስቴታ።",
+            "am": "ክብር ስለምትሆን ስለዚች ቤተ ክርስቲያን በውስጥዋም ስላለ አንድነታችንም ጸልዪ",
+            "en": "Pray for this holy church and our congregation therein.",
+            "gez-Latn": "Tseliyu be'inte zatee béte kiristeeyan qidist wemahiberene bewisteta."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "catec-016",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ማኅበርነ ባርከ ዕቀብ በሰላም።",
+            "am": "አንድነታችንን ባርክ በስላም ጠብቅ።",
+            "en": "Bless our congregation and keep them in peace.",
+            "gez-Latn": "Mahiberene barike iqeb beselam."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-017",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ንበል ኵልነ በጥበበ እግዚአብሔር ጸሎተ ሃይማኖት።",
+            "am": "በእግዚአብሔር ጥበብ ሆነን ሁላችን የሃይማኖትን ጸሎት እንበል።",
+            "en": "Let us all say, in the wisdom of God, the prayer of faith",
+            "gez-Latn": "Nibel kwuline betibebe Igzee'abihér tselote haymanot."
+          },
+          "speaker": "deacon"
+        }
+      ]
+    },
+    {
+      "id": "creed",
+      "titles": {
+        "en": "Creed",
+        "gez-Latn": "Amekniyou"
+      },
+      "nodes": [
+        {
+          "id": "catec-018",
+          "kind": "heading",
+          "content": {
+            "gez": "አመክኒዩ ዘሃዋርያት",
+            "en": "Apostle's Creed"
+          }
+        },
+        {
+          "id": "catec-019",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ንጹሕ የሆነ ከቍርባኑ ይቀበል፤ …",
+            "en": "He that is pure let him receive of the oblation and he that is not pure let him not receive it, that he may not be consumed by the fire of the Godhead which is prepared for the devil and his angels. Who so hath revenge in his heart and who so hath in him strange thoughts and fornication let him not draw nigh. As I have cleansed my hands from outward pollution, so also I am pure from the blood of you all. If you presumptuously draw nigh to the body and blood of Christ I will not be responsible for your reception thereof. I am pure of your wickedness but your sin will return upon your head if you do not draw nigh in purity."
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "catec-020",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ይህን የቄሱን ቃል ያቀለለ ወይም የሳቀና የተነጋገረ ወይም በቤተ ክርስቲያን ውስጥ በክፋት የቆመ ቢኖር ጌታችንን ኢየሱስ ክርስቶስን እንዳሳዘንው በርሱም እንደ ተነሣሣ ይወቅ ይረዳ ስለ በረከት ፈንታ መርገምን ስለ ኃጢአት ሥርየት ፈንታም ገሃነመ እሳትን ከእግዚአብሔር ዘንድ ይቀበላል",
+            "en": "If there be any who disdains this word of the priest or laughs or speaks or stands in the church in an evil manner, let him know and understand that he is provoking to wrath our Lord Jesus Christ, and bringing upon himself a curse instead of a blessing, and will get from God the fire of hell instead of the remission of sin."
+          },
+          "speaker": "deacon"
+        }
+      ]
+    },
+    {
+      "id": "stand-up-for-prayerj",
+      "titles": {
+        "gez": "ተንሥኡ ለጸሎት",
+        "am": "ለጸሎት ተነሡ።",
+        "en": "Stand up for prayer",
+        "gez-Latn": "Tensi'u letselot"
+      },
+      "nodes": [
+        {
+          "id": "serate-qidase-moekas36cr6",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ተንሥኡ ለጸሎት",
+            "am": "ለጸሎት ተነሡ። ",
+            "en": "Stand up for prayer. ",
+            "gez-Latn": "Tensi'u letselot "
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "serate-qidase-moekas36v93",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "እግዚኦ ተሣሃለነ። ",
+            "am": "አቤቱ ይቅር በለን።",
+            "en": "Lord have mercy upon us.",
+            "gez-Latn": "Igzee'o tesahalene."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "serate-qidase-moekas36gfp",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ሰላም ለኵልክሙ።",
+            "am": "ሰላም ለሁላችሁም። ",
+            "en": "Peace be unto you all. ",
+            "gez-Latn": "Selam lekwulikimu. "
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "serate-qidase-moekas36xkd",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ምስለ መንፈስከ። ",
+            "am": "ከመንፈስህ ጋራ።",
+            "en": "And with Thy spirit.",
+            "gez-Latn": "Misle menfesike."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    },
+    {
+      "id": "prayer-of-salutation",
+      "titles": {
+        "en": "Prayer of Salutation"
+      },
+      "nodes": [
+        {
+          "id": "catec-025",
+          "kind": "heading",
+          "content": {
+            "am": "ባስልዮስ የተናገረው የአምኃ ጸሎት",
+            "en": "\"Prayer of Salutation\" of St. Basil"
+          }
+        },
+        {
+          "id": "catec-026",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "ለዘላለሙ ገናና የምትሆን እግዚአብሔር ሆይ ያለጥፋት ሰውን የፈጠርኸው። አስቀድሞ በሰይጣን ቅንዓት የገባውን ሞት …",
+            "en": "God, great eternal, who didst form a man uncorrupt,"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "catec-027",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ስብሐት ለእግዚአብሔር በሰማያት ወሰላም በምድር ሥምረቱ ለስብእ",
+            "am": "በሰማይ ለእግዚአብሔር ምስጋና ይገባል ሰላም በምድር ፍቅሩ ለሰው ሆነ።",
+            "en": "Glory to God in heaven and on earth peace, His goodwill toward men.",
+            "gez-Latn": "Sibhat le'Igzee'abihér besemayat weselam bemidir simretu leseb'i."
+          },
+          "speaker": "assembly"
+        },
+        {
+          "id": "catec-028",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "am": "አቤቱ ፈቃድህን በሁላችን ልቡና ሙላ፤"
+          },
+          "speaker": "priest"
+        },
+        {
+          "id": "catec-029",
+          "kind": "text",
+          "role": "prayer",
+          "content": {
+            "gez": "ጸልዩ በእንተ ሰላም ፍጽምት ወፍቅር ተአምኁ በበይናቲክሙ በአምኃ ቅድሳት።",
+            "am": "ፍጽምት ስልምትሆን ሰላምና ፍቅር ጸልዪ እርስ በርሳችሁ በተለየች ሰላምታ እጅ ተነሳሱ።",
+            "en": "Pray for the perfect peace and love. Salute one another with a holy salutation",
+            "gez-Latn": "Tseliyu be'inte selam fitsimt wefiqir te'amihu bebeyinateekimu be'amiha qidisat."
+          },
+          "speaker": "deacon"
+        },
+        {
+          "id": "catec-030",
+          "kind": "text",
+          "role": "response",
+          "content": {
+            "gez": "ክርስቶስ አምላክነ ረስየነ ድልዋነ ከመ ንትአማኅ በበይናቲነ በአምኃ ቅድሳት",
+            "am": "ፈጣሪያችን ክርስቶስ ሆይ እርስ በርሳችን  በከበረች ሰላምታ እጅ እንነሳሳ ዘንድ የበቃን አድርገን።",
+            "en": "Christ our God, make us meet to salute one another with a holy salutation.",
+            "gez-Latn": "Kiristos amlakine resiyene diliwane keme niti'amah bebeyinateene be'amiha qidisat."
+          },
+          "speaker": "assembly"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "imported",
+      "ref": "data/serate-qidase.json"
+    }
+  }
+}

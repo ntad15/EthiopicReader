@@ -1,10 +1,5 @@
 {
   "id": "saint-james-nisibis",
-  "name": {
-    "english": "St. Jacob of Nisibis",
-    "geez": "ቅዱስ ያዕቆብ ዘነጽሒቢ",
-    "amharic": "ቅዱስ ያዕቆብ ዘነጽሒቢ"
-  },
   "sections": [
     {
       "id": "saint-james-nisibis-placeholder",
@@ -19,5 +14,10 @@
         }
       ]
     }
-  ]
+  ],
+  "name": {
+    "geez": "ቅዱስ ያዕቆብ ዘነጽሒቢ",
+    "amharic": "ቅዱስ ያዕቆብ ዘነጽሒቢ",
+    "english": "St. Jacob of Nisibis"
+  }
 }

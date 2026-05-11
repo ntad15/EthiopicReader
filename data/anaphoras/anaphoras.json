@@ -1,31 +1,115 @@
 [
   {
-    "id": "apostles",
-    "name": { "english": "Anaphora of the Apostles", "geez": "ቅዳሴ ሐዋርያት", "amharic": "ቅዳሴ ሐዋርያት" }
-  },
-  {
-    "id": "saint-dioscorus",
-    "name": { "english": "St. Dioscorus", "geez": "ቅዱስ ዲዮስቆሮስ", "amharic": "ቅዱስ ዲዮስቆሮስ" },
-    "saint": "Dioscorus"
-  },
-  {
-    "id": "saint-cyril",
-    "name": { "english": "St. Cyril", "geez": "ቅዱስ ቄርሎስ", "amharic": "ቅዱስ ቄርሎስ" },
-    "saint": "Cyril"
-  },
-  {
-    "id": "saint-epiphanius",
-    "name": { "english": "St. Epiphanius", "geez": "ቅዱስ ኤጲፋንዮስ", "amharic": "ቅዱስ ኤጲፋንዮስ" },
-    "saint": "Epiphanius"
-  },
-  {
     "id": "saint-john-chrysostom",
-    "name": { "english": "St. John Chrysostom", "geez": "ቅዱስ ዮሐንስ አፈወርቅ", "amharic": "ቅዱስ ዮሐንስ አፈወርቅ" },
+    "name": {
+      "geez": "ቅዱስ ዮሐንስ ዝርጋዊ",
+      "amharic": "ቅዱስ ዮሐንስ ዝርጋዊ",
+      "english": "St. John Chrysostom"
+    },
     "saint": "John Chrysostom"
   },
   {
+    "id": "saint-mary",
+    "name": {
+      "geez": "ቅድስት ድንግል ማርያም",
+      "amharic": "ቅድስት ድንግል ማርያም",
+      "english": "St. Mary"
+    }
+  },
+  {
+    "id": "apostles",
+    "name": {
+      "geez": "ቅዳሴ ሐዋርያት",
+      "amharic": "ቅዳሴ ሐዋርያት",
+      "english": "Anaphora of the Apostles"
+    }
+  },
+  {
+    "id": "saint-basil",
+    "name": {
+      "geez": "ቅዱስ ባስልዮስ",
+      "amharic": "ቅዱስ ባስልዮስ",
+      "english": "St. Basil the Great"
+    }
+  },
+  {
+    "id": "saint-gregory",
+    "name": {
+      "geez": "ቅዱስ ጎርጎርዮስ",
+      "amharic": "ቅዱስ ጎርጎርዮስ",
+      "english": "St. Gregory"
+    }
+  },
+  {
+    "id": "saint-epiphanius",
+    "name": {
+      "geez": "ቅዱስ ኤጲፋንዮስ",
+      "amharic": "ቅዱስ ኤጲፋንዮስ",
+      "english": "St. Epiphanius"
+    }
+  },
+  {
+    "id": "saint-cyril",
+    "name": {
+      "geez": "ቅዱስ ቄርሎስ",
+      "amharic": "ቅዱስ ቄርሎስ",
+      "english": "St. Cyril"
+    }
+  },
+  {
     "id": "saint-james-sarugh",
-    "name": { "english": "St. James of Sarugh", "geez": "ቅዱስ ያዕቆብ ዘሥሩግ", "amharic": "ቅዱስ ያዕቆብ ዘሥሩግ" },
-    "saint": "James of Sarugh"
+    "name": {
+      "geez": "ቅዱስ ያዕቆብ ዘሱሩጅ",
+      "amharic": "ቅዱስ ያዕቆብ ዘሱሩጅ",
+      "english": "St. Jacob of Sarug"
+    }
+  },
+  {
+    "id": "saint-james-nisibis",
+    "name": {
+      "geez": "ቅዱስ ያዕቆብ ዘነጽሒቢ",
+      "amharic": "ቅዱስ ያዕቆብ ዘነጽሒቢ",
+      "english": "St. Jacob of Nisibis"
+    }
+  },
+  {
+    "id": "saint-dioscorus",
+    "name": {
+      "geez": "ቅዱስ ዲዮስቆሮስ",
+      "amharic": "ቅዱስ ዲዮስቆሮስ",
+      "english": "St. Dioscorus"
+    }
+  },
+  {
+    "id": "our-lord",
+    "name": {
+      "geez": "ጌታ ኢየሱስ ክርስቶስ",
+      "amharic": "ጌታ ኢየሱስ ክርስቶስ",
+      "english": "Our Lord Jesus Christ"
+    }
+  },
+  {
+    "id": "saint-john-thunder",
+    "name": {
+      "geez": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
+      "amharic": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
+      "english": "St. John Son of Thunder"
+    }
+  },
+  {
+    "id": "three-hundred-eighteen",
+    "name": {
+      "geez": "ሦስቱ መቶ ዐሥራ ወሰምንቱ",
+      "amharic": "ሦስቱ መቶ ዐሥራ ወሰምንቱ",
+      "english": "The 318 Orthodox Fathers"
+    }
+  },
+  {
+    "id": "saint-athanasius",
+    "name": {
+      "geez": "ቅዱስ አትናቴዎስ",
+      "amharic": "ቅዱስ አትናቴዎስ",
+      "english": "St. Athanasius"
+    }
   }
 ]

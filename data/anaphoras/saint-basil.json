@@ -1,10 +1,5 @@
 {
   "id": "saint-basil",
-  "name": {
-    "english": "St. Basil the Great",
-    "geez": "ቅዱስ ባስልዮስ",
-    "amharic": "ቅዱስ ባስልዮስ"
-  },
   "sections": [
     {
       "id": "saint-basil-placeholder",
@@ -19,5 +14,10 @@
         }
       ]
     }
-  ]
+  ],
+  "name": {
+    "geez": "ቅዱስ ባስልዮስ",
+    "amharic": "ቅዱስ ባስልዮስ",
+    "english": "St. Basil the Great"
+  }
 }
