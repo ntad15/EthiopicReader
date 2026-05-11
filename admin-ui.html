@@ -291,6 +291,7 @@
       color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer;
     }
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-ghost:disabled { opacity: 0.3; cursor: default; pointer-events: none; }
 
     /* ── Search & Insert modal ───────────────────────── */
     .modal-backdrop {
@@ -474,6 +475,10 @@
     <div id="save-bar">
       <button class="btn btn-save" onclick="saveFile()">Save to Disk</button>
       <span id="save-hint"></span>
+      <div style="margin-left:auto;display:flex;gap:6px;">
+        <button id="prev-block-btn" class="btn btn-ghost" onclick="navigateBlock(-1)" title="Previous block" style="display:none">← Prev</button>
+        <button id="next-block-btn" class="btn btn-ghost" onclick="navigateBlock(1)" title="Next block" style="display:none">Next →</button>
+      </div>
     </div>
   </div>
 
@@ -1161,6 +1166,8 @@ function renderBlocks() {
       '</div>' +
     '</div>';
   }).join('');
+  const activeEl = list.querySelector('.list-item.active');
+  if (activeEl) activeEl.scrollIntoView({ block: 'nearest' });
 }
 
 function selectBlock(idx, e) {
@@ -1187,6 +1194,28 @@ function selectBlock(idx, e) {
   }
   renderBlocks();
   renderEditor();
+}
+
+function navigateBlock(dir) {
+  if (selSection === null || !isLiturgical(fileData)) return;
+  const blocks = fileData.sections[selSection].blocks || [];
+  const newIdx = selBlock === null ? (dir > 0 ? 0 : blocks.length - 1) : selBlock + dir;
+  if (newIdx < 0 || newIdx >= blocks.length) return;
+  selectBlock(newIdx, null);
+}
+
+function updateBlockNav() {
+  const prevBtn = document.getElementById('prev-block-btn');
+  const nextBtn = document.getElementById('next-block-btn');
+  if (!prevBtn || !nextBtn) return;
+  const hasSection = selSection !== null && isLiturgical(fileData);
+  prevBtn.style.display = hasSection ? '' : 'none';
+  nextBtn.style.display = hasSection ? '' : 'none';
+  if (hasSection) {
+    const blocks = fileData.sections[selSection].blocks || [];
+    prevBtn.disabled = selBlock === null || selBlock <= 0;
+    nextBtn.disabled = selBlock === null || selBlock >= blocks.length - 1;
+  }
 }
 
 function addBlock() {
@@ -1692,6 +1721,7 @@ function duplicateSectionFromTemplate(templateSection) {
 
 // ── Editor ─────────────────────────────────────────────────────────────────────
 function renderEditor() {
+  updateBlockNav();
   const panel = document.getElementById('editor-panel');
 
   if (!fileData) {
