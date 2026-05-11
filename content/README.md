@@ -2,15 +2,13 @@
 
 This directory is the new home for canonical liturgical content and its schema contract.
 
-## Step-1 boundary
+## Current state
 
-This directory currently defines structure only.
-
-- `content/source/` is for human-edited canonical source
-- `content/schema/` is the source schema contract
-- runtime JSON in `data/` stays unchanged for now
-
-No compiler, validator CLI, compiled output, or CI flow is implemented here yet.
+- `content/source/**` is the human-edited canonical source of truth
+- `content/schema/**` defines the source schema contract
+- `data/**` is compiled runtime output generated locally and committed to the repo
+- `data/runtimeIndex.ts` is generated and serves as the Expo app's runtime import surface
+- CI only verifies that committed runtime output is current with `npm run content:verify`
 
 ## Layout
 
@@ -39,23 +37,30 @@ content/
 
 ## Current source schema
 
-The step-1 schema contract lives in:
+The current schema contract lives in:
 
 - `content/schema/v1/README.md`
 - `content/schema/v1/migration-notes.md`
 - `content/schema/v1/types.ts`
 - `content/schema/v1/source-document.schema.json`
 
-The step-1 implementation plan lives in:
+## Normal editing workflow
 
-- `docs/content-schema-implementation-plan.md`
+1. Edit canonical source documents in `content/source/**`.
+2. Run `npm run content:validate`.
+3. Run `npm run content:build`.
+4. Run `npm run content:verify`.
+5. Run `python3 data/scripts/lint_block_length.py`.
+6. Commit both the source edits and regenerated runtime files under `data/**`.
+
+Avoid editing `data/**` directly for routine content work. Those files are build output and can drift from or be overwritten by the canonical source pipeline.
 
 ## Content pipeline commands
 
 The repo now includes a local source-to-runtime pipeline:
 
 - `npm run content:import`
-  One-time migration helper that imports the current runtime corpus into `content/source/`.
+  One-time/bootstrap helper that imports the current runtime corpus into `content/source/`.
 - `npm run content:validate`
   Validates canonical source documents and references.
 - `npm run content:build`
