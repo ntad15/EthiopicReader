@@ -436,6 +436,8 @@
     <option value="">Select a liturgy…</option>
   </select>
   <div class="header-right">
+    <input type="file" id="upload-json-input" accept=".json" style="display:none" onchange="handleUploadJson(this)">
+    <button id="upload-json-btn" class="btn btn-ghost" style="display:none" onclick="document.getElementById('upload-json-input').click()" title="Upload a previously downloaded JSON to resume editing">Upload JSON</button>
     <button id="common-blocks-btn" class="btn btn-ghost" onclick="openCommonBlocks()" title="Search and insert blocks or sections from the corpus" style="display:none">Search &amp; insert</button>
     <span id="status"></span>
   </div>
@@ -664,6 +666,9 @@ function toast(msg, type) {
 function markDirty() {
   dirty = true;
   updateStatus();
+  if (STATIC_MODE && currentFile && fileData) {
+    try { localStorage.setItem('adminDraft_' + currentFile, JSON.stringify(fileData)); } catch (e) {}
+  }
 }
 
 function updateStatus() {
@@ -715,14 +720,17 @@ async function init() {
     }
   }
   applyModeToUI();
-  loadAnaphoraDropdown();
+  await loadAnaphoraDropdown();
   refreshLint();
   loadCommonBlocks();
+  restoreLastPosition();
 }
 
 function applyModeToUI() {
   const btn = document.querySelector('#save-bar .btn-save');
   if (btn) btn.textContent = STATIC_MODE ? 'Download JSON' : 'Save to Disk';
+  const uploadBtn = document.getElementById('upload-json-btn');
+  if (uploadBtn) uploadBtn.style.display = STATIC_MODE ? '' : 'none';
 }
 
 async function loadCommonBlocks() {
@@ -853,16 +861,24 @@ async function selectFile(path) {
     if (!confirm('Discard unsaved changes to ' + currentFile + '?')) return;
   }
   currentFile = path;
+  localStorage.setItem('lastFile', path);
+  localStorage.removeItem('lastSection');
+  localStorage.removeItem('lastBlock');
   const sel = document.getElementById('liturgy-select');
   if (sel) sel.value = path;
   selSection = null;
   selBlock = null;
   selBlocks = new Set();
   dirty = false;
-  
+
   // Load file (static or from server)
   if (STATIC_MODE) {
     fileData = await fetchJson('data/' + path);
+    // Restore autosaved draft silently if one exists
+    const draft = localStorage.getItem('adminDraft_' + path);
+    if (draft) {
+      try { fileData = JSON.parse(draft); dirty = true; } catch (e) {}
+    }
   } else {
     fileData = await apiFetch('GET', '/api/file?path=' + encodeURIComponent(path));
   }
@@ -926,6 +942,7 @@ function downloadCurrentFile() {
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
+  localStorage.removeItem('adminDraft_' + currentFile);
   dirty = false;
   updateStatus();
   toast('Downloaded ' + a.download + ' — email it to the maintainer', 'ok');
@@ -997,6 +1014,8 @@ function selectSection(idx) {
   selSection = idx;
   selBlock = null;
   selBlocks = new Set();
+  localStorage.setItem('lastSection', String(idx));
+  localStorage.removeItem('lastBlock');
   renderSections();
   renderBlocks();
   renderEditor();
@@ -1167,6 +1186,7 @@ function selectBlock(idx, e) {
     // Plain click: single select
     selBlocks = new Set([idx]);
     selBlock = idx;
+    localStorage.setItem('lastBlock', String(idx));
   }
   renderBlocks();
   renderEditor();
@@ -2062,6 +2082,65 @@ function secDrop(e, toSecIdx) {
     renderSections();
     renderBlocks();
   }
+}
+
+// ── Session restore ────────────────────────────────────────────────────────────
+async function restoreLastPosition() {
+  const lastFile = localStorage.getItem('lastFile');
+  if (!lastFile) return;
+  const sel = document.getElementById('liturgy-select');
+  if (!sel || ![...sel.options].some(o => o.value === lastFile)) return;
+  await selectFile(lastFile);
+  const lastSection = localStorage.getItem('lastSection');
+  if (lastSection !== null && isLiturgical(fileData)) {
+    const secIdx = parseInt(lastSection);
+    if (!isNaN(secIdx) && fileData.sections[secIdx]) {
+      selSection = secIdx;
+      renderSections();
+      renderBlocks();
+      renderEditor();
+      const lastBlock = localStorage.getItem('lastBlock');
+      if (lastBlock !== null) {
+        const blockIdx = parseInt(lastBlock);
+        const sec = fileData.sections[secIdx];
+        if (!isNaN(blockIdx) && sec.blocks && sec.blocks[blockIdx]) {
+          selBlock = blockIdx;
+          selBlocks = new Set([blockIdx]);
+          renderBlocks();
+          renderEditor();
+        }
+      }
+    }
+  }
+}
+
+// ── Upload JSON (STATIC_MODE) ──────────────────────────────────────────────────
+function handleUploadJson(input) {
+  const file = input.files[0];
+  if (!file) return;
+  if (!currentFile) {
+    toast('Select a liturgy from the dropdown first', 'err');
+    input.value = '';
+    return;
+  }
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      fileData = JSON.parse(e.target.result);
+      dirty = true;
+      localStorage.removeItem('adminDraft_' + currentFile);
+      renderSections();
+      renderBlocks();
+      renderEditor();
+      updateStatus();
+      updateCurrentFileLint();
+      toast('Loaded ' + file.name, 'ok');
+    } catch (err) {
+      toast('Invalid JSON: ' + err.message, 'err');
+    }
+    input.value = '';
+  };
+  reader.readAsText(file);
 }
 
 // ── Warn before leaving with unsaved changes ───────────────────────────────────
