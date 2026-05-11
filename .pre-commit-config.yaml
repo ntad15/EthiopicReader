@@ -1,0 +1,11 @@
+fail_fast: true
+
+repos:
+  - repo: local
+    hooks:
+      - id: content-check
+        name: verify content pipeline output
+        entry: npm run content:check
+        language: system
+        pass_filenames: false
+        files: ^(content/(schema|source)/|data/(anaphoras/.*\.json|qidan\.json|serate-qidase\.json|seasonals\.json|runtimeIndex\.ts)|scripts/content/|data/scripts/lint_block_length\.py|package\.json)$

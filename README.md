@@ -26,6 +26,24 @@ A digital reader for the Divine Liturgy (Qidase) of the Ethiopian Orthodox Tewah
 npm ci
 ```
 
+### Recommended maintainer setup
+
+If you are working on this repo regularly, the lightest local setup is `direnv` plus `pre-commit`.
+
+```bash
+brew install direnv pre-commit
+echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+direnv allow
+pre-commit install
+```
+
+If you are not using Homebrew, install `direnv` and `pre-commit` with your system package manager instead.
+
+What this gives you:
+
+- `direnv` automatically adds `node_modules/.bin` to your shell when you enter the repo
+- `pre-commit` runs the content pipeline freshness check before commits that touch canonical content or generated runtime files
+
 ### Run the web app
 
 ```bash
@@ -57,13 +75,16 @@ Canonical liturgical content now lives under `content/source/`.
 For a normal content update:
 
 1. Edit the relevant files in `content/source/**`.
-2. Run `npm run content:validate`.
-3. Run `npm run content:build`.
-4. Run `npm run content:verify`.
-5. Run `python3 data/scripts/lint_block_length.py`.
-6. Commit both the source changes and the regenerated runtime files in `data/**`.
+2. Run `npm run content:sync`.
+3. Run `npm run content:check`.
+4. Commit both the source changes and the regenerated runtime files in `data/**`.
 
 `npm run content:import` is only a migration/bootstrap helper for lifting the legacy runtime corpus into `content/source/`. It is not the day-to-day editing path.
+
+Equivalent low-level commands:
+
+- `npm run content:sync` = `content:validate` + `content:build`
+- `npm run content:check` = `content:verify` + block-length lint
 
 ## Legacy Admin Tool
 

@@ -1,4 +1,5 @@
 node_modules/
+.direnv/
 .expo/
 dist/
 android/
@@ -14,6 +15,7 @@ web-build/
 web-build/
 .env
 .env.local
+/.envrc.local
 /.agents/
 /docs/
 

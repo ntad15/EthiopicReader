@@ -8,9 +8,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 npm ci                               # Install dependencies
+direnv allow                         # Enable repo-local PATH setup for this checkout
+pre-commit install                   # Enable the local pre-commit hook
 npm run web                          # Start the web dev server
 npx expo start                       # Start the Expo dev server for device/simulator/web
 npm run build:web                    # Build a production web export into dist/
+npm run content:sync                 # Validate source and regenerate committed runtime data
+npm run content:check                # Verify runtime freshness and block-length limits
 npm run content:validate             # Validate canonical source content
 npm run content:build                # Compile canonical source into committed runtime data
 npm run content:verify               # Ensure committed runtime matches source
@@ -18,7 +22,7 @@ python3 data/scripts/lint_block_length.py  # Enforce block-length limits
 node admin-server.js                 # Start the legacy local admin UI at http://localhost:3001
 ```
 
-There are no automated tests in this project. For content-system work, the main regression checks are `content:validate`, `content:build`, `content:verify`, the block-length lint, and `npm run build:web`.
+There are no automated tests in this project. For content-system work, the main regression checks are `content:sync`, `content:check`, and `npm run build:web`.
 
 ## Architecture
 

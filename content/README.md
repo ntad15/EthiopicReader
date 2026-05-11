@@ -9,6 +9,7 @@ This directory is the new home for canonical liturgical content and its schema c
 - `data/**` is compiled runtime output generated locally and committed to the repo
 - `data/runtimeIndex.ts` is generated and serves as the Expo app's runtime import surface
 - CI only verifies that committed runtime output is current with `npm run content:verify`
+- local `pre-commit` can enforce the non-mutating content checks before commit
 
 ## Layout
 
@@ -47,13 +48,13 @@ The current schema contract lives in:
 ## Normal editing workflow
 
 1. Edit canonical source documents in `content/source/**`.
-2. Run `npm run content:validate`.
-3. Run `npm run content:build`.
-4. Run `npm run content:verify`.
-5. Run `python3 data/scripts/lint_block_length.py`.
-6. Commit both the source edits and regenerated runtime files under `data/**`.
+2. Run `npm run content:sync`.
+3. Run `npm run content:check`.
+4. Commit both the source edits and regenerated runtime files under `data/**`.
 
 Avoid editing `data/**` directly for routine content work. Those files are build output and can drift from or be overwritten by the canonical source pipeline.
+
+If you install `pre-commit`, commits that touch canonical content or generated runtime files will automatically run `npm run content:check`.
 
 ## Content pipeline commands
 
@@ -61,6 +62,10 @@ The repo now includes a local source-to-runtime pipeline:
 
 - `npm run content:import`
   One-time/bootstrap helper that imports the current runtime corpus into `content/source/`.
+- `npm run content:sync`
+  Validates canonical source documents and regenerates the committed runtime files under `data/`.
+- `npm run content:check`
+  Verifies compiled runtime freshness and runs the block-length lint.
 - `npm run content:validate`
   Validates canonical source documents and references.
 - `npm run content:build`
