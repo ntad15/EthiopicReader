@@ -56,6 +56,8 @@ Avoid editing `data/**` directly for routine content work. Those files are build
 
 If you install `pre-commit`, commits that touch canonical content or generated runtime files will automatically run `npm run content:check`.
 
+For a fresh maintainer machine, the easiest bootstrap path is `npm run setup:dev`.
+
 ## Content pipeline commands
 
 The repo now includes a local source-to-runtime pipeline:

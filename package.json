@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "scripts": {
+    "setup:dev": "./scripts/setup-dev.sh",
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",

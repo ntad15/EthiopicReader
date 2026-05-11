@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
+npm run setup:dev                    # One-command maintainer bootstrap
 npm ci                               # Install dependencies
 direnv allow                         # Enable repo-local PATH setup for this checkout
 pre-commit install                   # Enable the local pre-commit hook

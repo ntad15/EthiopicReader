@@ -28,16 +28,23 @@ npm ci
 
 ### Recommended maintainer setup
 
-If you are working on this repo regularly, the lightest local setup is `direnv` plus `pre-commit`.
+If you are working on this repo regularly, the preferred setup path is:
 
 ```bash
-brew install direnv pre-commit
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-direnv allow
-pre-commit install
+npm run setup:dev
 ```
 
-If you are not using Homebrew, install `direnv` and `pre-commit` with your system package manager instead.
+What it does:
+
+- runs `npm ci` if `node_modules/` is missing
+- installs `direnv` with `brew install direnv` if it is missing
+- installs `pre-commit` with `brew install pre-commit` if it is missing
+- runs `direnv allow`
+- runs `pre-commit install`
+
+If you are not using Homebrew, install `direnv` and `pre-commit` with your system package manager first, then rerun `npm run setup:dev`.
+
+The script skips tools that are already installed. It does not silently rewrite your shell config, but it will remind you which `direnv` hook line to add if shell integration is still missing.
 
 What this gives you:
 
