@@ -1,10 +1,5 @@
 {
   "id": "saint-athanasius",
-  "name": {
-    "english": "St. Athanasius",
-    "geez": "ቅዱስ አትናቴዎስ",
-    "amharic": "ቅዱስ አትናቴዎስ"
-  },
   "sections": [
     {
       "id": "saint-athanasius-placeholder",
@@ -19,5 +14,10 @@
         }
       ]
     }
-  ]
+  ],
+  "name": {
+    "geez": "ቅዱስ አትናቴዎስ",
+    "amharic": "ቅዱስ አትናቴዎስ",
+    "english": "St. Athanasius"
+  }
 }

@@ -7,15 +7,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm install          # Install dependencies
-npx expo start       # Start dev server (scan QR with Expo Go, or press w for web)
-expo run:ios         # Build and run on iOS simulator
-expo run:android     # Build and run on Android emulator
-expo lint            # Run ESLint
-node admin-server.js # Start local admin UI at http://localhost:3001
+npm run setup:dev                    # One-command maintainer bootstrap
+npm ci                               # Install dependencies
+direnv allow                         # Enable repo-local PATH setup for this checkout
+pre-commit install                   # Enable the local pre-commit hook
+npm run web                          # Start the web dev server
+npx expo start                       # Start the Expo dev server for device/simulator/web
+npm run build:web                    # Build a production web export into dist/
+npm run content:sync                 # Validate source and regenerate committed runtime data
+npm run content:check                # Verify runtime freshness and block-length limits
+npm run content:validate             # Validate canonical source content
+npm run content:build                # Compile canonical source into committed runtime data
+npm run content:verify               # Ensure committed runtime matches source
+python3 data/scripts/lint_block_length.py  # Enforce block-length limits
+node admin-server.js                 # Start the legacy local admin UI at http://localhost:3001
 ```
 
-There are no automated tests in this project.
+There are no automated tests in this project. For content-system work, the main regression checks are `content:sync`, `content:check`, and `npm run build:web`.
 
 ## Architecture
 
@@ -24,19 +32,24 @@ There are no automated tests in this project.
 ### Navigation (Expo Router)
 
 - `app/(tabs)/` — Tab bar home, settings, bookmarks
-- `app/reader/[section].tsx` — Reader for `kidan` and `serate-kidase` sections
+- `app/reader/[section].tsx` — Reader for `qidan` and `serate-qidase`
+- `app/qidase/[id].tsx` — Combined route for `serate-qidase` followed by one anaphora
 - `app/anaphora/[id].tsx` — Reader for any of the 14 anaphoras
 - `app/_layout.tsx` — Root layout: wraps everything in `GestureHandlerRootView`, `SafeAreaProvider`, and the three context providers
 
 ### Data Layer
 
-All liturgical content lives in `data/` as JSON. The core types in [data/types.ts](data/types.ts) are:
+Canonical liturgical content now lives under `content/source/**`, with the source contract defined in `content/schema/v1/**`.
+
+Compiled runtime output lives in `data/**` and is committed to the repo. The Expo app loads that compiled runtime through `data/runtimeIndex.ts`.
+
+The core runtime types in [data/types.ts](data/types.ts) are:
 
 - `PrayerBlock` — A single block of text with `id`, `type` (`heading|rubric|prayer|response`), optional `speaker` (`priest|deacon|congregation|all`), and per-language text fields
 - `LiturgicalSection` — Array of `PrayerBlock`s with a title
 - `LiturgicalText` / `Anaphora` — Array of `LiturgicalSection`s
 
-Data files: `data/kidan.json`, `data/serate-kidase.json`, `data/anaphoras/` (14 files + metadata index). The admin server (`node admin-server.js` → `http://localhost:3001`) provides a browser UI for editing these JSON files without touching code.
+Canonical changes should be made in `content/source/**`, then compiled with the content pipeline. The admin server (`node admin-server.js` → `http://localhost:3001`) still exists, but it edits compiled runtime directly and should not be the default path for canonical liturgical updates.
 
 ### Shared Components
 

@@ -1,10 +1,5 @@
 {
   "id": "three-hundred-eighteen",
-  "name": {
-    "english": "The 318 Orthodox Fathers",
-    "geez": "ሦስቱ መቶ ዐሥራ ወሰምንቱ",
-    "amharic": "ሦስቱ መቶ ዐሥራ ወሰምንቱ"
-  },
   "sections": [
     {
       "id": "three-hundred-eighteen-placeholder",
@@ -19,5 +14,10 @@
         }
       ]
     }
-  ]
+  ],
+  "name": {
+    "geez": "ሦስቱ መቶ ዐሥራ ወሰምንቱ",
+    "amharic": "ሦስቱ መቶ ዐሥራ ወሰምንቱ",
+    "english": "The 318 Orthodox Fathers"
+  }
 }

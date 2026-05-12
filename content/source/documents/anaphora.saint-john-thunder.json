@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "anaphora",
+  "id": "anaphora.saint-john-thunder",
+  "slug": "saint-john-thunder",
+  "titles": {
+    "gez": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
+    "am": "ቅዱስ ዮሐንስ ወልደ ነጐድጓድ",
+    "en": "St. John Son of Thunder"
+  },
+  "sections": [
+    {
+      "id": "saint-john-thunder-placeholder",
+      "titles": {
+        "en": "Coming Soon"
+      },
+      "nodes": [
+        {
+          "id": "saint-john-thunder-placeholder-1",
+          "kind": "rubric",
+          "content": {
+            "en": "[Placeholder — contribute the full text via a Pull Request on GitHub]"
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": {
+      "type": "imported",
+      "ref": "data/anaphoras/saint-john-thunder.json"
+    }
+  }
+}

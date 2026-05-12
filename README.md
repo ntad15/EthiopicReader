@@ -17,26 +17,89 @@ A digital reader for the Divine Liturgy (Qidase) of the Ethiopian Orthodox Tewah
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [Expo Go](https://expo.dev/go) app on your phone (easiest way to run it)
+- [Node.js](https://nodejs.org/) (v20 recommended)
+- [Expo Go](https://expo.dev/go) on your phone if you want to open the native dev server on a device
 
 ### Install dependencies
 
 ```bash
-npm install
+npm ci
 ```
 
-### Run the app
+### Recommended maintainer setup
+
+If you are working on this repo regularly, the preferred setup path is:
+
+```bash
+npm run setup:dev
+```
+
+What it does:
+
+- runs `npm ci` if `node_modules/` is missing
+- installs `direnv` with `brew install direnv` if it is missing
+- installs `pre-commit` with `brew install pre-commit` if it is missing
+- runs `direnv allow`
+- runs `pre-commit install`
+
+If you are not using Homebrew, install `direnv` and `pre-commit` with your system package manager first, then rerun `npm run setup:dev`.
+
+The script skips tools that are already installed. It does not silently rewrite your shell config, but it will remind you which `direnv` hook line to add if shell integration is still missing.
+
+What this gives you:
+
+- `direnv` automatically adds `node_modules/.bin` to your shell when you enter the repo
+- `pre-commit` runs the content pipeline freshness check before commits that touch canonical content or generated runtime files
+
+### Run the web app
+
+```bash
+npm run web
+```
+
+### Run the Expo dev server
 
 ```bash
 npx expo start
 ```
 
-Scan the QR code with the Expo Go app on your phone to open it. You can also press `w` to open it in a web browser.
+Use this when you want to scan the QR code with Expo Go or launch a simulator. Press `w` in the Expo terminal to open the web app from the same dev server.
 
-## Admin Tool
+### Build the web app
 
-A browser-based editor for updating the liturgical JSON data files without touching code. It runs in two modes depending on how you open it.
+```bash
+npm run build:web
+```
+
+## Content Workflow
+
+Canonical liturgical content now lives under `content/source/`.
+
+- `content/source/**` is the human-edited source of truth
+- `data/**` is compiled runtime output that is generated locally and committed
+- the Expo app reads committed runtime through `data/runtimeIndex.ts`
+
+For a normal content update:
+
+1. Edit the relevant files in `content/source/**`.
+2. Run `npm run content:sync`.
+3. Run `npm run content:check`.
+4. Commit both the source changes and the regenerated runtime files in `data/**`.
+
+`npm run content:import` is only a migration/bootstrap helper for lifting the legacy runtime corpus into `content/source/`. It is not the day-to-day editing path.
+
+Equivalent low-level commands:
+
+- `npm run content:sync` = `content:validate` + `content:build`
+- `npm run content:check` = `content:verify` + block-length lint
+
+## Legacy Admin Tool
+
+This repo still contains a browser-based admin tool, but it is no longer the canonical update path for liturgical content.
+
+Use the content workflow above for routine content changes. The admin tool edits compiled files in `data/**` directly, so changes there can drift from or be overwritten by the canonical source pipeline unless they are mirrored back into `content/source/**`.
+
+The tool still runs in two modes depending on how you open it.
 
 ### Mode 1 — Local (maintainer)
 
@@ -44,21 +107,13 @@ A browser-based editor for updating the liturgical JSON data files without touch
 npm run admin          # starts the server at http://localhost:3001
 ```
 
-No extra install needed — uses only Node.js built-ins. **Save to Disk** writes changes directly back to the JSON files in `data/`. Changes take effect in the app on next reload.
+No extra install needed — uses only Node.js built-ins. **Save to Disk** writes directly into the compiled runtime files under `data/`.
 
 ### Mode 2 — GitHub Pages (non-technical editors)
 
 The admin tool is also deployed as a static site at `<pages-url>/admin/` alongside the Expo web app. Clergy and translators can open it in any browser without cloning the repo or running Node.
 
-Because there is no server to write to, **Save to Disk** becomes **Download JSON**: the browser saves the edited file to the editor's Downloads folder. The editor then emails that file to a maintainer, who reviews the diff and commits it.
-
-To apply a received file:
-
-```bash
-cp ~/Downloads/saint-basil.json data/anaphoras/saint-basil.json
-git diff data/anaphoras/saint-basil.json   # review changes
-git add data/anaphoras/saint-basil.json && git commit -m "..."
-```
+Because there is no server to write to, **Save to Disk** becomes **Download JSON**. Treat downloaded files as review input for a maintainer, not as canonical source content.
 
 ### What you can do in either mode
 
@@ -71,7 +126,7 @@ git add data/anaphoras/saint-basil.json && git commit -m "..."
   - **Sections**: browse or search all sections from all files; click one to insert a full copy (with fresh IDs) after the currently selected section
 - **Character-count indicators** on each text field (yellow > 250 chars, red > 400 chars — the hard limit for presentation mode)
 
-All data files are available: `kidan.json`, `serate-qidase.json`, and all anaphoras under `anaphoras/`.
+All compiled runtime files are available: `qidan.json`, `serate-qidase.json`, `seasonals.json`, and all anaphoras under `anaphoras/`.
 
 ### Admin password (GitHub Pages)
 
@@ -115,10 +170,17 @@ EthiopicReader/
 │   │   ├── settings.tsx         # Settings (languages, font size, app info)
 │   │   └── bookmarks.tsx        # Bookmarks (placeholder)
 │   ├── reader/
-│   │   └── [section].tsx        # Reader for Kidan & Serate Kidase
+│   │   └── [section].tsx        # Reader for qidan & serate-qidase
+│   ├── qidase/
+│   │   ├── index.tsx            # Combined qidase/anaphora entrypoint
+│   │   └── [id].tsx             # Serate Qidase + selected anaphora
 │   └── anaphora/
 │       ├── index.tsx            # Anaphora list (14 items)
 │       └── [id].tsx             # Individual anaphora reader
+├── content/
+│   ├── schema/
+│   │   └── v1/                  # Canonical source schema contract
+│   └── source/                  # Canonical liturgical source documents
 ├── components/
 │   ├── ReaderLayout.tsx         # Shared reader layout (used by reader & anaphora screens)
 │   ├── PrayerBlock.tsx          # Renders a single prayer block (multi-column, speaker colors)
@@ -136,10 +198,14 @@ EthiopicReader/
 ├── utils/
 │   └── language.ts              # Shared language sorting/filtering utility
 ├── data/
-│   ├── types.ts                 # TypeScript types (PrayerBlock, LiturgicalSection, etc.)
-│   ├── kidan.json               # Kidan liturgical text
-│   ├── serate-kidase.json       # Serate Kidase liturgical text
-│   └── anaphoras/               # 14 anaphora data files + metadata index
+│   ├── types.ts                 # TypeScript runtime types
+│   ├── runtimeIndex.ts          # Generated runtime import surface used by the app
+│   ├── qidan.json               # Compiled qidan runtime content
+│   ├── serate-qidase.json       # Compiled serate-qidase runtime content
+│   ├── seasonals.json           # Compiled seasonal overrides
+│   └── anaphoras/               # Compiled anaphora runtime files + metadata index
+├── scripts/
+│   └── content/                 # Import/validate/build/verify content pipeline
 ├── admin-server.js              # Local admin HTTP server (node admin-server.js)
 ├── admin-ui.html                # Admin UI served by the server
 ├── app.json                     # Expo config

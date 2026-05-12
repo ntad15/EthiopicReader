@@ -27,8 +27,8 @@ import SettingsSheet from '@/components/SettingsSheet';
 import ReadingsPicker from '@/components/ReadingsPicker';
 import { useReadings } from '@/context/ReadingsContext';
 import { LiturgicalSection, PrayerBlock as PrayerBlockType, LiturgicalText } from '@/data/types';
+import { SEASONALS_DATA } from '@/data/runtimeIndex';
 import { processSections, calculateLiturgicalSeason } from '@/utils/seasonalResolver';
-import seasonalsData from '@/data/seasonals.json';
 
 interface ReaderLayoutProps {
   title: { english: string; geez?: string };
@@ -91,7 +91,10 @@ export default function ReaderLayout({
       season: calculateLiturgicalSeason(currentDate),
       // TODO: Add feast days for current date
     };
-    return processSections(sections, seasonalsData as LiturgicalText, context);
+    // Seasonal substitutions still happen at runtime because the chosen text
+    // depends on "today", but the candidate seasonal content itself is part of
+    // the committed compiled runtime generated from canonical source docs.
+    return processSections(sections, SEASONALS_DATA as LiturgicalText, context);
   }, [sections]);
 
   const allBlocks: PrayerBlockType[] = processedSections.flatMap((sec) => sec.blocks);

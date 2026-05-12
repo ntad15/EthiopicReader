@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Verify compiled content is current
+        run: npm run content:verify
+
       - name: Build web
         run: npx expo export --platform web
 

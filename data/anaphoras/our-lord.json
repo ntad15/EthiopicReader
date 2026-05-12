@@ -1,10 +1,5 @@
 {
   "id": "our-lord",
-  "name": {
-    "english": "Our Lord Jesus Christ",
-    "geez": "ጌታ ኢየሱስ ክርስቶስ",
-    "amharic": "ጌታ ኢየሱስ ክርስቶስ"
-  },
   "sections": [
     {
       "id": "our-lord-placeholder",
@@ -19,5 +14,10 @@
         }
       ]
     }
-  ]
+  ],
+  "name": {
+    "geez": "ጌታ ኢየሱስ ክርስቶስ",
+    "amharic": "ጌታ ኢየሱስ ክርስቶስ",
+    "english": "Our Lord Jesus Christ"
+  }
 }

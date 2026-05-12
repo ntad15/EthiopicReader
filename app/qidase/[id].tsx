@@ -13,33 +13,17 @@ import { Colors } from '@/constants/colors';
 import { Fonts } from '@/constants/fonts';
 import ReaderLayout from '@/components/ReaderLayout';
 import { ReadingsProvider } from '@/context/ReadingsContext';
-import { LiturgicalText, Anaphora, LiturgicalSection } from '@/data/types';
-
-const ANAPHORA_MAP: Record<string, () => Anaphora> = {
-  'saint-john-chrysostom': () => require('@/data/anaphoras/saint-john-chrysostom.json'),
-  'saint-mary': () => require('@/data/anaphoras/saint-mary.json'),
-  'apostles': () => require('@/data/anaphoras/apostles.json'),
-  'saint-basil': () => require('@/data/anaphoras/saint-basil.json'),
-  'saint-gregory': () => require('@/data/anaphoras/saint-gregory.json'),
-  'saint-epiphanius': () => require('@/data/anaphoras/saint-epiphanius.json'),
-  'saint-cyril': () => require('@/data/anaphoras/saint-cyril.json'),
-  'saint-james-sarugh': () => require('@/data/anaphoras/saint-james-sarugh.json'),
-  'saint-james-nisibis': () => require('@/data/anaphoras/saint-james-nisibis.json'),
-  'saint-dioscorus': () => require('@/data/anaphoras/saint-dioscorus.json'),
-  'our-lord': () => require('@/data/anaphoras/our-lord.json'),
-  'saint-john-thunder': () => require('@/data/anaphoras/saint-john-thunder.json'),
-  'three-hundred-eighteen': () => require('@/data/anaphoras/three-hundred-eighteen.json'),
-  'saint-athanasius': () => require('@/data/anaphoras/saint-athanasius.json'),
-};
-
-const serateData: LiturgicalText = require('@/data/serate-qidase.json');
+import { LiturgicalSection } from '@/data/types';
+import { loadAnaphoraRuntime, loadServiceRuntime } from '@/data/runtimeIndex';
 
 export default function CombinedQidaseScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const loader = ANAPHORA_MAP[id];
-  const anaphoraData: Anaphora | null = loader ? loader() : null;
+  // This screen stitches together the compiled common service and one compiled
+  // anaphora, matching the existing reader contract without exposing source docs.
+  const anaphoraData = loadAnaphoraRuntime(id);
+  const serateData = loadServiceRuntime('serate-qidase');
 
-  if (!anaphoraData) {
+  if (!anaphoraData || !serateData) {
     return (
       <View style={styles.errorContainer}>
         <Text style={styles.errorText}>Anaphora not found.</Text>
